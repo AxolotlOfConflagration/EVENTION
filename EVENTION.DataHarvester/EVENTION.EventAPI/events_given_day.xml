@@ -1,0 +1,2179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xsi:noNamespaceSchemaLocation="http://www.poznan.pl/mim/xmlschema/sit-wlkp/events.xsd" xmlns="http://sit-wlkp.eu/xmlrepo/events.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <event>
+        <event_id>106515</event_id>
+        <event_created>2018-11-20 09:05:36</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/koncert-pawel-domagala,106515.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Koncert - Paweł Domagała]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Paweł Domagała to jeden z najbardziej rozpoznawanych aktorów młodego pokolenia. W jego dorobku znajduje się wiele ról teatralnych, serialowych, a także filmowych.<br />Nie każdy jednak wie, że drugą największą pasją Pawła oprócz aktorstwa jest muzyka. Pisze i wykonuje swoje piosenki od wielu lat, spełniając się w artystycznie również na tym polu.<br />Jesienią 2016 roku ukazał się długo wyczekiwany debiutancki album Pawła Domagały pt. &quot;Opowiem Ci o mnie&quot;. Płyta trafiła do serc szerokiego grona odbiorców, osiągając status Złotej Płyty. Koncerty promujące album, których od daty premiery Paweł zagrał już kilkadziesiąt, również cieszyły się ogromnym powodzeniem. Bilety najczęściej były wyprzedane na wiele dni przed datą wydarzenia.<br />Zachęcony sukcesem pierwszego albumu, Paweł rozpoczął z zapałem prace nad kolejnym krążkiem. Nowe wydawnictwo ukaże się 16 listopada i będzie nosić tytuł: &quot;1984&quot;. Na płycie znajdzie się 12 premierowych piosenek, album promuje piosenka &quot;Weź nie pytaj&quot; W dniu premiery płyty rozpocznie się trasa koncertowa &quot;1984 TOUR&quot; promująca to wydawnictwo.</p><p>W dniu premiery płyty rozpocznie się trasa koncertowa &quot;1984 TOUR&quot; promująca to wydawnictwo.</p><p>Bilety w cenach 129 i 139 zł (w zależności od miejsca).</p><p>_<br />opr.LT</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Sala Ziemi, MTP, ul. Głogowska 14, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 20:00:00</event_start>
+        <event_end/>
+        <event_modified>2018-11-20 09:09:17</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>106515</event_id>
+        <event_created>2018-11-20 09:05:36</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/koncert-pawel-domagala,106515.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Koncert - Paweł Domagała]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Paweł Domagała to jeden z najbardziej rozpoznawanych aktorów młodego pokolenia. W jego dorobku znajduje się wiele ról teatralnych, serialowych, a także filmowych.<br />Nie każdy jednak wie, że drugą największą pasją Pawła oprócz aktorstwa jest muzyka. Pisze i wykonuje swoje piosenki od wielu lat, spełniając się w artystycznie również na tym polu.<br />Jesienią 2016 roku ukazał się długo wyczekiwany debiutancki album Pawła Domagały pt. &quot;Opowiem Ci o mnie&quot;. Płyta trafiła do serc szerokiego grona odbiorców, osiągając status Złotej Płyty. Koncerty promujące album, których od daty premiery Paweł zagrał już kilkadziesiąt, również cieszyły się ogromnym powodzeniem. Bilety najczęściej były wyprzedane na wiele dni przed datą wydarzenia.<br />Zachęcony sukcesem pierwszego albumu, Paweł rozpoczął z zapałem prace nad kolejnym krążkiem. Nowe wydawnictwo ukaże się 16 listopada i będzie nosić tytuł: &quot;1984&quot;. Na płycie znajdzie się 12 premierowych piosenek, album promuje piosenka &quot;Weź nie pytaj&quot; W dniu premiery płyty rozpocznie się trasa koncertowa &quot;1984 TOUR&quot; promująca to wydawnictwo.</p><p>W dniu premiery płyty rozpocznie się trasa koncertowa &quot;1984 TOUR&quot; promująca to wydawnictwo.</p><p>Bilety w cenach 129 i 139 zł (w zależności od miejsca).</p><p>_<br />opr.LT</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Sala Ziemi, MTP, ul. Głogowska 14, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 20:00:00</event_start>
+        <event_end/>
+        <event_modified>2018-11-20 09:09:17</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107026</event_id>
+        <event_created>2018-12-07 12:47:06</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/koncert-zespolow-guzior-i-reto,107026.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Koncert zespołów Guzior i Reto]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p><strong>GUZIOR (QueQuality)</strong><br />Reprezentant Młodych Wilków 4 z 2015 roku jest jednym z przedstawicieli młodego pokolenia polskich raperów, którzy mimo wieku i krótkiego stażu mają na swoim koncie osiągnięcia, których wielu może pozazdrościć. Pierwszy legalny album studyjny Guziora - &quot;Evil Twin&quot;, wspiął się na sam szczyt OLiS-u oraz rozszedł się w nakładzie ponad 15 000 egzemplarzy, uzyskując status złotej płyty. Materiał ten został wydany przez wytwórnię QueQuality, do której Guziora wziął pod swe skrzydła Quebonafide. Płyta, na której gościnnie pojawili się między innymi ReTo czy wydający w BOR Records Szpaku, zabiera słuchaczy w podróż po nieznanych wcześniej meandrach umysłu artysty. Guzior to zawsze gwarancja energicznego koncertu, pełnego trafnych wersów podanych przy akompaniamencie bardzo zróżnicowanych beatów, nie inaczej będzie tym razem!</p><p><strong>RETO (New Bad Label)</strong><br />Wszystko zaczęło się kręcić w marcu 2015r. od wypuszczenia do sieci utworu &quot;Minotaur&quot;. Dziś, 3 lata po tamtej premierze, ReTo to obok Guziora jeden z czołowych reprezentatów młodego pokolenia polskiej sceny rapowej. Od początku związany z wytwórnią Borixona, NewBadLabel, w której wydał swój pierwszy album studyjny &quot;K R U K&quot;, aby powrócić w 2018 roku ze zróżnicowanym materiałem &quot;BOA&quot;. Uczestnik Młodych Wilków 5 w 2017 roku w swojej twórczości kładzie nacisk na wulgarne porównania i często nawiązuje do mitologii i popkultury. Na nowej płycie ReTo zaprosił do współpracy takich gości jak Quebonafide, ZetHa, Guzior, Avi, Louis Villain czy Jano PW.</p><p>Bilety w cenie 50 zł.</p><p>_<br />opr.LT</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Klub U Bazyla, ul. Norwida 18A, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 20:00:00</event_start>
+        <event_end/>
+        <event_modified>2018-12-07 12:47:06</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107026</event_id>
+        <event_created>2018-12-07 12:47:06</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/koncert-zespolow-guzior-i-reto,107026.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Koncert zespołów Guzior i Reto]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p><strong>GUZIOR (QueQuality)</strong><br />Reprezentant Młodych Wilków 4 z 2015 roku jest jednym z przedstawicieli młodego pokolenia polskich raperów, którzy mimo wieku i krótkiego stażu mają na swoim koncie osiągnięcia, których wielu może pozazdrościć. Pierwszy legalny album studyjny Guziora - &quot;Evil Twin&quot;, wspiął się na sam szczyt OLiS-u oraz rozszedł się w nakładzie ponad 15 000 egzemplarzy, uzyskując status złotej płyty. Materiał ten został wydany przez wytwórnię QueQuality, do której Guziora wziął pod swe skrzydła Quebonafide. Płyta, na której gościnnie pojawili się między innymi ReTo czy wydający w BOR Records Szpaku, zabiera słuchaczy w podróż po nieznanych wcześniej meandrach umysłu artysty. Guzior to zawsze gwarancja energicznego koncertu, pełnego trafnych wersów podanych przy akompaniamencie bardzo zróżnicowanych beatów, nie inaczej będzie tym razem!</p><p><strong>RETO (New Bad Label)</strong><br />Wszystko zaczęło się kręcić w marcu 2015r. od wypuszczenia do sieci utworu &quot;Minotaur&quot;. Dziś, 3 lata po tamtej premierze, ReTo to obok Guziora jeden z czołowych reprezentatów młodego pokolenia polskiej sceny rapowej. Od początku związany z wytwórnią Borixona, NewBadLabel, w której wydał swój pierwszy album studyjny &quot;K R U K&quot;, aby powrócić w 2018 roku ze zróżnicowanym materiałem &quot;BOA&quot;. Uczestnik Młodych Wilków 5 w 2017 roku w swojej twórczości kładzie nacisk na wulgarne porównania i często nawiązuje do mitologii i popkultury. Na nowej płycie ReTo zaprosił do współpracy takich gości jak Quebonafide, ZetHa, Guzior, Avi, Louis Villain czy Jano PW.</p><p>Bilety w cenie 50 zł.</p><p>_<br />opr.LT</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Klub U Bazyla, ul. Norwida 18A, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 20:00:00</event_start>
+        <event_end/>
+        <event_modified>2018-12-07 12:47:06</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108147</event_id>
+        <event_created>2019-02-01 08:18:04</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/ze-zlotej-pragi-koncert,108147.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Ze złotej Pragi - koncert]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p><strong>Wystąpią:</strong></p><p>Bomsori&#160;KIM&#160;- skrzypce<br />V&#225;clav&#160;LUKS&#160;- dyrygent<br />Orkiestra Filharmonii Poznańskiej&#160;<br />Ryszard Daniel&#160;GOLIANEK&#160;- wprowadzenie słowne do koncertu</p><p><strong>Program:</strong></p><ul><li><span>Wolfgang Amadeus Mozart</span><ul><li><span>Uwertura do opery&#160;<em>Don Giovanni</em></span></li></ul></li><li><span>Anton&#237;n Dvoř&#225;k</span><ul><li><span>Koncert skrzypcowy a-moll op. 53</span></li></ul></li><li><span>Wolfgang Amadeus Mozart</span><ul><li><span>XXXVIII Symfonia D-dur&#160;<em>Praska</em>&#160;KV 504</span></li></ul></li></ul><p>opr.sw</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Aula UAM, ul. Wieniawskiego 1</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 19:00:00</event_start>
+        <event_end/>
+        <event_modified>2019-02-01 08:18:04</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108147</event_id>
+        <event_created>2019-02-01 08:18:04</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/ze-zlotej-pragi-koncert,108147.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Ze złotej Pragi - koncert]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p><strong>Wystąpią:</strong></p><p>Bomsori&#160;KIM&#160;- skrzypce<br />V&#225;clav&#160;LUKS&#160;- dyrygent<br />Orkiestra Filharmonii Poznańskiej&#160;<br />Ryszard Daniel&#160;GOLIANEK&#160;- wprowadzenie słowne do koncertu</p><p><strong>Program:</strong></p><ul><li><span>Wolfgang Amadeus Mozart</span><ul><li><span>Uwertura do opery&#160;<em>Don Giovanni</em></span></li></ul></li><li><span>Anton&#237;n Dvoř&#225;k</span><ul><li><span>Koncert skrzypcowy a-moll op. 53</span></li></ul></li><li><span>Wolfgang Amadeus Mozart</span><ul><li><span>XXXVIII Symfonia D-dur&#160;<em>Praska</em>&#160;KV 504</span></li></ul></li></ul><p>opr.sw</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Aula UAM, ul. Wieniawskiego 1</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 19:00:00</event_start>
+        <event_end/>
+        <event_modified>2019-02-01 08:18:04</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108767</event_id>
+        <event_created>2019-03-01 12:11:22</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/pisanka-2019-vii-ogolnopolski-konkurs-plastyczny,108767.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Pisanka 2019 - VII Ogólnopolski Konkurs Plastyczny]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Ogród Jordanowski Nr 2 organizuje VII Ogólnopolski Konkurs Plastyczny - Pisanka 2019. Do współpracy zaprasza szkoły, placówki pozaszkolne i osoby indywidualne. Pielęgnując polskie tradycje wielkanocne, zachęca do pracy twórczej przy wykonaniu pisanek przez dzieci i młodzież w wieku od 5 do 16 lat. Praca musi mieć kształt jajka, wielkość dowolna, ozdobionego w oryginalny sposób przy zastosowaniu dowolnej techniki. Prace konkursowe będą oceniane w trzech kategoriach wiekowych: - od 5 do 8 lat - od 9 do 12 lat - od 13 do 16 lat Dodatkowo zostanie przyznana specjalna nagroda - Grand Prix w kategorii tradycyjna pisanka wielkanocna. Sponsorem nagrody jest Muzeum Narodowe Rolnictwa i Przemysłu Rolno- Spożywczego w Szreniawie. Prace konkursowe można składać osobiście w siedzibie lub wysłać pocztą do dnia 10 kwietnia 2019 r. do godziny 19.00 na adres: Ogród Jordanowski Nr 2 ul. Przybyszewskiego 30 a, 60-561 Poznań z dopiskiem &quot;Pisanka 2019&quot;.</p><p>Autorzy zwycięskich prac zostaną powiadomieni o wyniku konkursu. W sobotę, 13 kwietnia 2019 r. o godz. 12 00 zostaną rozdane dyplomy wraz z nagrodami rzeczowymi, uroczystości towarzyszyć będzie wystawa wszystkich prac konkursowych i występ wychowanków OJ nr 2. Szkoła / placówka która, dostarczy największą ilość prac konkursowych zostanie wyróżniona dyplomem.</p><p>Więcej informacji można uzyskać pod numerem tel. 61 847 36 27</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Ogród Jordanowski Nr 2 w Poznaniu, ul. Przybyszewskiego 35 A</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 12:00:00</event_start>
+        <event_end>2019-04-10 19:00:00</event_end>
+        <event_modified>2019-03-01 12:23:12</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108767</event_id>
+        <event_created>2019-03-01 12:11:22</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/pisanka-2019-vii-ogolnopolski-konkurs-plastyczny,108767.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Pisanka 2019 - VII Ogólnopolski Konkurs Plastyczny]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Ogród Jordanowski Nr 2 organizuje VII Ogólnopolski Konkurs Plastyczny - Pisanka 2019. Do współpracy zaprasza szkoły, placówki pozaszkolne i osoby indywidualne. Pielęgnując polskie tradycje wielkanocne, zachęca do pracy twórczej przy wykonaniu pisanek przez dzieci i młodzież w wieku od 5 do 16 lat. Praca musi mieć kształt jajka, wielkość dowolna, ozdobionego w oryginalny sposób przy zastosowaniu dowolnej techniki. Prace konkursowe będą oceniane w trzech kategoriach wiekowych: - od 5 do 8 lat - od 9 do 12 lat - od 13 do 16 lat Dodatkowo zostanie przyznana specjalna nagroda - Grand Prix w kategorii tradycyjna pisanka wielkanocna. Sponsorem nagrody jest Muzeum Narodowe Rolnictwa i Przemysłu Rolno- Spożywczego w Szreniawie. Prace konkursowe można składać osobiście w siedzibie lub wysłać pocztą do dnia 10 kwietnia 2019 r. do godziny 19.00 na adres: Ogród Jordanowski Nr 2 ul. Przybyszewskiego 30 a, 60-561 Poznań z dopiskiem &quot;Pisanka 2019&quot;.</p><p>Autorzy zwycięskich prac zostaną powiadomieni o wyniku konkursu. W sobotę, 13 kwietnia 2019 r. o godz. 12 00 zostaną rozdane dyplomy wraz z nagrodami rzeczowymi, uroczystości towarzyszyć będzie wystawa wszystkich prac konkursowych i występ wychowanków OJ nr 2. Szkoła / placówka która, dostarczy największą ilość prac konkursowych zostanie wyróżniona dyplomem.</p><p>Więcej informacji można uzyskać pod numerem tel. 61 847 36 27</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Ogród Jordanowski Nr 2 w Poznaniu, ul. Przybyszewskiego 35 A</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 12:00:00</event_start>
+        <event_end>2019-04-10 19:00:00</event_end>
+        <event_modified>2019-03-01 12:23:12</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108697</event_id>
+        <event_created>2019-02-27 08:05:42</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/poznanskie-targi-ksiazki,108697.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Poznańskie Targi Książki]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Międzynarodowe Targi Poznańskie zapraszają do udziału w Poznańskich Targach Książki, które odbędą się w dniach 1-3 marca 2019 roku. Ta impreza, mająca blisko 20-letnią historię zmienia swoją formułę. Utrzymane zostaną dotychczasowe działania popularyzujące książkę wśród jej najmłodszych odbiorców, ale targi otworzą się też na możliwie najszersze grono czytelników, miłośników książki popularnej, ambitnej oraz naukowej i popularnonaukowej.</p><p>Tradycyjnie targom towarzyszyć będzie specjalnie przygotowany program, bogaty w spotkania autorskie, warsztaty, wystawy, prezentacje nowości wydawniczych, konkursy, panele i spotkania w gronie specjalistów. Nie zabraknie sprawdzonych już wydarzeń, takich jak Mistrz ilustracji, czy Salon ilustratorów. Jak co roku wręczone zostaną prestiżowe nagrody Pegazika oraz nagrody w konkursach na najlepszą książkę naukową i popularnonaukową.</p><p>Wraz z Poznańskimi Targami Książki odbędą się największe w Polsce&#160;Targi Edukacyjne na których swoją ofertę prezentują szkoły i instytucje oświatowe różnych szczebli i specjalności - również spoza Polski.</p><p>Imprezie towarzyszyć będą <a href="https://edutec.mtp.pl/pl/">Targi Technologii i Wyposażenia dla Edukacji EDUTEC</a> oraz III <a href="https://odnpoznan.pl/sub,pl,kongres.html">Ogólnopolski Kongres Oświatowy</a> kierowany do nauczycieli, pedagogów, dyrektorów szkół i przedstawicieli sektora oświaty.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Międzynarodowe Targi Poznańskie, ul. Głogowska 10, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-02-27 08:20:10</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108697</event_id>
+        <event_created>2019-02-27 08:05:42</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/poznanskie-targi-ksiazki,108697.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Poznańskie Targi Książki]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Międzynarodowe Targi Poznańskie zapraszają do udziału w Poznańskich Targach Książki, które odbędą się w dniach 1-3 marca 2019 roku. Ta impreza, mająca blisko 20-letnią historię zmienia swoją formułę. Utrzymane zostaną dotychczasowe działania popularyzujące książkę wśród jej najmłodszych odbiorców, ale targi otworzą się też na możliwie najszersze grono czytelników, miłośników książki popularnej, ambitnej oraz naukowej i popularnonaukowej.</p><p>Tradycyjnie targom towarzyszyć będzie specjalnie przygotowany program, bogaty w spotkania autorskie, warsztaty, wystawy, prezentacje nowości wydawniczych, konkursy, panele i spotkania w gronie specjalistów. Nie zabraknie sprawdzonych już wydarzeń, takich jak Mistrz ilustracji, czy Salon ilustratorów. Jak co roku wręczone zostaną prestiżowe nagrody Pegazika oraz nagrody w konkursach na najlepszą książkę naukową i popularnonaukową.</p><p>Wraz z Poznańskimi Targami Książki odbędą się największe w Polsce&#160;Targi Edukacyjne na których swoją ofertę prezentują szkoły i instytucje oświatowe różnych szczebli i specjalności - również spoza Polski.</p><p>Imprezie towarzyszyć będą <a href="https://edutec.mtp.pl/pl/">Targi Technologii i Wyposażenia dla Edukacji EDUTEC</a> oraz III <a href="https://odnpoznan.pl/sub,pl,kongres.html">Ogólnopolski Kongres Oświatowy</a> kierowany do nauczycieli, pedagogów, dyrektorów szkół i przedstawicieli sektora oświaty.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Międzynarodowe Targi Poznańskie, ul. Głogowska 10, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-02-27 08:20:10</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108765</event_id>
+        <event_created>2019-03-01 11:13:28</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/mistrzostwa-polski-w-skokach-do-wody,108765.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Mistrzostwa Polski w skokach do wody]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Mistrzostwa Polski w skokach do wody przez cały weekend na basenach sportowych. Przyjdźcie i podziwiajcie najlepszych zawodników i zawodniczki w Polsce. Wstęp wolny!</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Termy Maltańskie, ul. Termalna 1</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-03-01 11:13:28</event_modified>
+        <category>Sport</category>
+    </event>
+    <event>
+        <event_id>108765</event_id>
+        <event_created>2019-03-01 11:13:28</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/mistrzostwa-polski-w-skokach-do-wody,108765.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Mistrzostwa Polski w skokach do wody]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Mistrzostwa Polski w skokach do wody przez cały weekend na basenach sportowych. Przyjdźcie i podziwiajcie najlepszych zawodników i zawodniczki w Polsce. Wstęp wolny!</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Termy Maltańskie, ul. Termalna 1</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-03-01 11:13:28</event_modified>
+        <category>Sport</category>
+    </event>
+    <event>
+        <event_id>108564</event_id>
+        <event_created>2019-02-19 11:49:17</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/cwiczenia-z-miasta-spacery-wyklady-i-warsztaty-miejskie,108564.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Ćwiczenia z miasta - spacery, wykłady i warsztaty miejskie]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Chodniki, przystanki i&#160;trawniki są dla wszystkich miejscami spotkań w&#160;miejskiej przestrzeni. Od marca do czerwca CK Zamek zaprasza do wspólnego zastanowienia się nad sposobami doświadczania i&#160;uczenia się miasta. Spróbowania także rozpoznawania potencjału drzemiącego w&#160;mieście.</p><p>Uczestnicy spotkań będą spacerować w&#160;poszukiwaniu &quot;baromlecznych&quot; wspomnień. Wezmąy na warsztat koncepcje miasta przyjaznego pieszym. Sprawdzą sensoryczność ulicy Święty Marcin. Dowiedzą się, jakie zastosowanie może mieć papier w&#160;kształtowaniu tkanki miejskiej. Stworzą unikalne koszulki z&#160;wybranymi fragmentami architektury. Zastanowią się też, jak skutecznie zazielenić miejską przestrzeń.</p><p>Harmonogram spotkań <a href="http://ckzamek.pl">ckzamek.pl</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>CK Zamek, ul. Święty Marcin 80/82, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 00:00:00</event_start>
+        <event_end>2019-06-30 00:00:00</event_end>
+        <event_modified>2019-02-19 11:49:17</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108564</event_id>
+        <event_created>2019-02-19 11:49:17</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/cwiczenia-z-miasta-spacery-wyklady-i-warsztaty-miejskie,108564.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Ćwiczenia z miasta - spacery, wykłady i warsztaty miejskie]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Chodniki, przystanki i&#160;trawniki są dla wszystkich miejscami spotkań w&#160;miejskiej przestrzeni. Od marca do czerwca CK Zamek zaprasza do wspólnego zastanowienia się nad sposobami doświadczania i&#160;uczenia się miasta. Spróbowania także rozpoznawania potencjału drzemiącego w&#160;mieście.</p><p>Uczestnicy spotkań będą spacerować w&#160;poszukiwaniu &quot;baromlecznych&quot; wspomnień. Wezmąy na warsztat koncepcje miasta przyjaznego pieszym. Sprawdzą sensoryczność ulicy Święty Marcin. Dowiedzą się, jakie zastosowanie może mieć papier w&#160;kształtowaniu tkanki miejskiej. Stworzą unikalne koszulki z&#160;wybranymi fragmentami architektury. Zastanowią się też, jak skutecznie zazielenić miejską przestrzeń.</p><p>Harmonogram spotkań <a href="http://ckzamek.pl">ckzamek.pl</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>CK Zamek, ul. Święty Marcin 80/82, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-03-01 00:00:00</event_start>
+        <event_end>2019-06-30 00:00:00</event_end>
+        <event_modified>2019-02-19 11:49:17</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107790</event_id>
+        <event_created>2019-01-15 15:11:11</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/nowy-nabor-do-sekcji-krav-maga,107790.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Nowy nabór do sekcji Krav Maga]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Nowy nabór do sekcji Krav Maga. Treningi: środy i piątki w godz. 19:15 - 20:45, grupa: dorośli oraz młodzież (powyżej 15. roku życia), adres: Szkoła Podstawowa nr 6, os. Rusa 56 Poznań</p><p>Pierwszy dwa trening dla nowych osób jest bezpłatny. Uczestnicy poznają w praktyce najlepszy i wyjątkowy system samoobrony, jakim jest Krav Maga. Każdy jest mile wdziany - bez względu na umiejętności, płeć i kondycję. Zainteresowani przekonają się, że Krav Maga jest prosta, skuteczna i dla każdego. Na trening wystarczy zabrać strój sportowy oraz wodę do picia. Wskazany jest również dobry humor.</p><p>Zajęcia prowadzi wykwalifikowany instruktor Stowarzyszenia Krav Maga Polska z uprawnieniami Federation Europeenne de Krav Maga (Officiel) Mariusz Zarzycki - 2 Dan Krav Maga, 2 Dan AiKiDo, instruktor Strzelectwa Sportowego. Więcej informacji&#160;<a href="mailto:mariusz.kravmaga@op.pl">mariusz.kravmaga@op.pl</a> lub telefonicznie 602 496 484.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Szkoła Podstawowa nr 6, os. Rusa 56, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-28 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-25 14:20:34</event_modified>
+        <category>Sport</category>
+    </event>
+    <event>
+        <event_id>107790</event_id>
+        <event_created>2019-01-15 15:11:11</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/nowy-nabor-do-sekcji-krav-maga,107790.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Nowy nabór do sekcji Krav Maga]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Nowy nabór do sekcji Krav Maga. Treningi: środy i piątki w godz. 19:15 - 20:45, grupa: dorośli oraz młodzież (powyżej 15. roku życia), adres: Szkoła Podstawowa nr 6, os. Rusa 56 Poznań</p><p>Pierwszy dwa trening dla nowych osób jest bezpłatny. Uczestnicy poznają w praktyce najlepszy i wyjątkowy system samoobrony, jakim jest Krav Maga. Każdy jest mile wdziany - bez względu na umiejętności, płeć i kondycję. Zainteresowani przekonają się, że Krav Maga jest prosta, skuteczna i dla każdego. Na trening wystarczy zabrać strój sportowy oraz wodę do picia. Wskazany jest również dobry humor.</p><p>Zajęcia prowadzi wykwalifikowany instruktor Stowarzyszenia Krav Maga Polska z uprawnieniami Federation Europeenne de Krav Maga (Officiel) Mariusz Zarzycki - 2 Dan Krav Maga, 2 Dan AiKiDo, instruktor Strzelectwa Sportowego. Więcej informacji&#160;<a href="mailto:mariusz.kravmaga@op.pl">mariusz.kravmaga@op.pl</a> lub telefonicznie 602 496 484.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Szkoła Podstawowa nr 6, os. Rusa 56, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-28 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-25 14:20:34</event_modified>
+        <category>Sport</category>
+    </event>
+    <event>
+        <event_id>108730</event_id>
+        <event_created>2019-02-27 14:49:40</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/ponadczasowosc-poznan-niezwykly-wystawa,108730.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Ponadczasowość &quot;Poznań niezwykły&quot; - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Wystawa organizowana jest w ramach projektu &quot;110. urodzin Patrona Fundacji Maksymiliana Myszkowskiego -cykl wystaw i wydarzeń artystycznych&quot;.</p><p>Wystawa jest jedną z przewidzianego na kilka lat cyklu odsłon niezwykłych czarno-białych fotografii Maksymiliana Myszkowskiego. Niektóre ze zdjęć dziesiątki lat nie były nigdzie prezentowane. Ekspozycja przedstawia prace ukazujące Miasto Poznań w okresie lat 1960-1970 oraz fotografie abstrakcyjne.</p><p>Maksymilian Myszkowski, ur. 30 grudnia 1909 r. we Lwówku (pow. Nowy Tomyśl)- zm. 29 listopada 1980 r. w Poznaniu, uważany jest za jednego z najwybitniejszych fotografików polskich, autorytet w dziedzinie fotografii artystycznej, artystę wszechstronnego, łączącego w pracach fotografie i grafikę. Zafascynowany na równi człowiekiem, szczegółem, aktem, architekturą, pejzażem i abstrakcją.</p><p>Organizatorem wystawy jest Piotr Myszkowski z Fundacji im. Maksymiliana Myszkowskiego z Poznania.</p><p>Prace można oglądać w Urzędzie przy pl. Kolegiackim 17, w holu na parterze, do 15 marca 2019 r., w godzinach pracy Urzędu: pn. 7:30 - 17:00, wt.-pt. 7:30 - 15:30.</p><p>Zobacz także: <a href="http://www.poznan.pl/mim/galerie/galerie,1080/ponadczasowosc-poznan-niezwykly,lhs,galerie,8951.html">Galeria zdjęć</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Urząd Miasta Poznania, plac Kolegiacki 17, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-27 00:00:00</event_start>
+        <event_end>2019-03-15 00:00:00</event_end>
+        <event_modified>2019-02-27 15:01:12</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108730</event_id>
+        <event_created>2019-02-27 14:49:40</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/ponadczasowosc-poznan-niezwykly-wystawa,108730.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Ponadczasowość &quot;Poznań niezwykły&quot; - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Wystawa organizowana jest w ramach projektu &quot;110. urodzin Patrona Fundacji Maksymiliana Myszkowskiego -cykl wystaw i wydarzeń artystycznych&quot;.</p><p>Wystawa jest jedną z przewidzianego na kilka lat cyklu odsłon niezwykłych czarno-białych fotografii Maksymiliana Myszkowskiego. Niektóre ze zdjęć dziesiątki lat nie były nigdzie prezentowane. Ekspozycja przedstawia prace ukazujące Miasto Poznań w okresie lat 1960-1970 oraz fotografie abstrakcyjne.</p><p>Maksymilian Myszkowski, ur. 30 grudnia 1909 r. we Lwówku (pow. Nowy Tomyśl)- zm. 29 listopada 1980 r. w Poznaniu, uważany jest za jednego z najwybitniejszych fotografików polskich, autorytet w dziedzinie fotografii artystycznej, artystę wszechstronnego, łączącego w pracach fotografie i grafikę. Zafascynowany na równi człowiekiem, szczegółem, aktem, architekturą, pejzażem i abstrakcją.</p><p>Organizatorem wystawy jest Piotr Myszkowski z Fundacji im. Maksymiliana Myszkowskiego z Poznania.</p><p>Prace można oglądać w Urzędzie przy pl. Kolegiackim 17, w holu na parterze, do 15 marca 2019 r., w godzinach pracy Urzędu: pn. 7:30 - 17:00, wt.-pt. 7:30 - 15:30.</p><p>Zobacz także: <a href="http://www.poznan.pl/mim/galerie/galerie,1080/ponadczasowosc-poznan-niezwykly,lhs,galerie,8951.html">Galeria zdjęć</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Urząd Miasta Poznania, plac Kolegiacki 17, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-27 00:00:00</event_start>
+        <event_end>2019-03-15 00:00:00</event_end>
+        <event_modified>2019-02-27 15:01:12</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108657</event_id>
+        <event_created>2019-02-26 10:58:43</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wiosenno-wielkanocne-dekoracje-warsztaty-dla-przedszkoli-i-szkol,108657.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wiosenno-wielkanocne dekoracje - warsztaty dla przedszkoli i szkół]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Pracownia Edukacyjna Wiatrak poleca twórcze warsztaty dla dzieci i młodzieży, podczas których mogą wykonać wiosenne i świąteczne dekoracje.</p><p>W ofercie między innymi:</p><ul><li><span>wianki wielkanocne</span></li><li><span>jajka marmurkowe</span></li><li><span>malowane zające</span></li></ul><p>Więcej informacji o warsztatach: <a href="http://www.pracowniawiatrak.pl">www.pracowniawiatrak.pl</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Pracownia Edukacyjna Wiatrak, os. Pod Lipami 8 (wejście od strony balkonów), Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-26 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-26 10:58:43</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>108657</event_id>
+        <event_created>2019-02-26 10:58:43</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wiosenno-wielkanocne-dekoracje-warsztaty-dla-przedszkoli-i-szkol,108657.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wiosenno-wielkanocne dekoracje - warsztaty dla przedszkoli i szkół]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Pracownia Edukacyjna Wiatrak poleca twórcze warsztaty dla dzieci i młodzieży, podczas których mogą wykonać wiosenne i świąteczne dekoracje.</p><p>W ofercie między innymi:</p><ul><li><span>wianki wielkanocne</span></li><li><span>jajka marmurkowe</span></li><li><span>malowane zające</span></li></ul><p>Więcej informacji o warsztatach: <a href="http://www.pracowniawiatrak.pl">www.pracowniawiatrak.pl</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Pracownia Edukacyjna Wiatrak, os. Pod Lipami 8 (wejście od strony balkonów), Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-26 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-26 10:58:43</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>108649</event_id>
+        <event_created>2019-02-25 19:15:43</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wiosenno-wielkanocne-warsztaty-dla-szkol-i-przedszkoli,108649.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wiosenno-wielkanocne warsztaty dla szkół i przedszkoli]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Pracownia Edukacyjna Wiatrak poleca twórcze warsztaty dla dzieci i młodzieży, podczas których mogą wykonać wiosenne i świąteczne dekoracje. W ofercie między innymi: - wianki wielkanocne - jajka marmurkowe - malowane zające</p><p>Więcej informacji o warsztatach: <a href="http://www.pracowniawiatrak.pl">www.pracowniawiatrak.pl</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Pracownia Edukacyjna Wiatrak, os. Pod Lipami 8 (wejście od strony balkonów), Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-25 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-26 10:11:35</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>108649</event_id>
+        <event_created>2019-02-25 19:15:43</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wiosenno-wielkanocne-warsztaty-dla-szkol-i-przedszkoli,108649.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wiosenno-wielkanocne warsztaty dla szkół i przedszkoli]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Pracownia Edukacyjna Wiatrak poleca twórcze warsztaty dla dzieci i młodzieży, podczas których mogą wykonać wiosenne i świąteczne dekoracje. W ofercie między innymi: - wianki wielkanocne - jajka marmurkowe - malowane zające</p><p>Więcej informacji o warsztatach: <a href="http://www.pracowniawiatrak.pl">www.pracowniawiatrak.pl</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Pracownia Edukacyjna Wiatrak, os. Pod Lipami 8 (wejście od strony balkonów), Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-25 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-26 10:11:35</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>108609</event_id>
+        <event_created>2019-02-21 15:04:05</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/narracje-bohdan-cieslak,108609.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Narracje. Bohdan Cieślak]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Wystawa poświęcona artyście, scenografowi Bohdanowi Cieślakowi. Artysta swoje prace realizował na deskach najlepszych polskich scen, m.in. Teatru Polskiego w Poznaniu, Teatru Współczesnego w Szczecinie, Teatru Studio w Warszawie, Ośrodka Jerzego Grotowskiego we Wrocławiu, Polskiego Teatru Tańca w Poznaniu, Teatru im. Heleny Modrzejewskiej w Legnicy i Polskiego Teatru Tańca w Poznaniu.</p><p>Tworzenie scenografii jest procesem rozwijającym się od koncepcji rodzącej się w głowie twórcy, szkicu, rysunku, makiety oraz często także współkreacji z reżyserem, choreografem po efekt całościowy przedstawiony widzowi w teatrze jako spójna dzieło ożywione przez aktora. Wystawa w Muzeum Narodowym w Poznaniu ukaże scenografie Bohdana Cieślaka przez pryzmat jego procesu twórczego.</p><p>Kuratorem wystawy jest Wojciech Suchocki.</p><p>Ekspozycję będzie można oglądać w Muzeum Narodowym w Poznaniu do 31 marca 2019.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Muzeum Narodowe, Al. Marcinkowskiego 9, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-17 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-21 15:04:05</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108609</event_id>
+        <event_created>2019-02-21 15:04:05</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/narracje-bohdan-cieslak,108609.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Narracje. Bohdan Cieślak]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Wystawa poświęcona artyście, scenografowi Bohdanowi Cieślakowi. Artysta swoje prace realizował na deskach najlepszych polskich scen, m.in. Teatru Polskiego w Poznaniu, Teatru Współczesnego w Szczecinie, Teatru Studio w Warszawie, Ośrodka Jerzego Grotowskiego we Wrocławiu, Polskiego Teatru Tańca w Poznaniu, Teatru im. Heleny Modrzejewskiej w Legnicy i Polskiego Teatru Tańca w Poznaniu.</p><p>Tworzenie scenografii jest procesem rozwijającym się od koncepcji rodzącej się w głowie twórcy, szkicu, rysunku, makiety oraz często także współkreacji z reżyserem, choreografem po efekt całościowy przedstawiony widzowi w teatrze jako spójna dzieło ożywione przez aktora. Wystawa w Muzeum Narodowym w Poznaniu ukaże scenografie Bohdana Cieślaka przez pryzmat jego procesu twórczego.</p><p>Kuratorem wystawy jest Wojciech Suchocki.</p><p>Ekspozycję będzie można oglądać w Muzeum Narodowym w Poznaniu do 31 marca 2019.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Muzeum Narodowe, Al. Marcinkowskiego 9, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-17 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-21 15:04:05</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108490</event_id>
+        <event_created>2019-02-14 13:04:17</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/polkolonie-winner-tenis-windsurfing-zagle,108490.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Półkolonie WINNER tenis/windsurfing/żagle]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Winner Szkoła Windsurfingu i Tenisa zaprasza dzieci w wieku 7-16 lat na półkolonie, na których zdobędą podstawową wiedzę i umiejętności z zakresu tenisa, windsurfingu i żeglarstwa. Gwarantowana dobra zabawa!</p><p>Turnusy przez całe wakacje począwszy 24.06.2019 r. Turnusy od poniedziałku do piątku. W przypadku braku wolnych miejsc, starsze dzieci 12+ i młodzież organizator zaprasza również do zapoznania się z ofertą szkoleń PRO WIND.</p><p>W programie 1,5 h tenisa - codzienne, 1,5 h windsurfingu - codzienne, 1h żeglarstwa - codzienne, Dodatkowe atrakcje: skimboard, trickboard, sup, kajaki, liczne gry i zabawy (piłkarzyki, tenis stołowy, gry zespołowe, gry planszowa).</p><p>Półkolonie odbywają się na terenie kortów tenisowych FART (część tenisowa) oraz w bazie windsurfingowej w Kiekrzu na terenie ŻLKS (ul. Wilków Morskich 2). Zapewniony jest przewóz dzieci między obiektami. Turnusy 5-dniowe (poniedziałek-piątek). Start godz. 7.30 korty tenisowe FART (Lasek Marceliński), godz. 9.30 przejazd do bazy windsurfingowej w Kiekrzu na terenie ŻLKS Meta, od godz. 16.30-17.00 odbiór dzieci na kortach tenisowych FART. Zajęcia prowadzone przez wykwalifikowanych trenerów i instruktorów posiadających wieloletnie doświadczenie szkoleniowe i pedagogiczne oraz opiekunów. Zajęcia w małych grupach 5-, 7-osobowych. Warunkiem uczestnictwa jest umiejętność pływania.</p><p>W ofercie:</p><ul><li><span>pełne wyżywienie (drugie śniadanie, dwudaniowy obiad),</span></li><li><span>do dyspozycji profesjonalny sprzęt do tenisa (rakiety) , windsurfingu (deska+pędnik, pianka, kamizelka asekuracyjna) i żeglarstwa,</span></li><li><span>profesjonalna kadra - zgłoszenie imprezy w Kuratorium Oświaty,</span></li><li><span>wpis do Rejestru Organizatorów Turystyki.</span></li></ul><p>Obowiązuje ubezpieczenie szkolne, jeśli dziecko nie jest ubezpieczone, to warto na czas półkolonii dziecko ubezpieczyć.</p><p>Płatność 700,00 zł/osoba. Zgłoszenie można wypełnić na <a href="http://www.winner.poznan.pl">www.winner.poznan.pl</a>, mail: <a href="mailto:kontakt@winner.poznan.pl">kontakt@winner.poznan.pl</a>, tel 606240204.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Korty tenisowe FART, ul. Wałbrzyska 6, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-15 11:00:00</event_start>
+        <event_end>2019-08-28 11:30:00</event_end>
+        <event_modified>2019-02-15 11:07:05</event_modified>
+        <category>Sport</category>
+    </event>
+    <event>
+        <event_id>108490</event_id>
+        <event_created>2019-02-14 13:04:17</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/polkolonie-winner-tenis-windsurfing-zagle,108490.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Półkolonie WINNER tenis/windsurfing/żagle]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Winner Szkoła Windsurfingu i Tenisa zaprasza dzieci w wieku 7-16 lat na półkolonie, na których zdobędą podstawową wiedzę i umiejętności z zakresu tenisa, windsurfingu i żeglarstwa. Gwarantowana dobra zabawa!</p><p>Turnusy przez całe wakacje począwszy 24.06.2019 r. Turnusy od poniedziałku do piątku. W przypadku braku wolnych miejsc, starsze dzieci 12+ i młodzież organizator zaprasza również do zapoznania się z ofertą szkoleń PRO WIND.</p><p>W programie 1,5 h tenisa - codzienne, 1,5 h windsurfingu - codzienne, 1h żeglarstwa - codzienne, Dodatkowe atrakcje: skimboard, trickboard, sup, kajaki, liczne gry i zabawy (piłkarzyki, tenis stołowy, gry zespołowe, gry planszowa).</p><p>Półkolonie odbywają się na terenie kortów tenisowych FART (część tenisowa) oraz w bazie windsurfingowej w Kiekrzu na terenie ŻLKS (ul. Wilków Morskich 2). Zapewniony jest przewóz dzieci między obiektami. Turnusy 5-dniowe (poniedziałek-piątek). Start godz. 7.30 korty tenisowe FART (Lasek Marceliński), godz. 9.30 przejazd do bazy windsurfingowej w Kiekrzu na terenie ŻLKS Meta, od godz. 16.30-17.00 odbiór dzieci na kortach tenisowych FART. Zajęcia prowadzone przez wykwalifikowanych trenerów i instruktorów posiadających wieloletnie doświadczenie szkoleniowe i pedagogiczne oraz opiekunów. Zajęcia w małych grupach 5-, 7-osobowych. Warunkiem uczestnictwa jest umiejętność pływania.</p><p>W ofercie:</p><ul><li><span>pełne wyżywienie (drugie śniadanie, dwudaniowy obiad),</span></li><li><span>do dyspozycji profesjonalny sprzęt do tenisa (rakiety) , windsurfingu (deska+pędnik, pianka, kamizelka asekuracyjna) i żeglarstwa,</span></li><li><span>profesjonalna kadra - zgłoszenie imprezy w Kuratorium Oświaty,</span></li><li><span>wpis do Rejestru Organizatorów Turystyki.</span></li></ul><p>Obowiązuje ubezpieczenie szkolne, jeśli dziecko nie jest ubezpieczone, to warto na czas półkolonii dziecko ubezpieczyć.</p><p>Płatność 700,00 zł/osoba. Zgłoszenie można wypełnić na <a href="http://www.winner.poznan.pl">www.winner.poznan.pl</a>, mail: <a href="mailto:kontakt@winner.poznan.pl">kontakt@winner.poznan.pl</a>, tel 606240204.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Korty tenisowe FART, ul. Wałbrzyska 6, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-15 11:00:00</event_start>
+        <event_end>2019-08-28 11:30:00</event_end>
+        <event_modified>2019-02-15 11:07:05</event_modified>
+        <category>Sport</category>
+    </event>
+    <event>
+        <event_id>108332</event_id>
+        <event_created>2019-02-07 11:20:33</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wystawa-dyplomow-studentow-wydzialu-architektury-wnetrz-i-scenografii-uap,108332.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wystawa dyplomów studentów Wydziału Architektury Wnętrz i Scenografii UAP]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Wystawa dyplomów studentów Uniwersytetu Artystycznego pt. &quot;Przestrzenie kolektywne&quot;. Wernisaż otwierający wydarzenie odbędzie się 11 lutego, o godz. 18:00, na kampusie Ogrody, ul. Szamarzewskiego 89, w bud. E. Prace młodych artystów będą dostępne dla publiczności w dniach od 12 lutego do 8 marca 2019 r. &quot;Przestrzenie kolektywne&quot; są kolejnym projektem - po &quot;Ławeczce Krystyny Feldman&quot; - realizowanym w ramach obchodów 100-lecia uczelni: Uniwersytetu Poznańskiego oraz Uniwersytetu Artystycznego w Poznaniu. Inauguracja współpracy między dwoma wydziałami miała miejsce 17 grudnia 2018 r. podczas otwarcia wystawy inspirowanej postacią poznańskiej aktorki.</p><p>Wystawa przygotowana przez Wydział Nauk Społecznych UAM oraz Wydział Architektury Wnętrz i Scenografii UAP</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Wydział Nauk Społecznych UAM, ul. Szamarzewskiego 89 (budynek E), 60-569 Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-11 00:00:00</event_start>
+        <event_end>2019-03-08 00:00:00</event_end>
+        <event_modified>2019-02-07 12:18:54</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108332</event_id>
+        <event_created>2019-02-07 11:20:33</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wystawa-dyplomow-studentow-wydzialu-architektury-wnetrz-i-scenografii-uap,108332.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wystawa dyplomów studentów Wydziału Architektury Wnętrz i Scenografii UAP]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Wystawa dyplomów studentów Uniwersytetu Artystycznego pt. &quot;Przestrzenie kolektywne&quot;. Wernisaż otwierający wydarzenie odbędzie się 11 lutego, o godz. 18:00, na kampusie Ogrody, ul. Szamarzewskiego 89, w bud. E. Prace młodych artystów będą dostępne dla publiczności w dniach od 12 lutego do 8 marca 2019 r. &quot;Przestrzenie kolektywne&quot; są kolejnym projektem - po &quot;Ławeczce Krystyny Feldman&quot; - realizowanym w ramach obchodów 100-lecia uczelni: Uniwersytetu Poznańskiego oraz Uniwersytetu Artystycznego w Poznaniu. Inauguracja współpracy między dwoma wydziałami miała miejsce 17 grudnia 2018 r. podczas otwarcia wystawy inspirowanej postacią poznańskiej aktorki.</p><p>Wystawa przygotowana przez Wydział Nauk Społecznych UAM oraz Wydział Architektury Wnętrz i Scenografii UAP</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Wydział Nauk Społecznych UAM, ul. Szamarzewskiego 89 (budynek E), 60-569 Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-11 00:00:00</event_start>
+        <event_end>2019-03-08 00:00:00</event_end>
+        <event_modified>2019-02-07 12:18:54</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108316</event_id>
+        <event_created>2019-02-06 13:39:49</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/cykl-zabaw-z-zabka,108316.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Cykl zabaw z żabką]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Cykl zabaw z żabką<br />Cena: 40 zł za 1 warsztat<br />Wiek: 5-7 lat<br />Niezwykły cykl inspirowany książką &quot;Uważność i spokój żabki&quot; Eline Snel, autorki treningu uważności dla dzieci : &quot;Uwaga, to Działa!&quot; Metoda Eline Snel&#174;.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Concordia Design, ul. Zwierzyniecka 3, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-10 14:00:00</event_start>
+        <event_end>2019-05-12 15:00:00</event_end>
+        <event_modified>2019-02-06 13:39:49</event_modified>
+        <category>Dziecko</category>
+    </event>
+    <event>
+        <event_id>108316</event_id>
+        <event_created>2019-02-06 13:39:49</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/cykl-zabaw-z-zabka,108316.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Cykl zabaw z żabką]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Cykl zabaw z żabką<br />Cena: 40 zł za 1 warsztat<br />Wiek: 5-7 lat<br />Niezwykły cykl inspirowany książką &quot;Uważność i spokój żabki&quot; Eline Snel, autorki treningu uważności dla dzieci : &quot;Uwaga, to Działa!&quot; Metoda Eline Snel&#174;.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Concordia Design, ul. Zwierzyniecka 3, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-10 14:00:00</event_start>
+        <event_end>2019-05-12 15:00:00</event_end>
+        <event_modified>2019-02-06 13:39:49</event_modified>
+        <category>Dziecko</category>
+    </event>
+    <event>
+        <event_id>108369</event_id>
+        <event_created>2019-02-08 11:23:37</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/eksperymentownia-warsztaty-steam-dla-rodzin-z-dziecmi-w-wieku-7-12-lat,108369.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Eksperymentownia - warsztaty STEAM dla rodzin z dziećmi w wieku 7-12 lat]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Eksperymentownia - warsztaty STEAM (Science, Technology, Engineering, Art, Mathematics)&#160; to&#160;warsztaty łączące nauki ścisłe, matematykę, inżynierię i sztukę z dziedzictwem Ostrowa Tumskiego. W trakcie zajęć będziemy wcielać się w rolę naukowców, inżynierów, twórców&#160; i artystów. Będziemy konstruować, eksperymentować, wyjaśniać, dociekać, zadawać pytania, tworzyć. Stawiamy na kreatywność, poszukiwanie rozwiązań, pracę zespołową wewnątrz rodziny i&#160;odkrywanie przez zabawę. Wszystkie rodziny gotowe na poznawanie świata&#160; w nietuzinkowy sposób i szereg wyzwań zapraszamy do Eksperymentowni - naszego składu dziwów i niezwykłości!</p><p>&#160;Zajęcia są okazją do:</p><ul><li><span>poznawania świata i dziedzictwa Ostrowa Tumskiego w kontakcie z przyrodą i sztuką</span></li><li><span>eksperymentowania, konstruowania, wykonywania doświadczeń</span></li><li><span>poszukiwania kreatywnych rozwiązań</span></li><li><span>spędzenia czasu z rodziną i budowania więzi rodzinnych</span></li></ul><p><strong>Informacje praktyczne</strong></p><p><strong>Odbiorcy:</strong>&#160;rodziny z dziećmi w wieku 7 - 12 lat</p><p><strong>Terminy:</strong>&#160;16.02.2019 r. godz. 10.30</p><p><strong>Czas trwania:</strong>&#160;ok. 120 minut</p><p><strong>Koszt:</strong>&#160; bezpłatne</p><p><strong>Zapisy:</strong>&#160;Chęć udziału w zajęciach należy wcześniej zgłosić poprzez przesłanie wypełnionego formularza zgłoszeniowego na adres&#160;<a href="mailto:edukacja@bramapoznania.pl">edukacja@bramapoznania.pl</a>. Formularz dostępny na stronie <a href="http://www.bramapoznania.pl/">www.bramapoznania.pl</a>. Udział w zajęciach jest możliwy po otrzymaniu od organizatora potwierdzenia drogą elektroniczną.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Brama Poznania ICHOT, ul. Gdańska 2, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-09 00:00:00</event_start>
+        <event_end>2019-06-15 00:00:00</event_end>
+        <event_modified>2019-02-08 11:31:18</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>108369</event_id>
+        <event_created>2019-02-08 11:23:37</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/eksperymentownia-warsztaty-steam-dla-rodzin-z-dziecmi-w-wieku-7-12-lat,108369.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Eksperymentownia - warsztaty STEAM dla rodzin z dziećmi w wieku 7-12 lat]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Eksperymentownia - warsztaty STEAM (Science, Technology, Engineering, Art, Mathematics)&#160; to&#160;warsztaty łączące nauki ścisłe, matematykę, inżynierię i sztukę z dziedzictwem Ostrowa Tumskiego. W trakcie zajęć będziemy wcielać się w rolę naukowców, inżynierów, twórców&#160; i artystów. Będziemy konstruować, eksperymentować, wyjaśniać, dociekać, zadawać pytania, tworzyć. Stawiamy na kreatywność, poszukiwanie rozwiązań, pracę zespołową wewnątrz rodziny i&#160;odkrywanie przez zabawę. Wszystkie rodziny gotowe na poznawanie świata&#160; w nietuzinkowy sposób i szereg wyzwań zapraszamy do Eksperymentowni - naszego składu dziwów i niezwykłości!</p><p>&#160;Zajęcia są okazją do:</p><ul><li><span>poznawania świata i dziedzictwa Ostrowa Tumskiego w kontakcie z przyrodą i sztuką</span></li><li><span>eksperymentowania, konstruowania, wykonywania doświadczeń</span></li><li><span>poszukiwania kreatywnych rozwiązań</span></li><li><span>spędzenia czasu z rodziną i budowania więzi rodzinnych</span></li></ul><p><strong>Informacje praktyczne</strong></p><p><strong>Odbiorcy:</strong>&#160;rodziny z dziećmi w wieku 7 - 12 lat</p><p><strong>Terminy:</strong>&#160;16.02.2019 r. godz. 10.30</p><p><strong>Czas trwania:</strong>&#160;ok. 120 minut</p><p><strong>Koszt:</strong>&#160; bezpłatne</p><p><strong>Zapisy:</strong>&#160;Chęć udziału w zajęciach należy wcześniej zgłosić poprzez przesłanie wypełnionego formularza zgłoszeniowego na adres&#160;<a href="mailto:edukacja@bramapoznania.pl">edukacja@bramapoznania.pl</a>. Formularz dostępny na stronie <a href="http://www.bramapoznania.pl/">www.bramapoznania.pl</a>. Udział w zajęciach jest możliwy po otrzymaniu od organizatora potwierdzenia drogą elektroniczną.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Brama Poznania ICHOT, ul. Gdańska 2, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-09 00:00:00</event_start>
+        <event_end>2019-06-15 00:00:00</event_end>
+        <event_modified>2019-02-08 11:31:18</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>108355</event_id>
+        <event_created>2019-02-08 10:35:59</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wystawa-jadwigi-sawickiej-chaosy,108355.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wystawa Jadwigi Sawickiej - Chaosy]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Jak Pisze Julia Niedziejko:</p><p>Jadwiga Sawicka jest twórcą o sporym doświadczeniu artystycznym. Jej dzieła były prezentowane w wielu polskich galeriach sztuki zarówno podczas wystaw zbiorowych, jak i indywidualnych. Warto też nadmienić, że jest malarką parokrotnie nagradzaną. W 2013 roku otrzymała Nagrodę im. Jana Cybisa, a w 2016 przyznano jej Nagrodę im. Katarzyny Kobro.</p><p>Więcej o artystce i wystawie <a href="http://kultura.poznan.pl/mim/kultura/news/wystawy,c,5/chaosy-dzisiejszego-jezyka,128698.html">na stronie kultura.poznan.pl</a></p><p>_<br />akt.LT</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Galeria Ego, ul. Stanisława Wyspiańskiego 41/3, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-08 19:00:00</event_start>
+        <event_end>2019-03-30 00:00:00</event_end>
+        <event_modified>2019-02-08 10:35:59</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108355</event_id>
+        <event_created>2019-02-08 10:35:59</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wystawa-jadwigi-sawickiej-chaosy,108355.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wystawa Jadwigi Sawickiej - Chaosy]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Jak Pisze Julia Niedziejko:</p><p>Jadwiga Sawicka jest twórcą o sporym doświadczeniu artystycznym. Jej dzieła były prezentowane w wielu polskich galeriach sztuki zarówno podczas wystaw zbiorowych, jak i indywidualnych. Warto też nadmienić, że jest malarką parokrotnie nagradzaną. W 2013 roku otrzymała Nagrodę im. Jana Cybisa, a w 2016 przyznano jej Nagrodę im. Katarzyny Kobro.</p><p>Więcej o artystce i wystawie <a href="http://kultura.poznan.pl/mim/kultura/news/wystawy,c,5/chaosy-dzisiejszego-jezyka,128698.html">na stronie kultura.poznan.pl</a></p><p>_<br />akt.LT</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Galeria Ego, ul. Stanisława Wyspiańskiego 41/3, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-08 19:00:00</event_start>
+        <event_end>2019-03-30 00:00:00</event_end>
+        <event_modified>2019-02-08 10:35:59</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107930</event_id>
+        <event_created>2019-01-22 14:01:11</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/jakub-paprocki-proces-trwa-wystawa,107930.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Jakub Paprocki: Proces trwa - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p><em>Proces trwa</em> to indywidualny pokaz prac poznańskiego twórcy samorodnego Jakuba Paprockiego. Jakub związany był z FWD: od samego początku jej powstania i mocno angażował się w jej działalność, dlatego też wystawa zorganizowana zostanie z okazji trzeciej rocznicy otwarcia przestrzeni galerii. W ramach ekspozycji po raz pierwszy będą prezentowane prace Jakuba, który zamiast galeryjnego blichtru wolał zakamarki forum kafeterii. Publiczność będzie miała okazję przyjrzeć się jego oryginalnym grafikom i cyfrowym kolażom, które komentują kondycję społeczeństwa, często w dość obsceniczny, wręcz odrażający sposób. Autor w nietuzinkowej formie wskazuje na wątki degeneracji, rozkładu i nastawienia na totalną konsumpcję, jakie jego zdaniem trawią współczesne cywilizacje. Paprocki występuje w roli skrupulatnego badacza i geografa odmętów sieci. Fascynuje go jednak szczególny rodzaj internetowej produkcji - jest to miłość do tego, co przesadne, skrajnie odbiegające od normy. Autor paradoksalnie przeobraża swoje znaleziska w obrazy jeszcze bardziej sztuczne i pompatyczne.</p><p>Jakub zdaje się być ogarnięty przymusem tworzenia. W jego obszernym, bardzo różnorodnym portfolio znajduje się ponad tysiąc prac i szkiców. Paprocki obsesyjnie trawestował pojawiające się mediach postaci, badał temat celebrytyzmu, nowych (pojawiających się głównie w Internecie) mistycznych światopoglądów, czy kolejnych postów na kafeterii dotyczących możliwości zajścia w ciążę i defekowania przy swoim życiowym partnerze. Ta wybuchowa mieszanka przyprawiona jest zarówno gorzkim poczuciem humoru jak i powagą, a także socjologicznym krytycyzmem. Bezustannie przewijają się w niej powtarzane przez Paprockiego zdania: &quot;Negatywne vibracje ego&quot;, &quot;Mili ludzie to zaraza&quot;, &quot;Ty nie jesteś swoje ciało&quot;, &quot;Toksyczna szwagierka rozbija rodzinę&quot;, &quot;Chomik zniszczył sukienkę komunijną Bożenki&quot; czy &quot;Proces trwa&quot;. Przywołując postacie z serialu <em>Klan</em>, Magdę Gessler czy piosenkarkę Eleni, które w swoich żartach beatyfikuje, zachęca polskie społeczeństwo do faszerowania się lekami Xanax i Ulgix. Jego komentarze są bezpośrednie, bezczelne, niesmaczne a poglądy radykalne. Wszechobecne w kapitalistycznym świecie medialne manipulacje i reklamy porównuje do hitlerowskiej propagandy. Nikomu się nie upiecze i nie ma ucieczki - proces trwa!</p><p>Jakub Paprocki (1982 - 2016) - poznański artysta samorodny, w swoich wypowiedziach przetwarzał kulturę popularną, tworząc artystyczne fotomontaże. Absolwent Wydziału Historycznego na Uniwersytecie Adama Mickiewicza w Poznaniu (2005). Rozpoczął studia na Wydziale Filologii Koreańskiej, w 2004 odbył wyjazd stypendialny do Seulu, gdzie w 2008 roku ukończył socjologię na Academy of Korean Studies. Pracował jako sekretarz w polskich ambasadach w Seulu i Phenianie. Mieszkał i pracował w Kanadzie i w Bułgarii. Podróżował po Ukrainie, dotarł na Krym. W okresie koreańskim był w Japonii, Mongolii i Chinach. Oprócz tego podróżował także po Tunezji, Turcji, Malcie, Gambie, Włoszech, Francji, Emiratach Arabskich, Dubaju, Gruzji, Litwie i Białorusi. Biegle władał językami angielskim, rosyjskim, koreańskim, biernie znał niemiecki i chiński. Interesował się szczególnie kulturą sumeryjską, potrafił czytać pismo klinowe. Doskonale gotował, znał potrawy wszystkich krajów świata.</p><p>Wernisaż: 1.02.2019, 19:00. Wystawa czynna 2.02. - 2.03.2019.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Galeria FWD:, ul. Święty Marcin 47, Pasaż Różowy, lokal 24, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-02 00:00:00</event_start>
+        <event_end>2019-03-02 00:00:00</event_end>
+        <event_modified>2019-01-22 14:01:11</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107930</event_id>
+        <event_created>2019-01-22 14:01:11</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/jakub-paprocki-proces-trwa-wystawa,107930.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Jakub Paprocki: Proces trwa - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p><em>Proces trwa</em> to indywidualny pokaz prac poznańskiego twórcy samorodnego Jakuba Paprockiego. Jakub związany był z FWD: od samego początku jej powstania i mocno angażował się w jej działalność, dlatego też wystawa zorganizowana zostanie z okazji trzeciej rocznicy otwarcia przestrzeni galerii. W ramach ekspozycji po raz pierwszy będą prezentowane prace Jakuba, który zamiast galeryjnego blichtru wolał zakamarki forum kafeterii. Publiczność będzie miała okazję przyjrzeć się jego oryginalnym grafikom i cyfrowym kolażom, które komentują kondycję społeczeństwa, często w dość obsceniczny, wręcz odrażający sposób. Autor w nietuzinkowej formie wskazuje na wątki degeneracji, rozkładu i nastawienia na totalną konsumpcję, jakie jego zdaniem trawią współczesne cywilizacje. Paprocki występuje w roli skrupulatnego badacza i geografa odmętów sieci. Fascynuje go jednak szczególny rodzaj internetowej produkcji - jest to miłość do tego, co przesadne, skrajnie odbiegające od normy. Autor paradoksalnie przeobraża swoje znaleziska w obrazy jeszcze bardziej sztuczne i pompatyczne.</p><p>Jakub zdaje się być ogarnięty przymusem tworzenia. W jego obszernym, bardzo różnorodnym portfolio znajduje się ponad tysiąc prac i szkiców. Paprocki obsesyjnie trawestował pojawiające się mediach postaci, badał temat celebrytyzmu, nowych (pojawiających się głównie w Internecie) mistycznych światopoglądów, czy kolejnych postów na kafeterii dotyczących możliwości zajścia w ciążę i defekowania przy swoim życiowym partnerze. Ta wybuchowa mieszanka przyprawiona jest zarówno gorzkim poczuciem humoru jak i powagą, a także socjologicznym krytycyzmem. Bezustannie przewijają się w niej powtarzane przez Paprockiego zdania: &quot;Negatywne vibracje ego&quot;, &quot;Mili ludzie to zaraza&quot;, &quot;Ty nie jesteś swoje ciało&quot;, &quot;Toksyczna szwagierka rozbija rodzinę&quot;, &quot;Chomik zniszczył sukienkę komunijną Bożenki&quot; czy &quot;Proces trwa&quot;. Przywołując postacie z serialu <em>Klan</em>, Magdę Gessler czy piosenkarkę Eleni, które w swoich żartach beatyfikuje, zachęca polskie społeczeństwo do faszerowania się lekami Xanax i Ulgix. Jego komentarze są bezpośrednie, bezczelne, niesmaczne a poglądy radykalne. Wszechobecne w kapitalistycznym świecie medialne manipulacje i reklamy porównuje do hitlerowskiej propagandy. Nikomu się nie upiecze i nie ma ucieczki - proces trwa!</p><p>Jakub Paprocki (1982 - 2016) - poznański artysta samorodny, w swoich wypowiedziach przetwarzał kulturę popularną, tworząc artystyczne fotomontaże. Absolwent Wydziału Historycznego na Uniwersytecie Adama Mickiewicza w Poznaniu (2005). Rozpoczął studia na Wydziale Filologii Koreańskiej, w 2004 odbył wyjazd stypendialny do Seulu, gdzie w 2008 roku ukończył socjologię na Academy of Korean Studies. Pracował jako sekretarz w polskich ambasadach w Seulu i Phenianie. Mieszkał i pracował w Kanadzie i w Bułgarii. Podróżował po Ukrainie, dotarł na Krym. W okresie koreańskim był w Japonii, Mongolii i Chinach. Oprócz tego podróżował także po Tunezji, Turcji, Malcie, Gambie, Włoszech, Francji, Emiratach Arabskich, Dubaju, Gruzji, Litwie i Białorusi. Biegle władał językami angielskim, rosyjskim, koreańskim, biernie znał niemiecki i chiński. Interesował się szczególnie kulturą sumeryjską, potrafił czytać pismo klinowe. Doskonale gotował, znał potrawy wszystkich krajów świata.</p><p>Wernisaż: 1.02.2019, 19:00. Wystawa czynna 2.02. - 2.03.2019.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Galeria FWD:, ul. Święty Marcin 47, Pasaż Różowy, lokal 24, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-02-02 00:00:00</event_start>
+        <event_end>2019-03-02 00:00:00</event_end>
+        <event_modified>2019-01-22 14:01:11</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>108115</event_id>
+        <event_created>2019-01-30 13:33:09</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/prezenty-na-dzien-kobiet-warsztaty-dla-przedszkoli-i-szkol,108115.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Prezenty na Dzień Kobiet - warsztaty dla przedszkoli i szkół]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Pracownia Edukacyjna Wiatrak poleca twórcze warsztaty dla dzieci i młodzieży, podczas których mogą wykonać wyjątkowe prezenty na Dzień Kobiet. W ofercie między innymi: mydełka o finezyjnych kształtach i przyjemnych zapachach musujące kule do kąpieli ozdobne świeczki żelowe laurki z papieru czerpanego Więcej informacji o naszych: www.pracowniawiatrak.pl</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Pracownia Edukacyjna Wiatrak, os. Pod Lipami 8, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-30 00:00:00</event_start>
+        <event_end>2019-03-08 00:00:00</event_end>
+        <event_modified>2019-01-30 13:58:51</event_modified>
+        <category>Inne</category>
+    </event>
+    <event>
+        <event_id>108115</event_id>
+        <event_created>2019-01-30 13:33:09</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/prezenty-na-dzien-kobiet-warsztaty-dla-przedszkoli-i-szkol,108115.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Prezenty na Dzień Kobiet - warsztaty dla przedszkoli i szkół]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Pracownia Edukacyjna Wiatrak poleca twórcze warsztaty dla dzieci i młodzieży, podczas których mogą wykonać wyjątkowe prezenty na Dzień Kobiet. W ofercie między innymi: mydełka o finezyjnych kształtach i przyjemnych zapachach musujące kule do kąpieli ozdobne świeczki żelowe laurki z papieru czerpanego Więcej informacji o naszych: www.pracowniawiatrak.pl</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Pracownia Edukacyjna Wiatrak, os. Pod Lipami 8, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-30 00:00:00</event_start>
+        <event_end>2019-03-08 00:00:00</event_end>
+        <event_modified>2019-01-30 13:58:51</event_modified>
+        <category>Inne</category>
+    </event>
+    <event>
+        <event_id>107813</event_id>
+        <event_created>2019-01-16 13:21:45</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/nowy-semestr-w-szkole-plywania-fregata-swimming,107813.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Nowy semestr w Szkole Pływania Fregata Swimming]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Oswajanie z wodą niemowląt w wieku już od 3 miesięcy, nauka pływania lub doskonalenie umiejętności dla dzieci i dorosłych na najlepszych basenach w Poznaniu i okolicy - ruszyły zapisy na zajęcia w nowym semestrze w szkole pływania Fregata Swimming.</p><p>Zaraz po feriach zimowych, a więc 28 stycznia 2019 r., rozpocznie się nowy semestr nauki pływania. Oferta Fregaty Swimming, która od ponad 20 lat z powodzeniem uczy poznaniaków pływania, obejmuje wszystkie stopnie nauki pływania, począwszy od oswajania z wodą niemowlaków w wieku już od 3 miesięcy, przez dzieci i młodzież, po dorosłych. Dlaczego warto pływać z Fregatą Swimming? Klienci Fregaty mają w Poznaniu cztery baseny do wyboru. Zajęcia prowadzone są w Termach Maltańskich, na basenie Lechicka (Hotel Quality System), na Posnanii oraz w Daszewicach. Instruktorzy Fregaty uczą pływać każdym stylem, jak również prowadzą zajęcia doskonalenia pływania, zarówno dla dzieci, jak i dorosłych. Fregata specjalizuje się w oswajaniu z wodą niemowląt w wieku już od 3. miesiąca życia, prowadząc takie zajęcia na basenach przystosowanych do potrzeb najmniejszych pływaków - z ciepłą wodą o temp. 32-33 st. C oraz wyposażonych w przewijaki, czy kojce. Wypracowany przez lata, w oparciu o najnowocześniejsze metody szkoleniowe, program treningowy Fregaty, gwarantuje efektywną naukę i stałe, na bieżąco monitorowane, postępy. Dzięki możliwości odrabiania zgłoszonych wcześniej nieobecności na zajęciach, każdy uczestnik kursu może być pewny, że nie ominie go żadna lekcja. Fregata Swimming to lider nauki pływania w Wielkopolsce, wielokrotnie wyróżniany i nagradzany za swoje osiągnięcia. Organizowane przez tę szkołę amatorskie zawody pływackie Fregata Family Cup zostały uznane w 2017 r. za najlepszą inicjatywę organizacji pozarządowej w kategorii &quot;sport&quot; w konkursie Urzędu Miasta Poznania &quot;Inicjatory&quot;.</p><p>Szczegółowe grafiki zajęć Fregaty w semestrze letnim 2019 można znaleźć na stronie <a href="http://www.fregata.com.pl">www.fregata.com.pl</a>. Wszystkie informacje także pod nr tel. 61 875 95 27, 514 535 195.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Termy Maltańskie, ul. Termalna 1, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-28 09:00:00</event_start>
+        <event_end>2019-06-30 19:00:00</event_end>
+        <event_modified>2019-01-17 12:00:51</event_modified>
+        <category>Sport</category>
+    </event>
+    <event>
+        <event_id>107813</event_id>
+        <event_created>2019-01-16 13:21:45</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/nowy-semestr-w-szkole-plywania-fregata-swimming,107813.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Nowy semestr w Szkole Pływania Fregata Swimming]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Oswajanie z wodą niemowląt w wieku już od 3 miesięcy, nauka pływania lub doskonalenie umiejętności dla dzieci i dorosłych na najlepszych basenach w Poznaniu i okolicy - ruszyły zapisy na zajęcia w nowym semestrze w szkole pływania Fregata Swimming.</p><p>Zaraz po feriach zimowych, a więc 28 stycznia 2019 r., rozpocznie się nowy semestr nauki pływania. Oferta Fregaty Swimming, która od ponad 20 lat z powodzeniem uczy poznaniaków pływania, obejmuje wszystkie stopnie nauki pływania, począwszy od oswajania z wodą niemowlaków w wieku już od 3 miesięcy, przez dzieci i młodzież, po dorosłych. Dlaczego warto pływać z Fregatą Swimming? Klienci Fregaty mają w Poznaniu cztery baseny do wyboru. Zajęcia prowadzone są w Termach Maltańskich, na basenie Lechicka (Hotel Quality System), na Posnanii oraz w Daszewicach. Instruktorzy Fregaty uczą pływać każdym stylem, jak również prowadzą zajęcia doskonalenia pływania, zarówno dla dzieci, jak i dorosłych. Fregata specjalizuje się w oswajaniu z wodą niemowląt w wieku już od 3. miesiąca życia, prowadząc takie zajęcia na basenach przystosowanych do potrzeb najmniejszych pływaków - z ciepłą wodą o temp. 32-33 st. C oraz wyposażonych w przewijaki, czy kojce. Wypracowany przez lata, w oparciu o najnowocześniejsze metody szkoleniowe, program treningowy Fregaty, gwarantuje efektywną naukę i stałe, na bieżąco monitorowane, postępy. Dzięki możliwości odrabiania zgłoszonych wcześniej nieobecności na zajęciach, każdy uczestnik kursu może być pewny, że nie ominie go żadna lekcja. Fregata Swimming to lider nauki pływania w Wielkopolsce, wielokrotnie wyróżniany i nagradzany za swoje osiągnięcia. Organizowane przez tę szkołę amatorskie zawody pływackie Fregata Family Cup zostały uznane w 2017 r. za najlepszą inicjatywę organizacji pozarządowej w kategorii &quot;sport&quot; w konkursie Urzędu Miasta Poznania &quot;Inicjatory&quot;.</p><p>Szczegółowe grafiki zajęć Fregaty w semestrze letnim 2019 można znaleźć na stronie <a href="http://www.fregata.com.pl">www.fregata.com.pl</a>. Wszystkie informacje także pod nr tel. 61 875 95 27, 514 535 195.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Termy Maltańskie, ul. Termalna 1, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-28 09:00:00</event_start>
+        <event_end>2019-06-30 19:00:00</event_end>
+        <event_modified>2019-01-17 12:00:51</event_modified>
+        <category>Sport</category>
+    </event>
+    <event>
+        <event_id>108561</event_id>
+        <event_created>2019-02-19 11:00:31</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/100-lat-ulanow-poznanskich-pokaz,108561.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[100 lat Ułanów Poznańskich - pokaz]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>W Sali Renesansowej poznańskiego Ratusza można oglądać zilustrowany kilkudziesięcioma zdjęciami archiwalnymi pokaz poświęcony historii 15. Pułku&#160;Ułanów Poznańskich. Wykorzystane ilustracje pochodzą w przeważającej części&#160;z Narodowego Archiwum Cyfrowego i ze zbiorów muzealnych. Niektóre z nich nigdy nie były prezentowane szerokiej publiczności.&#160;</p><p>Prezentacja została przez autorów podzielona na 10 sekwencji mówiących m.in. o początkach Pułku w roku 1919, pierwszych dowódcach, sztandarze i wczesnych mundurach 15. Pułku Ułanów, o udziale żołnierzy Pułku w wojnie polsko-bolszewiskiej, kampanii wrześniowej, tradycjach Pułku, latach międzywojennych oraz czasach po II wojnie światowej, tj. o londyńskim Kole Pułkowym, Towarzystwie b. Żołnierzy i Przyjaciół 15 P.U.P. i historii 15. Batalionu&#160;Ułanów Poznańskich.</p><p>Pokaz&#160;powstał staraniem Towarzystwa b. Żołnierzy i Przyjaciół 15. Pułku Ułanów Poznańskich we współpracy z oddziałami Muzeum Narodowego w Poznaniu: Muzeum Historii Miasta Poznania i Wielkopolskiego Muzeum Wojskowego.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Muzeum Historii Miasta Poznania, ul. Stary Rynek 1, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-26 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-19 11:00:31</event_modified>
+        <category>100-lecie niepodległości</category>
+    </event>
+    <event>
+        <event_id>108561</event_id>
+        <event_created>2019-02-19 11:00:31</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/100-lat-ulanow-poznanskich-pokaz,108561.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[100 lat Ułanów Poznańskich - pokaz]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>W Sali Renesansowej poznańskiego Ratusza można oglądać zilustrowany kilkudziesięcioma zdjęciami archiwalnymi pokaz poświęcony historii 15. Pułku&#160;Ułanów Poznańskich. Wykorzystane ilustracje pochodzą w przeważającej części&#160;z Narodowego Archiwum Cyfrowego i ze zbiorów muzealnych. Niektóre z nich nigdy nie były prezentowane szerokiej publiczności.&#160;</p><p>Prezentacja została przez autorów podzielona na 10 sekwencji mówiących m.in. o początkach Pułku w roku 1919, pierwszych dowódcach, sztandarze i wczesnych mundurach 15. Pułku Ułanów, o udziale żołnierzy Pułku w wojnie polsko-bolszewiskiej, kampanii wrześniowej, tradycjach Pułku, latach międzywojennych oraz czasach po II wojnie światowej, tj. o londyńskim Kole Pułkowym, Towarzystwie b. Żołnierzy i Przyjaciół 15 P.U.P. i historii 15. Batalionu&#160;Ułanów Poznańskich.</p><p>Pokaz&#160;powstał staraniem Towarzystwa b. Żołnierzy i Przyjaciół 15. Pułku Ułanów Poznańskich we współpracy z oddziałami Muzeum Narodowego w Poznaniu: Muzeum Historii Miasta Poznania i Wielkopolskiego Muzeum Wojskowego.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Muzeum Historii Miasta Poznania, ul. Stary Rynek 1, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-26 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-02-19 11:00:31</event_modified>
+        <category>100-lecie niepodległości</category>
+    </event>
+    <event>
+        <event_id>107832</event_id>
+        <event_created>2019-01-17 13:48:48</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/rezydenci-w-rezydencji-wspomnienia-wspomnien-wystawa,107832.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Rezydenci w rezydencji: Wspomnienia wspomnień - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Wystawa &quot;Wspomnienia wspomnień&quot; podsumowuje rezydencję Bettiny Bereś w&#160;Centrum Kultury ZAMEK w&#160;Poznaniu. Artystka -&#160;na co dzień związana z&#160;Krakowem -&#160;od lat chciała poznać miasto Poznań, szczególnie miejsca związane z&#160;historią jej rodziny. Mama artystki, rzeźbiarka Maria Pinińska-Bereś, urodziła się w&#160;Poznaniu w&#160;1931 roku i&#160;spędziła tutaj pierwsze lata swojego życia, aż do czasów wojny. Rodzina mieszkała najpierw w&#160;kamienicy przy ul. Grottgera, by później przenieść się do wybudowanej przez dziadka modernistycznej willi na Starym Grunwaldzie. Historie z&#160;tego okresu były bajkami, które mama Bettiny opowiadała jej do snu. Poznański czas dzieciństwa matki wydawał się w&#160;nich magiczny i&#160;niezwykle szczęśliwy.</p><p>Artystka bardzo często wciąga dzieje rodzinne w&#160;orbitę swojej twórczości. Podczas realizacji programu rezydencyjnego mogła prześledzić miejsca i&#160;adresy, które pamiętała z&#160;opowiadań zasłyszanych w&#160;wieku dziecięcym. Głównym narzędziem badań okazała się jej własna pamięć -&#160;z rodzinnego domu zachowało się bowiem mało przedmiotów. Rodzina Pinińskich w&#160;nadziei na uratowanie majątku zaraz na początku wojny spakowała cały swój dobytek i&#160;wyprawiła go pociągiem na wschód, transport ten został jednak zbombardowany. Sam budynek, w&#160;którym Pinińscy mieszkali, był wielokrotnie przebudowywany podczas okupacji, a&#160;zachowana dokumentacja fotograficzna jest dość uboga.</p><p>Projekt rezydencji ma na celu zderzenie rodzinnych mitów z&#160;teraźniejszością. Zajmując się tym tematem, Bettina starała się materialną lukę wypełnić swoimi twórczymi przetworzeniami. Postanowiła namalować przedmioty, które jej zdaniem mogłyby znajdować się w&#160;utraconej rodzinnej siedzibie, wyobrażając je sobie i&#160;przywołując z&#160;zapamiętanych opowieści. Tytuł &quot;Wspomnienia wspomnień&quot; tłumaczy ten niemalże archeologiczny proces powstawania kolejnych wizerunków. Całość działania nawiązuje do duchologii, idei filozoficznej Jacques'a Derridy eksponującej postmodernistyczną tendencję do obsesyjnego archiwizowania i&#160;odtwarzania tego, co przeszłe. Powracająca wciąż na nowo i&#160;w kolejnych wersjach przeszłość w&#160;zasadzie się nie kończy, ale trwa w&#160;widmowej postaci. Taki model myślenia prawie całkowicie znosi konserwatywną opozycję stare -&#160;nowe. Rzeczywistość staje się płynna, tak samo jak widmowa tożsamość przedmiotów namalowanych przez Bettinę, które istnieją i&#160;nie istnieją jednocześnie.</p><p>Tekst: Ewa Mrozikiewicz</p><p>Wernisaż wystawy 25 stycznia 2019 r., godz. 19:00. Wystawa czynna 26.01. - 03.03. 2019, g. 12 - 20.</p><p>27 stycznia, godz. 12:00 - oprowadzanie po wystawie z&#160;Bettiną Bereś.</p><p><em>CK Zamek informuje, że od 1.02.19 r., w&#160;związku ze zmianami regulacji w&#160;zakresie odzyskiwania podatku VAT przez instytucje kultury, wstęp na niektóre -&#160;dotąd bezpłatne -&#160;wydarzenia będzie wynosił symboliczne 2&#160;zł.</em> CK Zamek dziękuje za zrozumienie.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>CK Zamek, Sala Wystaw, ul. Święty Marcin 80/82, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-25 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-01-17 13:58:30</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107832</event_id>
+        <event_created>2019-01-17 13:48:48</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/rezydenci-w-rezydencji-wspomnienia-wspomnien-wystawa,107832.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Rezydenci w rezydencji: Wspomnienia wspomnień - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Wystawa &quot;Wspomnienia wspomnień&quot; podsumowuje rezydencję Bettiny Bereś w&#160;Centrum Kultury ZAMEK w&#160;Poznaniu. Artystka -&#160;na co dzień związana z&#160;Krakowem -&#160;od lat chciała poznać miasto Poznań, szczególnie miejsca związane z&#160;historią jej rodziny. Mama artystki, rzeźbiarka Maria Pinińska-Bereś, urodziła się w&#160;Poznaniu w&#160;1931 roku i&#160;spędziła tutaj pierwsze lata swojego życia, aż do czasów wojny. Rodzina mieszkała najpierw w&#160;kamienicy przy ul. Grottgera, by później przenieść się do wybudowanej przez dziadka modernistycznej willi na Starym Grunwaldzie. Historie z&#160;tego okresu były bajkami, które mama Bettiny opowiadała jej do snu. Poznański czas dzieciństwa matki wydawał się w&#160;nich magiczny i&#160;niezwykle szczęśliwy.</p><p>Artystka bardzo często wciąga dzieje rodzinne w&#160;orbitę swojej twórczości. Podczas realizacji programu rezydencyjnego mogła prześledzić miejsca i&#160;adresy, które pamiętała z&#160;opowiadań zasłyszanych w&#160;wieku dziecięcym. Głównym narzędziem badań okazała się jej własna pamięć -&#160;z rodzinnego domu zachowało się bowiem mało przedmiotów. Rodzina Pinińskich w&#160;nadziei na uratowanie majątku zaraz na początku wojny spakowała cały swój dobytek i&#160;wyprawiła go pociągiem na wschód, transport ten został jednak zbombardowany. Sam budynek, w&#160;którym Pinińscy mieszkali, był wielokrotnie przebudowywany podczas okupacji, a&#160;zachowana dokumentacja fotograficzna jest dość uboga.</p><p>Projekt rezydencji ma na celu zderzenie rodzinnych mitów z&#160;teraźniejszością. Zajmując się tym tematem, Bettina starała się materialną lukę wypełnić swoimi twórczymi przetworzeniami. Postanowiła namalować przedmioty, które jej zdaniem mogłyby znajdować się w&#160;utraconej rodzinnej siedzibie, wyobrażając je sobie i&#160;przywołując z&#160;zapamiętanych opowieści. Tytuł &quot;Wspomnienia wspomnień&quot; tłumaczy ten niemalże archeologiczny proces powstawania kolejnych wizerunków. Całość działania nawiązuje do duchologii, idei filozoficznej Jacques'a Derridy eksponującej postmodernistyczną tendencję do obsesyjnego archiwizowania i&#160;odtwarzania tego, co przeszłe. Powracająca wciąż na nowo i&#160;w kolejnych wersjach przeszłość w&#160;zasadzie się nie kończy, ale trwa w&#160;widmowej postaci. Taki model myślenia prawie całkowicie znosi konserwatywną opozycję stare -&#160;nowe. Rzeczywistość staje się płynna, tak samo jak widmowa tożsamość przedmiotów namalowanych przez Bettinę, które istnieją i&#160;nie istnieją jednocześnie.</p><p>Tekst: Ewa Mrozikiewicz</p><p>Wernisaż wystawy 25 stycznia 2019 r., godz. 19:00. Wystawa czynna 26.01. - 03.03. 2019, g. 12 - 20.</p><p>27 stycznia, godz. 12:00 - oprowadzanie po wystawie z&#160;Bettiną Bereś.</p><p><em>CK Zamek informuje, że od 1.02.19 r., w&#160;związku ze zmianami regulacji w&#160;zakresie odzyskiwania podatku VAT przez instytucje kultury, wstęp na niektóre -&#160;dotąd bezpłatne -&#160;wydarzenia będzie wynosił symboliczne 2&#160;zł.</em> CK Zamek dziękuje za zrozumienie.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>CK Zamek, Sala Wystaw, ul. Święty Marcin 80/82, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-25 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-01-17 13:58:30</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107974</event_id>
+        <event_created>2019-01-24 12:22:52</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/archeologia-gniezna-wystawa,107974.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Archeologia Gniezna - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Archeologiczne rewelacje z dawnej stolicy Polski!</p><p>&quot;Archeologia Gniezna&quot; jest ekspozycją przedstawiającą historię wykopalisk prowadzonych na obszarze jednej z dawnych stolic naszego kraju. Mowa tutaj zarówno o najstarszych pracach prowadzonych przez XIX-wiecznych &quot;poszukiwaczy starożytności&quot;, jak i o w pełni profesjonalnej działalności zawodowych archeologów. Przedstawione są najważniejsze postacie, stanowiska oraz artefakty nierozerwalnie związane z Gnieznem i jego przeszłością.</p><p>Ta historia to ważny rozdział dziejów archeologii w Polsce. Wiele tutejszych&#160;badań i metod było bowiem pionierskich. Pokażemy sylwetki najważniejszych badaczy, miejsca - stanowiska archeologiczne, w których prowadzili wykopaliska, metody badawcze, jakimi się posługiwali i wiele innych ciekawostek związanych z archeologią Gniezna. Oczywiście, nie zabraknie tego co najcenniejsze, czyli zabytków - od czasów najdawniejszych aż do nowożytności - odnalezionych w Gnieźnie. Do obejrzenia będzie ponad 300 znalezisk!</p><p>Wystawę przygotowały dwa muzea, które od wielu lat badały terytorium Gniezna: Muzeum Archeologiczne w Poznaniu oraz Muzeum Początków Państwa Polskiego w Gnieźnie. Obie placówki łączy silna więź i wspólnie tworzą historię wielkopolskiego muzealnictwa. Powstały na terenie Gniezna oddział MAP przeistoczył się w dzisiejsze MPPP.</p><p>Wystawę można podziwiać w sali wystaw czasowych na parterze Pałacu Górków przy ulicy Wodnej 27 w Poznaniu od 24 stycznia 2019 do 31 marca 2019.</p><p>Wstęp po zakupie biletu uprawniającego do zwiedzania całego muzeum.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Muzeum Archeologiczne, Pałac Górków, ul. Wodna 27, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-24 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-01-24 12:24:27</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107974</event_id>
+        <event_created>2019-01-24 12:22:52</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/archeologia-gniezna-wystawa,107974.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Archeologia Gniezna - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Archeologiczne rewelacje z dawnej stolicy Polski!</p><p>&quot;Archeologia Gniezna&quot; jest ekspozycją przedstawiającą historię wykopalisk prowadzonych na obszarze jednej z dawnych stolic naszego kraju. Mowa tutaj zarówno o najstarszych pracach prowadzonych przez XIX-wiecznych &quot;poszukiwaczy starożytności&quot;, jak i o w pełni profesjonalnej działalności zawodowych archeologów. Przedstawione są najważniejsze postacie, stanowiska oraz artefakty nierozerwalnie związane z Gnieznem i jego przeszłością.</p><p>Ta historia to ważny rozdział dziejów archeologii w Polsce. Wiele tutejszych&#160;badań i metod było bowiem pionierskich. Pokażemy sylwetki najważniejszych badaczy, miejsca - stanowiska archeologiczne, w których prowadzili wykopaliska, metody badawcze, jakimi się posługiwali i wiele innych ciekawostek związanych z archeologią Gniezna. Oczywiście, nie zabraknie tego co najcenniejsze, czyli zabytków - od czasów najdawniejszych aż do nowożytności - odnalezionych w Gnieźnie. Do obejrzenia będzie ponad 300 znalezisk!</p><p>Wystawę przygotowały dwa muzea, które od wielu lat badały terytorium Gniezna: Muzeum Archeologiczne w Poznaniu oraz Muzeum Początków Państwa Polskiego w Gnieźnie. Obie placówki łączy silna więź i wspólnie tworzą historię wielkopolskiego muzealnictwa. Powstały na terenie Gniezna oddział MAP przeistoczył się w dzisiejsze MPPP.</p><p>Wystawę można podziwiać w sali wystaw czasowych na parterze Pałacu Górków przy ulicy Wodnej 27 w Poznaniu od 24 stycznia 2019 do 31 marca 2019.</p><p>Wstęp po zakupie biletu uprawniającego do zwiedzania całego muzeum.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Muzeum Archeologiczne, Pałac Górków, ul. Wodna 27, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-24 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-01-24 12:24:27</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107691</event_id>
+        <event_created>2019-01-11 09:41:45</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/sceny-nieistotne-wystawa,107691.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Sceny nieistotne - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Od stycznia do marca Brama Poznania zaprasza na wystawę &quot;Sceny nieistotne&quot;, na którą składają się kolaże zestawiające postacie z fotografii Jana Kurka. Zdjęcia, jakie posłużyły do zbudowania przestrzennych scen, dokumentowały przedpołudniowe spacery po ulicach Łazarza z lat 1967-1969.</p><p>Jan Kurek bez żadnych nadziei na publikację swoich fotografii, rejestrował codzienne wydarzenia uliczne nie mieszczące się w oficjalnym sposobie prezentowania świata. Jako operator telewizyjny znał doskonale wytyczne określające co, w jaki sposób, dlaczego i po co - należy pokazywać w mediach. Łazarska rzeczywistość, jaką bez pretensji i na własne potrzeby fotografował odpoczywając jednocześnie od propagandowej wizji świata, nie mieściła się w tych ramach. Nie ma tam doniosłych wydarzeń, nie ma ilustracji problemów politycznych, nie ma postaci zasługujących na upamiętnienie. Ten świat nie miał trafić do opracowań historycznych. Jako szary i zwykły, nie był wart uwagi.</p><p><a href="http://bramapoznania.pl/oferta/wystawy/sceny-nieistotne/">Więcej informacji</a></p><p>opr.sw</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Brama Poznania ICHOT, ul. Gdańska 2, Poznan</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-19 00:00:00</event_start>
+        <event_end>2019-03-10 00:00:00</event_end>
+        <event_modified>2019-01-15 13:36:30</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107691</event_id>
+        <event_created>2019-01-11 09:41:45</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/sceny-nieistotne-wystawa,107691.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Sceny nieistotne - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Od stycznia do marca Brama Poznania zaprasza na wystawę &quot;Sceny nieistotne&quot;, na którą składają się kolaże zestawiające postacie z fotografii Jana Kurka. Zdjęcia, jakie posłużyły do zbudowania przestrzennych scen, dokumentowały przedpołudniowe spacery po ulicach Łazarza z lat 1967-1969.</p><p>Jan Kurek bez żadnych nadziei na publikację swoich fotografii, rejestrował codzienne wydarzenia uliczne nie mieszczące się w oficjalnym sposobie prezentowania świata. Jako operator telewizyjny znał doskonale wytyczne określające co, w jaki sposób, dlaczego i po co - należy pokazywać w mediach. Łazarska rzeczywistość, jaką bez pretensji i na własne potrzeby fotografował odpoczywając jednocześnie od propagandowej wizji świata, nie mieściła się w tych ramach. Nie ma tam doniosłych wydarzeń, nie ma ilustracji problemów politycznych, nie ma postaci zasługujących na upamiętnienie. Ten świat nie miał trafić do opracowań historycznych. Jako szary i zwykły, nie był wart uwagi.</p><p><a href="http://bramapoznania.pl/oferta/wystawy/sceny-nieistotne/">Więcej informacji</a></p><p>opr.sw</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Brama Poznania ICHOT, ul. Gdańska 2, Poznan</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-19 00:00:00</event_start>
+        <event_end>2019-03-10 00:00:00</event_end>
+        <event_modified>2019-01-15 13:36:30</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107730</event_id>
+        <event_created>2019-01-13 12:33:08</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/dzienny-dom-seniora-nabor,107730.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Dzienny Dom Seniora - nabór]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Nabór do ,,Parasolki&quot;, nowo powstającego Dziennego Domu Seniora. Otwarcie 1 lutego 2019 r. Każda osoba w wieku emerytalnym może tutaj miło spędzić czas od poniedziałku do piątku w godzinach 7.00-17.00. Zapewniona będzie profesjonalna opieka i wyżywienie, oraz zajęcia z rehabilitantami.</p><p>Zgłoszenia i zapisy pod nr tel. 601905118.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Poznań Winogrady, ul. Pszenna 2, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-14 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-01-14 12:36:42</event_modified>
+        <category>Zdrowie i uroda</category>
+    </event>
+    <event>
+        <event_id>107730</event_id>
+        <event_created>2019-01-13 12:33:08</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/dzienny-dom-seniora-nabor,107730.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Dzienny Dom Seniora - nabór]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Nabór do ,,Parasolki&quot;, nowo powstającego Dziennego Domu Seniora. Otwarcie 1 lutego 2019 r. Każda osoba w wieku emerytalnym może tutaj miło spędzić czas od poniedziałku do piątku w godzinach 7.00-17.00. Zapewniona będzie profesjonalna opieka i wyżywienie, oraz zajęcia z rehabilitantami.</p><p>Zgłoszenia i zapisy pod nr tel. 601905118.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Poznań Winogrady, ul. Pszenna 2, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-14 00:00:00</event_start>
+        <event_end>2019-03-31 00:00:00</event_end>
+        <event_modified>2019-01-14 12:36:42</event_modified>
+        <category>Zdrowie i uroda</category>
+    </event>
+    <event>
+        <event_id>107727</event_id>
+        <event_created>2019-01-12 08:01:26</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/poznanskie-centrum-mediacji-nieodplatne-mediacje-i-porady,107727.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Poznańskie Centrum Mediacji - nieodpłatne mediacje i porady]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Poznańskie Centrum Mediacji prowadzi nieodpłatne działania na rzecz mieszkańców Poznania, w tym m.in.:</p><ul><li><span>codzienne dyżury mediatorów: poniedziałek, środa, piątek 9.00-11.00 wtorek, czwartek 15.00-17.00</span></li><li><span>nieodpłatne mediacje, w tym również mediacje rodzinne oraz mediacje w szkołach</span></li></ul><p>Można przyjść osobiście: ul. Sienkiewicza 22/6, Poznań, zadzwonić: 578 897 388 lub 509 955 925, napisać:&#160;<a href="mailto:mediacjecentrum@gmail.com">mediacjecentrum@gmail.com</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Poznańskie Centrum Mediacji, ul. Sienkiewicza 22/6, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-12 00:00:00</event_start>
+        <event_end>2019-12-31 00:00:00</event_end>
+        <event_modified>2019-01-24 11:04:30</event_modified>
+        <category>Inne</category>
+    </event>
+    <event>
+        <event_id>107727</event_id>
+        <event_created>2019-01-12 08:01:26</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/poznanskie-centrum-mediacji-nieodplatne-mediacje-i-porady,107727.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Poznańskie Centrum Mediacji - nieodpłatne mediacje i porady]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Poznańskie Centrum Mediacji prowadzi nieodpłatne działania na rzecz mieszkańców Poznania, w tym m.in.:</p><ul><li><span>codzienne dyżury mediatorów: poniedziałek, środa, piątek 9.00-11.00 wtorek, czwartek 15.00-17.00</span></li><li><span>nieodpłatne mediacje, w tym również mediacje rodzinne oraz mediacje w szkołach</span></li></ul><p>Można przyjść osobiście: ul. Sienkiewicza 22/6, Poznań, zadzwonić: 578 897 388 lub 509 955 925, napisać:&#160;<a href="mailto:mediacjecentrum@gmail.com">mediacjecentrum@gmail.com</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Poznańskie Centrum Mediacji, ul. Sienkiewicza 22/6, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-12 00:00:00</event_start>
+        <event_end>2019-12-31 00:00:00</event_end>
+        <event_modified>2019-01-24 11:04:30</event_modified>
+        <category>Inne</category>
+    </event>
+    <event>
+        <event_id>107585</event_id>
+        <event_created>2019-01-08 13:43:03</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/marlon-de-azambuja-medio-cuerpo-wystawa,107585.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Marlon de Azambuja: Medio Cuerpo - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Medio Cuerpo (Pół-Ciało) to projekt o fascynacji architekturą i możliwością cielesnego jej doświadczania. Różne formy i poziomy pojmowania przestrzeni przenikają się ze sobą i tworzą jedną całość. Sztywne podziały architektoniczne, miękkie organiczne formy, architektura wyobrażona, światło, świadomość... Zapraszani jesteśmy do stopniowego doświadczania różnorodnych form, odkrywania znaczeń, a co najważniejsze do przekraczania ustanowionych granic, zarówno tych w przestrzeni fizycznej, jak i mentalnej.</p><p>Punktem wyjścia projektu brazylijskiego artysty Marlona de Azambuja była fascynacja architekturą Galerii Miejskiej Arsenał w Poznaniu. Uważna obserwacja przestrzeni i próba zmiany jej percepcji poprzez delikatne interwencje, od wielu lat powracała w jego twórczości, zarówno w projektach tworzonych wewnątrz, jak i tych ingerujących w elementy architektury miejskiej. Azambuja stara się modelować zastane struktury, wydobywać ich rzeźbiarski potencjał, tak aby widz nie tylko spojrzał na dane miejsce z innej perspektywy, ale też żeby poczuł z nim związek. Szczególną obsesją artysty stały się formy i struktury niezauważane na pierwszy rzut oka, które przywraca w świadomości widza.</p><p>Wernisaż: 11.01.2019, godz. 18.30. Wystawa czynna 11.01.-3.03.2019 r.</p><p>Oprowadzanie kuratorskie 13 lutego, godz. 17:00.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Galeria Miejska Arsenał, ul. Stary Rynek 6, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-11 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-02-12 13:31:26</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107585</event_id>
+        <event_created>2019-01-08 13:43:03</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/marlon-de-azambuja-medio-cuerpo-wystawa,107585.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Marlon de Azambuja: Medio Cuerpo - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Medio Cuerpo (Pół-Ciało) to projekt o fascynacji architekturą i możliwością cielesnego jej doświadczania. Różne formy i poziomy pojmowania przestrzeni przenikają się ze sobą i tworzą jedną całość. Sztywne podziały architektoniczne, miękkie organiczne formy, architektura wyobrażona, światło, świadomość... Zapraszani jesteśmy do stopniowego doświadczania różnorodnych form, odkrywania znaczeń, a co najważniejsze do przekraczania ustanowionych granic, zarówno tych w przestrzeni fizycznej, jak i mentalnej.</p><p>Punktem wyjścia projektu brazylijskiego artysty Marlona de Azambuja była fascynacja architekturą Galerii Miejskiej Arsenał w Poznaniu. Uważna obserwacja przestrzeni i próba zmiany jej percepcji poprzez delikatne interwencje, od wielu lat powracała w jego twórczości, zarówno w projektach tworzonych wewnątrz, jak i tych ingerujących w elementy architektury miejskiej. Azambuja stara się modelować zastane struktury, wydobywać ich rzeźbiarski potencjał, tak aby widz nie tylko spojrzał na dane miejsce z innej perspektywy, ale też żeby poczuł z nim związek. Szczególną obsesją artysty stały się formy i struktury niezauważane na pierwszy rzut oka, które przywraca w świadomości widza.</p><p>Wernisaż: 11.01.2019, godz. 18.30. Wystawa czynna 11.01.-3.03.2019 r.</p><p>Oprowadzanie kuratorskie 13 lutego, godz. 17:00.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Galeria Miejska Arsenał, ul. Stary Rynek 6, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-11 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-02-12 13:31:26</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107588</event_id>
+        <event_created>2019-01-08 14:02:58</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/andrea-marioni-ekonization-hello-my-friend-wystawa,107588.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Andrea Marioni: Ekonization: Hello My Friend - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Globalna spektakularyzacja bólu i cierpienia potwierdza fizyczną i emocjonalną przepaść pomiędzy tymi, którzy patrzą a tymi, którzy cierpią: ciałami, zdesperowanymi twarzami, nadmuchanymi pontonami, szarymi plażami, kamizelkami ratunkowymi, miastami z namiotów. Obrazy te przyczyniają się do wizualnego uprzedmiotowienia kategorii &quot;uchodźców&quot; w języku cywilizacji zachodniej, konsekwentnie utrwalając ich percepcję jako odmiennej grupy ludzkich istot.<br />W 2016 roku szwajcarski artysta Andrea Marioni spędził dziewięć miesięcy, podróżując dookoła Europy, w tym dwa w Grecji, gdzie odwiedził kilka obozów dla uchodźców, przez moment żyjąc i pracując w niektórych z nich. Powodów dla tych podróży było wiele, niewytłumaczalnych i niewyraźnych, jak to zwykle bywa w takich przypadkach. Czy jednak naprawdę ma znaczenie to, co powoduje kimś, kto zadaje sobie pytania o swoją współczesność, chcąc zobaczyć na żywo sytuację wcześniej znaną jedynie ze zdjęć? Kimś, kto poszukuje bezpośredniego doświadczenia tej sytuacji? To, co ma znaczenie, dotyczy przekazania tego doświadczenia innym.</p><p>Przybywając do Eko niemalże przez przypadek, wynikający z konieczności napełnienia baku auta, Marioni musiał oduczyć się bycia tym, kim był. Stopniowo pozwolił napełniać siebie przez napotykane głosy i wizerunki życia. Eko-obóz czy też Eko-stacja w Polykastro koło Idomeni, była niezależnym, oddolnie zorganizowanym obozem dla uchodźców, prowadzonym przez grupę międzynarodowych wolontariuszy przy niewielkim wsparciu międzynarodowych NGO. Marioni stał się jednym z nich, jako pracownik Eko-kuchni, każdego dnia oferującej skromne posiłki mieszkańcom i mieszkankom obozu. Eko i jego załoga, uchodźcy lub nie, &quot;skolonizowali&quot; sposób postrzegania i odczuwania Marioniego, jego świadomość siebie i świata. Tytuł wystawy, EKONIZATION: Hello My Friend to połączenie słów &quot;Eko&quot; i &quot;kolonizacji&quot;; kolonizacji, która działała nie tylko na osobistym poziomie, ale również odnosi się do specyficznego poczucia życia, wydobywającego antropologiczne aspekty egzystencji społeczności takich jak Eko, do których odnosi się fraza: Hello my friend. [...]<br />Kurstor weystawy Elisa Rusca</p><p>Wernisaż 11.01., godz. 18:00.</p><p>Otwarciu wystawy towarzyszyć będzie publikacja <em>Eko Diaries</em> (<em>Eko dzienników</em>), dostępnych w księgarni Arsenału w trakcie jej trwania.</p><p>Projekt został zrealizowany przy wsparciu <a href="https://prohelvetia.ch/en/">The Swiss Arts Council - Pro Helvetia.</a></p><p>Andrea Marioni (ur. w 1986 r.) - absolwent HEAD - Haute Ecole d'Art et Design, Geneva, 2013. Od tego czasu prezentuje performansy, fotografie oraz instalacje w różnych publicznych instytucjach w Szwajcarii. Na swoim koncie ma liczne muzyczne współprace i radiowe publikacje. Był rezydentem w Warszawie i Brukseli. Był asystentem Dory Garcia podczas Documenta 13 w Kassel, gdzie pokazała pracę&#160; <em>Die Klau Mich Show</em>. Od 2017 roku kieruje projektem Visarte &#160;<em>espace libre</em> (wolna przestrzeń) w Bienne/Biel.</p><p>Elisa Rusca jest kuratorką i pisarką kursującą między Berlinem, Londynem i Warszawą.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Galeria Miejska Arsenał, ul. Stary Rynek 6, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-11 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-01-08 14:02:58</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107588</event_id>
+        <event_created>2019-01-08 14:02:58</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/andrea-marioni-ekonization-hello-my-friend-wystawa,107588.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Andrea Marioni: Ekonization: Hello My Friend - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Globalna spektakularyzacja bólu i cierpienia potwierdza fizyczną i emocjonalną przepaść pomiędzy tymi, którzy patrzą a tymi, którzy cierpią: ciałami, zdesperowanymi twarzami, nadmuchanymi pontonami, szarymi plażami, kamizelkami ratunkowymi, miastami z namiotów. Obrazy te przyczyniają się do wizualnego uprzedmiotowienia kategorii &quot;uchodźców&quot; w języku cywilizacji zachodniej, konsekwentnie utrwalając ich percepcję jako odmiennej grupy ludzkich istot.<br />W 2016 roku szwajcarski artysta Andrea Marioni spędził dziewięć miesięcy, podróżując dookoła Europy, w tym dwa w Grecji, gdzie odwiedził kilka obozów dla uchodźców, przez moment żyjąc i pracując w niektórych z nich. Powodów dla tych podróży było wiele, niewytłumaczalnych i niewyraźnych, jak to zwykle bywa w takich przypadkach. Czy jednak naprawdę ma znaczenie to, co powoduje kimś, kto zadaje sobie pytania o swoją współczesność, chcąc zobaczyć na żywo sytuację wcześniej znaną jedynie ze zdjęć? Kimś, kto poszukuje bezpośredniego doświadczenia tej sytuacji? To, co ma znaczenie, dotyczy przekazania tego doświadczenia innym.</p><p>Przybywając do Eko niemalże przez przypadek, wynikający z konieczności napełnienia baku auta, Marioni musiał oduczyć się bycia tym, kim był. Stopniowo pozwolił napełniać siebie przez napotykane głosy i wizerunki życia. Eko-obóz czy też Eko-stacja w Polykastro koło Idomeni, była niezależnym, oddolnie zorganizowanym obozem dla uchodźców, prowadzonym przez grupę międzynarodowych wolontariuszy przy niewielkim wsparciu międzynarodowych NGO. Marioni stał się jednym z nich, jako pracownik Eko-kuchni, każdego dnia oferującej skromne posiłki mieszkańcom i mieszkankom obozu. Eko i jego załoga, uchodźcy lub nie, &quot;skolonizowali&quot; sposób postrzegania i odczuwania Marioniego, jego świadomość siebie i świata. Tytuł wystawy, EKONIZATION: Hello My Friend to połączenie słów &quot;Eko&quot; i &quot;kolonizacji&quot;; kolonizacji, która działała nie tylko na osobistym poziomie, ale również odnosi się do specyficznego poczucia życia, wydobywającego antropologiczne aspekty egzystencji społeczności takich jak Eko, do których odnosi się fraza: Hello my friend. [...]<br />Kurstor weystawy Elisa Rusca</p><p>Wernisaż 11.01., godz. 18:00.</p><p>Otwarciu wystawy towarzyszyć będzie publikacja <em>Eko Diaries</em> (<em>Eko dzienników</em>), dostępnych w księgarni Arsenału w trakcie jej trwania.</p><p>Projekt został zrealizowany przy wsparciu <a href="https://prohelvetia.ch/en/">The Swiss Arts Council - Pro Helvetia.</a></p><p>Andrea Marioni (ur. w 1986 r.) - absolwent HEAD - Haute Ecole d'Art et Design, Geneva, 2013. Od tego czasu prezentuje performansy, fotografie oraz instalacje w różnych publicznych instytucjach w Szwajcarii. Na swoim koncie ma liczne muzyczne współprace i radiowe publikacje. Był rezydentem w Warszawie i Brukseli. Był asystentem Dory Garcia podczas Documenta 13 w Kassel, gdzie pokazała pracę&#160; <em>Die Klau Mich Show</em>. Od 2017 roku kieruje projektem Visarte &#160;<em>espace libre</em> (wolna przestrzeń) w Bienne/Biel.</p><p>Elisa Rusca jest kuratorką i pisarką kursującą między Berlinem, Londynem i Warszawą.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Galeria Miejska Arsenał, ul. Stary Rynek 6, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-11 00:00:00</event_start>
+        <event_end>2019-03-03 00:00:00</event_end>
+        <event_modified>2019-01-08 14:02:58</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>107529</event_id>
+        <event_created>2019-01-04 13:45:39</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/imprezy-na-miedzynarodowych-targach-poznanskich,107529.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Imprezy na Międzynarodowych Targach Poznańskich]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Międzynarodowe Targi Poznańskie (MTP) to największy organizator targów w Europie Środkowo-Wschodnie. MTP istnieją od 1921 r. W roku 2017 w 57 wydarzeniach targowych organizowanych przez poznańskie Targi wzięło udział ponad 9 tys. wystawców, w tym ponad 1600 pochodzących z 59 krajów świata. MTP posiadają ok. 55% udziałów w rynku targowym w Polsce. Poznańskie Targi należą do organizacji skupiających liderów targowych z całego świata (UFI - Światowe Stowarzyszenie Przemysłu Targowego i Centrex - Międzynarodowy Związek Statystyk Targowych).</p><p>Międzynarodowe Targi Poznańskie posiadają 16 pawilonów o wysokim standardzie i dużej powierzchni (ponad 110 tys. m&#178; w halach wystawienniczych i prawie 35 tys. m&#178; terenu otwartego) oraz 81 nowoczesnych sal konferencyjnych. Należy również wspomnieć o najnowocześniejszej sali konferencyjno - koncertowej - Sali Ziemi, która może pomieścić prawie 2000 osób. Od 1 stycznia 2018 roku Targi są również operatorem hali widowiskowo-sportowej Arena przy ul. Wyspiańskiego w Poznaniu.</p><p><a href="http://www.mtp.pl/pl/kalendarium/">Kalendarium wydarzeń na Międzynarodowych Targach Poznańskich</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Międzynarodowe Targi Poznańskie, ul. Głogowska 10, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-04 00:00:00</event_start>
+        <event_end>2019-12-31 00:00:00</event_end>
+        <event_modified>2019-01-04 13:45:39</event_modified>
+        <category>Targi</category>
+    </event>
+    <event>
+        <event_id>107529</event_id>
+        <event_created>2019-01-04 13:45:39</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/imprezy-na-miedzynarodowych-targach-poznanskich,107529.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Imprezy na Międzynarodowych Targach Poznańskich]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Międzynarodowe Targi Poznańskie (MTP) to największy organizator targów w Europie Środkowo-Wschodnie. MTP istnieją od 1921 r. W roku 2017 w 57 wydarzeniach targowych organizowanych przez poznańskie Targi wzięło udział ponad 9 tys. wystawców, w tym ponad 1600 pochodzących z 59 krajów świata. MTP posiadają ok. 55% udziałów w rynku targowym w Polsce. Poznańskie Targi należą do organizacji skupiających liderów targowych z całego świata (UFI - Światowe Stowarzyszenie Przemysłu Targowego i Centrex - Międzynarodowy Związek Statystyk Targowych).</p><p>Międzynarodowe Targi Poznańskie posiadają 16 pawilonów o wysokim standardzie i dużej powierzchni (ponad 110 tys. m&#178; w halach wystawienniczych i prawie 35 tys. m&#178; terenu otwartego) oraz 81 nowoczesnych sal konferencyjnych. Należy również wspomnieć o najnowocześniejszej sali konferencyjno - koncertowej - Sali Ziemi, która może pomieścić prawie 2000 osób. Od 1 stycznia 2018 roku Targi są również operatorem hali widowiskowo-sportowej Arena przy ul. Wyspiańskiego w Poznaniu.</p><p><a href="http://www.mtp.pl/pl/kalendarium/">Kalendarium wydarzeń na Międzynarodowych Targach Poznańskich</a></p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Międzynarodowe Targi Poznańskie, ul. Głogowska 10, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2019-01-04 00:00:00</event_start>
+        <event_end>2019-12-31 00:00:00</event_end>
+        <event_modified>2019-01-04 13:45:39</event_modified>
+        <category>Targi</category>
+    </event>
+    <event>
+        <event_id>106524</event_id>
+        <event_created>2018-11-20 13:25:41</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wielkopolskie-znaki-zwyciestwa-w-stulecie-powstania-wielkopolskiego-1918-1919-wystawa,106524.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wielkopolskie Znaki Zwycięstwa. W stulecie Powstania Wielkopolskiego 1918-1919 - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Zaprezentowane zostaną odznaki i odznaczenia upamiętniające udział w Powstaniu Wielkopolskim 1918-1919. Dodatkowo pokazane będą odznaki pamiątkowe nadawane przez byłe władze powstańcze: Radę Ludową Miasta Poznania i Naczelną Komendę Straży Ludowej oraz władze organizacji kombatanckich skupiających osoby związane z powstaniem, przede wszystkim uczestników działań zbrojnych. Wyeksponowane zostaną przede wszystkim Odznaki Pamiątkowe Wojsk Wielkopolskich i Wielkopolskie Krzyże Powstańcze, odnośne dokumenty potwierdzające nadanie: legitymacje, patenty, dyplomy oraz różnego rodzaju druki pamiątkowe, fotografie osób wyróżnionych itp.</p><p>Kuratorzy: Jarosław Łuczak, Anna Szukalska-Kuś, Alina Sokołowska, Eligiusz Tomkowiak.</p><p>Wstęp bilet do muzeum</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Wielkopolskie Muzeum Wojskowe, ul. Stary Rynek 9, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-12-12 00:00:00</event_start>
+        <event_end>2019-03-20 00:00:00</event_end>
+        <event_modified>2018-11-20 13:25:41</event_modified>
+        <category>100-lecie niepodległości</category>
+    </event>
+    <event>
+        <event_id>106524</event_id>
+        <event_created>2018-11-20 13:25:41</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/wielkopolskie-znaki-zwyciestwa-w-stulecie-powstania-wielkopolskiego-1918-1919-wystawa,106524.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Wielkopolskie Znaki Zwycięstwa. W stulecie Powstania Wielkopolskiego 1918-1919 - wystawa]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Zaprezentowane zostaną odznaki i odznaczenia upamiętniające udział w Powstaniu Wielkopolskim 1918-1919. Dodatkowo pokazane będą odznaki pamiątkowe nadawane przez byłe władze powstańcze: Radę Ludową Miasta Poznania i Naczelną Komendę Straży Ludowej oraz władze organizacji kombatanckich skupiających osoby związane z powstaniem, przede wszystkim uczestników działań zbrojnych. Wyeksponowane zostaną przede wszystkim Odznaki Pamiątkowe Wojsk Wielkopolskich i Wielkopolskie Krzyże Powstańcze, odnośne dokumenty potwierdzające nadanie: legitymacje, patenty, dyplomy oraz różnego rodzaju druki pamiątkowe, fotografie osób wyróżnionych itp.</p><p>Kuratorzy: Jarosław Łuczak, Anna Szukalska-Kuś, Alina Sokołowska, Eligiusz Tomkowiak.</p><p>Wstęp bilet do muzeum</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Wielkopolskie Muzeum Wojskowe, ul. Stary Rynek 9, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-12-12 00:00:00</event_start>
+        <event_end>2019-03-20 00:00:00</event_end>
+        <event_modified>2018-11-20 13:25:41</event_modified>
+        <category>100-lecie niepodległości</category>
+    </event>
+    <event>
+        <event_id>106761</event_id>
+        <event_created>2018-11-30 12:54:56</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/bezplatne-badania-w-kierunku-tetniakow-aorty,106761.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Bezpłatne badania w kierunku tętniaków aorty]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Szpital Kliniczny Przemienienia Pańskiego UM zaprasza na bezpłatne badania przesiewowe w kierunku tętniaka aorty brzusznej osoby, które osiągnęły wiek 65 lat i powyżej oraz spełniają co najmniej trzy spośród poniższych czynników ryzyka:</p><ul><li><span>płeć męska</span></li><li><span>choroba wieńcowa</span></li><li><span>palenie tytoniu</span></li><li><span>nadciśnienie tętnicze</span></li><li><span>hiperlipidemia.</span></li></ul><p>Informacje na temat badań można uzyskać pod numerem infolinii: 514 198 499. Infolinia czynna od poniedziałku do piątku w godz: 7.30 - 12.00 oraz 16.00 - 17.00. Miejsce realizacji badań: Szpital Kliniczny Przemienienia Pańskiego UM w Poznaniu ul. Długa 1/2 61- 848 Poznań; wejście D, piętro pierwsze, gabinet 146.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Szpital Kliniczny Przemienienia Pańskiego UM w Poznaniu, ul. Długa 1/2</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-11-30 08:00:00</event_start>
+        <event_end>2020-12-31 15:00:00</event_end>
+        <event_modified>2018-11-30 13:28:35</event_modified>
+        <category>Inne</category>
+    </event>
+    <event>
+        <event_id>106761</event_id>
+        <event_created>2018-11-30 12:54:56</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/bezplatne-badania-w-kierunku-tetniakow-aorty,106761.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Bezpłatne badania w kierunku tętniaków aorty]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Szpital Kliniczny Przemienienia Pańskiego UM zaprasza na bezpłatne badania przesiewowe w kierunku tętniaka aorty brzusznej osoby, które osiągnęły wiek 65 lat i powyżej oraz spełniają co najmniej trzy spośród poniższych czynników ryzyka:</p><ul><li><span>płeć męska</span></li><li><span>choroba wieńcowa</span></li><li><span>palenie tytoniu</span></li><li><span>nadciśnienie tętnicze</span></li><li><span>hiperlipidemia.</span></li></ul><p>Informacje na temat badań można uzyskać pod numerem infolinii: 514 198 499. Infolinia czynna od poniedziałku do piątku w godz: 7.30 - 12.00 oraz 16.00 - 17.00. Miejsce realizacji badań: Szpital Kliniczny Przemienienia Pańskiego UM w Poznaniu ul. Długa 1/2 61- 848 Poznań; wejście D, piętro pierwsze, gabinet 146.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Szpital Kliniczny Przemienienia Pańskiego UM w Poznaniu, ul. Długa 1/2</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-11-30 08:00:00</event_start>
+        <event_end>2020-12-31 15:00:00</event_end>
+        <event_modified>2018-11-30 13:28:35</event_modified>
+        <category>Inne</category>
+    </event>
+    <event>
+        <event_id>104475</event_id>
+        <event_created>2018-08-27 17:58:45</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/lekcje-spiewu-dla-dzieci-w-wieku-5-14-lat,104475.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Lekcje śpiewu dla dzieci w wieku 5-14 lat!]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Lekcje śpiewu dla dzieci w wieku 5-14 lat w roku szkolnym 2018/2019! Zajęcia prowadzone są w różnych grupach wiekowych do 8 osób raz w tygodniu - 45 min.</p><p>Wtorek:</p><ul><li><span>Grupa I - godz. 17:00 - dzieci w wieku 5 -7 lat</span></li><li><span>Grupa II - godz. 18:00 - dzieci w wieku 11-14 lat</span></li><li><span>Grupa III - godz. 19:00 - dzieci w wieku 8-10 lat</span></li></ul><p>Czwartek:</p><ul><li><span>Grupa I - godz. 17:00 - dzieci w wieku 11-14 lat</span></li><li><span>Grupa II - godz. 18:00 - dzieci w wieku 8-10 lat</span></li><li><span>Grupa III - godz. 19:00 - dzieci w wieku 5-7 lat</span></li></ul><p>Program zajęć obejmuje pracę nad emisją i higieną głosu, ruchem scenicznym oraz dykcją. Podczas zajęć dzieci uczą się utworów zróżnicowanych pod względem techniki oraz stylistyki muzycznej. Koszt zajęć: 90 zł/mc (nie ma możliwości odrabiania zajęć, opłata z góry) Wystawiane są certyfikaty uczestnictwa w kursie wokalnym! Sala warsztatowa wyposażona jest w profesjonalny sprzęt: mikrofon - Shure, nagłośnienie i pianino - Yamaha oraz instrumenty perkusyjne - Meinl. Dzieciom gwarantowane są jak najlepsze warunki do osiągnięcia swobody scenicznej oraz zdobycia doświadczenia na dużych scenach.</p><p>Zapisy: 537 708 701 lub&#160;<a href="mailto:fundacja@blizejgwiazd.org">fundacja@blizejgwiazd.org</a> Zajęcia odbywają się w nowej sali warsztatowej fundacji - ul. Rubież 19/1, 61-612 Poznań (Naramowice).</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>ul. Rubież 19/1, Poznań (Naramowice)</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-09-11 17:00:00</event_start>
+        <event_end>2019-06-19 19:00:00</event_end>
+        <event_modified>2018-08-28 12:40:23</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>104475</event_id>
+        <event_created>2018-08-27 17:58:45</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/lekcje-spiewu-dla-dzieci-w-wieku-5-14-lat,104475.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Lekcje śpiewu dla dzieci w wieku 5-14 lat!]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Lekcje śpiewu dla dzieci w wieku 5-14 lat w roku szkolnym 2018/2019! Zajęcia prowadzone są w różnych grupach wiekowych do 8 osób raz w tygodniu - 45 min.</p><p>Wtorek:</p><ul><li><span>Grupa I - godz. 17:00 - dzieci w wieku 5 -7 lat</span></li><li><span>Grupa II - godz. 18:00 - dzieci w wieku 11-14 lat</span></li><li><span>Grupa III - godz. 19:00 - dzieci w wieku 8-10 lat</span></li></ul><p>Czwartek:</p><ul><li><span>Grupa I - godz. 17:00 - dzieci w wieku 11-14 lat</span></li><li><span>Grupa II - godz. 18:00 - dzieci w wieku 8-10 lat</span></li><li><span>Grupa III - godz. 19:00 - dzieci w wieku 5-7 lat</span></li></ul><p>Program zajęć obejmuje pracę nad emisją i higieną głosu, ruchem scenicznym oraz dykcją. Podczas zajęć dzieci uczą się utworów zróżnicowanych pod względem techniki oraz stylistyki muzycznej. Koszt zajęć: 90 zł/mc (nie ma możliwości odrabiania zajęć, opłata z góry) Wystawiane są certyfikaty uczestnictwa w kursie wokalnym! Sala warsztatowa wyposażona jest w profesjonalny sprzęt: mikrofon - Shure, nagłośnienie i pianino - Yamaha oraz instrumenty perkusyjne - Meinl. Dzieciom gwarantowane są jak najlepsze warunki do osiągnięcia swobody scenicznej oraz zdobycia doświadczenia na dużych scenach.</p><p>Zapisy: 537 708 701 lub&#160;<a href="mailto:fundacja@blizejgwiazd.org">fundacja@blizejgwiazd.org</a> Zajęcia odbywają się w nowej sali warsztatowej fundacji - ul. Rubież 19/1, 61-612 Poznań (Naramowice).</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>ul. Rubież 19/1, Poznań (Naramowice)</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-09-11 17:00:00</event_start>
+        <event_end>2019-06-19 19:00:00</event_end>
+        <event_modified>2018-08-28 12:40:23</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>104212</event_id>
+        <event_created>2018-08-16 17:44:14</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/warsztaty-tworzenia-gier,104212.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Warsztaty Tworzenia Gier]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Płatne warsztaty tworzenia gier dla dzieci i młodzieży - grafika 2D i 3D, animacja, programowanie w c#, projektowanie gier i praca w silniku gier Unity 3D.</p><p>Uczestnicy proszeni są o przeniesienie własnych laptopów (mamy kilka dla osób które ich nie posiadają).</p><p>ODK &quot;Bajka&quot; os. Wichrowe Wzgórze 124 Wtorki i środy od godziny 15.</p><p>Dokładne godziny do ustalenia.</p><p>Kontakt: <a href="mailto:%20info@kidsmakegames.com">info@kidsmakegames.com</a></p><p>Instruktor pracował przez wiele lat w USA w branży gier.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>ODK Bajka, os. Wichrowe Wzgórze 124, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-09-11 00:00:00</event_start>
+        <event_end>2019-06-30 00:00:00</event_end>
+        <event_modified>2018-08-17 10:45:12</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>104212</event_id>
+        <event_created>2018-08-16 17:44:14</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/warsztaty-tworzenia-gier,104212.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Warsztaty Tworzenia Gier]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>Płatne warsztaty tworzenia gier dla dzieci i młodzieży - grafika 2D i 3D, animacja, programowanie w c#, projektowanie gier i praca w silniku gier Unity 3D.</p><p>Uczestnicy proszeni są o przeniesienie własnych laptopów (mamy kilka dla osób które ich nie posiadają).</p><p>ODK &quot;Bajka&quot; os. Wichrowe Wzgórze 124 Wtorki i środy od godziny 15.</p><p>Dokładne godziny do ustalenia.</p><p>Kontakt: <a href="mailto:%20info@kidsmakegames.com">info@kidsmakegames.com</a></p><p>Instruktor pracował przez wiele lat w USA w branży gier.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>ODK Bajka, os. Wichrowe Wzgórze 124, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-09-11 00:00:00</event_start>
+        <event_end>2019-06-30 00:00:00</event_end>
+        <event_modified>2018-08-17 10:45:12</event_modified>
+        <category>Kultura i sztuka</category>
+    </event>
+    <event>
+        <event_id>104769</event_id>
+        <event_created>2018-09-07 11:22:46</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/krasnonutki-zajecia-muzyczne-dla-niemowlat-i-malych-dzieci,104769.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Krasnonutki - zajęcia muzyczne dla niemowląt i małych dzieci]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>​​​​​​Nowy cykl zajęć umuzykalniających dla najmłodszych dzieci, prowadzonych w oparciu o teorię uczenia się muzyki E. E. Gordona. Krasnonutki to&#160; spotkania muzyczne, których celem jest rozwijanie zdolności muzycznych niemowląt i małych dzieci poprzez śpiewanki i rytmiczanki kierowane bezpośrednio do nich. Dla rodziców to okazja do muzycznego relaksu, bycia bliżej dziecka i zaskoczenia, jak wiele ono potrafi. Zajęcia w grupach wiekowych, dostępne terminy przed południem i po południu.</p><p>Aktualny grafik spotkań dostępny na stronie internetowej​​​.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Poznań, Piątkowo, Os. Batorego 38A, Os. Batorego 80H, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-09-03 10:00:00</event_start>
+        <event_end>2019-06-26 18:00:00</event_end>
+        <event_modified>2018-09-10 07:57:13</event_modified>
+        <category>Oświata</category>
+    </event>
+    <event>
+        <event_id>104769</event_id>
+        <event_created>2018-09-07 11:22:46</event_created>
+        <event_url><![CDATA[http://www.poznan.pl/mim/events/krasnonutki-zajecia-muzyczne-dla-niemowlat-i-malych-dzieci,104769.html]]></event_url>
+        <event_version>
+            <version>
+                <evtml_name><![CDATA[Krasnonutki - zajęcia muzyczne dla niemowląt i małych dzieci]]></evtml_name>
+                <evtml_introtext/>
+                <evtml_desc><![CDATA[<p>​​​​​​Nowy cykl zajęć umuzykalniających dla najmłodszych dzieci, prowadzonych w oparciu o teorię uczenia się muzyki E. E. Gordona. Krasnonutki to&#160; spotkania muzyczne, których celem jest rozwijanie zdolności muzycznych niemowląt i małych dzieci poprzez śpiewanki i rytmiczanki kierowane bezpośrednio do nich. Dla rodziców to okazja do muzycznego relaksu, bycia bliżej dziecka i zaskoczenia, jak wiele ono potrafi. Zajęcia w grupach wiekowych, dostępne terminy przed południem i po południu.</p><p>Aktualny grafik spotkań dostępny na stronie internetowej​​​.</p>]]></evtml_desc>
+                <lang>pl</lang>
+            </version>
+        </event_version>
+        <event_keywords>
+            <keyword/>
+        </event_keywords>
+        <event_address>
+            <city/>
+            <state/>
+            <street>Poznań, Piątkowo, Os. Batorego 38A, Os. Batorego 80H, Poznań</street>
+            <number/>
+            <postalcode/>
+            <phone/>
+            <lat>0.0</lat>
+            <lon>0.0</lon>
+            <fax/>
+        </event_address>
+        <event_author>Miejski Informator Multimedialny</event_author>
+        <event_start>2018-09-03 10:00:00</event_start>
+        <event_end>2019-06-26 18:00:00</event_end>
+        <event_modified>2018-09-10 07:57:13</event_modified>
+        <category>Oświata</category>
+    </event>
+</root>
