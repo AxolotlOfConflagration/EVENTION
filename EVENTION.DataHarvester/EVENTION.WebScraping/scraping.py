@@ -1,30 +1,31 @@
 import bs4 as bs
-import urllib.request, sys
-from PyQt5.QtCore import QUrl
-from PyQt5.QtWeb
-from PyQt5.QtWidgets import QApplication
-
-
-class Client(QWebPage):
-    def __init__(self, url):
-        self.app = QApplication(sys.argv)
-        QWebPage.__init__(self)
-        self.loadFinished.connect(selff.on_page_load)
-        self.mainFrame().load(QUrl(url))
-        self.app.exec_()
-    def on_page_load(self):
-        self.app.quit()
+import urllib.request, sys, json
 
 class Scrap:
     def __init__(self):
-        pass
+        with open('../config.json') as file:
+            config = json.load(file)
+        self.event_labels = config["event_labels"]
+        self.event_address_labels = config["event_address_labels"]
+
+    def event_parser(self, short_version):
+        proper_event = 
 
     def scrap_kiwiportal(self, url):
-        client_response = Client(url)
-        source = client_response.mainFrame().innerHtml()
+        try:
+            source = urllib.request.urlopen(url)
+        except:
+            print('Website ERROR')
         soup = bs.BeautifulSoup(source, 'lxml')
-        simple_strong = soup.find('strong')
-        print(simple_strong)
+        event_list = soup.find_all('li', attrs={'class': 'ui-datascroller-item'} )
+        content_list = []
+        for event in event_list:
+            content_json = event.find('script', attrs={'type':'application/ld+json'})
+            try:
+                content_list.append(self.event_parser(json.loads(content_json.getText())))
+            except AttributeError:
+                pass
+        print(content_list[0])
 
 s = Scrap()
 s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/warszawa')
