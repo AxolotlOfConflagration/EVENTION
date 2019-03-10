@@ -33,5 +33,9 @@ class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)
     val event = request.body.asJson.get.as[Event]
     repo.insert(event).map(res => Ok)
   }
+
+  def getSql(): Action[AnyContent] = Action { implicit request =>
+    Ok(repo.sql())
+  }
 }
 
