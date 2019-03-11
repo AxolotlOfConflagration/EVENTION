@@ -1,4 +1,4 @@
 {
     "event_labels": ["name", "shortDescription", "longDescription", "creationDate", "eventStart", "eventEnd", "ownerId", "geoJSON", "imageSource", "category", "address"],
-    "event_address_labels": ["country", "city", "postalAddress", "street", "houseNumber", "allAddress"]
+    "event_address_labels": ["country", "city", "postalAddress", "street", "houseNumber", "fullAddress"]
 }
