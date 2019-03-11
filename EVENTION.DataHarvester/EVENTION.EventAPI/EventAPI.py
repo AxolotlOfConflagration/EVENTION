@@ -1,52 +1,53 @@
 import xml.etree.ElementTree as ET
 import json
 import requests
+from scrap import get_image_src
 class EventAPI:
     def __init__(self):
-        pass
+        with open('../config.json') as f:
+            config_json = json.load(f)
+        self.event_labels = config_json["event_labels"]
+        self.event_address_labels = config_json["event_address_labels"]
+        self.url_today = "http://www.poznan.pl/mim/public/ws-information/?co=getCurrentDayEvents"
+        self.url_to_given_day = "http://www.poznan.pl/mim/public/ws-information/?co=getEventsToDate&dateTo="
 
-    def save_xml(self, url, name):
+
+    def _save_xml(self, url, name):
         """
+        METHOD TO TESTS
         Save xml from url
-        :return:
+        :param url: address url
+        :param name: file name
         """
         request = requests.get(url)
         xml = request.text
         with open(name, "w", encoding="UTF-8") as f:
             f.write(xml)
 
-    def save_xml_today(self):
+    def _save_xml_today(self):
         """
+        METHOD TO TESTS
+        Saving to xml current day events' date
         :return:
         """
-        self.save_xml("http://www.poznan.pl/mim/public/ws-information/?co=getCurrentDayEvents", "events_today.xml")
+        self._save_xml(self.url_today, "events_today.xml")
 
-    def save_xml_given_day(self, date):
-        """
-        :param data:
-        :return:
-        """
-        self.save_xml(f"http://www.poznan.pl/mim/public/ws-information/?co=getDayEvent&date={date}", "events_given_day.xml")
 
-    def save_xml_to_given_day(self, date):
+    def _save_xml_to_given_day(self, date):
         """
+        METHOD TO TESTS
+        Saving to xml to current day events' date
         :param data: Format data - e.g. 2019-05-01
         :return:
         """
-        self.save_xml(f"http://www.poznan.pl/mim/public/ws-information/?co=getEventsToDate&dateTo={date}",
+
+        self._save_xml(self.url_to_given_day+date,
                  "events_to_given_day.xml")
 
 
-
-    def save_xml_to_from_date(self, dateTo, dateFrom):
-        """
-        :param data: Format data - e.g. 2019-05-01
-        :return:
-        """
-        self.save_xml(f"http://www.poznan.pl/mim/public/ws-information/?co=getEvents&dateTo={dateTo}&dateFrom={dateFrom}",
-                      "events_to_from_day.xml")
     def get_xml(self, name_xml):
         """
+        METHOD TO TESTS
         Read xml from file
         :return:
         """
@@ -58,69 +59,91 @@ class EventAPI:
 
         return root
 
+    def make_request_and_get_root(self, url):
+        """
+        Make request and return a root of xml file
+        :param url: address url
+        :return: root of xml file
+        """
+        request = requests.get(url)
+        xml = request.text
+        tree = ET.ElementTree(ET.fromstring(xml))
+        root = tree.getroot()
+        return root
+
+
+    def _get_first_sentence(self, long_description):
+        """
+        Get short Description from long description
+        :param long_description:
+        :return:
+        """
+        result = str(long_description.split(".")[0])
+
+        return result+"..."
+
+
     def parse_xml(self, root):
         """
         Parsing xml
-        :param root:
-        :return:
+        :param root: xml root
+        :return: json with parsed data
         """
         EVENT = []
+
         for elem in root:
             try:
-                pass
+                address = ["Polska", "Poznań", "", "","", elem[5][2].text]
+                url = elem[2].text #event_url
+                image_url = get_image_src(url) #get image src from scrapping
+                print(image_url)
+                event_array = [elem[3][0][0].text, #name
+                               self._get_first_sentence(elem[3][0][2].text), #shortDescription
+                               elem[3][0][2].text,#longDescription
+                               elem[1].text,#creationDate
+                               elem[7].text,#eventStart
+                               elem[8].text,#eventEnd
+                               0, #ownerId
+                               None, #geoJSON
+                               image_url, #imageSource
+                               elem[10].text ] #category
+                event = {}
 
+                for label, eve in zip(self.event_labels[:-1], event_array):
+                    event[label] = eve
+
+                event["address"] = {}
+                for label, add in zip(self.event_address_labels, address):
+                    event["address"][label] = add
+
+                EVENT.append(event)
             except:
-
-               pass
+                pass
+                EVENT.append(event)
 
         result = json.dumps(EVENT, ensure_ascii=False)
         return result
 
-    def get_category(self, EVENT):
-        category = []
-        if EVENT:
-            for k,v in EVENT.items():
-                if v["event_category"] not in category:
-                    category.append(v["event_category"])
-        cat = {
-            "Category" : category
-        }
-        result = json.dumps(cat, ensure_ascii=False)
-        print(result)
-        return result
 
     def get_event_today(self):
-        self.save_xml_today()
-        root = self.get_xml("events_today.xml")
+        #self._save_xml_today()
+        #root = self.get_xml("events_today.xml")
+        root = self.make_request_and_get_root(self.url_today)
         result = self.parse_xml(root)
         return result
 
-    def get_event_given_day(self, date):
-        self.save_xml_given_day(date)
-        root = self.get_xml("events_given_day.xml")
-        result = self.parse_xml(root)
-        return result
 
     def get_event_to_given_day(self, date):
-        self.save_xml_to_given_day(date)
-        root = self.get_xml("events_to_given_day.xml")
+        #self._save_xml_to_given_day(date)
+        #root = self.get_xml("events_to_given_day.xml")
+        root = self.make_request_and_get_root(self.url_to_given_day+date)
         result = self.parse_xml(root)
         return result
-    def get_event_to_from_day(self, dateTo, dateFrom):
-        self.save_xml_to_from_date(dateTo, dateFrom)
-        root = self.get_xml("events_to_from_day.xml")
-        result = self.parse_xml(root)
-        return result
-
-
-
 
 
 if __name__ == "__main__":
 
     eapi = EventAPI()
-    print(eapi.get_event_today())
-    print(type(eapi.get_event_today()))
-#    eapi.get_event_to_from_day("2019-08-08","2019-05-08" )
+    print(eapi.get_event_to_given_day("2019-03-12"))
 
 
