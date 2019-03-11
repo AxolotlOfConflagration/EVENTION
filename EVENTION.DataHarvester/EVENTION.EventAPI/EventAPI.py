@@ -58,64 +58,20 @@ class EventAPI:
 
         return root
 
-    def parse_xml(self, root, EVENT):
+    def parse_xml(self, root):
         """
         Parsing xml
         :param root:
         :return:
         """
-
+        EVENT = []
         for elem in root:
             try:
-                EVENT[elem[0].text] = {
-                "event_created" : elem[1].text,
-                "event_url" : elem[2].text,
-                "evet_name" : elem[3][0][0].text,
-                "event_desc" : elem[3][0][2].text,
-                "enevt_lag" : elem[3][0][3].text,
-                "event_address" : {
-                    "city": "Poznan",
-                    "state": elem[5][1].text,
-                    "street": elem[5][2].text,
-                    "number": elem[5][3].text,
-                    "postalcode": elem[5][4].text,
-                    "phone": elem[5][5].text,
-                    "lat": elem[5][6].text,
-                    "lon": elem[5][7].text,
+                pass
 
-                },
-                "event_author": elem[6].text,
-                "event_start" : elem[7].text,
-                "event_end" : elem[8].text,
-                "event_modified" : elem[9].text,
-                "event_category" : elem[10].text,
-                }
             except:
-                EVENT["Error"] = {
-                    "event_created": "",
-                    "event_url": "",
-                    "evet_name": "",
-                    "event_desc": "",
-                    "enevt_lag": "",
-                    "event_address": {
-                        "city": "Poznan",
-                        "state": "",
-                        "street": "",
-                        "number": "",
-                        "postalcode": "",
-                        "phone": "",
-                        "lat": "",
-                        "lon": "",
 
-                    },
-                    "event_author": "",
-                    "event_start": "",
-                    "event_end": "",
-                    "event_modified": "",
-                    "event_category": "",
-                }
-
-            #print(EVENT)
+               pass
 
         result = json.dumps(EVENT, ensure_ascii=False)
         return result
@@ -134,31 +90,26 @@ class EventAPI:
         return result
 
     def get_event_today(self):
-        #self.save_xml_today()
+        self.save_xml_today()
         root = self.get_xml("events_today.xml")
-        EVENT_today = {}
-        result = self.parse_xml(root, EVENT_today)
+        result = self.parse_xml(root)
         return result
 
     def get_event_given_day(self, date):
         self.save_xml_given_day(date)
         root = self.get_xml("events_given_day.xml")
-        EVENT_given_day = {}
-
-        result = self.parse_xml(root, EVENT_given_day)
+        result = self.parse_xml(root)
         return result
 
     def get_event_to_given_day(self, date):
         self.save_xml_to_given_day(date)
         root = self.get_xml("events_to_given_day.xml")
-        EVENT_to_given_day = {}
-        result = self.parse_xml(root, EVENT_to_given_day)
+        result = self.parse_xml(root)
         return result
     def get_event_to_from_day(self, dateTo, dateFrom):
         self.save_xml_to_from_date(dateTo, dateFrom)
         root = self.get_xml("events_to_from_day.xml")
-        EVENT_to_from_day = {}
-        result = self.parse_xml(root, EVENT_to_from_day)
+        result = self.parse_xml(root)
         return result
 
 
@@ -168,6 +119,8 @@ class EventAPI:
 if __name__ == "__main__":
 
     eapi = EventAPI()
-    eapi.get_event_to_from_day("2019-08-08","2019-05-08" )
+    print(eapi.get_event_today())
+    print(type(eapi.get_event_today()))
+#    eapi.get_event_to_from_day("2019-08-08","2019-05-08" )
 
 
