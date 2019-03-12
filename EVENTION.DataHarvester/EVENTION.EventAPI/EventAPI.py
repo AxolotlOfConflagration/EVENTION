@@ -1,7 +1,9 @@
 import xml.etree.ElementTree as ET
 import json
 import requests
+import datetime
 from scrap import get_image_src
+
 class EventAPI:
     def __init__(self):
         with open('../config.json') as f:
@@ -95,8 +97,7 @@ class EventAPI:
             try:
                 address = ["Polska", "Poznań", "", "","", elem[5][2].text]
                 url = elem[2].text #event_url
-                image_url = get_image_src(url) #get image src from scrapping
-                print(image_url)
+                image_url = get_image_src(url)  # get image src from scrapping
                 event_array = [elem[3][0][0].text, #name
                                self._get_first_sentence(elem[3][0][2].text), #shortDescription
                                elem[3][0][2].text,#longDescription
@@ -126,17 +127,19 @@ class EventAPI:
 
 
     def get_event_today(self):
-        #self._save_xml_today()
-        #root = self.get_xml("events_today.xml")
+        #self._save_xml_today() #to test
+        #root = self.get_xml("events_today.xml") #to test
         root = self.make_request_and_get_root(self.url_today)
         result = self.parse_xml(root)
         return result
 
 
-    def get_event_to_given_day(self, date):
-        #self._save_xml_to_given_day(date)
-        #root = self.get_xml("events_to_given_day.xml")
-        root = self.make_request_and_get_root(self.url_to_given_day+date)
+    def get_event_7days(self):
+        #self._save_xml_to_given_day(date) #to test
+        #root = self.get_xml("events_to_given_day.xml") #to test
+        date = datetime.datetime.now()+datetime.timedelta(days=7) #get current day and add 7 days
+        str_date= str(date.date())
+        root = self.make_request_and_get_root(self.url_to_given_day+str_date)
         result = self.parse_xml(root)
         return result
 
@@ -144,6 +147,7 @@ class EventAPI:
 if __name__ == "__main__":
 
     eapi = EventAPI()
-    print(eapi.get_event_to_given_day("2019-03-12"))
+    print(eapi.get_event_7days())
+
 
 
