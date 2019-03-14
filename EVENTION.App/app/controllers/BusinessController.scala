@@ -29,7 +29,10 @@ class BusinessController @Inject()
   }
 
   def get(id: Long) = Action.async { implicit request =>
-    repo.get(id).map(business => Ok(Json.toJson(business)))
+    repo.get(id).map{
+      case Some(business) => Ok(Json.toJson(business))
+      case _ => NotFound
+    }
   }
 
   def update = Action(parse.json[Business]).async { implicit request =>
