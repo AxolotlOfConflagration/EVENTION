@@ -3,10 +3,19 @@
 # https://www.playframework.com/documentation/latest/ScalaRouting
 # ~~~~
 
-# An example controller showing a sample home page
-GET      /                              controllers.EventController.index()
-POST     /event/create                  controllers.EventController.createEvent()
+# Utils
+#GET      /                              controllers.EventController.index()
+#POST     /event/create                  controllers.EventController.createEvent()
 GET      /sql                           controllers.EventController.getSql()
+#GET      /int/:num                      controllers.EventController.intEndpoint(num)
+
+# Business
+GET     /business                       controllers.BusinessController.all()
+GET     /business/:id                   controllers.BusinessController.get(id: Long)
+POST    /business/create                controllers.BusinessController.create()
+PUT     /business/update                controllers.BusinessController.update()
+DELETE  /business/delete/:id            controllers.BusinessController.delete(id: Long)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+

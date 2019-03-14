@@ -1,41 +1,36 @@
 package controllers
 
 import javax.inject._
-import models.Event
+import models.dbTypes.Event
 import play.api.libs.json._
 import play.api.mvc._
-import repositories.EventRepository
+import repositories.BaseRepository
 
 import scala.concurrent.ExecutionContext
 import scala.util.{Failure, Success}
 
-/**
-  * This controller creates an `Action` to handle HTTP requests to the
-  * application's home page.
-  */
-class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)(implicit ec: ExecutionContext) extends AbstractController(cc) {
+class EventController @Inject()(repo: BaseRepository, cc: ControllerComponents)(implicit ec: ExecutionContext) extends AbstractController(cc) {
 
-  /**
-    * Create an Action to render an HTML page.
-    *
-    * The configuration in the `routes` file means that this method
-    * will be called when the application receives a `GET` request with
-    * a path of `/`.
-    */
-
-  def index(): Action[AnyContent] = Action.async { implicit request: Request[AnyContent] =>
-    repo.get().map { event =>
-      Ok(Json.toJson(event))
-    }
-  }
-
-  def createEvent(): Action[AnyContent] = Action.async { implicit request: Request[AnyContent] =>
-    val event = request.body.asJson.get.as[Event]
-    repo.insert(event).map(res => Ok)
-  }
-
-  def getSql(): Action[AnyContent] = Action { implicit request =>
+//  def index() = Action.async { implicit request =>
+//    repo.all().map { event =>
+//      Ok(Json.toJson(event))
+//    }
+//  }
+//
+//  def createEvent() = Action.async { implicit request =>
+//    val event = request.body.asJson.all.as[Event]
+//    repo.insert(event).map(res => Ok)
+//  }
+//
+//  def swagger() = Action{
+//    Redirect("/docs/swagger-ui/index.html?url=/assets/swagger.json")
+//  }
+//
+  def getSql() = Action { implicit request =>
     Ok(repo.sql())
   }
+//
+//  def intEndpoint(int: String) = Action { implicit request =>
+//    Ok((int.toInt + 1).toString)
+//  }
 }
-

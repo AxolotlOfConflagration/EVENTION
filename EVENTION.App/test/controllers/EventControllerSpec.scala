@@ -35,7 +35,7 @@ import play.api.test.Helpers._
 //
 //    "render the index page from the router" in {
 //      val request = FakeRequest(GET, "/")
-//      val home = route(app, request).get
+//      val home = route(app, request).all
 //
 //      status(home) mustBe OK
 //      contentType(home) mustBe Some("text/html")
