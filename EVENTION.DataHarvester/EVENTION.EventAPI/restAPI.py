@@ -1,4 +1,6 @@
-from EventAPI import EventAPI
+from EventAPI_Poznan import EventAPI_Poznan
+from EventAPI_Gdansk import EventAPI_Gdansk
+from EventAPI_Wroclaw import EventAPI_Wroclaw
 from flask import Flask
 app = Flask(__name__)
 
@@ -6,15 +8,35 @@ app = Flask(__name__)
 def hello():
     return "Event API"
 
-@app.route("/events", methods = ['GET'])
+@app.route("/events/Poznan", methods = ['GET'])
 def events():
-    eapi = EventAPI()
+    eapi = EventAPI_Poznan()
     return eapi.get_event_today()
 
-@app.route("/events/7days", methods = ['GET'])
+@app.route("/events/Poznan/7days", methods = ['GET'])
 def events_7days():
-    eapi = EventAPI()
+    eapi = EventAPI_Poznan()
     return eapi.get_event_7days()
+
+@app.route("/events/Gdansk", methods = ['GET'])
+def events_Gdans():
+    eapi = EventAPI_Gdansk()
+    return eapi.get_event_today()
+
+@app.route("/events/Gdansk/7days", methods = ['GET'])
+def events_7days_Gdansk():
+    eapi = EventAPI_Gdansk()
+    return eapi.get_event_7days()
+
+@app.route("/events/Wroclaw/7days", methods = ['GET'])
+def events_7days_Wroclaw():
+    eapi = EventAPI_Wroclaw()
+    return eapi.get_event_7days()
+@app.route("/events/Wroclaw", methods = ['GET'])
+def events_Wroclaw():
+    eapi = EventAPI_Wroclaw()
+    return eapi.get_event_today()
+
 
 @app.route("/events/givenday/<date>", methods = ['GET'])
 def events_given_date(date):
@@ -28,12 +50,6 @@ def events_to_given_date(date):
 def events_to_from_date():
     pass
 
-
-@app.route("/category", methods = ['GET'])
-def category():
-    eapi = EventAPI()
-    eapi.parse_xml()
-    return eapi.get_category()
 
 if __name__ == "__main__":
     app.run(debug=True)
