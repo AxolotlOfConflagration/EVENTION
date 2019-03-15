@@ -4,7 +4,7 @@ import requests
 import datetime
 from scrap import get_image_src
 
-class EventAPI:
+class EventAPI_Poznan:
     def __init__(self):
         with open('../config.json') as f:
             config_json = json.load(f)
@@ -32,7 +32,7 @@ class EventAPI:
         Saving to xml current day events' date
         :return:
         """
-        self._save_xml(self.url_today, "events_today.xml")
+        self._save_xml(self.url_today, "events_today_Poznan.xml")
 
 
     def _save_xml_to_given_day(self, date):
@@ -44,7 +44,7 @@ class EventAPI:
         """
 
         self._save_xml(self.url_to_given_day+date,
-                 "events_to_given_day.xml")
+                 "events_to_given_day_Poznan.xml")
 
 
     def get_xml(self, name_xml):
@@ -120,23 +120,23 @@ class EventAPI:
                 EVENT.append(event)
             except:
                 pass
-                EVENT.append(event)
+
 
         result = json.dumps(EVENT, ensure_ascii=False)
         return result
 
 
     def get_event_today(self):
-        #self._save_xml_today() #to test
-        #root = self.get_xml("events_today.xml") #to test
-        root = self.make_request_and_get_root(self.url_today)
+        self._save_xml_today() #to test
+        root = self.get_xml("events_today_Poznan.xml") #to test
+        #root = self.make_request_and_get_root(self.url_today)
         result = self.parse_xml(root)
         return result
 
 
     def get_event_7days(self):
         #self._save_xml_to_given_day(date) #to test
-        #root = self.get_xml("events_to_given_day.xml") #to test
+        #root = self.get_xml("events_to_given_day_Poznan.xml") #to test
         date = datetime.datetime.now()+datetime.timedelta(days=7) #get current day and add 7 days
         str_date= str(date.date())
         root = self.make_request_and_get_root(self.url_to_given_day+str_date)
@@ -146,7 +146,7 @@ class EventAPI:
 
 if __name__ == "__main__":
 
-    eapi = EventAPI()
+    eapi = EventAPI_Poznan()
     print(eapi.get_event_7days())
 
 
