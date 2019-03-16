@@ -23,13 +23,21 @@ class Scrap:
             return False
         return datetime.datetime(int(year), int(month), int(day), int(hour), int(minute), 0)
 
-    def create_geojson(self, query):
-        results = self.geocoder.geocode(query)
-        return Point((results[0]['geometry']['lng'], results[0]['geometry']['lat']))
+    def create_geojson(self, query=None, latlng=None):
+        results = []
+        if query != None:
+            geo = self.geocoder.geocode(query)
+            results.append(geo[0]['geometry']['lng'])
+            results.append(geo[0]['geometry']['lat'])
+        else:
+            results.append(latlng[1]) 
+            results.append(latlng[0])
+        return Point((results[0], results[1]))
+    
+    def get_address(self, latlng):
+        return self.geocoder.reverse_geocode(latlng[0], latlng[1])[0]['formatted']
 
     def event_parser(self, event):
-        proper_event = {}
-
         source = urllib.request.urlopen(event)
         soup = bs.BeautifulSoup(source, 'lxml')
         info = soup.find_all('script')[8].getText()
@@ -41,6 +49,7 @@ class Scrap:
         longDescription = bs.BeautifulSoup(longDescription, 'lxml')
         longDescription = ''.join(longDescription.find_all(text=True))
         shortDescription = ' '.join(re.split(r'(?<=[.:;])\s', longDescription)[:2]) + ' [...] '
+        tags = info_dict['body'][4]['declarations'][0]['init']['properties'][37]['value']['value']
         creationDate = datetime.datetime.now()
         eventStart = self.parse_date(info_dict['body'][4]['declarations'][0]['init']['properties'][16]['value']['elements'])
         if self.parse_date(info_dict['body'][4]['declarations'][0]['init']['properties'][17]['value']['elements']):
@@ -52,24 +61,19 @@ class Scrap:
         categories = []
         for category in categories_elements:
             categories.append(category['value'].lower())
-        # address = 
-        # geoJSON = self.create_geojson()
-        # imageSource = 
-        # # --------------------------------------------------------------------
-        # country = 
-        # city = 
-        # postalAddress = 
-        # street = 
-        # houseNumber = 
+        imageSource = info_dict['body'][4]['declarations'][0]['init']['properties'][20]['value']['value']
+        latlng = (float(info_dict['body'][4]['declarations'][0]['init']['properties'][31]['value']['elements'][0]['value']), float(info_dict['body'][4]['declarations'][0]['init']['properties'][31]['value']['elements'][1]['value']))
+        #----------- ODZNACZYĆ !!! - ograniczenie 2500 requestów/dzień
+        geoJSON = self.create_geojson(latlng=latlng)
+        address = self.get_address(latlng)
 
+        def date_converter(o):
+            if isinstance(o, datetime.datetime):
+                return o.__str__()
 
-        # for label in self.event_labels:
-        #     if label != "address":
-        #         proper_event[label] = 
-        #     else:
-        #         for address_label in self.event_address_labels:
-
-        # return json.dumps(proper_event)
+        used_var_list = [name, shortDescription, longDescription, creationDate, eventStart, eventEnd, owner, geoJSON, address, imageSource, categories]
+        proper_event = dict(zip(self.event_labels, used_var_list))
+        return json.dumps(proper_event, default=date_converter)
 
     def scrap_kiwiportal(self, url):
         try:
@@ -79,7 +83,7 @@ class Scrap:
         soup = bs.BeautifulSoup(source, 'lxml')
         event_list = soup.find_all('a', {'href': re.compile(r'https:\/\/www\.kiwiportal\.pl\/wydarzenia/[0-9]+.*')})
         event_list = list(set([event['href'] for event in event_list]))
-        self.event_parser(event_list[0])
+        print(self.event_parser(event_list[0]))
         # for event in event_list:
         #     try:
         #         self.event_parser(event)
@@ -87,6 +91,8 @@ class Scrap:
         #         pass
         # print(len(event_list))
 
-s = Scrap()
-s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/warszawa')
-# s.create_geojson('Polska, Poznań, ulica Stróżyńskiego 17c/10')
+# test--------------------------------------------------------------------------------------------------------
+# s = Scrap()
+# s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/warszawa')
+# s.create_geojson(query='Polska, Poznań, ulica Stróżyńskiego 17c/10')
+# print(s.get_address((21.0246, 52.2791)))
