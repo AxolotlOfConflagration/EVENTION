@@ -1,36 +1,52 @@
 package controllers
 
 import javax.inject._
-import models.dbTypes.Event
+import models.dbTypes.{BusinessUser, Event}
+import play.api.libs.json.JodaReads._
+import play.api.libs.json.JodaWrites._
 import play.api.libs.json._
 import play.api.mvc._
-import repositories.BaseRepository
+import repositories.EventRepository
+import utils.JsonUtils._
 
 import scala.concurrent.ExecutionContext
 import scala.util.{Failure, Success}
 
-class EventController @Inject()(repo: BaseRepository, cc: ControllerComponents)(implicit ec: ExecutionContext) extends AbstractController(cc) {
+class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)(implicit ec: ExecutionContext) extends AbstractController(cc) {
 
-//  def index() = Action.async { implicit request =>
-//    repo.all().map { event =>
-//      Ok(Json.toJson(event))
+  def create() = Action(parse.json).async {implicit request =>
+    val event = (request.body \ "event").get.as[Event]
+    val categories = (request.body \ "categories").toOption.map(json => json.as[Seq[Long]]).getOrElse(Nil)
+
+    repo.insert(event, categories).map{
+      case Success(value) => Ok(Json.toJson(value))
+      case Failure(exception) => BadRequest(Json.toJson(exception))
+    }
+  }
+
+  def all() = Action.async { implicit request =>
+    repo.all().map(events => Ok(Json.toJson(events)))
+  }
+
+//  def get(id: Long) = Action.async { implicit request =>
+//    repo.get(id).map{
+//      case Some(business) => Ok(Json.toJson(business))
+//      case _ => NotFound
 //    }
 //  }
 //
-//  def createEvent() = Action.async { implicit request =>
-//    val event = request.body.asJson.all.as[Event]
-//    repo.insert(event).map(res => Ok)
+//  def getByBusinness(id: Long) = Action.async { implicit request =>
+//    repo.getByBusiness(id).map{users => Ok(Json.toJson(users))}
 //  }
 //
-//  def swagger() = Action{
-//    Redirect("/docs/swagger-ui/index.html?url=/assets/swagger.json")
+//  def update = Action(parse.json[BusinessUser]).async { implicit request =>
+//    repo.update(request.body).map{
+//      case Success(value) => Ok(Json.toJson(value))
+//      case Failure(exception) => BadRequest(Json.toJson(exception))
+//    }
 //  }
 //
-  def getSql() = Action { implicit request =>
-    Ok(repo.sql())
-  }
-//
-//  def intEndpoint(int: String) = Action { implicit request =>
-//    Ok((int.toInt + 1).toString)
+//  def delete(id: Long) = Action.async { implicit request =>
+//    repo.delete(id).map(_ => Ok)
 //  }
 }

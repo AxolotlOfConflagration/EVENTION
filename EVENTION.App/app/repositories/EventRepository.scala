@@ -8,24 +8,28 @@ import com.github.tototoshi.slick.H2JodaSupport._
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Success, Try}
 
-class EventRepositiry @Inject()(provider: DatabaseConfigProvider)(implicit ec: ExecutionContext) extends
+class EventRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: ExecutionContext) extends
   BaseRepository(provider) {
 
   import profile.api._
 
-  def insert(event: Event, optCats: Option[Seq[Long]] = None): Future[Try[Event]] = {
+  def insert(event: Event): Future[Try[Event]] = {
     val insertEvent = (events returning events.map(_.id)
       into ((e, id) => e.copy(id = Option(id)))
       ) += event
 
-    val insertCategoires = if (optCats.isEmpty) insertEvent else for {
-      e <- insertEvent
-      cats <- optCats
-      catId <- cats
-    } yield eventCategories += EventCategory(e.id, catId)
+    db.run(insertEvent.asTry.transactionally)
+  }
 
+  def insert(event: Event, categories: Seq[Long]): Future[Try[Event]] = {
 
-    db.run(insertCategoires.asTry.transactionally)
+    insert(event).map{
+      case Success(e) =>
+        val insertCategories = categories.map(cat => eventCategories += EventCategory(e.id, cat))
+        db.run(DBIO.sequence(insertCategories))
+        Success(e)
+      case x => x
+    }
   }
 
   def get(id: Long): Future[Option[(Event, Seq[Category])]] = {

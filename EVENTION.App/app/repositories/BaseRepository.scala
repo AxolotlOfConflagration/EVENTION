@@ -79,7 +79,7 @@ class BaseRepository @Inject()(protected val dbConfigProvider: DatabaseConfigPro
       (id.?, name, shortDescription, longDescription, creationDate, eventStart, eventEnd, ownerId, geoJson, address, imageSource) <>
         ((Event.apply _).tupled, Event.unapply)
 
-    def owner = foreignKey("fk_owner", ownerId, businessUsers)(_.id)
+    def owner = foreignKey("fk_owner", ownerId, businessUsers)(_.id.?)
   }
 
   protected val events = TableQuery[Events]

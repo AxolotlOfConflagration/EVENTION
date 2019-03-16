@@ -3,7 +3,7 @@
 create table "businesses" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"name" VARCHAR NOT NULL UNIQUE);
 create table "businessUsers" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"name" VARCHAR NOT NULL,"businessId" BIGINT NOT NULL);
 create table "categories" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"category" VARCHAR NOT NULL UNIQUE);
-create table "events" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"name" VARCHAR NOT NULL,"shortDescription" VARCHAR NOT NULL,"longDescription" VARCHAR NOT NULL,"creationDate" TIMESTAMP NOT NULL,"eventStart" TIMESTAMP NOT NULL,"eventEnd" TIMESTAMP NOT NULL,"ownerId" BIGINT NOT NULL,"geoJson" VARCHAR NOT NULL,"address" VARCHAR NOT NULL,"imageSource" VARCHAR NOT NULL);
+create table "events" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"name" VARCHAR NOT NULL,"shortDescription" VARCHAR,"longDescription" VARCHAR,"creationDate" TIMESTAMP NOT NULL,"eventStart" TIMESTAMP NOT NULL,"eventEnd" TIMESTAMP NOT NULL,"ownerId" BIGINT,"geoJson" VARCHAR,"address" VARCHAR,"imageSource" VARCHAR);
 create table "eventCategories" ("eventId" BIGINT NOT NULL,"catId" BIGINT NOT NULL);
 create unique index "index" on "eventCategories" ("eventId","catId");
 alter table "businessUsers" add constraint "fk_business" foreign key("businessId") references "businesses"("id") on update NO ACTION on delete NO ACTION;
