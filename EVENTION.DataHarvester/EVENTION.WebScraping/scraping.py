@@ -83,13 +83,13 @@ class Scrap:
         soup = bs.BeautifulSoup(source, 'lxml')
         event_list = soup.find_all('a', {'href': re.compile(r'https:\/\/www\.kiwiportal\.pl\/wydarzenia/[0-9]+.*')})
         event_list = list(set([event['href'] for event in event_list]))
-        print(self.event_parser(event_list[0]))
-        # for event in event_list:
-        #     try:
-        #         self.event_parser(event)
-        #     except AttributeError:
-        #         pass
-        # print(len(event_list))
+        json_list = []
+        for event in event_list:
+            try:
+                json_list.append(self.event_parser(event))
+            except AttributeError:
+                pass
+        return json_list
 
 # test--------------------------------------------------------------------------------------------------------
 # s = Scrap()
