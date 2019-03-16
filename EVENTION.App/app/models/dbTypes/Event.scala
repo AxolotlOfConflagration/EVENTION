@@ -9,17 +9,17 @@ import scala.util.Try
 
 case class Event
 (
-  id: Long = 0,
+  id: Option[Long],
   name: String,
   shortDescription: Option[String],
   longDescription: Option[String],
   creationDate: DateTime = DateTime.now(),
-  eventStart: DateTime,
-  eventEnd: DateTime,
+  eventStart: DateTime = DateTime.now(),
+  eventEnd: DateTime = DateTime.now().plusDays(1),
   ownerId: Option[Long],
-  geoJson: Option[String] = None,
-  address: Option[String] = None,
-  imageSource: Option[String] = None
+  geoJson: Option[String],
+  address: Option[String],
+  imageSource: Option[String]
 ){
   def city: Option[String] = Try{ (Json.parse(address.get) \ "City").get.as[String]}.toOption
 }

@@ -4,7 +4,8 @@ import play.api.libs.json.{Json, OFormat}
 
 case class BusinessUser
 (
-  id: Long = 0,
+  id: Option[Long],
+  name: String,
   businessId: Long,
 )
 

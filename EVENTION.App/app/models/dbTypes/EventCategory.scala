@@ -2,7 +2,6 @@ package models.dbTypes
 
 case class EventCategory
 (
-  id: Long,
-  eventId: Long,
+  eventId: Option[Long],
   categoryId: Long
 )

@@ -4,7 +4,7 @@ import play.api.libs.json.{Json, OFormat}
 
 case class Category
 (
-  id: Long,
+  id: Option[Long],
   category: String
 )
 
