@@ -117,14 +117,9 @@ class EventAPI_Gdansk:
                     event["category"] = dic["categoryId"]
                 except:
                     event["category"] = "Inne"
-                event["address"] = {
-                    "country" : "Polska",
-                    "city": "",
-                    "postalAddress": "",
-                    "street":"",
-                    "houseNumber" : "",
-                    "fullAddress" : dic["place"]["name"]
-                }
+                event["address"] = dic["place"]["name"]
+                event["addressCity"] = "Gdańsk"
+
                 EVENT.append(event)
                 self.get_category(event)
             except:

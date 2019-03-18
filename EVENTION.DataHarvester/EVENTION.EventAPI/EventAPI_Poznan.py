@@ -95,7 +95,7 @@ class EventAPI_Poznan:
 
         for elem in root:
             try:
-                address = ["Polska", "Poznań", "", "","", elem[5][2].text]
+
                 url = elem[2].text #event_url
                 image_url = get_image_src(url)  # get image src from scrapping
                 event_array = [elem[3][0][0].text, #name
@@ -113,10 +113,10 @@ class EventAPI_Poznan:
                 for label, eve in zip(self.event_labels[:-1], event_array):
                     event[label] = eve
 
-                event["address"] = {}
-                for label, add in zip(self.event_address_labels, address):
-                    event["address"][label] = add
+                event["address"] = elem[5][2].text #address -> street in xml
+                event["addressCity"] ="Poznań"
 
+                
                 EVENT.append(event)
             except:
                 pass

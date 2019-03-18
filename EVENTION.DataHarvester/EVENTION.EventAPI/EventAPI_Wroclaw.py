@@ -111,14 +111,20 @@ class EventAPI_Wroclaw:
                         event["category"]= dic["offer"]["categories"][0]["name"]
                 except:
                     event["category"] = "Inne"
-                event["address"] = {
-                    "country" : dic["address"]["country"],
-                    "city": dic["address"]["city"],
-                    "postalAddress": dic["address"]["zipCode"],
-                    "street": dic["address"]["street"],
-                    "houseNumber" : "",
-                    "fullAddress" : ""
-                }
+                # event["address"] = {
+                #     "country" : dic["address"]["country"],
+                #     "city": dic["address"]["city"],
+                #     "postalAddress": dic["address"]["zipCode"],
+                #     "street": dic["address"]["street"],
+                #     "houseNumber" : "",
+                #     "fullAddress" : ""
+                # }
+                try:
+                    event["address"] = dic["address"]["street"]+" "+dic["address"]["zipCode"]
+                    event["addressCity"] = dic["address"]["city"]
+                except:
+                    event["address"] = dic["address"]["street"]
+                    event["addressCity"] = dic["address"]["city"]
                 #dic["location"]["lattiude"]
                 #dic["location"]["longitude"]
                 EVENT.append(event)
