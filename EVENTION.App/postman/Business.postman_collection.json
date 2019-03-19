@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "9a75fc15-aaa5-42aa-adca-0a62364e0444",
+		"name": "Business",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/business",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/business",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/business/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Kivi Portal\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/business/create",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/delete/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/business/delete/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						"delete",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"Put Poznan\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/business/update",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

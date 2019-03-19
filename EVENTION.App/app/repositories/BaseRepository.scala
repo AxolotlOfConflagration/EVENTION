@@ -75,8 +75,10 @@ class BaseRepository @Inject()(protected val dbConfigProvider: DatabaseConfigPro
 
     def imageSource = column[Option[String]]("imageSource")
 
+    def city = column[Option[String]]("city")
+
     def * =
-      (id.?, name, shortDescription, longDescription, creationDate, eventStart, eventEnd, ownerId, geoJson, address, imageSource) <>
+      (id.?, name, shortDescription, longDescription, creationDate, eventStart, eventEnd, ownerId, geoJson, address, imageSource, city) <>
         ((Event.apply _).tupled, Event.unapply)
 
     def owner = foreignKey("fk_owner", ownerId, businessUsers)(_.id.?)

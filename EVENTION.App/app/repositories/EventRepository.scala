@@ -72,13 +72,22 @@ class EventRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: E
   def update(event: Event): Future[Try[Event]] = db.run {
     events
       .filter(_.id === event.id)
-      .map (x => (x.id.?, x.name, x.shortDescription, x.longDescription, x.creationDate, x.eventStart, x.eventEnd, x.ownerId, x.geoJson, x.address, x.imageSource) )
+      .map (x => (x.id.?, x.name, x.shortDescription, x.longDescription, x.creationDate, x.eventStart, x.eventEnd, x.ownerId, x.geoJson, x.address, x.imageSource, x.city) )
       .update(Event.unapply(event).get)
       .andThen(events
         .filter(_.id === event.id)
         .result
         .head
       ).asTry
+  }
+
+  def removeCategory(eventId: Long, categoryId: Long) = db.run {
+    eventCategories.filter(e => e.categoryId === categoryId && e.eventId === e.eventId).delete
+  }
+
+  def addCategory(eventId: Long, categoryId: Long) = db.run {
+    val q = eventCategories += EventCategory(Some(eventId), categoryId)
+    q.asTry
   }
 
   def delete(id: Long) = db.run {

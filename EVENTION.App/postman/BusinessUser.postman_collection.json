@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "72d421b6-9eaa-4ed9-b3e2-d53ac915a796",
+		"name": "BusinessUser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/business/user/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/business/user/all",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/user/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/business/user/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/:id/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/business/:id/users",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						":id",
+						"users"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/user/create ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Bartosz Mikulski\",\n\t\"businessId\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/business/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/user/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"name\": \"BartMiki\",\n\t\"businessId\": 3\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/business/user/update",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/business/user/delete/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/business/user/delete/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"business",
+						"user",
+						"delete",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

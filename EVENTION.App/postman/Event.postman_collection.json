@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "396106c0-f16f-441c-9662-3c5687218bef",
+		"name": "Event",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/event",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/event/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/event/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"event\": {\n\t\t\"name\": \"Test Event\",\n\t\t\"shortDescription\": \"Short\",\n\t\t\"longDescription\": \"Long\",\n\t\t\"ownerId\": 1,\n\t\t\"creationDate\": \"2012-04-23T18:25:43.511Z\",\n\t\t\"eventStart\": \"2012-04-23T18:25:43.511Z\",\n\t\t\"eventEnd\": \"2012-04-23T18:25:43.511Z\",\n\t\t\"city\": \"Poznań\",\n\t\t\"imageSource\": \"https://qnap.epasystemy.pl/qnap/wordpress/wp-content/uploads/2017/05/sample.jpg\",\n\t\t\"geoJson\": \"{}\",\n\t\t\"address\": \"Poznań, Pleszewska 1\"\n\t},\n\t\n\t\"categories\": [3, 2]\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/event/create",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"event",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

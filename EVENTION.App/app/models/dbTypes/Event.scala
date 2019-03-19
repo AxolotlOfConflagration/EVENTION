@@ -19,10 +19,9 @@ case class Event
   ownerId: Option[Long],
   geoJson: Option[String],
   address: Option[String],
-  imageSource: Option[String]
-){
-  def city: Option[String] = Try{ (Json.parse(address.get) \ "City").get.as[String]}.toOption
-}
+  imageSource: Option[String],
+  city: Option[String]
+)
 
 object Event {
   implicit val eventFormat: OFormat[Event] = Json.format[Event]

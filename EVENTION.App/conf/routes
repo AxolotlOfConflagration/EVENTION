@@ -26,6 +26,7 @@ POST    /category                       controllers.CategoryController.getMany()
 
 # Event
 GET     /event                          controllers.EventController.all()
+GET     /event/:id                      controllers.EventController.get(id: Long)
 POST    /event/create                   controllers.EventController.create()
 
 # Map static resources from the /public folder to the /assets URL path
