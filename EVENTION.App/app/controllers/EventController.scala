@@ -1,37 +1,53 @@
 package controllers
 
 import javax.inject._
-import models.Event
+import models.dbTypes.{BusinessUser, Event}
+import play.api.libs.json.JodaReads._
+import play.api.libs.json.JodaWrites._
 import play.api.libs.json._
 import play.api.mvc._
 import repositories.EventRepository
+import utils.JsonUtils._
 
 import scala.concurrent.ExecutionContext
 import scala.util.{Failure, Success}
 
-/**
-  * This controller creates an `Action` to handle HTTP requests to the
-  * application's home page.
-  */
 class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)(implicit ec: ExecutionContext) extends AbstractController(cc) {
 
-  /**
-    * Create an Action to render an HTML page.
-    *
-    * The configuration in the `routes` file means that this method
-    * will be called when the application receives a `GET` request with
-    * a path of `/`.
-    */
+  def create() = Action(parse.json).async { implicit request =>
+    val event = (request.body \ "event").get.as[Event]
+    val categories = (request.body \ "categories").toOption.map(json => json.as[Seq[Long]]).getOrElse(Nil)
 
-  def index(): Action[AnyContent] = Action.async { implicit request: Request[AnyContent] =>
-    repo.get().map { event =>
-      Ok(Json.toJson(event))
+    repo.insert(event, categories).map {
+      case Success(value) => Ok(Json.toJson(value))
+      case Failure(exception) => BadRequest(Json.toJson(exception))
     }
   }
 
-  def createEvent(): Action[AnyContent] = Action.async { implicit request: Request[AnyContent] =>
-    val event = request.body.asJson.get.as[Event]
-    repo.insert(event).map(res => Ok)
+  def all() = Action.async { implicit request =>
+    repo.all().map(events => Ok(Json.toJson(events)))
   }
-}
 
+  def get(id: Long) = Action.async { implicit request =>
+    repo.get(id).map {
+      case Some(event) => Ok(Json.obj("event" -> Json.toJson(event._1), "categories" -> Json.toJson(event._2)))
+      case _ => NotFound
+    }
+  }
+
+  //
+  //  def getByBusinness(id: Long) = Action.async { implicit request =>
+  //    repo.getByBusiness(id).map{users => Ok(Json.toJson(users))}
+  //  }
+  //
+  //  def update = Action(parse.json[BusinessUser]).async { implicit request =>
+  //    repo.update(request.body).map{
+  //      case Success(value) => Ok(Json.toJson(value))
+  //      case Failure(exception) => BadRequest(Json.toJson(exception))
+  //    }
+  //  }
+  //
+  //  def delete(id: Long) = Action.async { implicit request =>
+  //    repo.delete(id).map(_ => Ok)
+  //  }
+}
