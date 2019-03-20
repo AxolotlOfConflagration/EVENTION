@@ -9,7 +9,6 @@ class EventAPI_Poznan:
         with open('../config.json') as f:
             config_json = json.load(f)
         self.event_labels = config_json["event_labels"]
-        self.event_address_labels = config_json["event_address_labels"]
         self.url_today = "http://www.poznan.pl/mim/public/ws-information/?co=getCurrentDayEvents"
         self.url_to_given_day = "http://www.poznan.pl/mim/public/ws-information/?co=getEventsToDate&dateTo="
 
