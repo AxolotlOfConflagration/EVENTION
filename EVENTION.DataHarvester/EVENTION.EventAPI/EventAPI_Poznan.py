@@ -110,7 +110,7 @@ class EventAPI_Poznan:
                                elem[10].text ] #category
                 event = {}
 
-                for label, eve in zip(self.event_labels[:-1], event_array):
+                for label, eve in zip(self.event_labels[:-2], event_array):
                     event[label] = eve
 
                 event["address"] = elem[5][2].text #address -> street in xml
@@ -127,9 +127,9 @@ class EventAPI_Poznan:
 
 
     def get_event_today(self):
-        self._save_xml_today() #to test
-        root = self.get_xml("events_today_Poznan.xml") #to test
-        #root = self.make_request_and_get_root(self.url_today)
+        #self._save_xml_today() #to test
+        #root = self.get_xml("events_today_Poznan.xml") #to test
+        root = self.make_request_and_get_root(self.url_today)
         result = self.parse_xml(root)
         return result
 
