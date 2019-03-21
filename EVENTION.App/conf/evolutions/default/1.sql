@@ -11,11 +11,6 @@ alter table "events" add constraint "fk_owner" foreign key("ownerId") references
 alter table "eventCategories" add constraint "fk_category" foreign key("catId") references "categories"("id") on update NO ACTION on delete NO ACTION;
 alter table "eventCategories" add constraint "fk_event" foreign key("eventId") references "events"("id") on update NO ACTION on delete NO ACTION;
 
-insert into "businesses"("id", "name") VALUES ( 1, 'Evention' );
-
-insert into "categories"("category") VALUES ('Sport'),('Kultura'),('Koncert'),('Targi');
-
-      
 
 # --- !Downs
 
