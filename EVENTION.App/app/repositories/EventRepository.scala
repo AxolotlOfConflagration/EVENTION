@@ -23,7 +23,7 @@ class EventRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: E
 
   def insert(event: Event, categories: Seq[Long]): Future[Try[Event]] = {
 
-    insert(event).map{
+    insert(event).map {
       case Success(e) =>
         val insertCategories = categories.map(cat => eventCategories += EventCategory(e.id, cat))
         db.run(DBIO.sequence(insertCategories))
@@ -40,7 +40,7 @@ class EventRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: E
 
     eventFuture
       .zip(catsFuture)
-      .map{
+      .map {
         case (Some(event), cats) => Option(event -> cats)
         case _ => None
       }
@@ -72,7 +72,7 @@ class EventRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: E
   def update(event: Event): Future[Try[Event]] = db.run {
     events
       .filter(_.id === event.id)
-      .map (x => (x.id.?, x.name, x.shortDescription, x.longDescription, x.creationDate, x.eventStart, x.eventEnd, x.ownerId, x.geoJson, x.address, x.imageSource, x.city) )
+      .map(x => (x.id.?, x.name, x.shortDescription, x.longDescription, x.creationDate, x.eventStart, x.eventEnd, x.ownerId, x.geoJson, x.address, x.imageSource, x.city))
       .update(Event.unapply(event).get)
       .andThen(events
         .filter(_.id === event.id)
