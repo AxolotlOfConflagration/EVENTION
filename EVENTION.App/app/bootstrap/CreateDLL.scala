@@ -79,21 +79,6 @@ private[bootstrap] class CreateDLL @Inject()
       ),
       eventCategories += EventCategory(Some(2), 2),
       eventCategories += EventCategory(Some(2), 3),
-      events += Event(None,
-        "Koncert Tuzy",
-        Some("Tuza gra, sialala"),
-        Some("https://pl.wikipedia.org/wiki/Pozna%C5%84_G%C5%82%C3%B3wny"),
-        DateTime.now(),
-        new DateTime(2019, 6, 11, 20, 0),
-        new DateTime(2019, 6, 12, 6, 0),
-        Some(1),
-        Some("{}"),
-        Some("Poznań, Poznań Main Station"),
-        Some("https://st.depositphotos.com/2801331/3568/i/950/depositphotos_35689899-stock-photo-gopher-on-duty.jpg"),
-        Some("Poznań")
-      ),
-      eventCategories += EventCategory(Some(3), 2),
-      eventCategories += EventCategory(Some(3), 3)
     ))
 
 
