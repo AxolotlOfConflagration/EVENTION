@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import bs4 as bs
 from geojson import Point
 from pyjsparser import PyJsParser
@@ -8,10 +9,9 @@ API_KEY = '908e5c8c9d9a42ad9d67ef77cf199358'
 
 class Scrap:
     def __init__(self):
-        with open('../config.json') as file:
+        with open('config.json') as file:
             config = json.load(file)
         self.event_labels = config["event_labels"]
-        self.event_address_labels = config["event_address_labels"]
         self.geocoder = OpenCageGeocode(API_KEY)
         self.p = PyJsParser()
 
@@ -19,7 +19,7 @@ class Scrap:
         try:
             day, month, year = date[0]['value'].split('.')
             hour, minute = date[2]['value'].split(':')
-        except AttributeError:
+        except (AttributeError, ValueError) as e:
             return False
         return datetime.datetime(int(year), int(month), int(day), int(hour), int(minute), 0)
 
@@ -71,11 +71,12 @@ class Scrap:
             if isinstance(o, datetime.datetime):
                 return o.__str__()
 
-        used_var_list = [name, shortDescription, longDescription, creationDate, eventStart, eventEnd, owner, geoJSON, address, imageSource, categories]
+        used_var_list = [name, shortDescription, longDescription, creationDate, eventStart, eventEnd, owner, geoJSON, imageSource, categories, address, self.addressCity]
         proper_event = dict(zip(self.event_labels, used_var_list))
         return json.dumps(proper_event, default=date_converter)
 
     def scrap_kiwiportal(self, url):
+        self.addressCity = url.rsplit('/', 1)[-1].capitalize()
         try:
             source = urllib.request.urlopen(url)
         except:
