@@ -20,7 +20,7 @@ case class Event
   geoJson: Option[String],
   address: Option[String],
   imageSource: Option[String],
-  city: Option[String]
+  addressCity: Option[String]
 )
 
 object Event {

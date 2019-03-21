@@ -60,7 +60,7 @@ private[bootstrap] class CreateDLL @Inject()
         Some(1),
         Some("{}"),
         Some("Poznań, Piotrowo 2, sala 122 BT"),
-        Some("https://ogarnijbigdata.pl/assets/img/img-logo.png"),
+        Some("http://www.lepszypoznan.pl/wp-content/uploads/2013/06/zabka-logo-RGB.jpg"),
         Some("Poznań")
       ),
       eventCategories += EventCategory(Some(1), 6),
@@ -78,7 +78,25 @@ private[bootstrap] class CreateDLL @Inject()
         Some("Konin")
       ),
       eventCategories += EventCategory(Some(2), 2),
-      eventCategories += EventCategory(Some(2), 3)))
+      eventCategories += EventCategory(Some(2), 3),
+      eventCategories += EventCategory(Some(1), 6),
+      events += Event(None,
+        "Koncert Tuzy",
+        Some("Tuza gra, sialala"),
+        Some("https://pl.wikipedia.org/wiki/Pozna%C5%84_G%C5%82%C3%B3wny"),
+        DateTime.now(),
+        new DateTime(2019, 6, 11, 20, 0),
+        new DateTime(2019, 6, 12, 6, 0),
+        Some(1),
+        Some("{}"),
+        Some("Poznań, Poznań Main Station"),
+        Some("https://st.depositphotos.com/2801331/3568/i/950/depositphotos_35689899-stock-photo-gopher-on-duty.jpg"),
+        Some("Poznań")
+      ),
+      eventCategories += EventCategory(Some(3), 2),
+      eventCategories += EventCategory(Some(3), 3)
+    ))
+
 
     db.run(inserts)
   }
