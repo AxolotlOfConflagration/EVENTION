@@ -79,7 +79,6 @@ private[bootstrap] class CreateDLL @Inject()
       ),
       eventCategories += EventCategory(Some(2), 2),
       eventCategories += EventCategory(Some(2), 3),
-      eventCategories += EventCategory(Some(1), 6),
       events += Event(None,
         "Koncert Tuzy",
         Some("Tuza gra, sialala"),
