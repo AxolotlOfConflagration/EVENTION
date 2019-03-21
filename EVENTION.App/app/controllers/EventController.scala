@@ -47,7 +47,7 @@ class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)
   //    }
   //  }
   //
-  //  def delete(id: Long) = Action.async { implicit request =>
-  //    repo.delete(id).map(_ => Ok)
-  //  }
+  def delete(id: Long) = Action.async { implicit request =>
+    repo.delete(id).map(_ => Ok)
+  }
 }
