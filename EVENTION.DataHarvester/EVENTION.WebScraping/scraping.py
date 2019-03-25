@@ -56,24 +56,31 @@ class Scrap:
             eventEnd = self.parse_date(info_dict['body'][4]['declarations'][0]['init']['properties'][17]['value']['elements'])
         else:
             eventEnd = eventStart
-        owner = "EVENTION"
+        owner = 1
         categories_elements = info_dict['body'][4]['declarations'][0]['init']['properties'][18]['value']['elements']
         categories = []
         for category in categories_elements:
-            categories.append(category['value'].lower())
+            # categories.append(category['value'].lower())
+            if 'sport' in category['value'].lower():
+                categories.append(1)
+            else:
+                categories.append(5)
+        categories = list(set(categories))
         imageSource = info_dict['body'][4]['declarations'][0]['init']['properties'][20]['value']['value']
         latlng = (float(info_dict['body'][4]['declarations'][0]['init']['properties'][31]['value']['elements'][0]['value']), float(info_dict['body'][4]['declarations'][0]['init']['properties'][31]['value']['elements'][1]['value']))
         #----------- ODZNACZYĆ !!! - ograniczenie 2500 requestów/dzień
-        geoJSON = self.create_geojson(latlng=latlng)
+        geoJSON = str(self.create_geojson(latlng=latlng))
         address = self.get_address(latlng)
 
         def date_converter(o):
             if isinstance(o, datetime.datetime):
-                return o.__str__()
+                return o.isoformat()
 
-        used_var_list = [name, shortDescription, longDescription, creationDate, eventStart, eventEnd, owner, geoJSON, imageSource, categories, address, self.addressCity]
-        proper_event = dict(zip(self.event_labels, used_var_list))
-        return json.dumps(proper_event, default=date_converter)
+        used_var_list = [name, shortDescription, longDescription, creationDate, eventStart, eventEnd, owner, geoJSON, imageSource, address, self.addressCity]
+        dic = {}
+        dic["event"] = dict(zip(self.event_labels, used_var_list))
+        dic["categories"] = categories
+        return  json.dumps(dic, default=date_converter)
 
     def scrap_kiwiportal(self, url):
         self.addressCity = url.rsplit('/', 1)[-1].capitalize()
@@ -89,7 +96,7 @@ class Scrap:
             try:
                 json_list.append(self.event_parser(event))
             except AttributeError:
-                pass
+                print('AttributeError occured inside event_parser')
         return json_list
 
 # test--------------------------------------------------------------------------------------------------------
