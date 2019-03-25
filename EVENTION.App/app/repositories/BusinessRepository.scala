@@ -45,7 +45,7 @@ class BusinessRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec
         ).asTry
   }
 
-  def delete(id: Long) = db.run {
+  def delete(id: Long): Future[Int] = db.run {
     businesses.filter(_.id === id).delete
   }
 }
