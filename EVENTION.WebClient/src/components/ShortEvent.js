@@ -6,7 +6,6 @@ class ShortEvent extends React.Component {
     <span>
       <Button
         type={type === "check" ? "primary" : "ghost"}
-        shape="omitted"
         size="small"
         icon={type}
       />
@@ -15,7 +14,7 @@ class ShortEvent extends React.Component {
 
   ButtonText = ({ text }) => (
     <span>
-      <Button type="ghost" shape="omitted" size="small">
+      <Button type="ghost" size="small">
         {text}
       </Button>
     </span>
@@ -35,6 +34,11 @@ class ShortEvent extends React.Component {
       {text}
     </span>
   );
+
+  prepTime = time => {
+    var splited = time.split("T");
+    return splited[0].concat(" ", splited[1].slice(0, 5));
+  };
 
   render() {
     return (
@@ -59,7 +63,10 @@ class ShortEvent extends React.Component {
               />,
               <this.ButtonIcon type="share-alt" />,
               <this.ButtonText text=" Więcej " />,
-              <this.IconText type="schedule" text={item.eventStart} />
+              <this.IconText
+                type="schedule"
+                text={this.prepTime(item.eventStart)}
+              />
             ]}
             extra={<img height={150} alt="logo" src={item.imageSource} />}
           >
