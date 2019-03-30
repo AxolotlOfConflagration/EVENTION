@@ -21,6 +21,9 @@ class EventDrawer extends React.Component {
         loading: false
       });
     });
+    console.log(typeof this.state.Event);
+    console.log(Object.getOwnPropertyNames(this.state.Event));
+    console.log(this.state.Event);
   }
 
   render() {

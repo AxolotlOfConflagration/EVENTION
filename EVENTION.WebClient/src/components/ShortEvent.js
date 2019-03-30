@@ -1,11 +1,14 @@
 import React from "react";
+import axios from "axios";
 import { List, Button, Icon, Drawer } from "antd";
 import EventDrawer from "./EventDrawer";
+import Axios from "axios";
 
 class ShortEvent extends React.Component {
   state = {
     visible: false,
     eventTitle: null,
+    event: null,
     eventID: null
   };
 
@@ -80,6 +83,13 @@ class ShortEvent extends React.Component {
                 <this.ButtonText
                   text=" Więcej "
                   func={() => {
+                    axios
+                      .get("http://localhost:9000/event/".concat(item.id))
+                      .then(res => {
+                        this.setState({
+                          event: res
+                        });
+                      });
                     this.setState({
                       visible: !this.state.visible,
                       eventID: item.id,
@@ -96,19 +106,19 @@ class ShortEvent extends React.Component {
             >
               <List.Item.Meta title={item.name} description={item.address} />
               {item.shortDescription}
-              <Drawer
-                title={this.state.eventTitle}
-                width={640}
-                placement="right"
-                closable={false}
-                onClose={this.closeDrawer}
-                visible={this.state.visible}
-              >
-                <EventDrawer data={this.state.eventID} />
-              </Drawer>
             </List.Item>
           )}
         />
+        <Drawer
+          title={this.state.eventTitle}
+          width={640}
+          placement="right"
+          closable={false}
+          onClose={this.closeDrawer}
+          visible={this.state.visible}
+        >
+          <EventDrawer data={this.state.eventID} />
+        </Drawer>
       </div>
     );
   }
