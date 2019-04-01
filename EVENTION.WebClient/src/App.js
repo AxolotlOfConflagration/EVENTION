@@ -10,10 +10,11 @@ class App extends Component {
     return (
       <div className="App">
         <MyLayout>
-          <Col span={14}>
+          <Col span={15}>
             <ShortEventList />
           </Col>
-          <Col span={10}>
+          <Col span={1} />
+          <Col span={8}>
             <EventMap />
           </Col>
         </MyLayout>

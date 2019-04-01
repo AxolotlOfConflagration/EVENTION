@@ -15,9 +15,12 @@ class EventMap extends React.Component {
       zoom: 13
     });
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 20
-    }).addTo(this.map);
+    L.tileLayer(
+      "https://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png",
+      {
+        maxZoom: 20
+      }
+    ).addTo(this.map);
   }
 
   render() {
