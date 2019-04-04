@@ -1,6 +1,7 @@
 package models
 
-import models.dbTypes.{Business, Category, Event}
+import models.database.{Business, Category, Event}
+import models.database.{Category, Event}
 
 case class EventResult
 (

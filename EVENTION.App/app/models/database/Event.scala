@@ -1,11 +1,9 @@
-package models.dbTypes
+package models.database
 
 import org.joda.time.DateTime
 import play.api.libs.json.JodaReads._
 import play.api.libs.json.JodaWrites._
 import play.api.libs.json._
-
-import scala.util.Try
 
 case class Event
 (
@@ -24,5 +22,6 @@ case class Event
 )
 
 object Event {
-  implicit val eventFormat: OFormat[Event] = Json.format[Event]
+  implicit val eventFormat: OFormat[Event] =
+    Json.using[Json.WithDefaultValues].format[Event]
 }

@@ -6,6 +6,7 @@ create table "categories" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"cate
 create table "events" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"name" VARCHAR NOT NULL,"shortDescription" VARCHAR,"longDescription" VARCHAR,"creationDate" TIMESTAMP NOT NULL,"eventStart" TIMESTAMP NOT NULL,"eventEnd" TIMESTAMP NOT NULL,"ownerId" BIGINT,"geoJson" VARCHAR,"address" VARCHAR,"imageSource" VARCHAR,"city" VARCHAR);
 create table "eventCategories" ("eventId" BIGINT NOT NULL,"catId" BIGINT NOT NULL);
 create unique index "index" on "eventCategories" ("eventId","catId");
+create table "users" ("id" BIGINT PRIMARY KEY AUTO_INCREMENT,"firstName" VARCHAR NOT NULL,"lastName" VARCHAR NOT NULL,"nick" VARCHAR,"externalId" VARCHAR);
 alter table "businessUsers" add constraint "fk_business" foreign key("businessId") references "businesses"("id") on update NO ACTION on delete NO ACTION;
 alter table "events" add constraint "fk_owner" foreign key("ownerId") references "businessUsers"("id") on update NO ACTION on delete NO ACTION;
 alter table "eventCategories" add constraint "fk_category" foreign key("catId") references "categories"("id") on update NO ACTION on delete NO ACTION;
@@ -18,6 +19,7 @@ alter table "eventCategories" drop constraint "fk_category";
 alter table "eventCategories" drop constraint "fk_event";
 alter table "events" drop constraint "fk_owner";
 alter table "businessUsers" drop constraint "fk_business";
+drop table "users";
 drop table "eventCategories";
 drop table "events";
 drop table "categories";

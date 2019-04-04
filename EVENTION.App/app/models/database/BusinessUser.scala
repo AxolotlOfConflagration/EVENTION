@@ -1,4 +1,4 @@
-package models.dbTypes
+package models.database
 
 import play.api.libs.json.{Json, OFormat}
 

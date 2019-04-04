@@ -1,9 +1,10 @@
 package repositories
 
 import javax.inject.Inject
-import models.dbTypes.{Category, Event, EventCategory}
+import models.database.{Event, EventCategory}
 import play.api.db.slick.DatabaseConfigProvider
 import com.github.tototoshi.slick.H2JodaSupport._
+import models.database.{Category, Event, EventCategory}
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Success, Try}

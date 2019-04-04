@@ -3,7 +3,8 @@ package bootstrap
 import java.io.{File, PrintWriter}
 
 import javax.inject.Inject
-import models.dbTypes._
+import models.database.{Business, BusinessUser, Category, Event, EventCategory}
+import models.database._
 import org.joda.time.DateTime
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import repositories.BaseRepository
@@ -25,7 +26,8 @@ private[bootstrap] class CreateDLL @Inject()
         businessUsers.schema ++
         categories.schema ++
         events.schema ++
-        eventCategories.schema
+        eventCategories.schema ++
+        users.schema
 
     val writer = new PrintWriter("./conf/evolutions/default/1.sql")
     writer.write("# --- !Ups\n\n")

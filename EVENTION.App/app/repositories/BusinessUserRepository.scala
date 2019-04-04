@@ -1,7 +1,7 @@
 package repositories
 
 import javax.inject.{Inject, Singleton}
-import models.dbTypes.BusinessUser
+import models.database.BusinessUser
 import play.api.db.slick.DatabaseConfigProvider
 
 import scala.concurrent.{ExecutionContext, Future}
