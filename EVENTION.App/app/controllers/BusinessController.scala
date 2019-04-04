@@ -1,7 +1,7 @@
 package controllers
 
 import javax.inject.Inject
-import models.dbTypes.Business
+import models.database.Business
 import play.api.libs.json.Json
 import play.api.mvc.{AbstractController, ControllerComponents}
 import repositories.BusinessRepository

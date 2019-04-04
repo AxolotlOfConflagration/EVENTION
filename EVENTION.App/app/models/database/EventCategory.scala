@@ -1,4 +1,4 @@
-package models.dbTypes
+package models.database
 
 case class EventCategory
 (

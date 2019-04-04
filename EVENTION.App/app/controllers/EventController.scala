@@ -1,7 +1,8 @@
 package controllers
 
 import javax.inject._
-import models.dbTypes.{BusinessUser, Event}
+import models.database.Event
+import models.database.Event
 import play.api.libs.json.JodaReads._
 import play.api.libs.json.JodaWrites._
 import play.api.libs.json._

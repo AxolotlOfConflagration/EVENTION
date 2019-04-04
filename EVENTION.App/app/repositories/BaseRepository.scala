@@ -6,7 +6,8 @@ import org.joda.time.DateTime
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import slick.jdbc.JdbcProfile
 import com.github.tototoshi.slick.H2JodaSupport._
-import models.dbTypes._
+import models.database.{Business, BusinessUser, Category, Event, EventCategory}
+import models.database._
 
 import scala.concurrent.{ExecutionContext, Future}
 
@@ -101,6 +102,17 @@ class BaseRepository @Inject()(protected val dbConfigProvider: DatabaseConfigPro
   }
 
   protected val eventCategories = TableQuery[EventCategories]
+
+  protected class Users(tag: Tag) extends Table[User](tag, "users") {
+    def id = column[Option[Long]]("id", O.PrimaryKey, O.AutoInc)
+    def firstName = column[String]("firstName")
+    def lastName = column[String]("lastName")
+    def nick = column[Option[String]]("nick")
+    def externalId = column[Option[String]]("externalId")
+
+    def * = (id, firstName, lastName, nick, externalId) <> ((User.apply _).tupled, User.unapply)
+  }
+  protected val users = TableQuery[Users]
 
   //endregion
 
