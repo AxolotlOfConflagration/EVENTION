@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "antd/dist/antd.css";
-import { Col } from "antd";
+import { Col, Row } from "antd";
 import MyLayout from "./containers/Layout";
 import ShortEventList from "./containers/ShortEventList";
+import EventFilters from "./containers/EventFilters";
 import EventMap from "./components/EventsMap";
 
 class App extends Component {
@@ -11,10 +12,17 @@ class App extends Component {
       <div className="App">
         <MyLayout>
           <Col span={15}>
-            <ShortEventList />
+            <Row>
+              <EventFilters />
+            </Row>
+            <Row>
+              <br />
+            </Row>
+            <Row>
+              <ShortEventList />
+            </Row>
           </Col>
-          <Col span={1} />
-          <Col span={8}>
+          <Col span={9}>
             <EventMap />
           </Col>
         </MyLayout>

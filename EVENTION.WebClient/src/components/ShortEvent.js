@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import { List, Button, Icon, Drawer } from "antd";
 import EventDrawer from "./EventDrawer";
-import Axios from "axios";
 
 class ShortEvent extends React.Component {
   state = {
