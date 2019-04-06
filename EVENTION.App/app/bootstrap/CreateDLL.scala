@@ -9,6 +9,7 @@ import org.joda.time.DateTime
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import repositories.BaseRepository
 import slick.jdbc.JdbcProfile
+import io.alphash.faker._
 
 import scala.concurrent.ExecutionContext
 
@@ -27,7 +28,9 @@ private[bootstrap] class CreateDLL @Inject()
         categories.schema ++
         events.schema ++
         eventCategories.schema ++
-        users.schema
+        users.schema ++
+        eventParticipants.schema ++
+        recommendations.schema
 
     val writer = new PrintWriter("./conf/evolutions/default/1.sql")
     writer.write("# --- !Ups\n\n")
@@ -41,6 +44,7 @@ private[bootstrap] class CreateDLL @Inject()
   }
 
   def insertIntoDatabase() = {
+
     val inserts = DBIO.sequence(Seq(businesses += Business(Some(1), "Evention"),
       categories += Category(Some(1), "Sport"),
       categories += Category(Some(2), "Kultura"),
@@ -109,8 +113,14 @@ private[bootstrap] class CreateDLL @Inject()
         Some("Poznań")
       ),
       eventCategories += EventCategory(Some(4), 3),
-    ))
-
+    ) ++
+      { for (_ <- 0 until 15) yield users += User(None, Person().name.split(" ")(0), Person().lastName, Option(Internet().email), None)} ++
+      Seq(
+        eventParticipants += EventParticipant(1, 1),
+        eventParticipants += EventParticipant(1, 2),
+        eventParticipants += EventParticipant(1, 3)
+      )
+    )
 
     db.run(inserts)
   }

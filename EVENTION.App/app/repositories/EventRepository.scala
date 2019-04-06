@@ -1,7 +1,7 @@
 package repositories
 
 import javax.inject.Inject
-import models.database.{Business, BusinessUser, Category, Event, EventCategory, EventFilter}
+import models.database.{Business, BusinessUser, Category, Event, EventCategory, EventFilter, User}
 import play.api.db.slick.DatabaseConfigProvider
 import models.EventResult
 import com.github.tototoshi.slick.H2JodaSupport._
@@ -135,18 +135,26 @@ class EventRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: E
       ).asTry
   }
 
-  def removeCategory(eventId: Long, categoryId: Long) = db.run {
+  def removeCategory(eventId: Long, categoryId: Long): Future[Int] = db.run {
     eventCategories.filter(e => e.categoryId === categoryId && e.eventId === e.eventId).delete
   }
 
-  def addCategory(eventId: Long, categoryId: Long) = db.run {
+  def addCategory(eventId: Long, categoryId: Long): Future[Try[Int]] = db.run {
     val q = eventCategories += EventCategory(Some(eventId), categoryId)
     q.asTry
   }
 
-  def delete(id: Long) = db.run {
+  def delete(id: Long): Future[Int] = db.run {
     eventCategories.filter(_.eventId === id).delete.andThen(
       events.filter(_.id === id).delete
     ).transactionally
+  }
+
+  def participants(id: Long): Future[Seq[User]] = db.run {
+    eventParticipants
+      .filter(_.eventId === id)
+      .join(users).on(_.userId === _.id)
+      .map(_._2)
+      .result
   }
 }

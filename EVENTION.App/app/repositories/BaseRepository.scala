@@ -132,6 +132,15 @@ class BaseRepository @Inject()(protected val dbConfigProvider: DatabaseConfigPro
 
   protected val eventParticipants = TableQuery[EventParticipants]
 
+  protected class Recommendations(tag: Tag) extends Table[Recommendation](tag, "recommendations"){
+    def userId = column[Long]("userId", O.PrimaryKey)
+
+    def recommendation = column[String]("recommendation")
+
+    def * = (userId, recommendation) <> ((Recommendation.apply _).tupled, Recommendation.unapply)
+  }
+  protected val recommendations = TableQuery[Recommendations]
+
   //endregion
 
   /**

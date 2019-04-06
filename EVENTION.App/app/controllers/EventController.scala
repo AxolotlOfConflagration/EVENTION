@@ -15,7 +15,7 @@ import scala.util.{Failure, Success}
 
 class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)(implicit ec: ExecutionContext) extends AbstractController(cc) {
 
-  def create() = Action(parse.json).async { implicit request =>
+  def create(): Action[JsValue] = Action(parse.json).async { implicit request =>
     val event = (request.body \ "event").get.as[Event]
     val categories = (request.body \ "categories").toOption.map(json => json.as[Seq[Long]]).getOrElse(Nil)
 
@@ -25,18 +25,18 @@ class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)
     }
   }
 
-  def all() = Action.async { implicit request =>
+  def all(): Action[AnyContent] = Action.async { implicit request =>
     repo.all().map(events => Ok(Json.toJson(events)))
   }
 
-  def get(id: Long) = Action.async { implicit request =>
+  def get(id: Long): Action[AnyContent] = Action.async { implicit request =>
     repo.get(id).map {
       case Some(event) => Ok(Json.obj("event" -> Json.toJson(event._1), "categories" -> Json.toJson(event._2)))
       case _ => NotFound
     }
   }
 
-  def filtered() = Action(parse.json).async { implicit request =>
+  def filtered(): Action[JsValue] = Action(parse.json).async { implicit request =>
     val filter = request.body.as[EventFilter]
 
     repo.all(filter).map {events => Ok(Json.toJson(events))}
@@ -54,7 +54,11 @@ class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)
   //    }
   //  }
   //
-  def delete(id: Long) = Action.async { implicit request =>
+  def delete(id: Long): Action[AnyContent] = Action.async { implicit request =>
     repo.delete(id).map(_ => Ok)
+  }
+
+  def participants(id: Long): Action[AnyContent] = Action.async { implicit request =>
+    repo.participants(id).map(users => Ok(Json.toJson(users)))
   }
 }

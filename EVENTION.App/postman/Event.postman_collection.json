@@ -28,6 +28,35 @@
 			"response": []
 		},
 		{
+			"name": "/event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"beginning\": 0,\n\t\"count\": 4,\n\t\"ordered\": \"creationDate\",\n\t\"ascending\": false,\n\t\"categories\": [3, 2],\n\t\"city\": \"Poznań\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/event",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/event/:id",
 			"request": {
 				"method": "GET",
@@ -37,7 +66,21 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": ""
+					"raw": "localhost:9000/event/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"event",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
 				}
 			},
 			"response": []
@@ -96,6 +139,36 @@
 						{
 							"key": "id",
 							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/event/:id/participants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/event/:id/participants",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"event",
+						":id",
+						"participants"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
 						}
 					]
 				}

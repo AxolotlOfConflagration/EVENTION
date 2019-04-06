@@ -29,6 +29,9 @@ libraryDependencies += "com.h2database" % "h2" % "1.4.197"
 // Test dependencies
 libraryDependencies += specs2 % Test
 
+// Faker
+libraryDependencies += "com.github.stevenchen3" %% "scala-faker" % "0.1.1"
+
 scalacOptions ++= Seq(
   "-feature",
   "-deprecation",
