@@ -18,8 +18,9 @@ libraryDependencies += "com.typesafe.play" %% "play-slick-evolutions" % "4.0.0"
 
 // Joda Time dependencies
 libraryDependencies += "com.typesafe.play" %% "play-json-joda" % "2.7.1"
-libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.22.0"
+//libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.22.0"
 libraryDependencies += "org.joda" % "joda-convert" % "1.7"
+libraryDependencies += "joda-time" % "joda-time" % "2.7"
 libraryDependencies += "com.github.tototoshi" %% "slick-joda-mapper" % "2.4.0"
 
 // Database dependencies
@@ -27,6 +28,9 @@ libraryDependencies += "com.h2database" % "h2" % "1.4.197"
 
 // Test dependencies
 libraryDependencies += specs2 % Test
+
+// Faker
+libraryDependencies += "com.github.stevenchen3" %% "scala-faker" % "0.1.1"
 
 scalacOptions ++= Seq(
   "-feature",

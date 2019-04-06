@@ -9,6 +9,7 @@ import org.joda.time.DateTime
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import repositories.BaseRepository
 import slick.jdbc.JdbcProfile
+import io.alphash.faker._
 
 import scala.concurrent.ExecutionContext
 
@@ -27,7 +28,9 @@ private[bootstrap] class CreateDLL @Inject()
         categories.schema ++
         events.schema ++
         eventCategories.schema ++
-        users.schema
+        users.schema ++
+        eventParticipants.schema ++
+        recommendations.schema
 
     val writer = new PrintWriter("./conf/evolutions/default/1.sql")
     writer.write("# --- !Ups\n\n")
@@ -41,6 +44,7 @@ private[bootstrap] class CreateDLL @Inject()
   }
 
   def insertIntoDatabase() = {
+
     val inserts = DBIO.sequence(Seq(businesses += Business(Some(1), "Evention"),
       categories += Category(Some(1), "Sport"),
       categories += Category(Some(2), "Kultura"),
@@ -66,11 +70,12 @@ private[bootstrap] class CreateDLL @Inject()
         Some("Poznań")
       ),
       eventCategories += EventCategory(Some(1), 6),
+      eventCategories += EventCategory(Some(1), 2),
       events += Event(None,
         "Koncert #316 ZU, Man Forever",
         Some("Dziewiętnaście lat działalności ZU, polegającej w głównej mierze na żonglowaniu i \"maltretowaniu\" przeróżnych gatunków muzycznych, zaowocowało wyjątkowymi albumami wydanymi pod skrzydłami takich kultowych wytwórni jak: Ipecac, Atavistic czy japońska Headz. Eksperymentalne połączenie jazzu, noise'u, metalu, punka i awangardy sprawiło, że uznany kompozytor John Zorn opisał ich brzmienie jako pełną mocy i ekspresji muzykę, która kompletnie miażdży dorobek większości współczesnych zespołów."),
         Some("ZU (Włochy)\nDziewiętnaście lat działalności ZU, polegającej w głównej mierze na żonglowaniu i \"maltretowaniu\" przeróżnych gatunków muzycznych, zaowocowało wyjątkowymi albumami wydanymi pod skrzydłami takich kultowych wytwórni jak: Ipecac, Atavistic czy japońska Headz. Eksperymentalne połączenie jazzu, noise'u, metalu, punka i awangardy sprawiło, że uznany kompozytor John Zorn opisał ich brzmienie jako pełną mocy i ekspresji muzykę, która kompletnie miażdży dorobek większości współczesnych zespołów.\nW pogoni za tytułem najbardziej pracowitego zespołu świata ZU zagrało ponad 2000 koncertów w Europie, Stanach Zjednoczonych, Kanadzie, Azji, Rosji, Meksyku, a nawet w Afryce, będąc w trasie z muzykami pokroju Mike'a Pattona (jako Zu/Patton Quartet) i dzieląc scenę z Faith No More, Fantomas, The Melvins, Lightning Bolt, Sonic Youth czy The Ex. Współpracowali również z takimi wykonawcami jak: Dälek, Jim O' Rourke, NoMeansNo, FM Einheit (Einsturzende Neubauten), Peter Brötzmann, Eugene S. Robinson (Oxbow), Steve MacKay (The Stooges), Thurston Moore i Stephen O'Malley.\nMan Forever (USA)\nMan Forever to projekt perkusisty Johna Colpittsa (aka Kid Millions, Oneida, People of the North). Jego nowy album Play What They Want wymyka się klasyfikacjom gatunkowym. Podstawą są napędzające muzykę, wyszukane układy perkusyjne (stworzone razem z Tigue), ale na nowej płycie są wzbogacane wokalem i melodią dzięki udziałowi Laurie Anderson, Yo La Tengo oraz Mary Lattimore, aby wymienić tylko kilku gości. Play What They Want stanowi kulminację 25-letniego zaangażowania muzycznego jednego z najważniejszych nowojorskich perkusistów.\nBilety w cenie 40 zł."),
-        DateTime.now(),
+        DateTime.now().plusHours(1),
         new DateTime(2019, 5, 11, 10, 0),
         new DateTime(2019, 5, 12, 10, 0),
         Some(1),
@@ -84,7 +89,7 @@ private[bootstrap] class CreateDLL @Inject()
         "Finał Festiwalu Młodego Teatru Wielkopolski",
         Some("Finał XIV Festiwalu Młodego Teatru Wielkopolski \"Dzień Dobry Sztuko\"."),
         Some("Finał XIV Festiwalu Młodego Teatru Wielkopolski \"Dzień Dobry Sztuko\".\nW tym roku wzięło udział 20 grup teatralnych z całej Wielkopolski. W CK Zamek zaprezentuje się 10 zespołów. W Festiwalu biorą udział grupy teatralne działające w szkołach, ośrodkach kultury, świetlicach itp.\nWstęp wolny."),
-        DateTime.now(),
+        DateTime.now().plusHours(2),
         new DateTime(2019, 5, 11, 10, 0),
         new DateTime(2019, 5, 12, 10, 0),
         Some(1),
@@ -93,12 +98,12 @@ private[bootstrap] class CreateDLL @Inject()
         Some("http://www.poznan.pl/mim/events/pictures/plakat,pic1,1225,0,224478,with-dims,150,150.jpg"),
         Some("Poznań")
       ),
-      eventCategories += EventCategory(Some(2), 3),
+      eventCategories += EventCategory(Some(3), 3),
       events += Event(None,
         "Koncert w Szkole u Szeligowskiego: duet Jarosław Nadrzycki i Joanna Zathey",
         Some("Kolejny Koncert w Szkole u Szeligowskiego, którego wykonawcami będą znakomici artyści - Jarosław Nadrzycki (skrzypce) i Joanna Zathey (fortepian)."),
         Some("Kolejny Koncert w Szkole u Szeligowskiego, którego wykonawcami będą znakomici artyści - Jarosław Nadrzycki (skrzypce) i Joanna Zathey (fortepian).\nW programie: Johannes Brahms - Sonata na fortepian i skrzypce G-dur op. 78, Sergiusz Rachmaninow - Romans op. 6 nr 1 Vocalise, Aleksander Głazunow - Medytacja, Karol Szymanowski - Romans op. 23, Henryk Wieniawski- Polonez brillante D-dur op. 4, Johannes Brahms - Scherzo c-moll, Fritz Kreisler - Caprice Viennoise.\nWstęp wolny\nKoncert odbywa się w ramach projektu \"Pośrodku Śródki 2019\" współfinansowanego z budżetu Miasta Poznania."),
-        DateTime.now(),
+        DateTime.now().plusHours(3),
         new DateTime(2019, 5, 11, 10, 0),
         new DateTime(2019, 5, 12, 10, 0),
         Some(1),
@@ -107,9 +112,15 @@ private[bootstrap] class CreateDLL @Inject()
         Some("http://www.poznan.pl/mim/events/pictures/joanna-zathey-i-jaroslaw-nadrzycki,pic1,1225,0,224615,with-dims,150,150.jpg"),
         Some("Poznań")
       ),
-      eventCategories += EventCategory(Some(2), 3),
-    ))
-
+      eventCategories += EventCategory(Some(4), 3),
+    ) ++
+      { for (_ <- 0 until 15) yield users += User(None, Person().name.split(" ")(0), Person().lastName, Option(Internet().email), None)} ++
+      Seq(
+        eventParticipants += EventParticipant(1, 1),
+        eventParticipants += EventParticipant(1, 2),
+        eventParticipants += EventParticipant(1, 3)
+      )
+    )
 
     db.run(inserts)
   }

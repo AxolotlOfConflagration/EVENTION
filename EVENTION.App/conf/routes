@@ -27,8 +27,10 @@ POST    /category                       controllers.CategoryController.getMany()
 # Event
 GET     /event                          controllers.EventController.all()
 GET     /event/:id                      controllers.EventController.get(id: Long)
+POST    /event                          controllers.EventController.filtered()
 POST    /event/create                   controllers.EventController.create()
 DELETE  /event/delete/:id               controllers.EventController.delete(id: Long)
+GET     /event/:id/participants         controllers.EventController.participants(id: Long)
 
 # User
 GET     /user                       controllers.UserController.all()
@@ -37,6 +39,16 @@ POST    /user/create                controllers.UserController.create()
 PUT     /user/update                controllers.UserController.update()
 DELETE  /user/delete/:id            controllers.UserController.delete(id: Long)
 
+PUT     /user/:userId/event/:eventId    controllers.UserController.singUpForEvent(userId: Long, eventId: Long)
+DELETE  /user/:userId/event/:eventId    controllers.UserController.leaveEvent(userId: Long, eventId: Long)
+
+GET     /user/:userId/event         controllers.UserController.allEvents(userId: Long)
+GET     /user/:userId/event/future  controllers.UserController.activeEvents(userId: Long)
+GET     /user/:userId/event/past    controllers.UserController.pastEvents(userId: Long)
+
+# Recomendations
+POST     /recomendation/:userId      controllers.UserController.upsertRecommendation(userId: Long)
+GET      /recomendation/:userId      controllers.UserController.recommendation(userId: Long)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
