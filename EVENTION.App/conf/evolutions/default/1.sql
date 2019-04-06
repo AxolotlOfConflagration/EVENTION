@@ -5,7 +5,7 @@ create table "businessUsers" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"n
 create table "categories" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"category" VARCHAR NOT NULL UNIQUE);
 create table "events" ("id" BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,"name" VARCHAR NOT NULL,"shortDescription" VARCHAR,"longDescription" VARCHAR,"creationDate" TIMESTAMP NOT NULL,"eventStart" TIMESTAMP NOT NULL,"eventEnd" TIMESTAMP NOT NULL,"ownerId" BIGINT,"geoJson" VARCHAR,"address" VARCHAR,"imageSource" VARCHAR,"city" VARCHAR);
 create table "eventCategories" ("eventId" BIGINT NOT NULL,"catId" BIGINT NOT NULL);
-create unique index "index" on "eventCategories" ("eventId","catId");
+create unique index "EventCategoriesIndex" on "eventCategories" ("eventId","catId");
 create table "users" ("id" BIGINT PRIMARY KEY AUTO_INCREMENT,"firstName" VARCHAR NOT NULL,"lastName" VARCHAR NOT NULL,"nick" VARCHAR,"externalId" VARCHAR);
 alter table "businessUsers" add constraint "fk_business" foreign key("businessId") references "businesses"("id") on update NO ACTION on delete NO ACTION;
 alter table "events" add constraint "fk_owner" foreign key("ownerId") references "businessUsers"("id") on update NO ACTION on delete NO ACTION;

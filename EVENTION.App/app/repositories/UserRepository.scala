@@ -1,9 +1,10 @@
 package repositories
 
 import javax.inject.Inject
-import models.database.{Category, Event, EventCategory, User}
+import models.database.{Category, Event, EventCategory, EventParticipant, User}
 import play.api.db.slick.DatabaseConfigProvider
 import com.github.tototoshi.slick.H2JodaSupport._
+import org.joda.time.DateTime
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Success, Try}
@@ -42,5 +43,29 @@ class UserRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: Ex
 
   def delete(id: Long): Future[Int] = db.run {
     users.filter(_.id === id).delete
+  }
+
+  def activeSingUpEvents(userId: Long, date: DateTime = DateTime.now): Future[Seq[Event]] = {
+    val query = eventParticipants
+      .filter(_.userId === userId)
+      .join(events)
+      .on(_.eventId === _.id)
+      .map(_._2)
+      .sortBy(_.creationDate.desc)
+
+    db.run(query.result)
+  }
+
+  def singUpForEvent(userId: Long, eventId: Long) = {
+    val participant = EventParticipant(eventId, userId)
+    db.run(eventParticipants += participant)
+  }
+
+  def leaveEvent(userId: Long, eventId: Long) = {
+    db.run{
+      eventParticipants
+        .filter(row => row.eventId === eventId && row.userId === userId)
+        .delete
+    }
   }
 }

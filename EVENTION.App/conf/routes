@@ -27,6 +27,7 @@ POST    /category                       controllers.CategoryController.getMany()
 # Event
 GET     /event                          controllers.EventController.all()
 GET     /event/:id                      controllers.EventController.get(id: Long)
+POST    /event                          controllers.EventController.filtered()
 POST    /event/create                   controllers.EventController.create()
 DELETE  /event/delete/:id               controllers.EventController.delete(id: Long)
 

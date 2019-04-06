@@ -1,14 +1,14 @@
 package controllers
 
 import javax.inject._
-import models.database.Event
-import models.database.Event
+import models.database.{Event, EventFilter}
 import play.api.libs.json.JodaReads._
 import play.api.libs.json.JodaWrites._
 import play.api.libs.json._
 import play.api.mvc._
 import repositories.EventRepository
 import utils.JsonUtils._
+import models.database.EventFilter._
 
 import scala.concurrent.ExecutionContext
 import scala.util.{Failure, Success}
@@ -34,6 +34,12 @@ class EventController @Inject()(repo: EventRepository, cc: ControllerComponents)
       case Some(event) => Ok(Json.obj("event" -> Json.toJson(event._1), "categories" -> Json.toJson(event._2)))
       case _ => NotFound
     }
+  }
+
+  def filtered() = Action(parse.json).async { implicit request =>
+    val filter = request.body.as[EventFilter]
+
+    repo.all(filter).map {events => Ok(Json.toJson(events))}
   }
 
   //
