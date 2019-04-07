@@ -1,16 +1,20 @@
 import json
 import requests
 import datetime
-from scrap import get_image_src
+
+import sys
+sys.path.append("../EVENTION.WebScraping")
+from scraping import Scrap
 
 class EventAPI_Wroclaw:
     def __init__(self):
         with open('../config.json') as f:
             config_json = json.load(f)
         self.event_labels = config_json["event_labels"]
-        self.event_address_labels = config_json["event_address_labels"]
-        self.url_today = "http://go.wroclaw.pl/api/v1.0/events?key=1011488156695333384118402645947989718531&time-from="
 
+        self.url_today = "http://go.wroclaw.pl/api/v1.0/events?key=1011488156695333384118402645947989718531&time-from="
+        self.category = ["Sport", "Kultura", "Koncert", "Targi", "Inne", "Hackaton", "Rozrywka", "Dziecko"]
+        self.scrap = Scrap()
 
     def _save_json(self, url, name):
         """
@@ -75,6 +79,23 @@ class EventAPI_Wroclaw:
         result = str(long_description.split(".")[0])
         return result+"..."
 
+    def _check_category(self, category):
+        #1-sport, 2-Kultura, 3-Koncert, 4-Targi, 5-Inne, 6-Hackaton 7 rozrywka 8 dziecko
+
+        if "Biegi" in category.split(" "):
+            return 1
+        elif category in self.category:
+            return self.category.index(category)+1
+        else:
+            return 5
+
+    def parse_data(self, date):
+        try:
+            year, month, day = date.split('-')
+        except AttributeError:
+            return False
+        return datetime.datetime(int(year), int(month), int(day), int(0), int(0), int(0))
+
 
     def parse_json(self, list_of_dic):
         """
@@ -83,55 +104,52 @@ class EventAPI_Wroclaw:
         """
         EVENT =[]
 
-        #['name', 'shortDescription', 'longDescription', 'creationDate', 'eventStart', 'eventEnd', 'ownerId', 'geoJSON', 'imageSource', 'category', 'address']
-        #['country', 'city', 'postalAddress', 'street', 'houseNumber', 'fullAddress']
+        #['name', 'shortDescription', 'longDescription', 'creationDate', 'eventStart', 'eventEnd', 'ownerId', 'geoJSON', 'imageSource',  'address', addressCity]
+
         for dic in list_of_dic["items"]:
-            event = {}
-            # print(dic.keys())
-            # print(dic["offer"].keys())
+            event = {
+                "event" :{},
+                "category": ""
+            }
+
             try:
 
-                event["name"] = dic["offer"]["title"]
-                event["shortDescription"] = self._get_first_sentence(dic["offer"]["longDescription"])
-                event["longDescription"] = dic["offer"]["longDescription"]
-                event["creationDate"] = ""
-                event["eventStart"] = dic["startDate"].split("T")[0]
-                event["eventEnd"] = dic["endDate"].split("T")[0]
-                event["ownerId"] = 0
-                event["geoJSON"] = None
+                event['event']["name"] = dic["offer"]["title"]
+                event['event']["shortDescription"] = self._get_first_sentence(dic["offer"]["longDescription"])
+                event['event']["longDescription"] = dic["offer"]["longDescription"]
+                event['event']["creationDate"] = datetime.datetime.now()
+                event['event']["eventStart"] = self.parse_data(dic["startDate"].split("T")[0])
+                event['event']["eventEnd"] = self.parse_data(dic["endDate"].split("T")[0])
+                event['event']["ownerId"] = 0
+
                 try:
-                    event["imageSource"] = dic["offer"]["mainImage"]["standard"]
+                    event['event']["imageSource"] = dic["offer"]["mainImage"]["standard"]
                 except:
-                    print(dic["offer"]["mainImage"])
+                    event['event']["imageSource"] = ""
                 try:
-                    #print(dic["offer"]["categories"][0])
-                    if dic["offer"]["categories"][0]["name"] =="Inny":
-                        event["category"] = dic["categories"][1]["name"]
-                    else:
-                        event["category"]= dic["offer"]["categories"][0]["name"]
+                    event["category"] = self._check_category(dic["offer"]["categories"][0]["name"])
+
                 except:
-                    event["category"] = "Inne"
-                # event["address"] = {
-                #     "country" : dic["address"]["country"],
-                #     "city": dic["address"]["city"],
-                #     "postalAddress": dic["address"]["zipCode"],
-                #     "street": dic["address"]["street"],
-                #     "houseNumber" : "",
-                #     "fullAddress" : ""
-                # }
+                   event['category'] = 5 #Inne
+
                 try:
-                    event["address"] = dic["address"]["street"]+" "+dic["address"]["zipCode"]
+                    event['event']["address"] = "Polska, " + dic["address"]["street"]+" "+dic["address"]["zipCode"]
+                    event['event']["addressCity"] = dic["address"]["city"]
+                except:
+                    event["address"] = "Polska, " + dic["address"]["street"] +" "+ dic["address"]["city"]
                     event["addressCity"] = dic["address"]["city"]
-                except:
-                    event["address"] = dic["address"]["street"]
-                    event["addressCity"] = dic["address"]["city"]
-                #dic["location"]["lattiude"]
-                #dic["location"]["longitude"]
+                event['event']["geoJSON"] =  self.scrap .create_geojson(event['address'])
                 EVENT.append(event)
 
             except:
                 pass
-        result = json.dumps(EVENT, ensure_ascii=False)
+
+        def date_converter(o):
+            if isinstance(o, datetime.datetime):
+                return o.__str__()
+
+        result = json.dumps(EVENT, ensure_ascii=False, default=date_converter)
+
         return result
 
     def get_event_today(self):
@@ -139,10 +157,10 @@ class EventAPI_Wroclaw:
         str_date = str(date.date())
 
         #self._save_json_today(str_date) #to test
-        list_of_dict = self.get_json("events_today_Wroclaw.json") #to test
+        #list_of_dict = self.get_json("events_today_Wroclaw.json") #to test
 
 
-        #list_of_dict = self.make_request_and_get_json(self.url_today+str_date)
+        list_of_dict = self.make_request_and_get_json(self.url_today+str_date)
         result = self.parse_json(list_of_dict)
         return result
 
