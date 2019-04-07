@@ -146,7 +146,7 @@ class EventAPI_Gdansk:
         date = datetime.datetime.now()
         str_date = str(date.date())
 
-        self._save_json_today(str_date) #to test
+        #self._save_json_today(str_date) #to test
         #list_of_dict = self.get_json("events_today_Gdansk.json") #to test
 
 
