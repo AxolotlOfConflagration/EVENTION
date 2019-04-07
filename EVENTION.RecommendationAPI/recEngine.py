@@ -50,5 +50,3 @@ class Recommendations:
 if __name__ == '__main__':
     rec = Recommendations()
     rec.recommendations
-
-
