@@ -14,6 +14,9 @@ class fillDB:
 
     def getEvents(self, dateStart = None, dateEnd = None):
         eventsScraping = Scrap().scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/warszawa')
+        eventsScraping = eventsScraping + Scrap().scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/krakow')
+        eventsScraping = eventsScraping + Scrap().scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/trojmiasto')
+        eventsScraping = eventsScraping + Scrap().scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/poznan')
         # # -- save/read to txt file --
         # with open('/home/sleter/Documents/Github/EVENTION/EVENTION.DataHarvester/eventScraping.txt', 'w+') as f:
         #     for item in eventsScraping:
