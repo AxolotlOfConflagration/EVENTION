@@ -88,8 +88,8 @@ class CategoryButton extends React.Component {
 
         <this.ButtonIcon text="Koncert" icon={this.IconMusicSvg} id={[2]} />
         <this.ButtonText text="Targi" icon="team" id={[3]} />
-        <this.ButtonIcon text="Hackathon" icon={this.IconHackathon} id={[5]} />
-        <this.ButtonText text="Inne" id={[4]} />
+        <this.ButtonIcon text="Hackathon" icon={this.IconHackathon} id={[4]} />
+        <this.ButtonText text="Inne" id={[5]} />
       </div>
     );
   }

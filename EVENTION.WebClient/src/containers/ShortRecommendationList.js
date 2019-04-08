@@ -4,10 +4,8 @@ import axios from "axios";
 
 class ShortRecommendationList extends React.Component {
   state = {
-    EventId: [],
     ShortEvents: [],
-    id: 1,
-    loading: true
+    id: 1
   };
 
   componentDidMount() {
@@ -15,36 +13,12 @@ class ShortRecommendationList extends React.Component {
       .get("http://localhost:9000/recomendation/".concat(this.state.id))
       .then(res => {
         this.setState({
-          EventId: res.data,
-          loading: false
+          ShortEvent: res.data
         });
       });
-
-    // this.state.EventId.recommendation.forEach(rec => {
-    //   axios.get(
-    //     "http://localhost:9000/event/".concat(rec).then(result => {
-    //       this.setState({
-    //         ShortEvents: this.state.ShortEvents.push(result),
-    //         loading: false
-    //       });
-    //     })
-    //   );
-    // });
-    while (this.state.loading) {
-      console.log("WHile");
-    }
-    axios.get("http://localhost:9000/event").then(result => {
-      this.setState({
-        ShortEvents: result,
-        loading: false
-      });
-    });
   }
 
   render() {
-    if (this.state.loading) {
-      return <div>LOADING</div>;
-    }
     return <ShortEvent data={this.state.ShortEvents} />;
   }
 }

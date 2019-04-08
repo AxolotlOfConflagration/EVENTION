@@ -11,7 +11,7 @@ class ShortEventList extends React.Component {
     axios
       .post("http://localhost:9000/event", {
         beginning: 0,
-        count: 4,
+        count: 100,
         ordered: "creationDate",
         ascending: false,
         categories: category,
