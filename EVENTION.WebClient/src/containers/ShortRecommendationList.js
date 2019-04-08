@@ -5,8 +5,7 @@ import axios from "axios";
 class ShortRecommendationList extends React.Component {
   state = {
     ShortEvents: [],
-    id: 1,
-    loading: true
+    id: 1
   };
 
   componentDidMount() {
@@ -14,8 +13,7 @@ class ShortRecommendationList extends React.Component {
       .get("http://localhost:9000/recomendation/".concat(this.state.id))
       .then(res => {
         this.setState({
-          ShortEvent: res.data,
-          loading: false
+          ShortEvents: res.data
         });
         console.log("data", res.data);
       });
