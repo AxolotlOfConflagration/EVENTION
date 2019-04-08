@@ -3,7 +3,7 @@ import axios from "axios";
 import { List, Button, Icon, Drawer } from "antd";
 import EventDrawer from "./EventDrawer";
 
-class ShortRecomEvent extends React.Component {
+class ShortEvent extends React.Component {
   state = {
     visible: false,
     eventTitle: null,
@@ -21,9 +21,9 @@ class ShortRecomEvent extends React.Component {
     </span>
   );
 
-  ButtonText = ({ text, func }) => (
+  ButtonText = ({ text }) => (
     <span>
-      <Button type="ghost" size="small" onClick={func}>
+      <Button type="ghost" size="small">
         {text}
       </Button>
     </span>
@@ -123,4 +123,4 @@ class ShortRecomEvent extends React.Component {
   }
 }
 
-export default ShortRecomEvent;
+export default ShortEvent;

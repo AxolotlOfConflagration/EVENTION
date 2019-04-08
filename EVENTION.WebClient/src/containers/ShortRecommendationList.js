@@ -13,7 +13,7 @@ class ShortRecommendationList extends React.Component {
       .get("http://localhost:9000/recomendation/".concat(this.state.id))
       .then(res => {
         this.setState({
-          ShortEvent: res.data
+          ShortEvents: res.data
         });
         console.log(res.data);
       });

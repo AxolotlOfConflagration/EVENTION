@@ -18,7 +18,12 @@ class CategoryButton extends React.Component {
   ButtonIcon = ({ text, icon, id }) => (
     <span>
       <Button
-        type={this.props.currentCategory === id ? "primary" : "dashed"}
+        type={
+          this.props.currentCategory != null &&
+          this.props.currentCategory[0] === id[0]
+            ? "primary"
+            : "dashed"
+        }
         size="default"
         shape="round"
         onClick={() => this.props.chooseCategory(id)}
