@@ -11,26 +11,28 @@ class Recommendations:
         resp = requests.get(url='http://localhost:9000/user')
         return [int(user['id']) for user in resp.json()]
 
-    def get_events(self):
+    def get_events(self, as_nums = False, with_index = False):
         ids = self.get_all_ids()
         events = []
         for _id in ids:
             userEvents = []
             resp = requests.get(url='http://localhost:9000/user/{}/event'.format(_id))
             for e in resp.json():
-                userEvents.append(e['name'])
-            events.append(tuple(userEvents))
-        self.eventsForUsers = events
+                if(as_nums): userEvents.append(self.name_to_id(e['name']))
+                else: userEvents.append(e['name'])
+            if(with_index): events.append((_id, tuple(userEvents)))
+            else: events.append(tuple(userEvents))
+        return events
 
     def name_to_id(self, name):
-        for tup in self.events:
+        events = self.events
+        for tup in events:
             if(name == tup[1]): return tup[0]
         return None
 
     def calculate(self):
-        self.get_events()
-        transactions = self.eventsForUsers[:10]
-        itemsets, rules = apriori(transactions, min_support=0.2,  min_confidence=0.5)
+        transactions =  self.get_events()[:8]
+        itemsets, rules = apriori(transactions, min_support=0.3,  min_confidence=1)
         bestFits = {}
         for rule in rules:
             bestFits[self.name_to_id(rule.lhs[0])] = [self.name_to_id(r) for r in rule.rhs]
@@ -38,15 +40,22 @@ class Recommendations:
 
     def recommendations(self):
         bestFits = self.calculate()
-        recc = {}
-        print(self.eventsForUsers)
-        print(bestFits)
-        # for i in self.eventsForUsers:
-        #     recc[str(i)] = []
-        #     for key, value in bestFits.items():
-        #         if(int(key) == )
+        events = self.get_events(as_nums = True, with_index = True)
+        recc = []
+        for event in events:
+            ve = []
+            for eventId in event[1]:
+                for key, value in bestFits.items():
+                    if(int(key) == eventId): ve = ve+ value
+            recc.append((event[0], list(set(ve))))
+        return recc
 
+    def send_recommendations(self):
+        recomm = self.recommendations()
+        for userId, rec in recomm:
+            r = requests.post('http://localhost:9000/recommendation/{}'.format(userId), json=recomm)
+            print("status_code: "+str(r.status_code))
 
 if __name__ == '__main__':
     rec = Recommendations()
-    rec.recommendations
+    rec.send_recommendations()

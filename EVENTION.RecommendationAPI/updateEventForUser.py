@@ -24,7 +24,7 @@ def put_event(userId, eventId): # dont add events that user already attend
     sleep(0.05)
 
 if __name__ == '__main__':
-    p = random_events(3, get_event_ids(), get_user_ids())
+    p = random_events(17, get_event_ids(), get_user_ids())
     for user, events in p.items():
         for event in events:
             put_event(user, event)
