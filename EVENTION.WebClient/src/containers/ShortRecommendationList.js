@@ -1,5 +1,5 @@
 import React from "react";
-import ShortEvent from "../components/ShortEvent";
+import ShortRecomEvent from "../components/ShortRecomEvent";
 import axios from "axios";
 
 class ShortRecommendationList extends React.Component {
@@ -15,11 +15,12 @@ class ShortRecommendationList extends React.Component {
         this.setState({
           ShortEvent: res.data
         });
+        console.log(res.data);
       });
   }
 
   render() {
-    return <ShortEvent data={this.state.ShortEvents} />;
+    return <ShortRecomEvent data={this.state.ShortEvents} />;
   }
 }
 
