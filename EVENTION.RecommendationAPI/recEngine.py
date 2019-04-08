@@ -32,7 +32,7 @@ class Recommendations:
 
     def calculate(self):
         transactions =  self.get_events()[:8]
-        itemsets, rules = apriori(transactions, min_support=0.3,  min_confidence=1)
+        itemsets, rules = apriori(transactions, min_support=0.35,  min_confidence=1)
         bestFits = {}
         for rule in rules:
             bestFits[self.name_to_id(rule.lhs[0])] = [self.name_to_id(r) for r in rule.rhs]
@@ -53,7 +53,7 @@ class Recommendations:
     def send_recommendations(self):
         recomm = self.recommendations()
         for userId, rec in recomm:
-            r = requests.post('http://localhost:9000/recommendation/{}'.format(userId), json=recomm)
+            r = requests.post('http://localhost:9000/recomendation/{}'.format(userId), json=rec)
             print("status_code: "+str(r.status_code))
 
 if __name__ == '__main__':
