@@ -16,18 +16,28 @@ class ShortRecommendationList extends React.Component {
       .then(res => {
         this.setState({
           EventId: res.data,
-          loading: true
+          loading: false
         });
       });
-    this.state.EventId.recommendation.forEach(rec => {
-      axios.get(
-        "http://localhost:9000/event".concat(rec).then(result => {
-          this.setState({
-            ShortEvents: this.state.ShortEvents.push(result),
-            loading: false
-          });
-        })
-      );
+
+    // this.state.EventId.recommendation.forEach(rec => {
+    //   axios.get(
+    //     "http://localhost:9000/event/".concat(rec).then(result => {
+    //       this.setState({
+    //         ShortEvents: this.state.ShortEvents.push(result),
+    //         loading: false
+    //       });
+    //     })
+    //   );
+    // });
+    while (this.state.loading) {
+      console.log("WHile");
+    }
+    axios.get("http://localhost:9000/event").then(result => {
+      this.setState({
+        ShortEvents: result,
+        loading: false
+      });
     });
   }
 
