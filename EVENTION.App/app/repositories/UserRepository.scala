@@ -6,7 +6,8 @@ import play.api.db.slick.DatabaseConfigProvider
 import com.github.tototoshi.slick.H2JodaSupport._
 import org.joda.time.DateTime
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, ExecutionContext, Future}
 import scala.util.{Success, Try}
 
 class UserRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: ExecutionContext)
@@ -101,12 +102,18 @@ class UserRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: Ex
     }
   }
 
-  def recommendation(userId: Long): Future[Option[Recommendation]] = {
-    db.run{
+  def recommendation(userId: Long): Future[Seq[Event]] = {
+    val recs = Await.result[Option[Recommendation]](db.run{
       recommendations
         .filter(_.userId === userId)
         .result
         .headOption
+    }, Duration.Inf).map(_.recommendations).getOrElse(Nil)
+
+    db.run{
+      events
+        .filter(_.id inSet recs)
+        .result
     }
   }
 }
