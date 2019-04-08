@@ -15,7 +15,7 @@ class UserController @Inject()
 (implicit ec: ExecutionContext) extends AbstractController(cc) {
   def create(): Action[User] = Action(parse.json[User]).async { implicit request =>
     val user = request.body
-    repo.insert(user).map{
+    repo.insert(user).map {
       case Success(value) => Ok(Json.toJson(value))
       case Failure(exception) => BadRequest(Json.toJson(exception))
     }
@@ -26,14 +26,14 @@ class UserController @Inject()
   }
 
   def get(id: Long): Action[AnyContent] = Action.async { implicit request =>
-    repo.get(id).map{
+    repo.get(id).map {
       case Some(business) => Ok(Json.toJson(business))
       case _ => NotFound
     }
   }
 
   def update: Action[User] = Action(parse.json[User]).async { implicit request =>
-    repo.update(request.body).map{
+    repo.update(request.body).map {
       case Success(value) => Ok(Json.toJson(value))
       case Failure(exception) => BadRequest(Json.toJson(exception))
     }
@@ -70,9 +70,7 @@ class UserController @Inject()
   }
 
   def recommendation(userId: Long): Action[AnyContent] = Action.async { implicit request =>
-    repo.recommendation(userId).map{
-      case Some(value) => Ok(value.asJson)
-      case _ => NotFound
+    repo.recommendation(userId).map { value => Ok(Json.toJson(value))
     }
   }
 }

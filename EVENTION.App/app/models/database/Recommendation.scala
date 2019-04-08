@@ -13,6 +13,10 @@ case class Recommendation
       "recommendation" -> Json.parse(recommendation).as[Seq[Long]]
     )
   }
+
+  def recommendations: Seq[Long] = {
+    Json.parse(recommendation).as[Seq[Long]]
+  }
 }
 
 object Recommendation{
