@@ -14,7 +14,7 @@ class ShortEventList extends React.Component {
         count: 4,
         ordered: "creationDate",
         ascending: false,
-        categories: [category],
+        categories: category,
         city: city
       })
       .then(res => {
