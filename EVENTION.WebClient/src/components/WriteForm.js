@@ -1,7 +1,5 @@
 import React from "react";
-import {
-    Form, Icon, Input, Button,
-  } from 'antd';
+import { Form, Icon, Input, Button } from "antd";
 
 function onChange(date, dateString) {
   console.log(date, dateString);
@@ -10,12 +8,11 @@ function onChange(date, dateString) {
 class WriteForm extends React.Component {
   render() {
     return (
-     
-        <Form layout="inline" onSubmit={this.handleSubmit}>
+      <Form layout="inline" onSubmit={this.handleSubmit}>
         <Form.Item>
-            <Input placeholder="Nazwa Wydarzenia" />
+          <Input placeholder="Nazwa Wydarzenia" />
         </Form.Item>
-        </Form>     
+      </Form>
     );
   }
 }

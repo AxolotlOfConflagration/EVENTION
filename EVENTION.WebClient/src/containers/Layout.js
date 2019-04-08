@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Menu, Icon } from "antd";
-import { createBrowserHistory } from "history"; 
+import { createBrowserHistory } from "history";
 const { Sider, Content } = Layout;
 
 class MyLayout extends React.Component {
@@ -14,27 +14,26 @@ class MyLayout extends React.Component {
     });
   };
 
-onNavigateMyEvents(){
+  onNavigateMyEvents() {
     const history = createBrowserHistory();
-    history.push("/MojeWydarzenia"); 
-    window.location.assign('/MojeWydarzenia'); 
-}
-onNavigateActivate(){
-  const history = createBrowserHistory();
-  history.push("/Aktywnosc"); 
-  window.location.assign('/Aktywnosc'); 
-}
-onNavigateHome(){
-  const history = createBrowserHistory();
-  history.push("/"); 
-  window.location.assign('/'); 
-}
-onNavigateRecommendation(){
-  const history = createBrowserHistory();
-  history.push("/Rekomendacje"); 
-  window.location.assign('/Rekomendacje'); 
-}
-
+    history.push("/MojeWydarzenia");
+    window.location.assign("/MojeWydarzenia");
+  }
+  onNavigateActivate() {
+    const history = createBrowserHistory();
+    history.push("/Aktywnosc");
+    window.location.assign("/Aktywnosc");
+  }
+  onNavigateHome() {
+    const history = createBrowserHistory();
+    history.push("/");
+    window.location.assign("/");
+  }
+  onNavigateRecommendation() {
+    const history = createBrowserHistory();
+    history.push("/Rekomendacje");
+    window.location.assign("/Rekomendacje");
+  }
 
   render() {
     return (
@@ -56,7 +55,7 @@ onNavigateRecommendation(){
               <Icon type="home" />
               <span>Strona domowa</span>
             </Menu.Item>
-            <Menu.Item key="2" onClick ={this.onNavigateMyEvents}>
+            <Menu.Item key="2" onClick={this.onNavigateMyEvents}>
               <Icon type="calendar" />
               <span>Moje wydarzenia</span>
             </Menu.Item>

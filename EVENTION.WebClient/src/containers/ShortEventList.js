@@ -21,16 +21,11 @@ class ShortEventList extends React.Component {
         this.setState({
           ShortEvents: res.data
         });
-        console.log(res.data);
-        console.log(category);
-        console.log(city);
       });
   };
 
   componentDidMount() {
     this.fetchData();
-    console.log("SEL mount");
-    console.log(this.props.city);
   }
 
   componentDidUpdate(prevProps) {
@@ -39,7 +34,6 @@ class ShortEventList extends React.Component {
       prevProps.category !== this.props.category
     ) {
       this.fetchData(this.props.city, this.props.category);
-      console.log("update sel");
     }
   }
 

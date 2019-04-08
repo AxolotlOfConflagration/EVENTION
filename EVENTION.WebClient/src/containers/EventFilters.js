@@ -20,7 +20,10 @@ class EventFilters extends React.Component {
       <div>
         <Row>
           <Col>
-            <CityButton chooseCity={this.props.chooseCity} />
+            <CityButton
+              currentCity={this.props.city}
+              chooseCity={this.props.chooseCity}
+            />
 
             <br />
             <CategortButton chooseCategory={this.props.chooseCategory} />

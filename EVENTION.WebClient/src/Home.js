@@ -10,7 +10,7 @@ class Home extends Component {
   state = {
     categories: null, //wszytskie czyli puste
     //1.Sport, 2.Koncert, 3.Targi, 4.Inne, 5.Hackathon
-    cities: null //Wszytskie
+    cities: null //Wszystkie
   };
   chooseCategory = category => {
     this.setState({ categories: category });
