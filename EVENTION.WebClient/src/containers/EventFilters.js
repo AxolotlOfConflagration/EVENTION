@@ -29,9 +29,9 @@ class EventFilters extends React.Component {
             <CategortButton chooseCategory={this.props.chooseCategory} />
           </Col>
           <br />
-          <Col>
+          {/* <Col>
             <DateSelect />
-          </Col>
+          </Col> */}
         </Row>
       </div>
     );
