@@ -14,7 +14,7 @@ class ShortEventList extends React.Component {
         count: 4,
         ordered: "creationDate",
         ascending: false,
-        categories: category,
+        categories: [category],
         city: city
       })
       .then(res => {
@@ -22,8 +22,8 @@ class ShortEventList extends React.Component {
           ShortEvents: res.data
         });
         console.log(res.data);
-        console.log(this.props.category);
-        console.log(this.props.city);
+        console.log(category);
+        console.log(city);
       });
   };
 
@@ -34,7 +34,10 @@ class ShortEventList extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.city !== this.props.city) {
+    if (
+      prevProps.city !== this.props.city ||
+      prevProps.category !== this.props.category
+    ) {
       this.fetchData(this.props.city, this.props.category);
       console.log("update sel");
     }

@@ -39,8 +39,8 @@ class Home extends Component {
             </Row>
             <Row>
               <ShortEventList
-                categories={this.state.categories}
-                cities={this.state.cities}
+                category={this.state.categories}
+                city={this.state.cities}
               />
             </Row>
           </Col>
