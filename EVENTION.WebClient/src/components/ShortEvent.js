@@ -101,9 +101,14 @@ class ShortEvent extends React.Component {
                   text={this.prepTime(item.event.eventStart)}
                 />
               ]}
-              extra={<img height={150} alt="logo" src={item.event.imageSource} />}
+              extra={
+                <img height={150} alt="logo" src={item.event.imageSource} />
+              }
             >
-              <List.Item.Meta title={item.event.name} description={item.event.address} />
+              <List.Item.Meta
+                title={item.event.name}
+                description={item.event.address}
+              />
               {item.event.shortDescription}
             </List.Item>
           )}
