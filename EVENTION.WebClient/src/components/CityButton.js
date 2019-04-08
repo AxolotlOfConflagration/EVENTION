@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "antd";
 
 class CityButton extends React.Component {
-  ButtonText = ({ text, type }) => (
+  ButtonText = ({ text }) => (
     <span>
       <Button
         type={this.props.currentCity === text ? "primary" : "ghost"}
@@ -21,7 +21,7 @@ class CityButton extends React.Component {
         <this.ButtonText text="Poznań" />
         <this.ButtonText text="Warszawa" />
         <this.ButtonText text="Wrocław" />
-        <this.ButtonText text="Gdańsk" />
+        <this.ButtonText text="Trojmiasto" />
         <this.ButtonText text="Kraków" />
         <this.ButtonText text="Zakopane" />
       </div>
