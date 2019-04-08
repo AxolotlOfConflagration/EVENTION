@@ -5,7 +5,7 @@ class CategoryButton extends React.Component {
   ButtonText = ({ text, icon, id }) => (
     <span>
       <Button
-        type="dashed"
+        type={this.props.currentCategory === id ? "primary" : "dashed"}
         size="default"
         icon={icon}
         shape="round"
@@ -18,7 +18,7 @@ class CategoryButton extends React.Component {
   ButtonIcon = ({ text, icon, id }) => (
     <span>
       <Button
-        type="dashed"
+        type={this.props.currentCategory === id ? "primary" : "dashed"}
         size="default"
         shape="round"
         onClick={() => this.props.chooseCategory(id)}
@@ -85,7 +85,6 @@ class CategoryButton extends React.Component {
       <div>
         <this.ButtonText text="Wszystkie" id={null} />
         <this.ButtonText text="Sport" icon="dribbble" id={[1]} />
-
         <this.ButtonIcon text="Koncert" icon={this.IconMusicSvg} id={[2]} />
         <this.ButtonText text="Targi" icon="team" id={[3]} />
         <this.ButtonIcon text="Hackathon" icon={this.IconHackathon} id={[4]} />
