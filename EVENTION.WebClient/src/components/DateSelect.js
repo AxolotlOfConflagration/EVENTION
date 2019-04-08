@@ -7,7 +7,7 @@ function onChange(date, dateString) {
   console.log(date, dateString);
 }
 
-class CitySelect extends React.Component {
+class DataSelect extends React.Component {
   render() {
     return (
       <div>
@@ -20,4 +20,4 @@ class CitySelect extends React.Component {
   }
 }
 
-export default CitySelect;
+export default DataSelect;

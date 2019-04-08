@@ -72,7 +72,7 @@ class ShortEvent extends React.Component {
           dataSource={this.props.data}
           renderItem={item => (
             <List.Item
-              key={item.name}
+              key={item.event.name}
               actions={[
                 <this.ButtonIconText
                   type={item.saved ? "check" : "plus"}
@@ -83,7 +83,7 @@ class ShortEvent extends React.Component {
                   text=" Więcej "
                   func={() => {
                     axios
-                      .get("http://localhost:9000/event/".concat(item.id))
+                      .get("http://localhost:9000/event/".concat(item.event.id))
                       .then(res => {
                         this.setState({
                           event: res
@@ -91,20 +91,20 @@ class ShortEvent extends React.Component {
                       });
                     this.setState({
                       visible: !this.state.visible,
-                      eventID: item.id,
-                      eventTitle: item.name
+                      eventID: item.event.id,
+                      eventTitle: item.event.name
                     });
                   }}
                 />,
                 <this.IconText
                   type="schedule"
-                  text={this.prepTime(item.eventStart)}
+                  text={this.prepTime(item.event.eventStart)}
                 />
               ]}
-              extra={<img height={150} alt="logo" src={item.imageSource} />}
+              extra={<img height={150} alt="logo" src={item.event.imageSource} />}
             >
-              <List.Item.Meta title={item.name} description={item.address} />
-              {item.shortDescription}
+              <List.Item.Meta title={item.event.name} description={item.event.address} />
+              {item.event.shortDescription}
             </List.Item>
           )}
         />
