@@ -63,6 +63,14 @@ class Scrap:
             # categories.append(category['value'].lower())
             if 'sport' in category['value'].lower():
                 categories.append(1)
+            elif 'kultura' in category['value'].lower():
+                categories.append(2)
+            elif 'koncert' in category['value'].lower():
+                categories.append(3)
+            elif 'targi' in category['value'].lower():
+                categories.append(4)
+            elif 'hackathon' in category['value'].lower():
+                categories.append(6)
             else:
                 categories.append(5)
         categories = list(set(categories))
