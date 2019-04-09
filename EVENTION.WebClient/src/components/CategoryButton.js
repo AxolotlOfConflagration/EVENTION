@@ -90,9 +90,10 @@ class CategoryButton extends React.Component {
       <div>
         <this.ButtonText text="Wszystkie" id={null} />
         <this.ButtonText text="Sport" icon="dribbble" id={[1]} />
+        <this.ButtonText text="Kultura" icon={null} id={[2]} />
         <this.ButtonIcon text="Koncert" icon={this.IconMusicSvg} id={[2]} />
-        <this.ButtonText text="Targi" icon="team" id={[3]} />
-        <this.ButtonIcon text="Hackathon" icon={this.IconHackathon} id={[4]} />
+        <this.ButtonText text="Targi" icon="team" id={[4]} />
+        <this.ButtonIcon text="Hackathon" icon={this.IconHackathon} id={[6]} />
         <this.ButtonText text="Inne" id={[5]} />
       </div>
     );

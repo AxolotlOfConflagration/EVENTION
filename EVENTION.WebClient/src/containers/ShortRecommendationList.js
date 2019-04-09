@@ -15,7 +15,6 @@ class ShortRecommendationList extends React.Component {
         this.setState({
           ShortEvents: res.data
         });
-        console.log(res.data);
       });
   }
 
