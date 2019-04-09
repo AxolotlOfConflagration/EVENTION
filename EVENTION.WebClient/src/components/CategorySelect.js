@@ -31,6 +31,7 @@ class CategorySelect extends React.Component {
         }
       >
         <Option value="sport">Sport</Option>
+        <Option value="kultura">Kultura</Option>
         <Option value="koncert">Koncert</Option>
         <Option value="targi">Targi</Option>
         <Option value="hackathon">Hackathon</Option>
