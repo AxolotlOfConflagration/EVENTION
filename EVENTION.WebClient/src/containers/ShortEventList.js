@@ -25,7 +25,7 @@ class ShortEventList extends React.Component {
   };
 
   componentDidMount() {
-    this.fetchData();
+    this.fetchData(this.props.city, this.props.category);
   }
 
   componentDidUpdate(prevProps) {

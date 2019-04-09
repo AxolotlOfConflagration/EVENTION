@@ -10,17 +10,20 @@ class Home extends Component {
   state = {
     categories: null, //wszytskie czyli puste
     //1.Sport, 2.Koncert, 3.Targi, 4.Inne, 5.Hackathon
-    cities: null //Wszystkie
+    city: null //Wszystkie
   };
+
   chooseCategory = category => {
     this.setState({ categories: category });
     console.log(category);
   };
+
   chooseCity = city => {
-    this.setState({ cities: city });
+    this.setState({ city: city });
     console.log(city);
-    console.log(this.state.cities);
+    console.log(this.state.city);
   };
+
   render() {
     return (
       <div className="Home">
@@ -30,7 +33,7 @@ class Home extends Component {
               <EventFilters
                 category={this.state.categories}
                 chooseCategory={this.chooseCategory}
-                city={this.state.cities}
+                city={this.state.city}
                 chooseCity={this.chooseCity}
               />
             </Row>
@@ -40,12 +43,12 @@ class Home extends Component {
             <Row>
               <ShortEventList
                 category={this.state.categories}
-                city={this.state.cities}
+                city={this.state.city}
               />
             </Row>
           </Col>
           <Col span={9}>
-            <EventMap />
+            <EventMap mapPos={this.state.city} />
           </Col>
         </MyLayout>
       </div>
