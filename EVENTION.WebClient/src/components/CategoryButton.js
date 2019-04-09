@@ -2,10 +2,29 @@ import React from "react";
 import { Icon, Button } from "antd";
 
 class CategoryButton extends React.Component {
-  ButtonText = ({ text, icon, id }) => (
+  ButtonAll = ({ text, icon, id }) => (
     <span>
       <Button
         type={this.props.currentCategory === id ? "primary" : "dashed"}
+        size="default"
+        icon={icon}
+        shape="round"
+        onClick={() => this.props.chooseCategory(id)}
+      >
+        {text}
+      </Button>
+    </span>
+  );
+
+  ButtonText = ({ text, icon, id }) => (
+    <span>
+      <Button
+        type={
+          this.props.currentCategory != null &&
+          this.props.currentCategory[0] === id[0]
+            ? "primary"
+            : "dashed"
+        }
         size="default"
         icon={icon}
         shape="round"
@@ -109,7 +128,7 @@ class CategoryButton extends React.Component {
   render() {
     return (
       <div>
-        <this.ButtonText text="Wszystkie" id={null} />
+        <this.ButtonAll text="Wszystkie" id={null} />
         <this.ButtonText text="Sport" icon="dribbble" id={[1]} />
         <this.ButtonIcon text="Kultura" icon={this.IconCultureSvg} id={[2]} />
         <this.ButtonIcon text="Koncert" icon={this.IconMusicSvg} id={[3]} />

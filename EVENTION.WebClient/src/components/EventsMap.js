@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
 const citiesPos = [
   {
-    cityName: "Poznań",
+    cityName: "Poznan",
     coords: [52.406, 16.925]
   },
   {
@@ -18,7 +18,7 @@ const citiesPos = [
     coords: [52.2297, 21.0122]
   },
   {
-    cityName: "Wrocław",
+    cityName: "Wroclaw",
     coords: [51.1079, 17.0385]
   },
   {
@@ -26,7 +26,7 @@ const citiesPos = [
     coords: [54.433, 18.55]
   },
   {
-    cityName: "Kraków",
+    cityName: "Krakow",
     coords: [50.0647, 19.945]
   },
   {

@@ -9,15 +9,11 @@ class Recommendation extends Component {
   render() {
     return (
       <div className="Recommendation">
-      
         <MyLayout>
-          <Col span={15}>
+          <Col span={24}>
             <Row>
               <ShortRecommendationList />
             </Row>
-          </Col>
-          <Col span={9}>
-            <EventMap />
           </Col>
         </MyLayout>
       </div>
