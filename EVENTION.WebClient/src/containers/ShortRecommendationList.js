@@ -25,7 +25,9 @@ class ShortRecommendationList extends React.Component {
     if (this.state.ShortEvents.length <= 0) {
       return (
         <div>
-          Uczęszczaj na eventy dalej, wkrótce będziemy mogli Ci coś polecić.
+          <h2>
+            Uczęszczaj na eventy dalej, wkrótce będziemy mogli Ci coś polecić.
+          </h2>
         </div>
       );
     } else if (this.state.loading) {

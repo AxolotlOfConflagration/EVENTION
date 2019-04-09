@@ -38,6 +38,13 @@ class ShortEventList extends React.Component {
   }
 
   render() {
+    if (this.state.ShortEvents.length <= 0) {
+      return (
+        <div>
+          <h2>Brak wydarzeń o wybranej kategorii.</h2>
+        </div>
+      );
+    }
     return <ShortEvent data={this.state.ShortEvents} />;
   }
 }
