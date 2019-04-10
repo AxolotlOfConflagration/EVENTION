@@ -10,39 +10,55 @@ const Wrapper = styled.div`
 
 const citiesPos = [
   {
+    cityName: null,
+    coords: [51.9194, 19.1451],
+    zoom: 6
+  },
+  {
     cityName: "Poznan",
-    coords: [52.406, 16.925]
+    coords: [52.406, 16.925],
+    zoom: 13
   },
   {
     cityName: "Warszawa",
-    coords: [52.2297, 21.0122]
+    coords: [52.2297, 21.0122],
+    zoom: 13
   },
   {
     cityName: "Wroclaw",
-    coords: [51.1079, 17.0385]
+    coords: [51.1079, 17.0385],
+    zoom: 13
   },
   {
     cityName: "Trojmiasto",
-    coords: [54.433, 18.55]
+    coords: [54.433, 18.55],
+    zoom: 11
   },
   {
     cityName: "Krakow",
-    coords: [50.0647, 19.945]
+    coords: [50.0647, 19.945],
+    zoom: 13
   },
   {
     cityName: "Zakopane",
-    coords: [49.2992, 19.9496]
+    coords: [49.2992, 19.9496],
+    zoom: 13
   }
 ];
 
 class EventMap extends React.Component {
-  setMap = mapPos => {
+  setMap = () => {
     citiesPos.forEach(city => {
       console.log(city);
       if (city.cityName === this.props.mapPos) {
-        this.map.flyTo(city.coords, 13);
+        this.map.flyTo(city.coords, city.zoom, { duration: 1.5 });
       }
     });
+  };
+
+  setMarkers = () => {
+    this.marker = new L.Marker([52.406, 16.925]);
+    this.marker.addTo(this.map);
   };
 
   componentDidMount() {
@@ -51,16 +67,14 @@ class EventMap extends React.Component {
       zoom: 13
     });
 
-    L.tileLayer(
-      "https://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png",
-      {
-        maxZoom: 20
-      }
-    ).addTo(this.map);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 20
+    }).addTo(this.map);
   }
 
   componentDidUpdate() {
-    this.setMap(this.props.mapPos);
+    this.setMap();
+    this.setMarkers();
   }
 
   render() {

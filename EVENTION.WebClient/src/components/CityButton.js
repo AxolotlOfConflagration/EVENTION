@@ -2,6 +2,19 @@ import React from "react";
 import { Button } from "antd";
 
 class CityButton extends React.Component {
+  ButtonAll = ({ text }) => (
+    <span>
+      <Button
+        type={this.props.currentCity === null ? "primary" : "ghost"}
+        size="default"
+        shape="round"
+        onClick={() => this.props.chooseCity(null)}
+      >
+        {text}
+      </Button>
+    </span>
+  );
+
   ButtonText = ({ text, value }) => (
     <span>
       <Button
@@ -18,6 +31,7 @@ class CityButton extends React.Component {
   render() {
     return (
       <div>
+        <this.ButtonAll text="Wszystkie" />
         <this.ButtonText text="Poznań" value="Poznan" />
         <this.ButtonText text="Warszawa" value="Warszawa" />
         <this.ButtonText text="Wrocław" value="Wroclaw" />
