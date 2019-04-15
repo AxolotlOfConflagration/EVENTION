@@ -45,7 +45,9 @@ class ShortEventList extends React.Component {
         </div>
       );
     }
-    return <ShortEvent data={this.state.ShortEvents} />;
+    return (
+      <ShortEvent data={this.state.ShortEvents} setPage={this.props.setPage} />
+    );
   }
 }
 

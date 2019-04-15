@@ -66,6 +66,7 @@ class ShortEvent extends React.Component {
           pagination={{
             onChange: page => {
               console.log(page);
+              this.props.setPage(page);
             },
             pageSize: 4
           }}

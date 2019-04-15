@@ -1,12 +1,20 @@
 import React from "react";
-import L from "leaflet";
+import * as L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import styled from "styled-components";
+import axios from "axios";
 
 const Wrapper = styled.div`
   width: ${props => props.width}
   height: ${props => props.height}
 `;
+
+const customMarker = new L.icon({
+  iconUrl: "https://unpkg.com/leaflet@1.4.0/dist/images/marker-icon.png",
+  iconSize: [25, 41],
+  iconAnchor: [10, 41],
+  popupAnchor: [2, -40]
+});
 
 const citiesPos = [
   {
@@ -17,7 +25,7 @@ const citiesPos = [
   {
     cityName: "Poznan",
     coords: [52.406, 16.925],
-    zoom: 13
+    zoom: 12
   },
   {
     cityName: "Warszawa",
@@ -49,32 +57,61 @@ const citiesPos = [
 class EventMap extends React.Component {
   setMap = () => {
     citiesPos.forEach(city => {
-      console.log(city);
       if (city.cityName === this.props.mapPos) {
         this.map.flyTo(city.coords, city.zoom, { duration: 1.5 });
       }
     });
   };
 
-  setMarkers = () => {
-    this.marker = new L.Marker([52.406, 16.925]);
-    this.marker.addTo(this.map);
+  setGeoMarker = () => {
+    if (this.props.city !== null) {
+      axios
+        .post("http://localhost:9000/event", {
+          beginning: (this.props.page - 1) * 4,
+          count: 4,
+          ordered: "creationDate",
+          ascending: false,
+          categories: this.props.categories,
+          city: this.props.city
+        })
+        .then(res => {
+          res.data.forEach(event => {
+            this.marker = L.geoJSON(JSON.parse(event.event.geoJson), {
+              pointToLayer: (feature, latlng) => {
+                return L.marker(latlng, { icon: customMarker });
+              }
+            }).addTo(this.map);
+          });
+        });
+    }
   };
 
   componentDidMount() {
     this.map = L.map("map", {
       center: [52.406, 16.925],
-      zoom: 13
+      zoom: 12
     });
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 20
-    }).addTo(this.map);
+    L.tileLayer(
+      "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+      {
+        maxZoom: 18,
+        attribution:
+          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: "mapbox.streets"
+      }
+    ).addTo(this.map);
+
+    this.setGeoMarker();
   }
 
-  componentDidUpdate() {
-    this.setMap();
-    this.setMarkers();
+  componentDidUpdate(prevProps) {
+    if (prevProps !== this.props) {
+      this.setMap();
+      this.setGeoMarker();
+    }
   }
 
   render() {

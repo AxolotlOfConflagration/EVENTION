@@ -10,7 +10,8 @@ class Home extends Component {
   state = {
     categories: null, //wszytskie czyli puste
     //1.Sport, 2.Koncert, 3.Targi, 4.Inne, 5.Hackathon
-    city: null //Wszystkie
+    city: "Poznan", //Wszystkie
+    page: 0
   };
 
   chooseCategory = category => {
@@ -22,6 +23,13 @@ class Home extends Component {
     this.setState({ city: city });
     console.log(city);
     console.log(this.state.city);
+  };
+
+  setPage = page => {
+    this.setState({
+      page: page
+    });
+    console.log("Chosen page " + page);
   };
 
   render() {
@@ -44,11 +52,17 @@ class Home extends Component {
               <ShortEventList
                 category={this.state.categories}
                 city={this.state.city}
+                setPage={this.setPage}
               />
             </Row>
           </Col>
           <Col span={9}>
-            <EventMap mapPos={this.state.city} />
+            <EventMap
+              mapPos={this.state.city}
+              city={this.state.city}
+              categories={this.state.categories}
+              page={this.state.page}
+            />
           </Col>
         </MyLayout>
       </div>

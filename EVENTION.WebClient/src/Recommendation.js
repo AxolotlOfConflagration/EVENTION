@@ -3,7 +3,6 @@ import "antd/dist/antd.css";
 import { Col, Row } from "antd";
 import MyLayout from "./containers/Layout";
 import ShortRecommendationList from "./containers/ShortRecommendationList";
-import EventMap from "./components/EventsMap";
 
 class Recommendation extends Component {
   render() {
