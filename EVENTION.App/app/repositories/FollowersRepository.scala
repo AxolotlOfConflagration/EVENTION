@@ -13,7 +13,7 @@ class FollowersRepository @Inject()(provider: DatabaseConfigProvider)(implicit e
 
   def follow(follower: Follower): Future[Int] = {
     db.run {
-      followers.insertOrUpdate(follower)
+      followers += follower
     }
   }
 
