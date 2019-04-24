@@ -62,15 +62,4 @@ class UserController @Inject()
   def pastEvents(userId: Long): Action[AnyContent] = Action.async { implicit request =>
     repo.pastEvents(userId).map(events => Ok(Json.toJson(events)))
   }
-
-  def upsertRecommendation(userId: Long): Action[Seq[Long]] = Action(parse.json[Seq[Long]]).async { implicit request =>
-    val rec = Recommendation.fromJson(userId, request.body)
-
-    repo.upsert(rec).map(_ => Ok)
-  }
-
-  def recommendation(userId: Long): Action[AnyContent] = Action.async { implicit request =>
-    repo.recommendation(userId).map { value => Ok(Json.toJson(value))
-    }
-  }
 }
