@@ -7,17 +7,47 @@ class ShortEventList extends React.Component {
     ShortEvents: []
   };
 
-  componentDidMount() {
-    axios.get("http://localhost:9000/event").then(res => {
-      this.setState({
-        ShortEvents: res.data
+  fetchData = (city, category) => {
+    axios
+      .post("http://localhost:9000/event", {
+        beginning: 0,
+        count: 100,
+        ordered: "creationDate",
+        ascending: false,
+        categories: category,
+        city: city
+      })
+      .then(res => {
+        this.setState({
+          ShortEvents: res.data
+        });
       });
-      console.log(res.data);
-    });
+  };
+
+  componentDidMount() {
+    this.fetchData(this.props.city, this.props.category);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (
+      prevProps.city !== this.props.city ||
+      prevProps.category !== this.props.category
+    ) {
+      this.fetchData(this.props.city, this.props.category);
+    }
   }
 
   render() {
-    return <ShortEvent data={this.state.ShortEvents} />;
+    if (this.state.ShortEvents.length <= 0) {
+      return (
+        <div>
+          <h2>Brak wydarzeń o wybranej kategorii.</h2>
+        </div>
+      );
+    }
+    return (
+      <ShortEvent data={this.state.ShortEvents} setPage={this.props.setPage} />
+    );
   }
 }
 
