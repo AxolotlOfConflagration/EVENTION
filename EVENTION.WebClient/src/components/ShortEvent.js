@@ -62,7 +62,7 @@ class ShortEvent extends React.Component {
         <List
           itemLayout="vertical"
           bordered="true"
-          size="large"
+          // size="large"
           pagination={{
             onChange: page => {
               console.log(page);

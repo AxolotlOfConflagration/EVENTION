@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "antd/dist/antd.css";
 import { Col, Row } from "antd";
-import Sticky from "react-sticky-el";
 import TestLayout from "./containers/TestLayout";
 import ShortEventList from "./containers/ShortEventList";
 import EventFilters from "./containers/EventFilters";
 import EventMap from "./components/EventsMap";
+import "./home.css";
 
 class Home extends Component {
   state = {
@@ -37,38 +37,31 @@ class Home extends Component {
     return (
       <div className="Home">
         <TestLayout>
-          <Col span={15}>
-            <Row style={{ zIndex: 3 }}>
-              <Sticky>
-                <EventFilters
-                  category={this.state.categories}
-                  chooseCategory={this.chooseCategory}
-                  city={this.state.city}
-                  chooseCity={this.chooseCity}
-                />
-              </Sticky>
-            </Row>
-            <Row>
-              <br />
-            </Row>
-            <Row>
+          <div className="container">
+            {/* <div className="left-col">
+              <EventFilters
+                category={this.state.categories}
+                chooseCategory={this.chooseCategory}
+                city={this.state.city}
+                chooseCity={this.chooseCity}
+              />
+            </div> */}
+            <div className="center-col">
               <ShortEventList
                 category={this.state.categories}
                 city={this.state.city}
                 setPage={this.setPage}
               />
-            </Row>
-          </Col>
-          <Col span={9}>
-            <Sticky>
+            </div>
+            <div className="map">
               <EventMap
                 mapPos={this.state.city}
                 city={this.state.city}
                 categories={this.state.categories}
                 page={this.state.page}
               />
-            </Sticky>
-          </Col>
+            </div>
+          </div>
         </TestLayout>
       </div>
     );

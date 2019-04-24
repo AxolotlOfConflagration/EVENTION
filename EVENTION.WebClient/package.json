@@ -12,6 +12,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "react-sticky": "^6.0.3",
+    "react-sticky-el": "^1.0.20",
     "styled-components": "^4.2.0"
   },
   "scripts": {

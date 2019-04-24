@@ -76,11 +76,13 @@ class EventMap extends React.Component {
         })
         .then(res => {
           res.data.forEach(event => {
+            console.log(event);
             this.marker = L.geoJSON(JSON.parse(event.event.geoJson), {
               pointToLayer: (feature, latlng) => {
                 return L.marker(latlng, { icon: customMarker });
               }
             }).addTo(this.map);
+            this.marker.bindPopup("<>");
           });
         });
     }
@@ -115,7 +117,7 @@ class EventMap extends React.Component {
   }
 
   render() {
-    return <Wrapper width="100%" height="800px" id="map" />;
+    return <Wrapper width="100%" height={"800px"} id="map" />;
   }
 }
 
