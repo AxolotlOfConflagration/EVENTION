@@ -47,7 +47,8 @@ class Scrap:
         url = info_dict['body'][4]['declarations'][0]['init']['properties'][5]['value']['value']
         longDescription = info_dict['body'][4]['declarations'][0]['init']['properties'][6]['value']['value']
         longDescription = bs.BeautifulSoup(longDescription, 'lxml')
-        longDescription = ''.join(longDescription.find_all(text=True))
+        longDescription = str(longDescription)
+        # longDescription = ''.join(longDescription.find_all(text=True))
         shortDescription = ' '.join(re.split(r'(?<=[.:;])\s', longDescription)[:2]) + ' [...] '
         tags = info_dict['body'][4]['declarations'][0]['init']['properties'][37]['value']['value']
         creationDate = datetime.datetime.now()
