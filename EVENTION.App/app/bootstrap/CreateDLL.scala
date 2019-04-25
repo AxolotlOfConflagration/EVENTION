@@ -30,7 +30,8 @@ private[bootstrap] class CreateDLL @Inject()
         eventCategories.schema ++
         users.schema ++
         eventParticipants.schema ++
-        recommendations.schema
+        recommendations.schema ++
+        followers.schema
 
     val writer = new PrintWriter("./conf/evolutions/default/1.sql")
     writer.write("# --- !Ups\n\n")

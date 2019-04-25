@@ -141,6 +141,17 @@ class BaseRepository @Inject()(protected val dbConfigProvider: DatabaseConfigPro
   }
   protected val recommendations = TableQuery[Recommendations]
 
+  protected class Followers(tag: Tag) extends Table[Follower](tag, "followers"){
+    def userId = column[Option[Long]]("userID")
+    def followerId = column[Long]("followerID")
+    def timestamp = column[DateTime]("timestamp")
+
+    def * = (userId, followerId, timestamp) <> ((Follower.apply _).tupled, Follower.unapply)
+
+    def idx = index("FollowersIndex", (userId, followerId), unique = true)
+  }
+
+  protected val followers = TableQuery[Followers]
   //endregion
 
   /**
