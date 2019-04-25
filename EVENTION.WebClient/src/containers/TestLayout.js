@@ -2,7 +2,7 @@ import React from "react";
 import { Layout, Menu, Icon } from "antd";
 import { createBrowserHistory } from "history";
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 class TestLayout extends React.Component {
   onNavigateMyEvents() {

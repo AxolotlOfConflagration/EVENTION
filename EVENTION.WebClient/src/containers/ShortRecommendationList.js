@@ -22,7 +22,7 @@ class ShortRecommendationList extends React.Component {
   }
 
   render() {
-    if (this.state.ShortEvents.length <= 0) {
+    if (this.state.ShortEvents.length === 0) {
       return (
         <div>
           <h2>
