@@ -14,3 +14,4 @@ User friendly event aggregator with additional features.
 ./EVENTION.DataHArvester> python fillDB.py ***fill database with sraped events***  
 ./EVENTION.RecommendationAPI> python updateEventForUser.py ***append events to users***  
 ./EVENTION.RecommendationAPI> python recEngine.py ***send users recommendations to database***  
+./EVENTION.WebClient>npm run ***runs server-frontend***  
