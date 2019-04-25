@@ -64,6 +64,8 @@ class EventMap extends React.Component {
   };
 
   setGeoMarker = () => {
+    this.map.removeLayer(this.markerGroup);
+    this.markerGroup = L.layerGroup().addTo(this.map);
     if (this.props.city !== null) {
       axios
         .post("http://localhost:9000/event", {
@@ -76,13 +78,18 @@ class EventMap extends React.Component {
         })
         .then(res => {
           res.data.forEach(event => {
-            console.log(event);
             this.marker = L.geoJSON(JSON.parse(event.event.geoJson), {
               pointToLayer: (feature, latlng) => {
                 return L.marker(latlng, { icon: customMarker });
               }
-            }).addTo(this.map);
-            this.marker.bindPopup("<>");
+            })
+              .bindPopup(
+                '<img height=75 alt="logo" src="' +
+                  event.event.imageSource +
+                  '"} /> <br>' +
+                  event.event.name
+              )
+              .addTo(this.markerGroup);
           });
         });
     }
@@ -98,14 +105,10 @@ class EventMap extends React.Component {
       "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
       {
         maxZoom: 18,
-        attribution:
-          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         id: "mapbox.streets"
       }
     ).addTo(this.map);
-
+    this.markerGroup = L.layerGroup().addTo(this.map);
     this.setGeoMarker();
   }
 

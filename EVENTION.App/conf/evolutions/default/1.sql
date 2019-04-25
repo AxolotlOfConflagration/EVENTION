@@ -10,6 +10,8 @@ create table "users" ("id" BIGINT PRIMARY KEY AUTO_INCREMENT,"firstName" VARCHAR
 create table "eventParticipant" ("eventId" BIGINT NOT NULL,"userId" BIGINT NOT NULL,"singUpDate" TIMESTAMP NOT NULL);
 create unique index "EvenParticipantsIndex" on "eventParticipant" ("eventId","userId");
 create table "recommendations" ("userId" BIGINT NOT NULL PRIMARY KEY,"recommendation" VARCHAR NOT NULL);
+create table "followers" ("userID" BIGINT,"followerID" BIGINT NOT NULL,"timestamp" TIMESTAMP NOT NULL);
+create unique index "FollowersIndex" on "followers" ("userID","followerID");
 alter table "businessUsers" add constraint "fk_business" foreign key("businessId") references "businesses"("id") on update NO ACTION on delete NO ACTION;
 alter table "events" add constraint "fk_owner" foreign key("ownerId") references "businessUsers"("id") on update NO ACTION on delete NO ACTION;
 alter table "eventCategories" add constraint "fk_category" foreign key("catId") references "categories"("id") on update NO ACTION on delete NO ACTION;
@@ -22,6 +24,7 @@ alter table "eventCategories" drop constraint "fk_category";
 alter table "eventCategories" drop constraint "fk_event";
 alter table "events" drop constraint "fk_owner";
 alter table "businessUsers" drop constraint "fk_business";
+drop table "followers";
 drop table "recommendations";
 drop table "eventParticipant";
 drop table "users";

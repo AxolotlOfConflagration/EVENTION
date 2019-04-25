@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import Home from "./Home";
-import TestHome from "./TestHome";
+//import TestHome from "./TestHome";
 import AddEvent from "./AddEvent";
 import Recommendation from "./Recommendation";
 

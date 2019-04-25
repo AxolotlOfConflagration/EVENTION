@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "c8872d7f-5361-4346-b9f6-d46b40790440",
+		"name": "Followers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/followers/:userId/:whoId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/followers/:userId/:whoId",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"followers",
+						":userId",
+						":whoId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						},
+						{
+							"key": "whoId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/followers/:userId/:whoId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/followers/:userId/:whoId",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"followers",
+						":userId",
+						":whoId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						},
+						{
+							"key": "whoId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/followers/:userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/followers/:userId",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"followers",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
