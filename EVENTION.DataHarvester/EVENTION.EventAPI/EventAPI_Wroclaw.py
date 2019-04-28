@@ -8,7 +8,7 @@ from scraping import Scrap
 
 class EventAPI_Wroclaw:
     def __init__(self):
-        with open('../config.json') as f:
+        with open('./config.json') as f:
             config_json = json.load(f)
         self.event_labels = config_json["event_labels"]
 
@@ -109,7 +109,7 @@ class EventAPI_Wroclaw:
         for dic in list_of_dic["items"]:
             event = {
                 "event" :{},
-                "category": ""
+                "categories": ""
             }
 
             try:
@@ -120,38 +120,40 @@ class EventAPI_Wroclaw:
                 event['event']["creationDate"] = datetime.datetime.now()
                 event['event']["eventStart"] = self.parse_data(dic["startDate"].split("T")[0])
                 event['event']["eventEnd"] = self.parse_data(dic["endDate"].split("T")[0])
-                event['event']["ownerId"] = 0
+                event['event']["ownerId"] = 1
 
                 try:
                     event['event']["imageSource"] = dic["offer"]["mainImage"]["standard"]
                 except:
                     event['event']["imageSource"] = ""
-                try:
-                    event["category"] = self._check_category(dic["offer"]["categories"][0]["name"])
-
-                except:
-                   event['category'] = 5 #Inne
 
                 try:
                     event['event']["address"] = "Polska, " + dic["address"]["street"]+" "+dic["address"]["zipCode"]
                     event['event']["addressCity"] = dic["address"]["city"]
                 except:
-                    event["address"] = "Polska, " + dic["address"]["street"] +" "+ dic["address"]["city"]
-                    event["addressCity"] = dic["address"]["city"]
-                event['event']["geoJSON"] =  self.scrap .create_geojson(event['address'])
-                EVENT.append(event)
-
+                    event["event"]["address"] = "Polska, " + dic["address"]["street"] +" "+ dic["address"]["city"]
+                    event['event']["addressCity"] = dic["address"]["city"]
+            
             except:
                 pass
+            event['event']["geoJSON"] = str( self.scrap.create_geojson(event["event"]["address"]))
+            try:
+                event["categories"] = [self._check_category(dic["offer"]["categories"][0]["name"])]
+            except:
+                event['categories'] = [5] #Inne 
 
-        def date_converter(o):
-            if isinstance(o, datetime.datetime):
-                return o.__str__()
 
-        result = json.dumps(EVENT, ensure_ascii=False, default=date_converter)
 
-        return result
+            def date_converter(o):
 
+                if isinstance(o, (datetime.date, datetime.datetime)):
+                    return o.isoformat()
+            e = json.dumps(event, ensure_ascii=False, default=date_converter)
+            if e not in EVENT:
+                EVENT.append(e)
+
+
+        return EVENT
     def get_event_today(self):
         date = datetime.datetime.now()
         str_date = str(date.date())

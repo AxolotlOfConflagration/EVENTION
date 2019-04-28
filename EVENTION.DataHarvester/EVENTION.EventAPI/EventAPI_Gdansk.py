@@ -9,7 +9,7 @@ from scraping import Scrap
 
 class EventAPI_Gdansk:
     def __init__(self):
-        with open('../config.json') as f:
+        with open('./config.json') as f:
             config_json = json.load(f)
         self.event_labels = config_json["event_labels"]
 
@@ -111,36 +111,47 @@ class EventAPI_Gdansk:
         for dic in list_of_dic:
             event = {
                 "event" : {},
-                "category": "",
+                "categories": "",
             }
             try:
 
                 event["event"]["name"] = dic["name"]
                 event["event"]["shortDescription"] = self._get_first_sentence(dic["descLong"])
                 event["event"]["longDescription"] = dic["descLong"]
-                event["event"]["creationDate"] = ""
-                event["event"]["eventStart"] = dic["startDate"].split("T")[0]
-                event["event"]["eventEnd"] = dic["endDate"].split("T")[0]
-                event["event"]["ownerId"] = 0
-                event["event"]["geoJSON"] = self.scrap.create_geojson("Polska, Gdańsk"+dic['place']['name'])
+                event["event"]["creationDate"] = datetime.datetime.now()
+                event["event"]["eventStart"] = self.parse_data(dic["startDate"].split("T")[0])
+                event["event"]["eventEnd"] = self.parse_data(dic["endDate"].split("T")[0])
+                event["event"]["ownerId"] = 1
+                #print(dic['place']['name'])
+                try:
+                    event["event"]["geoJSON"] = str(self.scrap.create_geojson("Polska, Gdańsk "+dic['place']['name']))
+                except:
+                    event["event"]["geoJSON"] = "{}"
                 try:
                     event["event"]["imageSource"] = dic["attachments"][0]["fileName"]
                 except:
                     event["event"]["imageSource"] = None
 
                 if dic["categoryId"] == 77:
-                    event["category"] = 1 # sport
-                else: event["category"] = 5 # kultura
+                    event["categories"] = [1] # sport
+                else: event["categories"] = [5] # kultura
 
                 event["event"]["address"] = "Gdańsk, "+ dic["place"]["name"]
                 event["event"]["addressCity"] = "Gdańsk"
 
-                EVENT.append(event)
-                self.get_category(event)
+                def date_converter(o):
+                    if isinstance(o, (datetime.date, datetime.datetime)):
+                        return o.isoformat()
+
+                e = json.dumps(event, ensure_ascii=False, default=date_converter)
+                if e not in EVENT:
+                    EVENT.append(e)
+
+
             except:
                 pass
-        result = json.dumps(EVENT, ensure_ascii=False)
-        return result
+
+        return EVENT
 
     def get_event_today(self):
         date = datetime.datetime.now()
@@ -172,7 +183,3 @@ if __name__ == "__main__":
 
     eapi = EventAPI_Gdansk()
     print(eapi.get_event_today())
-
-
-
-
