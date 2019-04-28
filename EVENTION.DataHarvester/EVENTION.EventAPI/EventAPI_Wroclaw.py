@@ -152,8 +152,6 @@ class EventAPI_Wroclaw:
             if e not in EVENT:
                 EVENT.append(e)
 
-            except:
-                pass
 
         return EVENT
     def get_event_today(self):
