@@ -139,7 +139,7 @@ class EventAPI_Poznan:
                                str(geoJSON), #geoJSON
                                image_url, #imageSource
                                elem[5][2].text,  #addres
-                               "Poznań"] #adressCity
+                               "Poznan"] #adressCity
                 event = {
                     'event' : {},
                     'categories' : [category]
