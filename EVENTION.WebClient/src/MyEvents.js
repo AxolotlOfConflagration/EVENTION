@@ -1,19 +1,33 @@
 import React, { Component } from "react";
 import "antd/dist/antd.css";
-import { Col, Row } from "antd";
+import { Row } from "antd";
+import MyEventFilters from "./components/MyEventFilters";
 import TestLayout from "./containers/TestLayout";
 import MyEventList from "./containers/MyEventsList";
 
 class MyEvents extends Component {
+  state = {
+    type: "Wszystkie"
+  };
+
+  changeType = t => {
+    this.setState({
+      type: t
+    });
+    console.log(this.state.type);
+  };
+
   render() {
+    const { type } = this.state;
     return (
       <div className="Recommendation">
         <TestLayout>
-          <Col span={24}>
-            <Row>
-              <MyEventList />
-            </Row>
-          </Col>
+          <Row>
+            <MyEventFilters type={type} changeType={this.changeType} />
+          </Row>
+          <Row>
+            <MyEventList type={type} />
+          </Row>
         </TestLayout>
       </div>
     );

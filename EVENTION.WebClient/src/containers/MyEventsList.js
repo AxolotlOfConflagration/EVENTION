@@ -9,19 +9,55 @@ class MyEventList extends React.Component {
     loading: true
   };
 
-  componentDidMount() {
-    console.log(
-      "http://localhost:9000/user/".concat(this.state.id).concat("/event")
-    );
-    axios
-      .get("http://localhost:9000/user/".concat(this.state.id).concat("/event"))
-      .then(res => {
-        this.setState({
-          MyEvents: res.data,
-          loading: false
+  fetchData = type => {
+    if (type === "Wszystkie") {
+      axios
+        .get(
+          "http://localhost:9000/user/".concat(this.state.id).concat("/event")
+        )
+        .then(res => {
+          this.setState({
+            MyEvents: res.data,
+            loading: false
+          });
         });
-        console.log(res.data);
-      });
+    } else if (type === "Zakończone") {
+      axios
+        .get(
+          "http://localhost:9000/user/"
+            .concat(this.state.id)
+            .concat("/event/past")
+        )
+        .then(res => {
+          this.setState({
+            MyEvents: res.data,
+            loading: false
+          });
+        });
+    } else {
+      axios
+        .get(
+          "http://localhost:9000/user/"
+            .concat(this.state.id)
+            .concat("/event/future")
+        )
+        .then(res => {
+          this.setState({
+            MyEvents: res.data,
+            loading: false
+          });
+        });
+    }
+  };
+
+  componentDidMount() {
+    this.fetchData(this.props.type);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.type !== this.props.type) {
+      this.fetchData(this.props.type);
+    }
   }
 
   render() {

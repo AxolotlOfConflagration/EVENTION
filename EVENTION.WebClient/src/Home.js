@@ -39,14 +39,12 @@ class Home extends Component {
         <TestLayout>
           <Col span={15}>
             <Row style={{ zIndex: 3 }}>
-              <Sticky>
-                <EventFilters
-                  category={this.state.categories}
-                  chooseCategory={this.chooseCategory}
-                  city={this.state.city}
-                  chooseCity={this.chooseCity}
-                />
-              </Sticky>
+              <EventFilters
+                category={this.state.categories}
+                chooseCategory={this.chooseCategory}
+                city={this.state.city}
+                chooseCity={this.chooseCity}
+              />
             </Row>
             <Row>
               <br />
