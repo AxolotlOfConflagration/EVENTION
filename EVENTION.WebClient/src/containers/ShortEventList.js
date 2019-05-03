@@ -4,7 +4,8 @@ import axios from "axios";
 
 class ShortEventList extends React.Component {
   state = {
-    ShortEvents: []
+    ShortEvents: [],
+    SavedEvents: []
   };
 
   fetchData = (city, category) => {
@@ -22,6 +23,22 @@ class ShortEventList extends React.Component {
           ShortEvents: res.data
         });
       });
+    axios.get("http://localhost:9000/user/1/event").then(res => {
+      console.log(res);
+      this.setState({
+        SavedEvents: res.data
+      });
+    });
+  };
+
+  contains = id => {
+    let flag = false;
+    this.state.SavedEvents.forEach(event => {
+      if (event.id === id) {
+        flag = true;
+      }
+    });
+    return flag;
   };
 
   componentDidMount() {
@@ -46,7 +63,11 @@ class ShortEventList extends React.Component {
       );
     }
     return (
-      <ShortEvent data={this.state.ShortEvents} setPage={this.props.setPage} />
+      <ShortEvent
+        data={this.state.ShortEvents}
+        setPage={this.props.setPage}
+        contains={this.contains}
+      />
     );
   }
 }
