@@ -13,8 +13,8 @@ class TestLayout extends React.Component {
 
   onNavigateActivate() {
     const history = createBrowserHistory();
-    history.push("/Aktywnosc");
-    window.location.assign("/Aktywnosc");
+    history.push("/DodajWydarzenie");
+    window.location.assign("/DodajWydarzenie");
   }
 
   onNavigateHome() {
@@ -50,7 +50,7 @@ class TestLayout extends React.Component {
             </Menu.Item>
             <Menu.Item key="3" onClick={this.onNavigateActivate}>
               <Icon type="contacts" />
-              <span>Aktywność</span>
+              <span>Dodaj wydarzenie</span>
             </Menu.Item>
             <Menu.Item key="4" onClick={this.onNavigateRecommendation}>
               <Icon type="compass" />

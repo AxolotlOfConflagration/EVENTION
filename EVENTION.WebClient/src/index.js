@@ -11,7 +11,7 @@ const routing = (
   <Router>
     <div>
       <Route exact path="/" component={Home} />
-      <Route path="/Aktywnosc" component={AddEvent} />
+      <Route path="/DodajWydarzenie" component={AddEvent} />
       <Route path="/Rekomendacje" component={Recommendation} />
     </div>
   </Router>
