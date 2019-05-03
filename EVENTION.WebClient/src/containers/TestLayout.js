@@ -1,34 +1,28 @@
 import React from "react";
 import { Layout, Menu, Icon } from "antd";
 import { createBrowserHistory } from "history";
-const { Sider, Content } = Layout;
 
-class MyLayout extends React.Component {
-  state = {
-    collapsed: true
-  };
+const { Header, Content } = Layout;
 
-  toggle = () => {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  };
-
+class TestLayout extends React.Component {
   onNavigateMyEvents() {
     const history = createBrowserHistory();
     history.push("/MojeWydarzenia");
     window.location.assign("/MojeWydarzenia");
   }
+
   onNavigateActivate() {
     const history = createBrowserHistory();
     history.push("/Aktywnosc");
     window.location.assign("/Aktywnosc");
   }
+
   onNavigateHome() {
     const history = createBrowserHistory();
     history.push("/");
     window.location.assign("/");
   }
+
   onNavigateRecommendation() {
     const history = createBrowserHistory();
     history.push("/Rekomendacje");
@@ -38,19 +32,14 @@ class MyLayout extends React.Component {
   render() {
     return (
       <Layout>
-        <Sider
-          style={{
-            overflow: "auto",
-            height: "100vh",
-            position: "fixed",
-            left: 0
-          }}
-          trigger={null}
-          collapsible
-          collapsed={this.state.collapsed}
-        >
+        <Header style={{ zIndex: 5, width: "100%", position: "fixed" }}>
           <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+          <Menu
+            theme="dark"
+            mode="horizontal"
+            defaultSelectedKeys={["1"]}
+            style={{ lineHeight: "64px" }}
+          >
             <Menu.Item key="1" onClick={this.onNavigateHome}>
               <Icon type="home" />
               <span>Strona domowa</span>
@@ -67,27 +56,22 @@ class MyLayout extends React.Component {
               <Icon type="compass" />
               <span>Rekomendacje</span>
             </Menu.Item>
-            <Menu.Item key="0" onClick={this.toggle}>
-              <Icon type={this.state.collapsed ? "right" : "left"} />
-              <span>{this.state.collapsed ? "Rozwiń" : "Zwiń"}</span>
-            </Menu.Item>
           </Menu>
-        </Sider>
-        <Layout style={{ marginLeft: this.state.collapsed ? 80 : 200 }}>
-          <Content
-            style={{
-              margin: "24px 16px",
-              padding: 24,
-              background: "#fff",
-              minHeight: 280
-            }}
-          >
-            {this.props.children}
-          </Content>
-        </Layout>
+        </Header>
+        <Content
+          style={{
+            margin: "24px 16px",
+            marginTop: 64,
+            padding: 24,
+            background: "#fff",
+            minHeight: 280
+          }}
+        >
+          {this.props.children}
+        </Content>
       </Layout>
     );
   }
 }
 
-export default MyLayout;
+export default TestLayout;

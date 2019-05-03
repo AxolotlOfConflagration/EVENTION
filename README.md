@@ -9,4 +9,9 @@ User friendly event aggregator with additional features.
 * **DataHarvester** - Wrapps WebScraping and EventAPI apps for communication with backend (Szymon)
   - **WebScrapping** - app for collecting and seeding data besed upon data fetch/scraped from websites (Szymon)
   - **EventAPI** - app for parsing fetched XML event files (Agnieszka)
-* (?) **BotAPI** - (Szymon) 
+
+./EVENTION.App> sbt start ***runs server***  
+./EVENTION.DataHArvester> python fillDB.py ***fill database with sraped events***  
+./EVENTION.RecommendationAPI> python updateEventForUser.py ***append events to users***  
+./EVENTION.RecommendationAPI> python recEngine.py ***send users recommendations to database***  
+./EVENTION.WebClient>npm start ***runs server-frontend***  

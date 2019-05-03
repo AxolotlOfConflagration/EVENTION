@@ -21,9 +21,9 @@ class ShortEvent extends React.Component {
     </span>
   );
 
-  ButtonText = ({ text, func }) => (
+  ButtonText = ({ text }) => (
     <span>
-      <Button type="ghost" size="small" onClick={func}>
+      <Button type="ghost" size="small">
         {text}
       </Button>
     </span>
@@ -62,18 +62,17 @@ class ShortEvent extends React.Component {
         <List
           itemLayout="vertical"
           bordered="true"
-          // size="large"
+          size="large"
           pagination={{
             onChange: page => {
               console.log(page);
-              this.props.setPage(page);
             },
             pageSize: 4
           }}
           dataSource={this.props.data}
           renderItem={item => (
             <List.Item
-              key={item.event.name}
+              key={item.name}
               actions={[
                 <this.ButtonIconText
                   type={item.saved ? "check" : "plus"}
@@ -84,7 +83,7 @@ class ShortEvent extends React.Component {
                   text=" Więcej "
                   func={() => {
                     axios
-                      .get("http://localhost:9000/event/".concat(item.event.id))
+                      .get("http://localhost:9000/event/".concat(item.id))
                       .then(res => {
                         this.setState({
                           event: res
@@ -92,25 +91,20 @@ class ShortEvent extends React.Component {
                       });
                     this.setState({
                       visible: !this.state.visible,
-                      eventID: item.event.id,
-                      eventTitle: item.event.name
+                      eventID: item.id,
+                      eventTitle: item.name
                     });
                   }}
                 />,
                 <this.IconText
                   type="schedule"
-                  text={this.prepTime(item.event.eventStart)}
+                  text={this.prepTime(item.eventStart)}
                 />
               ]}
-              extra={
-                <img height={150} alt="logo" src={item.event.imageSource} />
-              }
+              extra={<img height={150} alt="logo" src={item.imageSource} />}
             >
-              <List.Item.Meta
-                title={item.event.name}
-                description={item.event.address}
-              />
-              {item.event.shortDescription}
+              <List.Item.Meta title={item.name} description={item.address} />
+              {item.shortDescription}
             </List.Item>
           )}
         />
