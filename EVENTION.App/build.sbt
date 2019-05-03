@@ -40,6 +40,8 @@ libraryDependencies ++= Seq(
   "org.pac4j" %% "play-pac4j" % playPac4jVersion,
   "org.pac4j" % "pac4j-http" % pac4jVersion,
   "org.pac4j" % "pac4j-oauth" % pac4jVersion,
+  "org.apache.shiro" % "shiro-core" % "1.4.0",
+  "com.typesafe.play" % "play-cache_2.12" % playVersion,
 )
 
 // Faker

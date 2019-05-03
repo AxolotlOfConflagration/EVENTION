@@ -3,6 +3,12 @@
 # https://www.playframework.com/documentation/latest/ScalaRouting
 # ~~~~
 
+# Auth
+GET         /callback                   @org.pac4j.play.CallbackController.callback()
+POST        /callback                   @org.pac4j.play.CallbackController.callback()
+GET         /logout                     @org.pac4j.play.LogoutController.logout()
+GET         /                           controllers.AuthController.callback()
+GET         /login                      controllers.AuthController.loginWithGoogle()
 
 # Business
 GET     /business                       controllers.BusinessController.all()
