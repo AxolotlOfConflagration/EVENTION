@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Cookies from "js-cookie";
 import { Button } from "antd";
 
 class SaveButton extends React.Component {
@@ -21,24 +22,24 @@ class SaveButton extends React.Component {
     this.setState({ text, icon, type });
   };
 
-  eventChangeHandler = (id, user) => {
+  eventChangeHandler = id => {
     console.log(
       "http://localhost:9000/user/"
-        .concat(user)
+        .concat(Cookies.get("USER_ID?userid"))
         .concat("/event/")
         .concat(id)
     );
     if (this.state.text === "Zapisano") {
       axios.delete(
         "http://localhost:9000/user/"
-          .concat(user)
+          .concat(Cookies.get("USER_ID?userid"))
           .concat("/event/")
           .concat(id)
       );
     } else {
       axios.put(
         "http://localhost:9000/user/"
-          .concat(user)
+          .concat(Cookies.get("USER_ID?userid"))
           .concat("/event/")
           .concat(id)
       );
@@ -47,7 +48,7 @@ class SaveButton extends React.Component {
 
   render() {
     const { text, type, icon } = this.state;
-    const { id, user } = this.props;
+    const { id } = this.props;
     return (
       <Button
         size="small"
@@ -57,8 +58,7 @@ class SaveButton extends React.Component {
           text === "Zapisz się"
             ? this.changeButton("Zapisano", "check", "primary")
             : this.changeButton("Zapisz się", "plus", "ghost");
-          console.log(this.props.id);
-          this.eventChangeHandler(id, user);
+          this.eventChangeHandler(id);
         }}
       >
         {text}

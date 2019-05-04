@@ -1,6 +1,7 @@
 import React from "react";
 import MyEvent from "../components/MyEvent";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 class MyEventList extends React.Component {
   state = {
@@ -13,7 +14,9 @@ class MyEventList extends React.Component {
     if (type === "Wszystkie") {
       axios
         .get(
-          "http://localhost:9000/user/".concat(this.state.id).concat("/event")
+          "http://localhost:9000/user/"
+            .concat(Cookies.get("USER_ID?userid"))
+            .concat("/event")
         )
         .then(res => {
           this.setState({
@@ -25,7 +28,7 @@ class MyEventList extends React.Component {
       axios
         .get(
           "http://localhost:9000/user/"
-            .concat(this.state.id)
+            .concat(Cookies.get("USER_ID?userid"))
             .concat("/event/past")
         )
         .then(res => {
@@ -38,7 +41,7 @@ class MyEventList extends React.Component {
       axios
         .get(
           "http://localhost:9000/user/"
-            .concat(this.state.id)
+            .concat(Cookies.get("USER_ID?userid"))
             .concat("/event/future")
         )
         .then(res => {

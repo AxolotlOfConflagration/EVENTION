@@ -14,7 +14,6 @@ class MyEvents extends Component {
     this.setState({
       type: t
     });
-    console.log(this.state.type);
   };
 
   render() {

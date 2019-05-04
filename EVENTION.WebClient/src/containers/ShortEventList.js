@@ -1,6 +1,7 @@
 import React from "react";
 import ShortEvent from "../components/ShortEvent";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 class ShortEventList extends React.Component {
   state = {
@@ -23,12 +24,19 @@ class ShortEventList extends React.Component {
           ShortEvents: res.data
         });
       });
-    axios.get("http://localhost:9000/user/1/event").then(res => {
-      console.log(res);
-      this.setState({
-        SavedEvents: res.data
+    axios
+      .get(
+        "http://localhost:9000/user/"
+          .concat(Cookies.get("USER_ID?userid"))
+          .concat("/event")
+      )
+      .then(res => {
+        console.log(res.data);
+        this.setState({
+          SavedEvents: res.data
+        });
       });
-    });
+    console.log(Cookies.get());
   };
 
   contains = id => {
