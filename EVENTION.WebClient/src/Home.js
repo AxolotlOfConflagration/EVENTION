@@ -6,6 +6,7 @@ import TestLayout from "./containers/TestLayout";
 import ShortEventList from "./containers/ShortEventList";
 import EventFilters from "./containers/EventFilters";
 import EventMap from "./components/EventsMap";
+import Login from "./Login";
 
 class Home extends Component {
   state = {
@@ -34,6 +35,11 @@ class Home extends Component {
   };
 
   render() {
+    if(!document.cookie) {
+      return (
+        <Login />
+      )
+    }
     return (
       <div className="Home">
         <TestLayout>
