@@ -18,25 +18,34 @@ function handleFocus() {
 class CategorySelect extends React.Component {
   render() {
     return (
-      <Select
-        showSearch
-        style={{ width: 200 }}
-        placeholder="Kategoria"
-        optionFilterProp="children"
-        onChange={handleChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        filterOption={(input, option) =>
-          option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-        }
-      >
-        <Option value="sport">Sport</Option>
-        <Option value="kultura">Kultura</Option>
-        <Option value="koncert">Koncert</Option>
-        <Option value="targi">Targi</Option>
-        <Option value="hackathon">Hackathon</Option>
-        <Option value="inne">Inne</Option>
-      </Select>
+      <div>
+        <div style={{ fontSize: 16 }}>
+          <text>Kategoria</text>
+        </div>
+        <Select
+          showSearch
+          style={{ width: 200 }}
+          placeholder="Kategoria"
+          optionFilterProp="children"
+          onChange={this.props.chooseCategory}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          filterOption={(input, option) =>
+            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >=
+            0
+          }
+        >
+          <Option value={[1]}>Sport</Option>
+          <Option value={[2]}>Kultura</Option>
+          <Option value={[3]}>Koncert</Option>
+          <Option value={[4]}>Targi</Option>
+          <Option value={[6]}>Hackathon</Option>
+          <Option value={[5]}>Inne</Option>
+        </Select>
+        <div style={{ fontSize: 14, color: "red" }}>
+          {this.props.categoriesError}
+        </div>
+      </div>
     );
   }
 }
