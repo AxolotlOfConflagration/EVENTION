@@ -67,13 +67,6 @@ class MyLayout extends React.Component {
               <Icon type="compass" />
               <span>Rekomendacje</span>
             </Menu.Item>
-            <Menu.Item key="5" onClick={() => {
-              document.cookie = undefined;
-              window.location = "http://localhost:3000"
-              }}>
-              <Icon type="compass" />
-              <span>Wyloguj</span>
-            </Menu.Item>
             <Menu.Item key="0" onClick={this.toggle}>
               <Icon type={this.state.collapsed ? "right" : "left"} />
               <span>{this.state.collapsed ? "Rozwiń" : "Zwiń"}</span>
