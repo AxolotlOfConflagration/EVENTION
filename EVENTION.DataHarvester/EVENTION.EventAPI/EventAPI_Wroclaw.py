@@ -8,7 +8,7 @@ from scraping import Scrap
 
 class EventAPI_Wroclaw:
     def __init__(self):
-        with open('../config.json') as f:
+        with open('./config.json') as f:
             config_json = json.load(f)
         self.event_labels = config_json["event_labels"]
 
