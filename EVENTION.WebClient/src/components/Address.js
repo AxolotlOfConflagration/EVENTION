@@ -5,7 +5,7 @@ class Address extends React.Component {
   WriteForm = ({ text, w }) => (
     <span>
       <Form>
-        <div>
+        <div style={{ fontSize: 16 }}>
           <text>Dokładny adres wydarzenia</text>
         </div>
         <Input
@@ -29,7 +29,7 @@ class Address extends React.Component {
           text="
 Centrum Kultury ZAMEK w Poznaniu
 ul. Św. Marcin 80/82"
-          w={400}
+          w={500}
         />
         {/* <h4>{this.props.address}</h4> */}
       </div>

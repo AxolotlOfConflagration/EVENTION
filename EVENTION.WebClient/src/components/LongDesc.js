@@ -5,7 +5,7 @@ import TextArea from "antd/lib/input/TextArea";
 class LongDesc extends React.Component {
   Area = ({ text, minR, maxR, w }) => (
     <span>
-      <div>
+      <div style={{ fontSize: 16 }}>
         <text>Długi opis wydarzenia</text>
       </div>
       <TextArea
@@ -25,7 +25,7 @@ class LongDesc extends React.Component {
   render() {
     return (
       <div>
-        <this.Area text="Długi opis wydarzenia..." w={400} minR={2} maxR={6} />
+        <this.Area text="Długi opis wydarzenia..." w={500} minR={2} maxR={6} />
         {/* <h4>{this.props.longDescription}</h4> */}
       </div>
     );

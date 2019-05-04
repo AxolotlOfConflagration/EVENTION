@@ -19,7 +19,7 @@ class CategorySelect extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div style={{ fontSize: 16 }}>
           <text>Kategoria</text>
         </div>
         <Select

@@ -5,7 +5,7 @@ class NameEvent extends React.Component {
   WriteForm = ({ text, w }) => (
     <span>
       <Form>
-        <div>
+        <div style={{ fontSize: 16 }}>
           <text>Nazwa wydarzenia</text>
         </div>
         <Input
@@ -23,7 +23,7 @@ class NameEvent extends React.Component {
   render() {
     return (
       <div>
-        <this.WriteForm text="Moje wydarzenie" w={400} />
+        <this.WriteForm text="Moje wydarzenie" w={500} />
         {/* <h4>{this.props.name}</h4> */}
       </div>
     );

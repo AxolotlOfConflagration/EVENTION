@@ -19,7 +19,7 @@ class CitySelect extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div style={{ fontSize: 16 }}>
           <text>Miasto</text>
         </div>
         <Select

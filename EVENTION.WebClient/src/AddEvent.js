@@ -15,25 +15,32 @@ class AddEvent extends Component {
               {
                 font: "Advent Pro",
                 weights: [400, 700]
+              },
+              {
+                font: "Arima Madurai",
+                weights: [400, 700]
               }
             ]}
           />
-          <Col span={9}>
-            <div
-              class="text"
-              style={{
-                fontFamily: "Advent Pro",
-                fontSize: "35px"
-              }}
-            >
-              Utwórz własne wydarzenie i udostępnij je innym użytkownikom!
-            </div>
-          </Col>
-          <Col span={3} />
-          <Col span={9}>
-            <AddEventForms />
-            <Col span={3} />
-          </Col>
+
+          <Row type="flex" justify="space-around" align="middle">
+            <Col span={10}>
+              <div
+                class="text"
+                style={{
+                  fontFamily: "Arima Madurai",
+                  fontSize: "45px"
+                }}
+              >
+                Utwórz własne wydarzenie i udostępnij je innym użytkownikom!
+              </div>
+            </Col>
+
+            <Col span={4} />
+            <Col span={10}>
+              <AddEventForms />
+            </Col>
+          </Row>
         </TestLayout>
       </div>
     );

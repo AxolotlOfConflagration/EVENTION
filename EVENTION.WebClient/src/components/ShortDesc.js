@@ -5,7 +5,7 @@ class ShortDesc extends React.Component {
   WriteForm = ({ text, w }) => (
     <span>
       <Form>
-        <div>
+        <div style={{ fontSize: 16 }}>
           <text>Krótki opis wydarzenia</text>
         </div>
 
@@ -26,7 +26,7 @@ class ShortDesc extends React.Component {
   render() {
     return (
       <div>
-        <this.WriteForm text="Krótki opis wydarzenia..." w={400} />
+        <this.WriteForm text="Krótki opis wydarzenia..." w={500} />
         {/* <h4>{this.props.shortDescription}</h4> */}
       </div>
     );

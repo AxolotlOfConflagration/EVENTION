@@ -5,7 +5,7 @@ class ImageSource extends React.Component {
   WriteForm = ({ text, w }) => (
     <span>
       <Form>
-        <div>
+        <div style={{ fontSize: 16 }}>
           <text>Źródło do zdjęcia</text>
         </div>
         <Input
@@ -25,7 +25,7 @@ class ImageSource extends React.Component {
   render() {
     return (
       <div>
-        <this.WriteForm text="http://www.image.pl/image.jpg" w={400} />
+        <this.WriteForm text="http://www.image.pl/image.jpg" w={500} />
         {/* <h4>{this.props.imageSource}</h4> */}
       </div>
     );
