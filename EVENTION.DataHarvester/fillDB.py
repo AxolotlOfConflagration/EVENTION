@@ -29,7 +29,7 @@ class fillDB:
         # with open('/home/sleter/Documents/Github/EVENTION/EVENTION.DataHarvester/eventScraping.txt', 'r') as f:
         #     for item in f:
         #         eventsScraping.append(item)
-        eventsScraping = self.eP.get_event_today()
+        eventsScraping = eventsScraping + self.eP.get_event_today()
         return eventsScraping
             
     def load_to_database(self):
