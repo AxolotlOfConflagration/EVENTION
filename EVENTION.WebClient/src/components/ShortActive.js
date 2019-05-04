@@ -1,15 +1,12 @@
 import React from "react";
-import axios from "axios";
-import { List, Avatar } from "antd";
+
+import { List, Icon, Avatar } from "antd";
 
 class ShortActive extends React.Component {
-  state = {
-    visible: false,
-    eventTitle: null,
-    event: null,
-    eventID: null
+  prepTime = time => {
+    var splited = time.split("T");
+    return splited[0].concat(" ", splited[1].slice(0, 5));
   };
-
   render() {
     return (
       <div>
@@ -20,12 +17,14 @@ class ShortActive extends React.Component {
             <List.Item>
               <List.Item.Meta
                 avatar={
-                  <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                  <Avatar src="https://img.icons8.com/windows/32/000000/contacts.png" />
                 }
-                title={item.name}
-                description={item.address}
+                title={item.user.firstName + " " + item.user.lastName}
+                description={"Nick: " + item.user.nick}
               />
-              {item.shortDescription}
+              <div>{"  " + item.event.name}</div>
+              <Icon type={"schedule"} style={{ marginRight: 8 }} />
+              {this.prepTime(item.event.eventStart)}
             </List.Item>
           )}
         />

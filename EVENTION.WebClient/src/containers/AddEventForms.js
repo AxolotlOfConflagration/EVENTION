@@ -5,37 +5,6 @@ import ShortForms from "../containers/ShortForms";
 import axios from "axios";
 import geocoder from "geocoder-geojson";
 
-const initialState = {
-  name: "",
-  shortDescription: "",
-  longDescription: "",
-  addressCity: "",
-  categories: "",
-  address: "",
-  imageSource: "",
-  eventStart: "",
-  eventEnd: "",
-  validname: "true bure",
-  validshortDescription: "true bure",
-  validlongDescription: "true bure",
-  validaddressCity: "true bure",
-  validcategories: "true bure",
-  validaddress: "true bure",
-  validimageSource: "true bure",
-  valideventStart: "true bure",
-  valideventEnd: "true bure",
-  nameError: "",
-  shortDescriptionError: "",
-  longDescriptionError: "",
-  addressCityError: "",
-  categoriesError: "",
-  addressError: "",
-  imageSourceError: "",
-  eventStartError: "",
-  eventEndError: "",
-  geojson: "",
-  valid: false
-};
 class AddEventForms extends React.Component {
   constructor(props) {
     super(props);
@@ -237,7 +206,7 @@ class AddEventForms extends React.Component {
           })
           .then(res => {
             console.log(res);
-            if (res.request.status == 200) {
+            if (res.request.status === 200) {
               this.setState({ message_from_post: "Wydarzenie zostało dodane" });
               this.setState({
                 name: "",

@@ -5,29 +5,25 @@ import ShortActive from "../components/ShortActive";
 class ShortActivateList extends React.Component {
   state = {
     ShortActiv: [],
-    id: 1,
+    id: 2,
     loading: true
   };
 
   componentDidMount() {
-    axios
-      .get("http://localhost:9000/recomendation/".concat(this.state.id))
-      .then(res => {
-        this.setState({
-          ShortActiv: res.data,
-          loading: false
-        });
-        console.log(res.data);
+    axios.get("http://localhost:9000/feed/".concat(this.state.id)).then(res => {
+      this.setState({
+        ShortActiv: res.data,
+        loading: false
       });
+      console.log(res.data);
+    });
   }
 
   render() {
     if (this.state.ShortActiv.length <= 0) {
       return (
         <div>
-          <h2>
-            Uczęszczaj na eventy dalej, wkrótce będziemy mogli Ci coś polecić.
-          </h2>
+          <h2>Jeszcze nie obserwujesz nikogo.</h2>
         </div>
       );
     } else if (this.state.loading) {
