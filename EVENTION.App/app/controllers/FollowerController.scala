@@ -1,13 +1,13 @@
 package controllers
 
 import javax.inject.Inject
+import models.database.Feed._
 import models.database.Follower
 import play.api.libs.json.Json
 import play.api.mvc.{AbstractController, Action, AnyContent, ControllerComponents}
-import repositories.{FollowersRepository, UserRepository}
+import repositories.FollowersRepository
 
 import scala.concurrent.ExecutionContext
-import scala.util.Success
 
 class FollowerController @Inject()
 (repo: FollowersRepository, cc: ControllerComponents)
@@ -23,5 +23,9 @@ class FollowerController @Inject()
 
   def following(userId: Long): Action[AnyContent] = Action.async {
     repo.following(userId).map(result => Ok(Json.toJson(result)))
+  }
+
+  def feed(userId: Long): Action[AnyContent] = Action.async {
+    repo.feed(userId).map(result => Ok(Json.toJson(result)))
   }
 }

@@ -23,6 +23,23 @@ class UserRepository @Inject()(provider: DatabaseConfigProvider)(implicit ec: Ex
     query.asTry
   }
 
+  def login(username: String, email: String): Future[Option[Long]] = {
+    val query = users
+      .filter(user => user.externalId === email && user.nick === username)
+      .map(_.id.get)
+      .result.headOption
+
+    db.run(query)
+  }
+
+  def registerOrLogin(user: User): Long = {
+    val maybeAccount = Await.result(login(user.nick.getOrElse(""), user.externalId.getOrElse("")), Duration.Inf)
+
+    maybeAccount.getOrElse{
+      Await.result(insert(user), Duration.Inf).get.id.get
+    }
+  }
+
   def get(id: Long): Future[Option[User]] = db.run {
     users.filter(_.id === id).result.headOption
   }

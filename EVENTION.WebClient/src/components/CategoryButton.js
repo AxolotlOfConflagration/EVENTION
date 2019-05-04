@@ -54,7 +54,7 @@ class CategoryButton extends React.Component {
   );
   IconCultureSvg = () => (
     <svg
-      enable-background="new 0 0 48 48"
+      enableBackground="new 0 0 48 48"
       height="18px"
       version="1.1"
       viewBox="0 0 48 48"

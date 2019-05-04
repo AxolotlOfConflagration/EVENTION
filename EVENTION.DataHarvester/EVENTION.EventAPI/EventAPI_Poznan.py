@@ -4,18 +4,20 @@ import requests
 import datetime
 from scrap import get_image_src
 import sys
-sys.path.append("../EVENTION.WebScraping")
 
+sys.path.append("../EVENTION.WebScraping")
 from scraping import Scrap
 
 class EventAPI_Poznan:
     def __init__(self):
-        with open('../config.json') as f:
+        with open('./config.json') as f:
             config_json = json.load(f)
         self.event_labels = config_json["event_labels"]
         self.url_today = "http://www.poznan.pl/mim/public/ws-information/?co=getCurrentDayEvents"
         self.url_to_given_day = "http://www.poznan.pl/mim/public/ws-information/?co=getEventsToDate&dateTo="
         self.category = ["Sport", "Kultura", "Koncert", "Targi", "Inne", "Hackaton", "Rozrywka", "Dziecko"]
+
+
         self.scrap = Scrap()
     def _save_xml(self, url, name):
         """
@@ -96,7 +98,10 @@ class EventAPI_Poznan:
         else: return 5
 
 
-    def parse_data(self, date):
+    def parse_data(self, date, date1=None):
+        if date1 != None:
+            date = date1
+
         try:
             year, month, day = date.split(' ')[0].split('-')
 
@@ -104,7 +109,8 @@ class EventAPI_Poznan:
 
         except AttributeError:
             return False
-        return datetime.datetime(int(year), int(month), int(day), int(hour), int(minute), int(seconds))
+        result = datetime.datetime(int(year), int(month), int(day), int(hour), int(minute), 0)
+        return result
 
     def parse_xml(self, root):
         """
@@ -125,31 +131,39 @@ class EventAPI_Poznan:
                 event_array = [elem[3][0][0].text, #name
                                self._get_first_sentence(elem[3][0][2].text), #shortDescription
                                elem[3][0][2].text,#longDescription
-                               elem[1].text,#creationDate
-                               elem[7].text,#eventStart
-                               elem[8].text,#eventEnd
-                               0, #ownerId
-                               geoJSON, #geoJSON
+
+                               self.parse_data(elem[1].text),#creationDate
+                               self.parse_data(elem[7].text),#eventStart
+                               self.parse_data(elem[8].text, elem[7].text),#eventEnd
+                               1, #ownerId
+                               str(geoJSON), #geoJSON
                                image_url, #imageSource
                                elem[5][2].text,  #addres
-                               "Poznań"] #adressCity
+                               "Poznan"] #adressCity
                 event = {
                     'event' : {},
-                    'categort' : category
+                    'categories' : [category]
                 }
 
                 for label, eve in zip(self.event_labels, event_array):
                     event['event'][label] = eve
 
-                EVENT.append(event)
+                def date_converter(o):
+                    if isinstance(o, (datetime.date, datetime.datetime)):
+                        return o.isoformat()
+
+                e = json.dumps(event, ensure_ascii=False,  default=date_converter)
+                if e not in EVENT:
+
+                    EVENT.append(e)
+
+                if len(EVENT) >10:
+                    break
             except:
                 pass
-        def date_converter(o):
-            if isinstance(o, datetime.datetime):
-                return o.__str__()
 
-        result = json.dumps(EVENT, ensure_ascii=False, default=date_converter)
-        return result
+        #result = json.dumps(EVENT, ensure_ascii=False, default=date_converter)
+        return EVENT
 
 
     def get_event_today(self):
@@ -174,8 +188,3 @@ if __name__ == "__main__":
 
     eapi = EventAPI_Poznan()
     print(eapi.get_event_today())
-    #print(eapi.parse_data("2019-04-06 19:00:00"))
-
-
-
-
