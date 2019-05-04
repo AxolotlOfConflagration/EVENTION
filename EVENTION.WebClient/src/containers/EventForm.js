@@ -3,6 +3,7 @@ import { Row, Col } from "antd";
 import CitySelect from "../components/CitySelect";
 import CategorySelect from "../components/CategorySelect";
 import DateSelect from "../components/DateSelect";
+
 import { Form, Icon, Input, Button, Checkbox, Upload } from "antd";
 import TextArea from "antd/lib/input/TextArea";
 
@@ -154,6 +155,8 @@ class EventForm extends React.Component {
             <Button onClick={this.handleFormSubmit}> Dodaj</Button>
           </Row>
         </Col>
+
+
       </div>
     );
   }

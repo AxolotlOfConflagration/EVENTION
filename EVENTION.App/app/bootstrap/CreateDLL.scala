@@ -11,7 +11,7 @@ import repositories.BaseRepository
 import slick.jdbc.JdbcProfile
 import io.alphash.faker._
 
-import scala.concurrent.ExecutionContext
+import scala.concurrent.{ExecutionContext, Future}
 
 private[bootstrap] class CreateDLL @Inject()
 (protected val provider: DatabaseConfigProvider)
@@ -44,7 +44,7 @@ private[bootstrap] class CreateDLL @Inject()
     writer.close()
   }
 
-  def insertIntoDatabase() = {
+  def insertIntoDatabase(): Future[Seq[Int]] = {
 
     val inserts = DBIO.sequence(Seq(businesses += Business(Some(1), "Evention"),
       categories += Category(Some(1), "Sport"),
@@ -117,11 +117,14 @@ private[bootstrap] class CreateDLL @Inject()
     ) ++
       { for (_ <- 0 until 15) yield users += User(None, Person().name.split(" ")(0), Person().lastName, Option(Internet().email), None)} ++
       Seq(
-        eventParticipants += EventParticipant(1, 1),
-        eventParticipants += EventParticipant(1, 2),
-        eventParticipants += EventParticipant(1, 3)
-      )
-    )
+        eventParticipants += EventParticipant(1, 1, DateTime.now.minusDays(3)),
+        eventParticipants += EventParticipant(2, 1, DateTime.now.minusDays(2)),
+        eventParticipants += EventParticipant(3, 3, DateTime.now.minusDays(1)),
+        eventParticipants += EventParticipant(4, 1, DateTime.now)
+      ) ++ Seq(
+        followers += Follower(Some(2), 1),
+        followers += Follower(Some(2), 3)
+    ))
 
     db.run(inserts)
   }
