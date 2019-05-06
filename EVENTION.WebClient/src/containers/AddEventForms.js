@@ -21,6 +21,7 @@ class AddEventForms extends React.Component {
       eventEnd: "",
       validname: "true bure",
       validlongDescription: "true bure",
+      validshortDescription: "true bure",
       validaddressCity: "true bure",
       validcategories: "true bure",
       validaddress: "true bure",
@@ -38,7 +39,7 @@ class AddEventForms extends React.Component {
       eventEndError: "",
       geojson: "",
       valid: false,
-      geoJson: "",
+      geoJson: "{}",
       message_from_post: ""
     };
     this.submitted = false;
@@ -179,14 +180,7 @@ class AddEventForms extends React.Component {
         console.log(today);
         console.log(this.state.eventStart);
         console.log(this.state.eventEnd);
-        console.log("before geojson");
-        geocoder.google(this.state.address).then(geojson => {
-          this.setState({
-            geoJson: geojson
-          });
-          console.log("geojson", geojson.toString());
-        });
-        console.log(this.state.geojson.toString());
+
         axios
           .post("http://localhost:9000/event/create", {
             event: {
@@ -199,7 +193,7 @@ class AddEventForms extends React.Component {
               eventEnd: this.state.eventEnd,
               addressCity: this.state.addressCity,
               imageSource: this.state.imageSource,
-              geoJson: this.state.geoJson.toString(),
+              geoJson: this.state.geoJson,
               address: this.state.address
             },
             categories: this.state.categories
@@ -232,6 +226,8 @@ class AddEventForms extends React.Component {
           });
       } else {
         this.setState({
+          message_from_post:
+            "Błąd podczas tworzenia wydarzenia. Spróbuj jeszcze raz.",
           name: "",
           shortDescription: "",
           longDescription: "",
