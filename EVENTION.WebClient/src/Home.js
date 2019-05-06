@@ -12,7 +12,6 @@ import Login from "./Login";
 class Home extends Component {
   state = {
     categories: null, //wszytskie czyli puste
-    //1.Sport, 2.Koncert, 3.Targi, 4.Inne, 5.Hackathon
     city: "Poznan", //Wszystkie
     page: 0
   };
@@ -42,17 +41,6 @@ class Home extends Component {
           <TestLayout>
             <Col span={15}>
               <Row style={{ zIndex: 3 }}>
-    if(!document.cookie) {
-      return (
-        <Login />
-      )
-    }
-    return (
-      <div className="Home">
-        <TestLayout>
-          <Col span={15}>
-            <Row style={{ zIndex: 3 }}>
-              <Sticky>
                 <EventFilters
                   category={this.state.categories}
                   chooseCategory={this.chooseCategory}
