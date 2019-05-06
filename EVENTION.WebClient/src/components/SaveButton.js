@@ -18,6 +18,16 @@ class SaveButton extends React.Component {
     });
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps !== this.props) {
+      this.setState({
+        text: this.props.text,
+        type: this.props.type,
+        icon: this.props.icon
+      });
+    }
+  }
+
   changeButton = (text, icon, type) => {
     this.setState({ text, icon, type });
   };

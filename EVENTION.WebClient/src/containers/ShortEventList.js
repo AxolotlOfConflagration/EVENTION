@@ -31,12 +31,10 @@ class ShortEventList extends React.Component {
           .concat("/event")
       )
       .then(res => {
-        console.log(res.data);
         this.setState({
           SavedEvents: res.data
         });
       });
-    console.log(Cookies.get());
   };
 
   contains = id => {

@@ -6,11 +6,23 @@ import Cookies from "js-cookie";
 class MyEventList extends React.Component {
   state = {
     MyEvents: [],
+    SavedEvents: [],
     id: 1,
     loading: true
   };
 
   fetchData = type => {
+    axios
+      .get(
+        "http://localhost:9000/user/"
+          .concat(Cookies.get("USER_ID?userid"))
+          .concat("/event")
+      )
+      .then(res => {
+        this.setState({
+          SavedEvents: res.data
+        });
+      });
     if (type === "Wszystkie") {
       axios
         .get(
@@ -53,6 +65,16 @@ class MyEventList extends React.Component {
     }
   };
 
+  contains = id => {
+    let flag = false;
+    this.state.SavedEvents.forEach(event => {
+      if (event.id === id) {
+        flag = true;
+      }
+    });
+    return flag;
+  };
+
   componentDidMount() {
     this.fetchData(this.props.type);
   }
@@ -75,7 +97,7 @@ class MyEventList extends React.Component {
     } else if (this.state.loading) {
       return <div>LOADING</div>;
     }
-    return <MyEvent data={this.state.MyEvents} />;
+    return <MyEvent data={this.state.MyEvents} contains={this.contains} />;
   }
 }
 

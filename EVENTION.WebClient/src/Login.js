@@ -15,7 +15,6 @@ class Login extends React.Component {
     return (
       <div className="Login">
         <TestLayout>
-          <div />
           <Button href="http://localhost:9000/login">Zaloguj się</Button>
         </TestLayout>
       </div>

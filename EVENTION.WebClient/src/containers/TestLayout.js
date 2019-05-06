@@ -34,12 +34,7 @@ class TestLayout extends React.Component {
       <Layout>
         <Header style={{ zIndex: 5, width: "100%", position: "fixed" }}>
           <div className="logo" />
-          <Menu
-            theme="dark"
-            mode="horizontal"
-            defaultSelectedKeys={["1"]}
-            style={{ lineHeight: "64px" }}
-          >
+          <Menu theme="dark" mode="horizontal" style={{ lineHeight: "64px" }}>
             <Menu.Item key="1" onClick={this.onNavigateHome}>
               <Icon type="home" />
               <span>Strona domowa</span>

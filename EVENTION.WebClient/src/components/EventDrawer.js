@@ -15,16 +15,12 @@ class EventDrawer extends React.Component {
     this.setState({
       loading: true
     });
-    console.log(eventID);
     axios.get(url).then(res => {
       this.setState({
         Event: res.data,
         loading: false
       });
     });
-    console.log(typeof this.state.Event);
-    console.log(Object.getOwnPropertyNames(this.state.Event));
-    console.log(this.state.Event);
   };
 
   componentDidUpdate(prevProps) {

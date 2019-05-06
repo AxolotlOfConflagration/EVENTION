@@ -58,10 +58,6 @@ class ShortEvent extends React.Component {
     });
   };
 
-  componentDidUpdate() {
-    console.log("updated");
-  }
-
   render() {
     return (
       <div>
@@ -103,7 +99,6 @@ class ShortEvent extends React.Component {
                 <this.ButtonText
                   text=" Więcej "
                   func={() => {
-                    //console.log(this.props.contains(parseInt(item.event.id)));
                     axios
                       .get("http://localhost:9000/event/".concat(item.event.id))
                       .then(res => {

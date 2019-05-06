@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { List, Button, Icon, Drawer } from "antd";
 import EventDrawer from "./EventDrawer";
+import SaveButton from "./SaveButton";
 
 class MyEvent extends React.Component {
   state = {
@@ -21,9 +22,9 @@ class MyEvent extends React.Component {
     </span>
   );
 
-  ButtonText = ({ text }) => (
+  ButtonText = ({ text, func }) => (
     <span>
-      <Button type="ghost" size="small">
+      <Button type="ghost" size="small" onClick={func}>
         {text}
       </Button>
     </span>
@@ -78,9 +79,20 @@ class MyEvent extends React.Component {
             <List.Item
               key={item.name}
               actions={[
-                <this.ButtonIconText
-                  type={item.saved ? "check" : "plus"}
-                  text="Zapisz się"
+                <SaveButton
+                  type={
+                    this.props.contains(parseInt(item.id)) ? "primary" : "ghost"
+                  }
+                  icon={
+                    this.props.contains(parseInt(item.id)) ? "check" : "plus"
+                  }
+                  text={
+                    this.props.contains(parseInt(item.id))
+                      ? "Zapisano"
+                      : "Zapisz się"
+                  }
+                  id={item.id}
+                  user="1"
                 />,
                 <this.ButtonIcon type="share-alt" />,
                 <this.ButtonText
