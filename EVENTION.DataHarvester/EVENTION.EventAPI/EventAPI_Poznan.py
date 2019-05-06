@@ -126,7 +126,7 @@ class EventAPI_Poznan:
                 url = elem[2].text #event_url
                 image_url = get_image_src(url)  # get image src from scrapping
                 category = self._check_category(elem[10].text)
-                geoJSON =  self.scrap .create_geojson("Polska, Poznań, "+elem[5][2].text)
+                geoJSON =  self.scrap .create_geojson(query=elem[5][2].text)
 
                 event_array = [elem[3][0][0].text, #name
                                self._get_first_sentence(elem[3][0][2].text), #shortDescription
