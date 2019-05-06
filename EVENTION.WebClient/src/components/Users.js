@@ -1,5 +1,6 @@
 import React from "react";
 import { List, Avatar, Button } from "antd";
+import FollowButton from "./FollowButton";
 
 class Users extends React.Component {
   render() {
@@ -13,9 +14,17 @@ class Users extends React.Component {
           <List.Item>
             <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
             {item.firstName ? item.firstName + " " + item.lastName : item.nick}
-            <Button size="small" style={{ float: "right" }}>
+            {/* <Button size="small" style={{ float: "right" }}>
               Dodaj
-            </Button>
+            </Button> */}
+            <FollowButton
+              type={
+                this.props.contains(parseInt(item.id)) ? "primary" : "ghost"
+              }
+              icon={this.props.contains(parseInt(item.id)) ? "minus" : "plus"}
+              text={this.props.contains(parseInt(item.id)) ? "Usuń" : "Dodaj"}
+              id={item.id}
+            />
           </List.Item>
         )}
       />

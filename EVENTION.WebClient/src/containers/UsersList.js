@@ -2,12 +2,15 @@ import React from "react";
 import { Input, Row } from "antd";
 import Users from "../components/Users";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 const Search = Input.Search;
 
 class UsersList extends React.Component {
   state = {
     AllUsers: [],
+    FilteredUsers: [],
+    FollowedUsers: [],
     User: null
   };
 
@@ -19,6 +22,24 @@ class UsersList extends React.Component {
         Users: res.data
       });
     });
+    axios
+      .get(
+        "http://localhost:9000/followers/".concat(Cookies.get("USER_ID?userid"))
+      )
+      .then(res => {
+        console.log(res.data);
+        this.setState({ FollowedUsers: res.data });
+      });
+  };
+
+  contains = id => {
+    let flag = false;
+    this.state.FollowedUsers.forEach(user => {
+      if (user.id === id) {
+        flag = true;
+      }
+    });
+    return flag;
   };
 
   componentDidMount() {
@@ -30,6 +51,19 @@ class UsersList extends React.Component {
     this.setState({ User: user });
   };
 
+  filterUsers = query => {
+    console.log(this.state.AllUsers);
+    const filtered = this.state.AllUsers.filter(
+      user =>
+        (user.firstName.trim() === "" &&
+          user.lastName.trim() === "" &&
+          user.nick.includes(query)) ||
+        user.firstName.includes(query) ||
+        user.lastName.includes(query)
+    );
+    this.setState({ Users: filtered });
+  };
+
   render() {
     return (
       <div>
@@ -37,16 +71,12 @@ class UsersList extends React.Component {
         <Row>
           <Search
             enterButton="Szukaj"
-            onSearch={value => {
-              this.findUser(value);
-            }}
+            onChange={event => this.filterUsers(event.target.value)}
             style={{ paddingBottom: 10, paddingTop: 10 }}
           />
         </Row>
         <Row>
-          <Users
-            data={this.state.User ? this.state.AllUsers : [this.state.User]}
-          />
+          <Users data={this.state.Users} contains={this.contains} />
         </Row>
       </div>
     );
