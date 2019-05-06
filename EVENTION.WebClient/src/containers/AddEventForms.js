@@ -3,7 +3,7 @@ import { Row } from "antd";
 import { Button } from "antd";
 import ShortForms from "../containers/ShortForms";
 import axios from "axios";
-import geocoder from "geocoder-geojson";
+
 
 class AddEventForms extends React.Component {
   constructor(props) {
@@ -21,6 +21,7 @@ class AddEventForms extends React.Component {
       eventEnd: "",
       validname: "true bure",
       validlongDescription: "true bure",
+      validshortDescription: "true bure",
       validaddressCity: "true bure",
       validcategories: "true bure",
       validaddress: "true bure",
@@ -179,14 +180,8 @@ class AddEventForms extends React.Component {
         console.log(today);
         console.log(this.state.eventStart);
         console.log(this.state.eventEnd);
-        console.log("before geojson");
-        geocoder.google(this.state.address).then(geojson => {
-          this.setState({
-            geoJson: geojson
-          });
-          console.log("geojson", geojson.toString());
-        });
-        console.log(this.state.geojson.toString());
+       
+   
         axios
           .post("http://localhost:9000/event/create", {
             event: {
@@ -199,7 +194,7 @@ class AddEventForms extends React.Component {
               eventEnd: this.state.eventEnd,
               addressCity: this.state.addressCity,
               imageSource: this.state.imageSource,
-              geoJson: this.state.geoJson.toString(),
+              geoJson: this.state.geoJson,
               address: this.state.address
             },
             categories: this.state.categories

@@ -124,7 +124,7 @@ class EventAPI_Gdansk:
                 event["event"]["ownerId"] = 1
                 #print(dic['place']['name'])
                 try:
-                    event["event"]["geoJSON"] = str(self.scrap.create_geojson("Polska, Gdańsk "+dic['place']['name']))
+                    event["event"]["geoJSON"] = str(self.scrap.create_geojson(query="Polska, Gdańsk "+dic['place']['name']))
                 except:
                     event["event"]["geoJSON"] = "{}"
                 try:
