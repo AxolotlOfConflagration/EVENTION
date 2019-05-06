@@ -4,7 +4,6 @@ import { Button } from "antd";
 import ShortForms from "../containers/ShortForms";
 import axios from "axios";
 
-
 class AddEventForms extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +38,7 @@ class AddEventForms extends React.Component {
       eventEndError: "",
       geojson: "",
       valid: false,
-      geoJson: "",
+      geoJson: "{}",
       message_from_post: ""
     };
     this.submitted = false;
@@ -180,8 +179,7 @@ class AddEventForms extends React.Component {
         console.log(today);
         console.log(this.state.eventStart);
         console.log(this.state.eventEnd);
-       
-   
+
         axios
           .post("http://localhost:9000/event/create", {
             event: {
@@ -227,6 +225,8 @@ class AddEventForms extends React.Component {
           });
       } else {
         this.setState({
+          message_from_post:
+            "Błąd podczas tworzenia wydarzenia. Spróbuj jeszcze raz.",
           name: "",
           shortDescription: "",
           longDescription: "",
