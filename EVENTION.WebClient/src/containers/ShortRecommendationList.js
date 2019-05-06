@@ -1,17 +1,20 @@
 import React from "react";
 import ShortRecomEvent from "../components/ShortRecomEvent";
 import axios from "axios";
-
+import Cookies from "js-cookie";
 class ShortRecommendationList extends React.Component {
   state = {
     ShortEvents: [],
-    id: 1,
     loading: true
   };
 
   componentDidMount() {
     axios
-      .get("http://localhost:9000/recomendation/".concat(this.state.id))
+      .get(
+        "http://localhost:9000/recomendation/".concat(
+          Cookies.get("USER_ID?userid")
+        )
+      )
       .then(res => {
         this.setState({
           ShortEvents: res.data,

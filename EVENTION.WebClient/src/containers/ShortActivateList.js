@@ -1,22 +1,24 @@
 import React from "react";
 import axios from "axios";
 import ShortActive from "../components/ShortActive";
-
+import Cookies from "js-cookie";
 class ShortActivateList extends React.Component {
   state = {
     ShortActiv: [],
-    id: 2,
+
     loading: true
   };
 
   componentDidMount() {
-    axios.get("http://localhost:9000/feed/".concat(this.state.id)).then(res => {
-      this.setState({
-        ShortActiv: res.data,
-        loading: false
+    axios
+      .get("http://localhost:9000/feed/".concat(Cookies.get("USER_ID?userid")))
+      .then(res => {
+        this.setState({
+          ShortActiv: res.data,
+          loading: false
+        });
+        console.log(res.data);
       });
-      console.log(res.data);
-    });
   }
 
   render() {
