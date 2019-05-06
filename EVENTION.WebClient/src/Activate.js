@@ -3,28 +3,21 @@ import "antd/dist/antd.css";
 import { Col, Row } from "antd";
 import TestLayout from "./containers/TestLayout";
 import ShortActivateList from "./containers/ShortActivateList";
-import { Input } from "antd";
-
-const Search = Input.Search;
+import UsersList from "./containers/UsersList";
 
 class Activate extends Component {
   render() {
     return (
       <div className="Recommendation">
         <TestLayout>
-          <Col span={7}>
-            <Search
-              placeholder="input search text"
-              enterButton="Search"
-              size="large"
-              onSearch={value => console.log(value)}
-            />
-          </Col>
-          <Col span={1} />
-          <Col span={16}>
+          <Col span={15}>
             <Row>
               <ShortActivateList />
             </Row>
+          </Col>
+          <Col span={1} />
+          <Col span={8}>
+            <UsersList />
           </Col>
         </TestLayout>
       </div>

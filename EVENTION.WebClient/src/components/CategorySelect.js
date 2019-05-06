@@ -3,9 +3,9 @@ import { Select } from "antd";
 
 const Option = Select.Option;
 
-function handleChange(value) {
-  console.log(`selected ${value}`);
-}
+// function handleChange(value) {
+//   console.log(`selected ${value}`);
+// }
 
 function handleBlur() {
   console.log("blur");
