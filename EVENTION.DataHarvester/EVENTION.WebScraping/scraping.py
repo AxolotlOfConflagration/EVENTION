@@ -46,10 +46,10 @@ class Scrap:
         name = info_dict['body'][4]['declarations'][0]['init']['properties'][2]['value']['value']
         url = info_dict['body'][4]['declarations'][0]['init']['properties'][5]['value']['value']
         longDescription = info_dict['body'][4]['declarations'][0]['init']['properties'][6]['value']['value']
-        # longDescription = bs.BeautifulSoup(longDescription, 'lxml')
+        sDF = bs.BeautifulSoup(longDescription, 'lxml')
         longDescription = str(longDescription)
-        # longDescription = ''.join(longDescription.find_all(text=True))
-        shortDescription = ' '.join(re.split(r'(?<=[.:;])\s', longDescription)[:2]) + ' [...] '
+        sDF = ''.join(sDF.find_all(text=True))
+        shortDescription = ' '.join(re.split(r'(?<=[.:;])\s', sDF)[:2]) + ' [...] '
         tags = info_dict['body'][4]['declarations'][0]['init']['properties'][37]['value']['value']
         creationDate = datetime.datetime.now()
         eventStart = self.parse_date(info_dict['body'][4]['declarations'][0]['init']['properties'][16]['value']['elements'])

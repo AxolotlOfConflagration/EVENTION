@@ -1,11 +1,12 @@
 import React from "react";
-import { Row, Col, Divider, Icon, Timeline } from "antd";
+import { Row, Col, Divider, Icon, Timeline, Button, Drawer } from "antd";
 import axios from "axios";
 
 class EventDrawer extends React.Component {
   state = {
     Event: {},
-    loading: true
+    loading: true,
+    visible: false
   };
 
   fetchData = eventID => {
@@ -14,16 +15,12 @@ class EventDrawer extends React.Component {
     this.setState({
       loading: true
     });
-    console.log(eventID);
     axios.get(url).then(res => {
       this.setState({
         Event: res.data,
         loading: false
       });
     });
-    console.log(typeof this.state.Event);
-    console.log(Object.getOwnPropertyNames(this.state.Event));
-    console.log(this.state.Event);
   };
 
   componentDidUpdate(prevProps) {
@@ -40,6 +37,18 @@ class EventDrawer extends React.Component {
     var splited = time.split("T");
     splited[1] = splited[1].slice(0, 5);
     return splited;
+  };
+
+  openMapDrawer = () => {
+    this.setState({
+      visible: true
+    });
+  };
+
+  closeMapDrawer = () => {
+    this.setState({
+      visible: false
+    });
   };
 
   render() {
@@ -81,6 +90,34 @@ class EventDrawer extends React.Component {
         </Row>
         <Divider />
         <Row>{this.state.Event.event.longDescription}</Row>
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            width: "100%",
+            borderTop: "1px solid #e8e8e8",
+            padding: "10px 16px",
+            textAlign: "right",
+            left: 0,
+            background: "#fff",
+            borderRadius: "0 0 4px 4px"
+          }}
+        >
+          <Button
+            style={{
+              marginRight: 8
+            }}
+            onClick={this.showMapDrawer}
+          >
+            Pokaż na mapie
+          </Button>
+        </div>
+        <Drawer
+          title="Map Drawer"
+          width={320}
+          onClose={this.closeMapDrawer}
+          visible={this.state.visible}
+        />
       </div>
     );
   }
