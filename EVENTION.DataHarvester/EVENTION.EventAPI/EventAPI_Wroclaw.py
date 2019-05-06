@@ -136,7 +136,7 @@ class EventAPI_Wroclaw:
             
             except:
                 pass
-            event['event']["geoJSON"] = str( self.scrap.create_geojson(event["event"]["address"]))
+            event['event']["geoJSON"] = str( self.scrap.create_geojson(query=event["event"]["address"]))
             try:
                 event["categories"] = [self._check_category(dic["offer"]["categories"][0]["name"])]
             except:
