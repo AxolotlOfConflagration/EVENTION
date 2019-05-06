@@ -1,7 +1,8 @@
 package repositories
 
 import javax.inject.{Inject, Singleton}
-import models.dbTypes.{Business, Event}
+import models.database.Business
+import models.database.Event
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import slick.jdbc.JdbcProfile
 

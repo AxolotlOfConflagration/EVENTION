@@ -7,6 +7,7 @@ import MyEvents from "./MyEvents";
 import AddEvent from "./AddEvent";
 import Recommendation from "./Recommendation";
 import Login from "./Login";
+import Activate from "./Activate";
 
 const routing = (
   <Router>
@@ -16,7 +17,10 @@ const routing = (
       <Route path="/Aktywnosc" component={AddEvent} />
       <Route path="/Rekomendacje" component={Recommendation} />
       <Route path="/Login" component={Login} />
+      <Route path="/DodajWydarzenie" component={AddEvent} />
+      <Route path="/OstatniaAktywnosc" component={Activate} />
     </div>
   </Router>
 );
+
 ReactDOM.render(routing, document.getElementById("root"));

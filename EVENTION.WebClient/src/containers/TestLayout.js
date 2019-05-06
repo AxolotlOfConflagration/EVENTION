@@ -13,10 +13,14 @@ class TestLayout extends React.Component {
 
   onNavigateActivate() {
     const history = createBrowserHistory();
-    history.push("/Aktywnosc");
-    window.location.assign("/Aktywnosc");
+    history.push("/OstatniaAktywnosc");
+    window.location.assign("/OstatniaAktywnosc");
   }
-
+  onNavigateAddEvent() {
+    const history = createBrowserHistory();
+    history.push("/DodajWydarzenie");
+    window.location.assign("/DodajWydarzenie");
+  }
   onNavigateHome() {
     const history = createBrowserHistory();
     history.push("/");
@@ -43,13 +47,17 @@ class TestLayout extends React.Component {
               <Icon type="calendar" />
               <span>Moje wydarzenia</span>
             </Menu.Item>
-            <Menu.Item key="3" onClick={this.onNavigateActivate}>
+            <Menu.Item key="3" onClick={this.onNavigateAddEvent}>
               <Icon type="contacts" />
-              <span>Aktywność</span>
+              <span>Dodaj wydarzenie</span>
             </Menu.Item>
             <Menu.Item key="4" onClick={this.onNavigateRecommendation}>
               <Icon type="compass" />
               <span>Rekomendacje</span>
+            </Menu.Item>
+            <Menu.Item key="5" onClick={this.onNavigateActivate}>
+              <Icon type="team" />
+              <span>Ostatnia aktywność</span>
             </Menu.Item>
           </Menu>
         </Header>

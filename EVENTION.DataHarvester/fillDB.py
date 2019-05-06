@@ -10,10 +10,16 @@ from EventAPI_Wroclaw import EventAPI_Wroclaw
 
 class fillDB:
     def __init__(self, *args, **kwargs):
-        pass
+        self.s = Scrap()
+        self.eP = EventAPI_Poznan()
 
     def getEvents(self, dateStart = None, dateEnd = None):
-        eventsScraping = Scrap().scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/warszawa')
+        eventsScraping = self.s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/warszawa')
+        eventsScraping = eventsScraping + self.s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/krakow')
+        eventsScraping = eventsScraping + self.s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/trojmiasto')
+        # eventsScraping = eventsScraping + self.s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/poznan')
+        eventsScraping = eventsScraping + self.s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/zakopane')
+        eventsScraping = eventsScraping + self.s.scrap_kiwiportal('https://www.kiwiportal.pl/wydarzenia/m/wroclaw')
         # # -- save/read to txt file --
         # with open('/home/sleter/Documents/Github/EVENTION/EVENTION.DataHarvester/eventScraping.txt', 'w+') as f:
         #     for item in eventsScraping:
@@ -23,6 +29,7 @@ class fillDB:
         # with open('/home/sleter/Documents/Github/EVENTION/EVENTION.DataHarvester/eventScraping.txt', 'r') as f:
         #     for item in f:
         #         eventsScraping.append(item)
+        eventsScraping = eventsScraping + self.eP.get_event_today()
         return eventsScraping
             
     def load_to_database(self):

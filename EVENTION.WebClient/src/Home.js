@@ -42,6 +42,17 @@ class Home extends Component {
           <TestLayout>
             <Col span={15}>
               <Row style={{ zIndex: 3 }}>
+    if(!document.cookie) {
+      return (
+        <Login />
+      )
+    }
+    return (
+      <div className="Home">
+        <TestLayout>
+          <Col span={15}>
+            <Row style={{ zIndex: 3 }}>
+              <Sticky>
                 <EventFilters
                   category={this.state.categories}
                   chooseCategory={this.chooseCategory}

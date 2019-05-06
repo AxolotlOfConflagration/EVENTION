@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "6acff920-daf8-4f5f-9514-f1586a95de4c",
+		"name": "Recommendation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/recomendation/:userId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[3, 4]"
+				},
+				"url": {
+					"raw": "localhost:9000/recomendation/:userId",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"recomendation",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/recomendation/:userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/recomendation/:userId",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"recomendation",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
