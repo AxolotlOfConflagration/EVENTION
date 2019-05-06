@@ -3,7 +3,6 @@ import { Row } from "antd";
 import { Button } from "antd";
 import ShortForms from "../containers/ShortForms";
 import axios from "axios";
-import geocoder from "geocoder-geojson";
 
 class AddEventForms extends React.Component {
   constructor(props) {
