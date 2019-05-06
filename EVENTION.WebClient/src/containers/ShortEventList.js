@@ -1,10 +1,12 @@
 import React from "react";
 import ShortEvent from "../components/ShortEvent";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 class ShortEventList extends React.Component {
   state = {
-    ShortEvents: []
+    ShortEvents: [],
+    SavedEvents: []
   };
 
   fetchData = (city, category) => {
@@ -22,6 +24,27 @@ class ShortEventList extends React.Component {
           ShortEvents: res.data
         });
       });
+    axios
+      .get(
+        "http://localhost:9000/user/"
+          .concat(Cookies.get("USER_ID?userid"))
+          .concat("/event")
+      )
+      .then(res => {
+        this.setState({
+          SavedEvents: res.data
+        });
+      });
+  };
+
+  contains = id => {
+    let flag = false;
+    this.state.SavedEvents.forEach(event => {
+      if (event.id === id) {
+        flag = true;
+      }
+    });
+    return flag;
   };
 
   componentDidMount() {
@@ -46,7 +69,11 @@ class ShortEventList extends React.Component {
       );
     }
     return (
-      <ShortEvent data={this.state.ShortEvents} setPage={this.props.setPage} />
+      <ShortEvent
+        data={this.state.ShortEvents}
+        setPage={this.props.setPage}
+        contains={this.contains}
+      />
     );
   }
 }

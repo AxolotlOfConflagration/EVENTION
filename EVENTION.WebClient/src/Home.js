@@ -6,6 +6,7 @@ import TestLayout from "./containers/TestLayout";
 import ShortEventList from "./containers/ShortEventList";
 import EventFilters from "./containers/EventFilters";
 import EventMap from "./components/EventsMap";
+import Cookies from "js-cookie";
 import Login from "./Login";
 
 class Home extends Component {
@@ -35,6 +36,12 @@ class Home extends Component {
   };
 
   render() {
+    if (Cookies.get("USER_ID?userid")) {
+      return (
+        <div className="Home">
+          <TestLayout>
+            <Col span={15}>
+              <Row style={{ zIndex: 3 }}>
     if(!document.cookie) {
       return (
         <Login />
@@ -52,32 +59,34 @@ class Home extends Component {
                   city={this.state.city}
                   chooseCity={this.chooseCity}
                 />
+              </Row>
+              <Row>
+                <br />
+              </Row>
+              <Row>
+                <ShortEventList
+                  category={this.state.categories}
+                  city={this.state.city}
+                  setPage={this.setPage}
+                />
+              </Row>
+            </Col>
+            <Col span={9}>
+              <Sticky>
+                <EventMap
+                  mapPos={this.state.city}
+                  city={this.state.city}
+                  categories={this.state.categories}
+                  page={this.state.page}
+                />
               </Sticky>
-            </Row>
-            <Row>
-              <br />
-            </Row>
-            <Row>
-              <ShortEventList
-                category={this.state.categories}
-                city={this.state.city}
-                setPage={this.setPage}
-              />
-            </Row>
-          </Col>
-          <Col span={9}>
-            <Sticky>
-              <EventMap
-                mapPos={this.state.city}
-                city={this.state.city}
-                categories={this.state.categories}
-                page={this.state.page}
-              />
-            </Sticky>
-          </Col>
-        </TestLayout>
-      </div>
-    );
+            </Col>
+          </TestLayout>
+        </div>
+      );
+    } else {
+      return <Login />;
+    }
   }
 }
 

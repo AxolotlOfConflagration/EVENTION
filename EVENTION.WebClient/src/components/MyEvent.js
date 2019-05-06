@@ -4,10 +4,9 @@ import { List, Button, Icon, Drawer } from "antd";
 import EventDrawer from "./EventDrawer";
 import SaveButton from "./SaveButton";
 
-class ShortEvent extends React.Component {
+class MyEvent extends React.Component {
   state = {
     visible: false,
-    childVisible: false,
     eventTitle: null,
     event: null,
     eventID: null
@@ -58,41 +57,41 @@ class ShortEvent extends React.Component {
     });
   };
 
+  buttonCheck = () => {
+    console.log("działa");
+  };
+
   render() {
     return (
       <div>
         <List
           itemLayout="vertical"
           bordered="true"
+          size="large"
           pagination={{
             onChange: page => {
               console.log(page);
-              this.props.setPage(page);
             },
             pageSize: 4
           }}
           dataSource={this.props.data}
           renderItem={item => (
             <List.Item
-              key={item.event.name}
+              key={item.name}
               actions={[
                 <SaveButton
                   type={
-                    this.props.contains(parseInt(item.event.id))
-                      ? "primary"
-                      : "ghost"
+                    this.props.contains(parseInt(item.id)) ? "primary" : "ghost"
                   }
                   icon={
-                    this.props.contains(parseInt(item.event.id))
-                      ? "check"
-                      : "plus"
+                    this.props.contains(parseInt(item.id)) ? "check" : "plus"
                   }
                   text={
-                    this.props.contains(parseInt(item.event.id))
+                    this.props.contains(parseInt(item.id))
                       ? "Zapisano"
                       : "Zapisz się"
                   }
-                  id={item.event.id}
+                  id={item.id}
                   user="1"
                 />,
                 <this.ButtonIcon type="share-alt" />,
@@ -100,7 +99,7 @@ class ShortEvent extends React.Component {
                   text=" Więcej "
                   func={() => {
                     axios
-                      .get("http://localhost:9000/event/".concat(item.event.id))
+                      .get("http://localhost:9000/event/".concat(item.id))
                       .then(res => {
                         this.setState({
                           event: res
@@ -108,25 +107,20 @@ class ShortEvent extends React.Component {
                       });
                     this.setState({
                       visible: !this.state.visible,
-                      eventID: item.event.id,
-                      eventTitle: item.event.name
+                      eventID: item.id,
+                      eventTitle: item.name
                     });
                   }}
                 />,
                 <this.IconText
                   type="schedule"
-                  text={this.prepTime(item.event.eventStart)}
+                  text={this.prepTime(item.eventStart)}
                 />
               ]}
-              extra={
-                <img height={150} alt="logo" src={item.event.imageSource} />
-              }
+              extra={<img height={150} alt="logo" src={item.imageSource} />}
             >
-              <List.Item.Meta
-                title={item.event.name}
-                description={item.event.address}
-              />
-              {item.event.shortDescription}
+              <List.Item.Meta title={item.name} description={item.address} />
+              {item.shortDescription}
             </List.Item>
           )}
         />
@@ -145,4 +139,4 @@ class ShortEvent extends React.Component {
   }
 }
 
-export default ShortEvent;
+export default MyEvent;
