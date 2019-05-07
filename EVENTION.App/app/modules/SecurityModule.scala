@@ -1,14 +1,13 @@
 package modules
 
 import com.google.inject.{AbstractModule, Provides}
-import javax.inject.Inject
 import org.pac4j.core.client.Clients
 import org.pac4j.core.config.Config
 import org.pac4j.oauth.client.Google2Client
 import org.pac4j.play.http.PlayHttpActionAdapter
-import org.pac4j.play.{CallbackController, LogoutController}
 import org.pac4j.play.scala.{DefaultSecurityComponents, SecurityComponents}
 import org.pac4j.play.store.{PlayCookieSessionStore, PlaySessionStore, ShiroAesDataEncrypter}
+import org.pac4j.play.{CallbackController, LogoutController}
 import play.api.{Configuration, Environment}
 
 class SecurityModule(env: Environment, conf: Configuration) extends AbstractModule{
@@ -33,7 +32,9 @@ class SecurityModule(env: Environment, conf: Configuration) extends AbstractModu
 
     // Logout
     val logoutController = new LogoutController()
-    logoutController.setDefaultUrl("/")
+    logoutController.setDefaultUrl("http://localhost:3000")
+    logoutController.setLocalLogout(true)
+    logoutController.setCentralLogout(true)
     bind(classOf[LogoutController]).toInstance(logoutController)
   }
 
