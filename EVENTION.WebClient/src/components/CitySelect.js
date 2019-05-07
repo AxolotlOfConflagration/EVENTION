@@ -35,12 +35,12 @@ class CitySelect extends React.Component {
             0
           }
         >
-          <Option value="poznan">Poznań</Option>
-          <Option value="warszawa">Warszawa</Option>
-          <Option value="wroclaw">Wrocław</Option>
-          <Option value="trojmiasto">Trójmiasto</Option>
-          <Option value="krakow">Kraków</Option>
-          <Option value="zakopane">Zakopane</Option>
+          <Option value="Poznań">Poznań</Option>
+          <Option value="Warszawa">Warszawa</Option>
+          <Option value="Wrocław">Wrocław</Option>
+          <Option value="Trójmiasto">Trójmiasto</Option>
+          <Option value="Kraków">Kraków</Option>
+          <Option value="Zakopane">Zakopane</Option>
         </Select>
         <div style={{ fontSize: 14, color: "red" }}>
           {this.props.addressCityError}

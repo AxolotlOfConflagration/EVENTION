@@ -36,9 +36,7 @@ class AddEventForms extends React.Component {
       imageSourceError: "",
       eventStartError: "",
       eventEndError: "",
-      geojson: "",
       valid: false,
-      geoJson: "{}",
       message_from_post: ""
     };
     this.submitted = false;
@@ -192,7 +190,6 @@ class AddEventForms extends React.Component {
               eventEnd: this.state.eventEnd,
               addressCity: this.state.addressCity,
               imageSource: this.state.imageSource,
-              geoJson: this.state.geoJson,
               address: this.state.address
             },
             categories: this.state.categories
@@ -264,7 +261,7 @@ class AddEventForms extends React.Component {
     //       addressCity: "Poznan",
     //       imageSource:
     //         "http://www.poznan.pl/mim/events/pictures/wejscie-do-schronu,pic1,1225,0,227640,with-dims,150,150.jpg",
-    //       geoJson: "{}",
+
     //       address: "Schron przy ul Warmińskiej, Poznań"
     //     },
     //     categories: [2, 3]
