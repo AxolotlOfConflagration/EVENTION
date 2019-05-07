@@ -78,6 +78,7 @@ class EventMap extends React.Component {
         })
         .then(res => {
           res.data.forEach(event => {
+            console.log(event);
             this.marker = L.geoJSON(JSON.parse(event.event.geoJson), {
               pointToLayer: (feature, latlng) => {
                 return L.marker(latlng, { icon: customMarker });

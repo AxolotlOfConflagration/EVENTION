@@ -35,11 +35,11 @@ class CitySelect extends React.Component {
             0
           }
         >
-          <Option value="Poznań">Poznań</Option>
+          <Option value="Poznan">Poznań</Option>
           <Option value="Warszawa">Warszawa</Option>
           <Option value="Wrocław">Wrocław</Option>
-          <Option value="Trójmiasto">Trójmiasto</Option>
-          <Option value="Kraków">Kraków</Option>
+          <Option value="Trojmiasto">Trójmiasto</Option>
+          <Option value="Krakow">Kraków</Option>
           <Option value="Zakopane">Zakopane</Option>
         </Select>
         <div style={{ fontSize: 14, color: "red" }}>

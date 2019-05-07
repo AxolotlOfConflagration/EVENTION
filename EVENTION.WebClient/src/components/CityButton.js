@@ -32,11 +32,11 @@ class CityButton extends React.Component {
     return (
       <div>
         <this.ButtonAll text="Wszystkie" />
-        <this.ButtonText text="Poznań" value="Poznań" />
+        <this.ButtonText text="Poznań" value="Poznan" />
         <this.ButtonText text="Warszawa" value="Warszawa" />
         <this.ButtonText text="Wrocław" value="Wroclaw" />
-        <this.ButtonText text="Trójmiasto" value="Trójmiasto" />
-        <this.ButtonText text="Kraków" value="Kraków" />
+        <this.ButtonText text="Trójmiasto" value="Trojmiasto" />
+        <this.ButtonText text="Kraków" value="Krakow" />
         <this.ButtonText text="Zakopane" value="Zakopane" />
       </div>
     );

@@ -4,9 +4,12 @@ import { Col, Row } from "antd";
 import AddEventForms from "./containers/AddEventForms";
 import TestLayout from "./containers/TestLayout";
 import GoogleFontLoader from "react-google-font-loader";
+import Login from "./Login";
+import Cookies from "js-cookie"
 
 class AddEvent extends Component {
   render() {
+    if (Cookies.get("USER_ID?userid")) {
     return (
       <div className="AddEvent">
         <TestLayout>
@@ -43,8 +46,11 @@ class AddEvent extends Component {
           </Row>
         </TestLayout>
       </div>
-    );
+    ); 
+  } else {
+      return <Login />;
   }
+}
 }
 
 export default AddEvent;
