@@ -3,7 +3,7 @@ import { Button } from "antd";
 
 class CityButton extends React.Component {
   ButtonAll = ({ text }) => (
-    <span>
+    <span style={{ paddingRight: 5 }}>
       <Button
         type={this.props.currentCity === null ? "primary" : "ghost"}
         size="default"
@@ -16,7 +16,7 @@ class CityButton extends React.Component {
   );
 
   ButtonText = ({ text, value }) => (
-    <span>
+    <span style={{ paddingRight: 5 }}>
       <Button
         type={this.props.currentCity === value ? "primary" : "ghost"}
         size="default"

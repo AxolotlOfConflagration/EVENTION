@@ -3,7 +3,7 @@ import { Icon, Button } from "antd";
 
 class CategoryButton extends React.Component {
   ButtonAll = ({ text, icon, id }) => (
-    <span>
+    <span style={{ paddingRight: 5 }}>
       <Button
         type={this.props.currentCategory === id ? "primary" : "dashed"}
         size="default"
@@ -17,7 +17,7 @@ class CategoryButton extends React.Component {
   );
 
   ButtonText = ({ text, icon, id }) => (
-    <span>
+    <span style={{ paddingRight: 5 }}>
       <Button
         type={
           this.props.currentCategory != null &&
@@ -35,7 +35,7 @@ class CategoryButton extends React.Component {
     </span>
   );
   ButtonIcon = ({ text, icon, id }) => (
-    <span>
+    <span style={{ paddingRight: 5 }}>
       <Button
         type={
           this.props.currentCategory != null &&
