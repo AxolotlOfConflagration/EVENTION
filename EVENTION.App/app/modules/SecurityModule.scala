@@ -10,13 +10,13 @@ import org.pac4j.play.store.{PlayCookieSessionStore, PlaySessionStore, ShiroAesD
 import org.pac4j.play.{CallbackController, LogoutController}
 import play.api.{Configuration, Environment}
 
-class SecurityModule(env: Environment, conf: Configuration) extends AbstractModule{
+class SecurityModule(env: Environment, conf: Configuration) extends AbstractModule {
   val baseUrl: String = conf.get[String]("base-url")
 
   override def configure(): Unit = {
 
     // Session configuration - all session data will be saved in cookie with AES encryption
-    val secret = conf.get[String]("play.http.secret.key").substring(0,16)
+    val secret = conf.get[String]("play.http.secret.key").substring(0, 16)
     val dataEncryptor = new ShiroAesDataEncrypter(secret)
     val playSessionStore = new PlayCookieSessionStore(dataEncryptor)
     bind(classOf[PlaySessionStore]).toInstance(playSessionStore)
@@ -47,7 +47,7 @@ class SecurityModule(env: Environment, conf: Configuration) extends AbstractModu
 
   @Provides
   def providesConfig(googleClient: Google2Client): Config = {
-    val clients = new Clients(baseUrl+"/callback", googleClient)
+    val clients = new Clients(baseUrl + "/callback", googleClient)
 
     val config = new Config(clients)
     config.setHttpActionAdapter(new PlayHttpActionAdapter())
