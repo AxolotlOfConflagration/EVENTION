@@ -22,7 +22,7 @@ class AuthController @Inject()
     val profile = request.profiles.head
     val fullname = profile.getDisplayName.split("//s+")
 
-    println(request.cookies.map(c => s"${c.name} ${c.value}").mkString("\n"))
+//    println(request.cookies.map(c => s"${c.name} ${c.value}").mkString("\n"))
 
     val user = User(
       id = None,

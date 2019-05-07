@@ -47,6 +47,8 @@ libraryDependencies ++= Seq(
 // Faker
 libraryDependencies += "com.github.stevenchen3" %% "scala-faker" % "0.1.1"
 
+libraryDependencies += "com.byteowls" % "jopencage" % "1.2.1"
+
 scalacOptions ++= Seq(
   "-feature",
   "-deprecation",
@@ -65,5 +67,6 @@ resolvers ++= Seq(
   "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
   "Sonatype snapshots repository" at "https://oss.sonatype.org/content/repositories/snapshots/",
   "Shibboleth releases" at "https://build.shibboleth.net/nexus/content/repositories/releases/",
-  "MuleSoft" at "https://repository.mulesoft.org/nexus/content/repositories/public/"
+  "MuleSoft" at "https://repository.mulesoft.org/nexus/content/repositories/public/",
+  "JCenter" at "http://jcenter.bintray.com/"
 )
