@@ -1,10 +1,24 @@
 import React from "react";
 import { Layout, Menu, Icon } from "antd";
 import { createBrowserHistory } from "history";
-
+import Cookies from "js-cookie";
+import axios from "axios";
 const { Header, Content } = Layout;
 
 class TestLayout extends React.Component {
+  state = {
+    nick: ""
+  };
+  componentDidMount() {
+    axios
+      .get("http://localhost:9000/user/".concat(Cookies.get("USER_ID?userid")))
+      .then(res => {
+        this.setState({
+          nick: res.data.nick
+        });
+        console.log(res.data);
+      });
+  }
   onNavigateMyEvents() {
     const history = createBrowserHistory();
     history.push("/MojeWydarzenia");
@@ -58,6 +72,10 @@ class TestLayout extends React.Component {
             <Menu.Item key="5" onClick={this.onNavigateActivate}>
               <Icon type="team" />
               <span>Ostatnia aktywność</span>
+            </Menu.Item>
+            <Menu.Item key="6" style={{ float: "right" }}>
+              <Icon type="user" />
+              <span>{this.state.nick}</span>
             </Menu.Item>
           </Menu>
         </Header>

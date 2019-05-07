@@ -12,7 +12,7 @@ class Users extends React.Component {
         dataSource={data}
         renderItem={item => (
           <List.Item>
-            <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+            <Avatar src="https://img.icons8.com/windows/32/000000/contacts.png" />
             {item.firstName ? item.firstName + " " + item.lastName : item.nick}
             {/* <Button size="small" style={{ float: "right" }}>
               Dodaj
