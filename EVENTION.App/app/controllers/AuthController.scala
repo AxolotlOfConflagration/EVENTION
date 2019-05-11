@@ -37,6 +37,12 @@ class AuthController @Inject()
     Redirect(s"http://localhost:3000/login?userid=$userId")
   }
 
+  def loginBasic: Action[AnyContent] = Secure("DirectBasicAuthClient ") { implicit request =>
+    val userId = 1
+//    Redirect(s"http://localhost:3000/login?userid=$userId&type=business")
+    Ok("""{"userId": 1, "type": "business"}""")
+  }
+
   def callback: Action[AnyContent] = Action { implicit request =>
     request.cookies.get("PLAY_SESSION").map { x =>
       Ok("You are logged in ;)")

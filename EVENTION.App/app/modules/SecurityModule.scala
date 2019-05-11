@@ -3,6 +3,9 @@ package modules
 import com.google.inject.{AbstractModule, Provides}
 import org.pac4j.core.client.Clients
 import org.pac4j.core.config.Config
+import org.pac4j.http.client.direct.DirectBasicAuthClient
+import org.pac4j.http.client.indirect.IndirectBasicAuthClient
+import org.pac4j.http.credentials.authenticator.test.SimpleTestUsernamePasswordAuthenticator
 import org.pac4j.oauth.client.Google2Client
 import org.pac4j.play.http.PlayHttpActionAdapter
 import org.pac4j.play.scala.{DefaultSecurityComponents, SecurityComponents}
@@ -46,8 +49,11 @@ class SecurityModule(env: Environment, conf: Configuration) extends AbstractModu
   }
 
   @Provides
-  def providesConfig(googleClient: Google2Client): Config = {
-    val clients = new Clients(baseUrl + "/callback", googleClient)
+  def provideIndirectBasicAuthClient: DirectBasicAuthClient = new DirectBasicAuthClient(new SimpleTestUsernamePasswordAuthenticator())
+
+  @Provides
+  def providesConfig(googleClient: Google2Client, basicAuthClient: DirectBasicAuthClient ): Config = {
+    val clients = new Clients(baseUrl + "/callback", googleClient, basicAuthClient)
 
     val config = new Config(clients)
     config.setHttpActionAdapter(new PlayHttpActionAdapter())
