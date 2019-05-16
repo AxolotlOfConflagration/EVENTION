@@ -35,6 +35,7 @@ class AuthController @Inject()
     val userId = repo.registerOrLogin(user)
 
     Redirect(s"http://localhost:3000/login?userid=$userId")
+    //Redirect(s"http://localhost:3000")
   }
 
   def loginBasic: Action[AnyContent] = Secure("DirectBasicAuthClient ") { implicit request =>

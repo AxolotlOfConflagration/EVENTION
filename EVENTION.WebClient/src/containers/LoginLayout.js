@@ -59,7 +59,16 @@ class LoginLayout extends React.Component {
               <Icon type="team" />
               <span>Ostatnia aktywność</span>
             </Menu.Item>
-            <Button type="default" style={{zIndex: 10, width: "52%"}}  size="large" href="http://localhost:9000/login"> Zaloguj się </Button>
+            <Button
+              type="default"
+              style={{ zIndex: 10, width: "52%" }}
+              size="large"
+              href="http://localhost:9000/login"
+              onClick={this.onNavigateHome}
+            >
+              {" "}
+              Zaloguj się{" "}
+            </Button>
           </Menu>
         </Header>
         <Content
