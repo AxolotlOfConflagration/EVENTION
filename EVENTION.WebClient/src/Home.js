@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "antd/dist/antd.css";
 import { Col, Row } from "antd";
 import Sticky from "react-sticky-el";
-import TestLayout from "./containers/TestLayout";
+import MyLayout from "./containers/MyLayout";
 import ShortEventList from "./containers/ShortEventList";
 import EventFilters from "./containers/EventFilters";
 import EventMap from "./components/EventsMap";
@@ -35,10 +35,10 @@ class Home extends Component {
   };
 
   render() {
-    if (Cookies.get("USER_ID?userid")) {
+    if (Cookies.get("USER_ID")) {
       return (
         <div className="Home">
-          <TestLayout>
+          <MyLayout>
             <Col span={15}>
               <Row style={{ zIndex: 3 }}>
                 <EventFilters
@@ -69,7 +69,7 @@ class Home extends Component {
                 />
               </Sticky>
             </Col>
-          </TestLayout>
+          </MyLayout>
         </div>
       );
     } else {
