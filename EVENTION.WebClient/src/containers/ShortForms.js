@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "antd";
+import { Row } from "antd";
 import NameEvent from "../components/NameEvent";
 import ShortDesc from "../components/ShortDesc";
 import LongDesc from "../components/LongDesc";

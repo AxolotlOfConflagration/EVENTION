@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "antd/dist/antd.css";
 import { Row } from "antd";
 import MyEventFilters from "./components/MyEventFilters";
-import TestLayout from "./containers/TestLayout";
+import MyLayout from "./containers/MyLayout";
 import MyEventList from "./containers/MyEventsList";
 import Cookies from "js-cookie";
 import Login from "./Login";
@@ -20,17 +20,17 @@ class MyEvents extends Component {
 
   render() {
     const { type } = this.state;
-    if (Cookies.get("USER_ID?userid")) {
+    if (Cookies.get("USER_ID")) {
       return (
         <div className="Recommendation">
-          <TestLayout>
+          <MyLayout>
             <Row>
               <MyEventFilters type={type} changeType={this.changeType} />
             </Row>
             <Row>
               <MyEventList type={type} />
             </Row>
-          </TestLayout>
+          </MyLayout>
         </div>
       );
     } else {

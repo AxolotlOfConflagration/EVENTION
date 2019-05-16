@@ -1,10 +1,25 @@
 import React from "react";
 import { Layout, Menu, Icon, Button } from "antd";
 import { createBrowserHistory } from "history";
-
+import Cookies from "js-cookie";
+import axios from "axios";
 const { Header, Content } = Layout;
 
-class LoginLayout extends React.Component {
+class MyLayout extends React.Component {
+  state = {
+    nick: ""
+  };
+
+  componentDidMount() {
+    axios
+      .get("http://localhost:9000/user/".concat(Cookies.get("USER_ID")))
+      .then(res => {
+        this.setState({
+          nick: res.data.nick
+        });
+        console.log(res.data);
+      });
+  }
   onNavigateMyEvents() {
     const history = createBrowserHistory();
     history.push("/MojeWydarzenia");
@@ -47,19 +62,36 @@ class LoginLayout extends React.Component {
               <Icon type="calendar" />
               <span>Moje wydarzenia</span>
             </Menu.Item>
-            <Menu.Item key="3" onClick={this.onNavigateAddEvent}>
-              <Icon type="contacts" />
-              <span>Dodaj wydarzenie</span>
+            <Menu.Item key="5" onClick={this.onNavigateActivate}>
+              <Icon type="team" />
+              <span>Ostatnia aktywność</span>
             </Menu.Item>
             <Menu.Item key="4" onClick={this.onNavigateRecommendation}>
               <Icon type="compass" />
               <span>Rekomendacje</span>
             </Menu.Item>
-            <Menu.Item key="5" onClick={this.onNavigateActivate}>
-              <Icon type="team" />
-              <span>Ostatnia aktywność</span>
-            </Menu.Item>
-            <Button type="default" style={{zIndex: 10, width: "52%"}}  size="large" href="http://localhost:9000/login"> Zaloguj się </Button>
+            {Cookies.get("Bussines") ? (
+              <Menu.Item key="3" onClick={this.onNavigateAddEvent}>
+                <Icon type="contacts" />
+                <span>Dodaj wydarzenie</span>
+              </Menu.Item>
+            ) : null}
+            {!Cookies.get("USER_ID") ? (
+              <Button
+                type="default"
+                // style={{ zIndex: 10, width: "52%" }}
+                size="large"
+                href="http://localhost:9000/login"
+              >
+                {" "}
+                Zaloguj się{" "}
+              </Button>
+            ) : (
+              <Menu.Item key="6" style={{ float: "right" }}>
+                <Icon type="user" />
+                <span>{this.state.nick}</span>
+              </Menu.Item>
+            )}
           </Menu>
         </Header>
         <Content
@@ -78,4 +110,4 @@ class LoginLayout extends React.Component {
   }
 }
 
-export default LoginLayout;
+export default MyLayout;
