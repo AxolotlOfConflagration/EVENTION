@@ -98,8 +98,8 @@ class EventMap extends React.Component {
 
   componentDidMount() {
     this.map = L.map("map", {
-      center: [52.406, 16.925],
-      zoom: 12
+      center: [51.9194, 19.1451],
+      zoom: 6
     });
 
     L.tileLayer(

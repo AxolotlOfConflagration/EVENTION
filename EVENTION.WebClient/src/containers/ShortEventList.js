@@ -27,7 +27,7 @@ class ShortEventList extends React.Component {
     axios
       .get(
         "http://localhost:9000/user/"
-          .concat(Cookies.get("USER_ID?userid"))
+          .concat(Cookies.get("USER_ID"))
           .concat("/event")
       )
       .then(res => {

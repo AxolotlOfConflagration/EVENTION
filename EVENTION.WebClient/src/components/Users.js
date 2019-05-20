@@ -1,5 +1,5 @@
 import React from "react";
-import { List, Avatar, Button } from "antd";
+import { List, Avatar } from "antd";
 import FollowButton from "./FollowButton";
 
 class Users extends React.Component {

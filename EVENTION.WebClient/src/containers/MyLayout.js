@@ -17,7 +17,6 @@ class MyLayout extends React.Component {
         this.setState({
           nick: res.data.nick
         });
-        console.log(res.data);
       });
   }
   onNavigateMyEvents() {
@@ -83,8 +82,7 @@ class MyLayout extends React.Component {
                 size="large"
                 href="http://localhost:9000/login"
               >
-                {" "}
-                Zaloguj się{" "}
+                Zaloguj się
               </Button>
             ) : (
               <Menu.Item key="6" style={{ float: "right" }}>

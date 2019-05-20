@@ -11,16 +11,13 @@ class ShortRecommendationList extends React.Component {
   componentDidMount() {
     axios
       .get(
-        "http://localhost:9000/recomendation/".concat(
-          Cookies.get("USER_ID?userid")
-        )
+        "http://localhost:9000/recomendation/".concat(Cookies.get("USER_ID"))
       )
       .then(res => {
         this.setState({
           ShortEvents: res.data,
           loading: false
         });
-        console.log(res.data);
       });
   }
 
