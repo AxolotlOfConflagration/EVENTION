@@ -3,11 +3,13 @@ import { Layout, Menu, Icon, Button } from "antd";
 import { createBrowserHistory } from "history";
 import Cookies from "js-cookie";
 import axios from "axios";
+import LoginModal from "../components/LoginModal";
 const { Header, Content } = Layout;
 
 class MyLayout extends React.Component {
   state = {
-    nick: ""
+    nick: "",
+    visible: false
   };
 
   componentDidMount() {
@@ -48,6 +50,29 @@ class MyLayout extends React.Component {
     window.location.assign("/Rekomendacje");
   }
 
+  showModal = () => {
+    console.log("Click");
+    this.setState({
+      visible: true
+    });
+  };
+
+  handleOk = () => {
+    console.log("ok");
+    // console.log(e);
+    this.setState({
+      visible: false
+    });
+  };
+
+  handleCancel = () => {
+    console.log("cancle");
+    //console.log(e);
+    this.setState({
+      visible: false
+    });
+  };
+
   render() {
     return (
       <Layout>
@@ -77,17 +102,23 @@ class MyLayout extends React.Component {
               </Menu.Item>
             ) : null}
             {!Cookies.get("USER_ID") ? (
-              <Button
-                type="default"
-                // style={{ zIndex: 10, width: "52%" }}
-                size="large"
-                href="http://localhost:9000/login"
-              >
-                {" "}
-                Zaloguj się{" "}
-              </Button>
-            ) : (
               <Menu.Item key="6" style={{ float: "right" }}>
+                <Button
+                  type="default"
+                  onClick={this.showModal}
+                  style={{ zIndex: 10, width: "100%" }}
+                  size="large"
+                >
+                  Zaloguj się
+                </Button>
+                <LoginModal
+                  visible={this.state.visible}
+                  onOk={this.handleOk}
+                  onCancel={this.handleCancel}
+                />
+              </Menu.Item>
+            ) : (
+              <Menu.Item key="7" style={{ float: "right" }}>
                 <Icon type="user" />
                 <span>{this.state.nick}</span>
               </Menu.Item>
