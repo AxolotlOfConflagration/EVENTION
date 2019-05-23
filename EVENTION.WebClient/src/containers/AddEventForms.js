@@ -245,30 +245,6 @@ class AddEventForms extends React.Component {
         });
       }
     }
-    // axios
-    //   .post("http://localhost:9000/event/create", {
-    //     event: {
-    //       name:
-    //         "Otwarcie Schronu przeciwlotniczego w pasie drogowym Nad Wierzbkiem",
-    //       shortDescription:
-    //         "<p>W godzinach 10-18 można zobaczyć wystawę w schronie: obronę cywilną, mundury oraz plansze...",
-    //       longDescription:
-    //         "<p>W godzinach 10-18 można zobaczyć wystawę w schronie: obronę cywilną, mundury oraz plansze. W schronie będzie półmrok, można wziąć latarki. Z</p><p>Kontakt Marcin Nowakowski 536 779 688</p>",
-    //       ownerId: 1,
-    //       creationDate: "2012-04-23T18:25:43.511Z",
-    //       eventStart: "2012-04-23T18:25:43.511Z",
-    //       eventEnd: "2012-04-23T18:25:43.511Z",
-    //       addressCity: "Poznan",
-    //       imageSource:
-    //         "http://www.poznan.pl/mim/events/pictures/wejscie-do-schronu,pic1,1225,0,227640,with-dims,150,150.jpg",
-
-    //       address: "Schron przy ul Warmińskiej, Poznań"
-    //     },
-    //     categories: [2, 3]
-    //   })
-    //   .then(res => {
-    //     console.log(res);
-    //   });
   }
   render() {
     return (

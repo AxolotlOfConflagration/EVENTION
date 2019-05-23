@@ -1,7 +1,6 @@
 import React from "react";
-
 import { Form, Input } from "antd";
-import { Col, Row, Button } from "antd";
+import { Row, Button } from "antd";
 class FormLoginBuis extends React.Component {
   constructor(props) {
     super(props);
@@ -11,13 +10,12 @@ class FormLoginBuis extends React.Component {
       validLogin: "true bure",
       validPassowrd: "true bure",
       loginError: "",
-      passwordError: "",
-      valid: false
+      passwordError: ""
     };
     this.setLogin = this.setLogin.bind(this);
     this.setPassword = this.setPassword.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
-
   validate = () => {
     if (!this.state.login) {
       this.setState({
@@ -46,9 +44,20 @@ class FormLoginBuis extends React.Component {
 
   onClick(event) {
     console.log("clicked");
+    const isValid = this.validate();
+    console.log(isValid);
+    if (isValid) {
+      if (
+        this.state.validLogin === "true bure" &&
+        this.state.validPassowrd === "true bure"
+      ) {
+        console.log(this.state.login);
+        console.log(this.state.password);
+      }
+    }
   }
 
-  WriteForm = ({ text, holder, type, w, value, error, fun }) => (
+  WriteForm = ({ text, holder, type, w, value, error, fun, blur }) => (
     <Form>
       <div style={{ fontSize: 16 }}>
         <text>{text}</text>
@@ -59,6 +68,7 @@ class FormLoginBuis extends React.Component {
         onChange={fun}
         type={type}
         value={value}
+        onBlur={blur}
       />
       <div style={{ fontSize: 14, color: "red" }}>{error}</div>
     </Form>
@@ -81,6 +91,7 @@ class FormLoginBuis extends React.Component {
             value={this.state.login}
             error={this.state.loginError}
             fun={this.setLogin}
+            blur={this.validateLogin}
           />
         </Row>
         <Row type="flex" justify="space-around" align="middle">
