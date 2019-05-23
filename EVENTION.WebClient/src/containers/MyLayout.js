@@ -19,7 +19,6 @@ class MyLayout extends React.Component {
         this.setState({
           nick: res.data.nick
         });
-        console.log(res.data);
       });
   }
   onNavigateMyEvents() {

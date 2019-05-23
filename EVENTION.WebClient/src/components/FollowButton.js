@@ -36,14 +36,14 @@ class FollowButton extends React.Component {
     if (this.state.text === "Dodaj") {
       axios.post(
         "http://localhost:9000/followers/"
-          .concat(Cookies.get("USER_ID?userid"))
+          .concat(Cookies.get("USER_ID"))
           .concat("/")
           .concat(id)
       );
     } else {
       axios.delete(
         "http://localhost:9000/followers/"
-          .concat(Cookies.get("USER_ID?userid"))
+          .concat(Cookies.get("USER_ID"))
           .concat("/")
           .concat(id)
       );
@@ -64,6 +64,7 @@ class FollowButton extends React.Component {
             ? this.changeButton("Usuń", "minus", "primary")
             : this.changeButton("Dodaj", "plus", "ghost");
           this.eventChangeHandler(id);
+          window.location.reload();
         }}
       >
         {text}

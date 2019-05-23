@@ -1,5 +1,4 @@
 import React from "react";
-import { Form, Input } from "antd";
 import TextArea from "antd/lib/input/TextArea";
 
 class LongDesc extends React.Component {

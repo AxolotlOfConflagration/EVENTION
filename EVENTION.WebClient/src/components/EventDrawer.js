@@ -1,6 +1,7 @@
 import React from "react";
-import { Row, Col, Divider, Icon, Timeline, Button, Drawer } from "antd";
+import { Row, Col, Divider, Icon, Timeline } from "antd";
 import axios from "axios";
+import ReactHtmlParser from "react-html-parser";
 
 class EventDrawer extends React.Component {
   state = {
@@ -53,7 +54,8 @@ class EventDrawer extends React.Component {
 
   render() {
     if (this.state.loading) {
-      return <div>LOADING</div>;
+      // return <div>LOADING</div>;
+      return null;
     }
     return (
       <div>
@@ -89,8 +91,8 @@ class EventDrawer extends React.Component {
           </Col>
         </Row>
         <Divider />
-        <Row>{this.state.Event.event.longDescription}</Row>
-        <div
+        <Row>{ReactHtmlParser(this.state.Event.event.longDescription)}</Row>
+        {/* <div
           style={{
             position: "absolute",
             bottom: 0,
@@ -117,7 +119,7 @@ class EventDrawer extends React.Component {
           width={320}
           onClose={this.closeMapDrawer}
           visible={this.state.visible}
-        />
+        /> */}
       </div>
     );
   }

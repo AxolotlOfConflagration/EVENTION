@@ -35,21 +35,21 @@ class SaveButton extends React.Component {
   eventChangeHandler = id => {
     console.log(
       "http://localhost:9000/user/"
-        .concat(Cookies.get("USER_ID?userid"))
+        .concat(Cookies.get("USER_ID"))
         .concat("/event/")
         .concat(id)
     );
     if (this.state.text === "Zapisano") {
       axios.delete(
         "http://localhost:9000/user/"
-          .concat(Cookies.get("USER_ID?userid"))
+          .concat(Cookies.get("USER_ID"))
           .concat("/event/")
           .concat(id)
       );
     } else {
       axios.put(
         "http://localhost:9000/user/"
-          .concat(Cookies.get("USER_ID?userid"))
+          .concat(Cookies.get("USER_ID"))
           .concat("/event/")
           .concat(id)
       );

@@ -15,7 +15,7 @@ class MyEventList extends React.Component {
     axios
       .get(
         "http://localhost:9000/user/"
-          .concat(Cookies.get("USER_ID?userid"))
+          .concat(Cookies.get("USER_ID"))
           .concat("/event")
       )
       .then(res => {
@@ -27,7 +27,7 @@ class MyEventList extends React.Component {
       axios
         .get(
           "http://localhost:9000/user/"
-            .concat(Cookies.get("USER_ID?userid"))
+            .concat(Cookies.get("USER_ID"))
             .concat("/event")
         )
         .then(res => {
@@ -40,7 +40,7 @@ class MyEventList extends React.Component {
       axios
         .get(
           "http://localhost:9000/user/"
-            .concat(Cookies.get("USER_ID?userid"))
+            .concat(Cookies.get("USER_ID"))
             .concat("/event/past")
         )
         .then(res => {
@@ -53,7 +53,7 @@ class MyEventList extends React.Component {
       axios
         .get(
           "http://localhost:9000/user/"
-            .concat(Cookies.get("USER_ID?userid"))
+            .concat(Cookies.get("USER_ID"))
             .concat("/event/future")
         )
         .then(res => {

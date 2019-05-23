@@ -11,13 +11,12 @@ class ShortActivateList extends React.Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:9000/feed/".concat(Cookies.get("USER_ID?userid")))
+      .get("http://localhost:9000/feed/".concat(Cookies.get("USER_ID")))
       .then(res => {
         this.setState({
           ShortActiv: res.data,
           loading: false
         });
-        console.log(res.data);
       });
   }
 

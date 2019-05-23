@@ -11,8 +11,8 @@ import Login from "./Login";
 
 class Home extends Component {
   state = {
-    categories: null, //wszytskie czyli puste
-    city: "Poznan", //Wszystkie
+    categories: null, //wszystkie czyli puste
+    city: null, //Wszystkie
     page: 0
   };
 

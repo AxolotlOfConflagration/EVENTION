@@ -16,18 +16,14 @@ class UsersList extends React.Component {
 
   fetchData = () => {
     axios.get("http://localhost:9000/user").then(res => {
-      console.log(res.data);
       this.setState({
         AllUsers: res.data,
         Users: res.data
       });
     });
     axios
-      .get(
-        "http://localhost:9000/followers/".concat(Cookies.get("USER_ID?userid"))
-      )
+      .get("http://localhost:9000/followers/".concat(Cookies.get("USER_ID")))
       .then(res => {
-        console.log(res.data);
         this.setState({ FollowedUsers: res.data });
       });
   };

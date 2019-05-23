@@ -95,7 +95,7 @@ class ShortEvent extends React.Component {
                   id={item.event.id}
                   user="1"
                 />,
-                <this.ButtonIcon type="share-alt" />,
+                // <this.ButtonIcon type="share-alt" />,
                 <this.ButtonText
                   text=" Więcej "
                   func={() => {
