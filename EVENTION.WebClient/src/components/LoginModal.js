@@ -36,6 +36,7 @@ class LoginModal extends React.Component {
             //   onClick={this.showModal}
             style={{ zIndex: 10, width: "100%" }}
             size="large"
+            href="http://localhost:3000/BiznesoweLogowanie"
           >
             Zaloguj się jako użytkownik biznesowy
           </Button>

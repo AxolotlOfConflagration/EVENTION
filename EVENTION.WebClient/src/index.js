@@ -8,6 +8,7 @@ import AddEvent from "./AddEvent";
 import Recommendation from "./Recommendation";
 import Login from "./Login";
 import Activate from "./Activate";
+import BuisnessLogin from "./BuisnessLogin";
 
 const routing = (
   <Router>
@@ -19,6 +20,7 @@ const routing = (
       <Route path="/Login" component={Login} />
       <Route path="/DodajWydarzenie" component={AddEvent} />
       <Route path="/OstatniaAktywnosc" component={Activate} />
+      <Route path="/BiznesoweLogowanie" component={BuisnessLogin} />
     </div>
   </Router>
 );
