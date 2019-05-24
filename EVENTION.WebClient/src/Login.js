@@ -17,6 +17,7 @@ class Login extends React.Component {
       "USER_ID",
       String(window.location.search).replace("?userid=", "")
     );
+    Cookies.set("BUSINESS", false);
     return (
       <div className="Login">
         <MyLayout className="layout">

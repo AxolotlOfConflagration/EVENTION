@@ -9,7 +9,7 @@ import Cookies from "js-cookie";
 
 class AddEvent extends Component {
   render() {
-    if (Cookies.get("USER_ID")) {
+    if (Cookies.get("USER_ID") && Cookies.get("BUSINESS") === "true") {
       return (
         <div className="AddEvent">
           <MyLayout>

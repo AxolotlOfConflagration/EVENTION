@@ -94,12 +94,14 @@ class MyLayout extends React.Component {
               <Icon type="compass" />
               <span>Rekomendacje</span>
             </Menu.Item>
-            {Cookies.get("Bussines") ? (
+            {Cookies.get("BUSINESS") === "true" ? (
               <Menu.Item key="3" onClick={this.onNavigateAddEvent}>
                 <Icon type="contacts" />
                 <span>Dodaj wydarzenie</span>
               </Menu.Item>
-            ) : null}
+            ) : (
+              console.log(Cookies.get("BUSINESS") === "true")
+            )}
             {!Cookies.get("USER_ID") ? (
               <Menu.Item key="6" style={{ float: "right" }}>
                 <Button
@@ -119,7 +121,11 @@ class MyLayout extends React.Component {
             ) : (
               <Menu.Item key="7" style={{ float: "right" }}>
                 <Icon type="user" />
-                <span>{this.state.nick}</span>
+                {Cookies.get("BUSINESS") === "true" ? (
+                  <span>Użytkownik biznesowy</span>
+                ) : (
+                  <span>{this.state.nick}</span>
+                )}
               </Menu.Item>
             )}
           </Menu>

@@ -1,6 +1,9 @@
 import React from "react";
 import { Form, Input } from "antd";
 import { Row, Button } from "antd";
+import axios from "axios";
+import Cookies from "js-cookie";
+
 class FormLoginBuis extends React.Component {
   constructor(props) {
     super(props);
@@ -16,6 +19,7 @@ class FormLoginBuis extends React.Component {
     this.setPassword = this.setPassword.bind(this);
     this.onClick = this.onClick.bind(this);
   }
+
   validate = () => {
     if (!this.state.login) {
       this.setState({
@@ -53,6 +57,26 @@ class FormLoginBuis extends React.Component {
       ) {
         console.log(this.state.login);
         console.log(this.state.password);
+        if (this.state.login === this.state.password) {
+          axios
+            .post(
+              "http://localhost:9000/login/basic",
+              {},
+              {
+                auth: {
+                  username: "admin",
+                  password: "admin"
+                }
+              }
+            )
+            .then(function(response) {
+              console.log(response.data);
+              console.log(response.status);
+              console.log(response.data.userId);
+              Cookies.set("USER_ID", response.data.userId);
+              Cookies.set("BUSINESS", true);
+            });
+        }
       }
     }
   }
@@ -73,6 +97,7 @@ class FormLoginBuis extends React.Component {
       <div style={{ fontSize: 14, color: "red" }}>{error}</div>
     </Form>
   );
+
   render() {
     return (
       <div>
