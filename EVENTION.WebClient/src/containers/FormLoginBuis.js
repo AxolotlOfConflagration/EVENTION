@@ -3,6 +3,7 @@ import { Form, Input } from "antd";
 import { Row, Button } from "antd";
 import axios from "axios";
 import Cookies from "js-cookie";
+import { createBrowserHistory } from "history";
 
 class FormLoginBuis extends React.Component {
   constructor(props) {
@@ -13,7 +14,8 @@ class FormLoginBuis extends React.Component {
       validLogin: "true bure",
       validPassowrd: "true bure",
       loginError: "",
-      passwordError: ""
+      passwordError: "",
+      message: ""
     };
     this.setLogin = this.setLogin.bind(this);
     this.setPassword = this.setPassword.bind(this);
@@ -46,7 +48,7 @@ class FormLoginBuis extends React.Component {
     console.log(`Password:  ${event.target.value}`);
   }
 
-  onClick(event) {
+  onClick = () => {
     console.log("clicked");
     const isValid = this.validate();
     console.log(isValid);
@@ -75,11 +77,19 @@ class FormLoginBuis extends React.Component {
               console.log(response.data.userId);
               Cookies.set("USER_ID", response.data.userId);
               Cookies.set("BUSINESS", true);
+
+              const history = createBrowserHistory();
+              history.push("/");
+              window.location.assign("/");
             });
+        } else {
+          this.setState({
+            message: "Błędne logowanie, spróbuj jeszcze raz."
+          });
         }
       }
     }
-  }
+  };
 
   WriteForm = ({ text, holder, type, w, value, error, fun, blur }) => (
     <Form>
@@ -137,6 +147,9 @@ class FormLoginBuis extends React.Component {
           <Button onClick={this.onClick} type={"primary"}>
             Zaloguj się
           </Button>
+        </Row>
+        <Row type="flex" justify="space-around" align="middle">
+          <div style={{ fontSize: 14, color: "red" }}>{this.state.message}</div>
         </Row>
       </div>
     );

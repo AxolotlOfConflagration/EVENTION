@@ -56,6 +56,11 @@ class MyLayout extends React.Component {
     });
   };
 
+  logOut = () => {
+    console.log("clicked");
+    Cookies.set("USER_ID", "");
+    window.location.reload();
+  };
   handleOk = () => {
     console.log("ok");
     // console.log(e);
@@ -122,10 +127,13 @@ class MyLayout extends React.Component {
               <Menu.Item key="7" style={{ float: "right" }}>
                 <Icon type="user" />
                 {Cookies.get("BUSINESS") === "true" ? (
-                  <span>Użytkownik biznesowy</span>
+                  <span style={{ paddingRight: 10 }}>Użytkownik biznesowy</span>
                 ) : (
-                  <span>{this.state.nick}</span>
+                  <span style={{ paddingRight: 10 }}>{this.state.nick}</span>
                 )}
+                <Button type="default" size="small" onClick={this.logOut}>
+                  Wyloguj się
+                </Button>
               </Menu.Item>
             )}
           </Menu>
