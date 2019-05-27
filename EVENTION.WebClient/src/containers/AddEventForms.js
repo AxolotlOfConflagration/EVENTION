@@ -51,15 +51,14 @@ class AddEventForms extends React.Component {
     this.onClick = this.onClick.bind(this);
   }
   validate = () => {
-    if (!this.state.name) {
+    if (this.state.name.length === 0) {
+      console.log("jestem w name validate");
       this.setState({
-        nameError: "Nazwa wydarzenia jest wymagana!"
-      });
-      this.setState({
+        nameError: "Nazwa wydarzenia jest wymagana!",
         validname: "false malse"
       });
     }
-    if (!this.state.shortDescription) {
+    if (this.state.shortDescription.length === 0) {
       this.setState({
         shortDescriptionError: "Krótki opis wydarzenia jest wymagany!",
         validshortDescription: "false malse"
@@ -110,43 +109,58 @@ class AddEventForms extends React.Component {
     console.log(`Nazwa wydarzenia:  ${event.target.value}`);
   }
   setShortDesc(event) {
-    this.setState({ shortDescription: event.target.value });
+    this.setState({
+      shortDescription: event.target.value,
+      shortDescriptionError: ""
+    });
     console.log(`Krótki opis:  ${event.target.value}`);
   }
   setLongDescription(event) {
-    this.setState({ longDescription: event.target.value });
+    this.setState({
+      longDescription: event.target.value,
+      longDescriptionError: ""
+    });
     console.log(`Długi opis:  ${event.target.value}`);
   }
   chooseCity(value) {
-    this.setState({ addressCity: value });
+    this.setState({ addressCity: value, addressCityError: "" });
     console.log(`Miasto wydarzenia:  ${value}`);
   }
+  chooseCategoryReset = () => {
+    this.setState({ categories: null });
+  };
+  chooseCityReset = () => {
+    this.setState({ addressCity: null });
+  };
   chooseCategory(value) {
-    this.setState({ categories: value });
+    this.setState({ categories: value, categoriesError: "" });
     console.log(`Kategoria wydarzenia:  ${value}`);
   }
   setAddress(event) {
-    this.setState({ address: event.target.value });
+    this.setState({ address: event.target.value, addressError: "" });
     console.log(`Dokłady adres wydarzenia:  ${event.target.value}`);
   }
   setData(date) {
     this.setState({
       eventStart: date[0]["_d"].toISOString(),
-      eventEnd: date[1]["_d"].toISOString()
+      eventEnd: date[1]["_d"].toISOString(),
+      eventStartError: "",
+      eventEndError: ""
     });
     console.log(`Start`, date[0]["_d"].toISOString());
     console.log(`End`, date[1]["_d"].toISOString());
   }
   setImageSource(event) {
-    this.setState({ imageSource: event.target.value });
+    this.setState({ imageSource: event.target.value, imageSourceError: "" });
     console.log(`Źródło adresu wydarzenia:  ${event.target.value}`);
   }
 
-  onClick(event) {
+  onClick = () => {
     const isValid = this.validate();
     console.log("clicked");
     console.log(isValid);
-    console.log("name1", this.state.validname);
+    console.log("name", this.state.validname);
+    console.log("name", this.state.name);
     if (isValid) {
       console.log("name2", this.state.validname);
       console.log("sD", this.state.validshortDescription);
@@ -156,13 +170,24 @@ class AddEventForms extends React.Component {
       console.log("image", this.state.validimageSource);
       console.log("cate", this.state.validcategories);
       console.log("date", this.state.valideventStart);
+      // if (
+      //   this.state.validname === "true bure" &&
+      //   this.state.validshortDescription === "true bure" &&
+      //   this.state.validlongDescription === "true bure" &&
+      //   this.state.validaddress === "true bure" &&
+      //   this.state.validaddressCity === "true bure" &&
+      //   this.state.validimageSource === "true bure" &&
+      //   this.state.validcategories === "true bure" &&
+      //   this.state.valideventStart === "true bure"
+      // )
+      console.log("len", this.state.name.length);
       if (
-        this.state.validname === "true bure" &&
-        this.state.validshortDescription === "true bure" &&
-        this.state.validlongDescription === "true bure" &&
-        this.state.validaddress === "true bure" &&
+        this.state.name.length > 0 &&
+        this.state.shortDescription.length > 0 &&
+        this.state.longDescription.length > 0 &&
+        this.state.address.length > 0 &&
         this.state.validaddressCity === "true bure" &&
-        this.state.validimageSource === "true bure" &&
+        this.state.imageSource.length > 0 &&
         this.state.validcategories === "true bure" &&
         this.state.valideventStart === "true bure"
       ) {
@@ -202,12 +227,12 @@ class AddEventForms extends React.Component {
                 name: "",
                 shortDescription: "",
                 longDescription: "",
-                addressCity: "",
-                categories: "",
+                categories: null,
                 address: "",
                 imageSource: "",
-                eventStart: "",
-                eventEnd: "",
+                eventStart: null,
+                eventEnd: null,
+                addressCity: null,
                 validname: "true bure",
                 validshortDescription: "true bure",
                 validlongDescription: "true bure",
@@ -216,7 +241,16 @@ class AddEventForms extends React.Component {
                 validaddress: "true bure",
                 validimageSource: "true bure",
                 valideventStart: "true bure",
-                valideventEnd: "true bure"
+                valideventEnd: "true bure",
+                nameError: "",
+                shortDescriptionError: "",
+                longDescriptionError: "",
+                addressCityError: "",
+                categoriesError: "",
+                addressError: "",
+                imageSourceError: "",
+                eventStartError: "",
+                eventEndError: ""
               });
             }
           });
@@ -224,16 +258,6 @@ class AddEventForms extends React.Component {
         this.setState({
           message_from_post:
             "Błąd podczas tworzenia wydarzenia. Spróbuj jeszcze raz.",
-          name: "",
-          shortDescription: "",
-          longDescription: "",
-          addressCity: "",
-          categories: "",
-          address: "",
-          imageSource: "",
-          eventStart: "",
-          eventEnd: "",
-          validname: "true bure",
           validshortDescription: "true bure",
           validlongDescription: "true bure",
           validaddressCity: "true bure",
@@ -245,7 +269,7 @@ class AddEventForms extends React.Component {
         });
       }
     }
-  }
+  };
   render() {
     return (
       <div>
