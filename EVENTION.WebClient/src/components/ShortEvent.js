@@ -3,6 +3,7 @@ import axios from "axios";
 import { List, Button, Icon, Drawer } from "antd";
 import EventDrawer from "./EventDrawer";
 import SaveButton from "./SaveButton";
+import Cookies from "js-cookie";
 
 class ShortEvent extends React.Component {
   state = {
@@ -75,49 +76,83 @@ class ShortEvent extends React.Component {
           renderItem={item => (
             <List.Item
               key={item.event.name}
-              actions={[
-                <SaveButton
-                  type={
-                    this.props.contains(parseInt(item.event.id))
-                      ? "primary"
-                      : "ghost"
-                  }
-                  icon={
-                    this.props.contains(parseInt(item.event.id))
-                      ? "check"
-                      : "plus"
-                  }
-                  text={
-                    this.props.contains(parseInt(item.event.id))
-                      ? "Zapisano"
-                      : "Zapisz się"
-                  }
-                  id={item.event.id}
-                  user="1"
-                />,
-                // <this.ButtonIcon type="share-alt" />,
-                <this.ButtonText
-                  text=" Więcej "
-                  func={() => {
-                    axios
-                      .get("http://localhost:9000/event/".concat(item.event.id))
-                      .then(res => {
-                        this.setState({
-                          event: res
-                        });
-                      });
-                    this.setState({
-                      visible: !this.state.visible,
-                      eventID: item.event.id,
-                      eventTitle: item.event.name
-                    });
-                  }}
-                />,
-                <this.IconText
-                  type="schedule"
-                  text={this.prepTime(item.event.eventStart)}
-                />
-              ]}
+              actions={
+                Cookies.get("BUSINESS") === "false"
+                  ? [
+                      <SaveButton
+                        type={
+                          this.props.contains(parseInt(item.event.id))
+                            ? "primary"
+                            : "ghost"
+                        }
+                        icon={
+                          this.props.contains(parseInt(item.event.id))
+                            ? "check"
+                            : "plus"
+                        }
+                        text={
+                          this.props.contains(parseInt(item.event.id))
+                            ? "Zapisano"
+                            : "Zapisz się"
+                        }
+                        id={item.event.id}
+                        user="1"
+                      />,
+                      // <this.ButtonIcon type="share-alt" />,
+                      <this.ButtonText
+                        text=" Więcej "
+                        func={() => {
+                          axios
+                            .get(
+                              "http://localhost:9000/event/".concat(
+                                item.event.id
+                              )
+                            )
+                            .then(res => {
+                              this.setState({
+                                event: res
+                              });
+                            });
+                          this.setState({
+                            visible: !this.state.visible,
+                            eventID: item.event.id,
+                            eventTitle: item.event.name
+                          });
+                        }}
+                      />,
+                      <this.IconText
+                        type="schedule"
+                        text={this.prepTime(item.event.eventStart)}
+                      />
+                    ]
+                  : [
+                      <this.ButtonText
+                        text=" Więcej "
+                        func={() => {
+                          axios
+                            .get(
+                              "http://localhost:9000/event/".concat(
+                                item.event.id
+                              )
+                            )
+                            .then(res => {
+                              this.setState({
+                                event: res
+                              });
+                            });
+                          this.setState({
+                            visible: !this.state.visible,
+                            eventID: item.event.id,
+                            eventTitle: item.event.name
+                          });
+                        }}
+                      />,
+                      <this.IconText
+                        type="schedule"
+                        text={this.prepTime(item.event.eventStart)}
+                      />
+                    ]
+              }
               extra={
                 <img height={150} alt="logo" src={item.event.imageSource} />
               }

@@ -6,10 +6,11 @@ import ShortActivateList from "./containers/ShortActivateList";
 import UsersList from "./containers/UsersList";
 import Login from "./Login";
 import Cookies from "js-cookie";
+import Home from "./Home";
 
 class Activate extends Component {
   render() {
-    if (Cookies.get("USER_ID")) {
+    if (Cookies.get("USER_ID") && Cookies.get("BUSINESS") === "false") {
       return (
         <div className="Recommendation">
           <MyLayout>
@@ -25,6 +26,8 @@ class Activate extends Component {
           </MyLayout>
         </div>
       );
+    } else if (Cookies.get("USER_ID") && Cookies.get("BUSINESS") === "true") {
+      return <Home />;
     } else {
       return <Login />;
     }

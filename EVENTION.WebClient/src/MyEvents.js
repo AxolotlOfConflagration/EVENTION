@@ -6,6 +6,7 @@ import MyLayout from "./containers/MyLayout";
 import MyEventList from "./containers/MyEventsList";
 import Cookies from "js-cookie";
 import Login from "./Login";
+import Home from "./Home";
 
 class MyEvents extends Component {
   state = {
@@ -20,7 +21,7 @@ class MyEvents extends Component {
 
   render() {
     const { type } = this.state;
-    if (Cookies.get("USER_ID")) {
+    if (Cookies.get("USER_ID") && Cookies.get("BUSINESS") === "false") {
       return (
         <div className="Recommendation">
           <MyLayout>
@@ -33,6 +34,8 @@ class MyEvents extends Component {
           </MyLayout>
         </div>
       );
+    } else if (Cookies.get("USER_ID") && Cookies.get("BUSINESS") === "true") {
+      return <Home />;
     } else {
       return <Login />;
     }

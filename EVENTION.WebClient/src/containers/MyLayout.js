@@ -87,18 +87,24 @@ class MyLayout extends React.Component {
               <Icon type="home" />
               <span>Strona domowa</span>
             </Menu.Item>
-            <Menu.Item key="2" onClick={this.onNavigateMyEvents}>
-              <Icon type="calendar" />
-              <span>Moje wydarzenia</span>
-            </Menu.Item>
-            <Menu.Item key="5" onClick={this.onNavigateActivate}>
-              <Icon type="team" />
-              <span>Ostatnia aktywność</span>
-            </Menu.Item>
-            <Menu.Item key="4" onClick={this.onNavigateRecommendation}>
-              <Icon type="compass" />
-              <span>Rekomendacje</span>
-            </Menu.Item>
+            {Cookies.get("BUSINESS") === "false" ? (
+              <Menu.Item key="2" onClick={this.onNavigateMyEvents}>
+                <Icon type="calendar" />
+                <span>Moje wydarzenia</span>
+              </Menu.Item>
+            ) : null}
+            {Cookies.get("BUSINESS") === "false" ? (
+              <Menu.Item key="5" onClick={this.onNavigateActivate}>
+                <Icon type="team" />
+                <span>Ostatnia aktywność</span>
+              </Menu.Item>
+            ) : null}
+            {Cookies.get("BUSINESS") === "false" ? (
+              <Menu.Item key="4" onClick={this.onNavigateRecommendation}>
+                <Icon type="compass" />
+                <span>Rekomendacje</span>
+              </Menu.Item>
+            ) : null}
             {Cookies.get("BUSINESS") === "true" ? (
               <Menu.Item key="3" onClick={this.onNavigateAddEvent}>
                 <Icon type="contacts" />

@@ -6,6 +6,7 @@ import MyLayout from "./containers/MyLayout";
 import GoogleFontLoader from "react-google-font-loader";
 import Login from "./Login";
 import Cookies from "js-cookie";
+import Home from "./Home";
 
 class AddEvent extends Component {
   render() {
@@ -47,6 +48,8 @@ class AddEvent extends Component {
           </MyLayout>
         </div>
       );
+    } else if (Cookies.get("USER_ID") && Cookies.get("BUSINESS") === "false") {
+      return <Home />;
     } else {
       return <Login />;
     }
