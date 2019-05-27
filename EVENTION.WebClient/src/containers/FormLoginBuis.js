@@ -59,7 +59,11 @@ class FormLoginBuis extends React.Component {
       ) {
         console.log(this.state.login);
         console.log(this.state.password);
-        if (this.state.login === this.state.password) {
+        if (
+          this.state.login &&
+          this.state.password &&
+          this.state.login === this.state.password
+        ) {
           axios
             .post(
               "http://localhost:9000/login/basic",

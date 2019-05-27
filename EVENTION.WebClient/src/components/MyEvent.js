@@ -94,7 +94,6 @@ class MyEvent extends React.Component {
                   id={item.id}
                   user="1"
                 />,
-                <this.ButtonIcon type="share-alt" />,
                 <this.ButtonText
                   text=" Więcej "
                   func={() => {
