@@ -26,9 +26,7 @@ class Address extends React.Component {
     return (
       <div>
         <this.WriteForm
-          text="
-Centrum Kultury ZAMEK w Poznaniu
-ul. Św. Marcin 80/82"
+          text="Centrum Kultury ZAMEK w Poznaniu ul. Św. Marcin 80/82, Poznań, Poland"
           w={500}
         />
         {/* <h4>{this.props.address}</h4> */}

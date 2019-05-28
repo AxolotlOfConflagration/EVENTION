@@ -79,18 +79,20 @@ class EventMap extends React.Component {
         .then(res => {
           res.data.forEach(event => {
             console.log(event);
-            this.marker = L.geoJSON(JSON.parse(event.event.geoJson), {
-              pointToLayer: (feature, latlng) => {
-                return L.marker(latlng, { icon: customMarker });
-              }
-            })
-              .bindPopup(
-                '<img height=75 alt="logo" src="' +
-                  event.event.imageSource +
-                  '"} /> <br>' +
-                  event.event.name
-              )
-              .addTo(this.markerGroup);
+            if (event.event.geoJson) {
+              this.marker = L.geoJSON(JSON.parse(event.event.geoJson), {
+                pointToLayer: (feature, latlng) => {
+                  return L.marker(latlng, { icon: customMarker });
+                }
+              })
+                .bindPopup(
+                  '<img height=75 alt="logo" src="' +
+                    event.event.imageSource +
+                    '"} /> <br>' +
+                    event.event.name
+                )
+                .addTo(this.markerGroup);
+            }
           });
         });
     }
